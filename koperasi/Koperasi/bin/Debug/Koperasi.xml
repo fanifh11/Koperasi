@@ -1,0 +1,886 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Koperasi
+</name>
+</assembly>
+<members>
+<member name="T:Koperasi.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Koperasi.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Koperasi.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.Paste_ErrorsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblakunDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblAnggotaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.TblBungaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblGroupDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.TblIdentitasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.TblJenisDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblkeuanganDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblklasifikasiDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblkontakDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tbllaporanDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblmenuDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblneracaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblperiodeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblPinjamDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblRekapDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblRekapBungaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblRekapSimpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblRekapSukarelaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblRekeningDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblSHUDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblSisaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblSukarelaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblTagihanDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblTahunDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.TblTransaksiDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tbluserDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QMenuDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.qneracaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QPinjamDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QRekapDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QRekapBungaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QRekapSimpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QRekapSukarelaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QRekeningDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QSHUDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QSisaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QSukarelaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QTagihanDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QTransaksiDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblrekapsimpananDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.Paste_ErrorsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblakunRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblAnggotaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.TblBungaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblGroupRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.TblIdentitasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.TblJenisRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblkeuanganRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblklasifikasiRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblkontakRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tbllaporanRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblmenuRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblneracaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblperiodeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblPinjamRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblRekapRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblRekapBungaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblRekapSimpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblRekapSukarelaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblRekeningRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblSHURow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblSisaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblSukarelaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblTagihanRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblTahunRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.TblTransaksiRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tbluserRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QMenuRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.qneracaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QPinjamRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QRekapRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QRekapBungaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QRekapSimpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QRekapSukarelaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QRekeningRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QSHURow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QSisaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QSukarelaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QTagihanRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QTransaksiRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblrekapsimpananRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.Paste_ErrorsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblakunRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblAnggotaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.TblBungaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblGroupRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.TblIdentitasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.TblJenisRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblkeuanganRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblklasifikasiRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblkontakRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tbllaporanRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblmenuRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblneracaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblperiodeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblPinjamRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblRekapRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblRekapBungaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblRekapSimpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblRekapSukarelaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblRekeningRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblSHURowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblSisaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblSukarelaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblTagihanRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblTahunRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.TblTransaksiRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tbluserRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QMenuRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.qneracaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QPinjamRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QRekapRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QRekapBungaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QRekapSimpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QRekapSukarelaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QRekeningRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QSHURowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QSisaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QSukarelaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QTagihanRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.QTransaksiRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSet.tblrekapsimpananRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.Paste_ErrorsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblakunTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblAnggotaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.TblBungaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblGroupTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.TblIdentitasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.TblJenisTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblkeuanganTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblklasifikasiTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblkontakTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tbllaporanTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblmenuTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblneracaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblperiodeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblPinjamTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblRekapTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblRekapBungaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblRekapSimpTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblRekapSukarelaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblRekeningTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblSHUTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblSisaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblSukarelaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblTagihanTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tblTahunTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.TblTransaksiTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.tbluserTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.QMenuTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.qneracaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.QPinjamTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.QRekapTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.QRekapBungaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.QRekapSimpTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.QRekapSukarelaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.QRekeningTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.QSHUTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.QSisaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.QSukarelaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.QTagihanTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.QTransaksiTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Koperasi.koperasiDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Koperasi.koperasiDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Koperasi.koperasiDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Koperasi.koperasiDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Koperasi.koperasiDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Koperasi.koperasiDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Koperasi.koperasiDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Koperasi.koperasiDataSetTableAdapters.TableAdapterManager.UpdateAll(Koperasi.koperasiDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Koperasi.koperasiDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

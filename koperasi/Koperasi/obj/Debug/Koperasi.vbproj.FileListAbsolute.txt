@@ -1,0 +1,636 @@
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\Koperasi.exe.config
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\Koperasi.exe
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\Koperasi.pdb
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\Koperasi.xml
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\System.Windows.Forms.Ribbon.dll
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.vbprojAssemblyReference.cache
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.MenuUtama.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.Resources.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.GenerateResource.cache
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.CoreCompileInputs.cache
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.CopyComplete
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.exe
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.xml
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.pdb
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\Koperasi.exe.config
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\Koperasi.exe
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\Koperasi.pdb
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\Koperasi.xml
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\System.Windows.Forms.Ribbon.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\EnvDTE.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\stdole.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\Microsoft.MSXML.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\obj\Debug\Koperasi.vbprojAssemblyReference.cache
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\obj\Debug\Koperasi.MenuUtama.resources
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\obj\Debug\Koperasi.Resources.resources
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.GenerateResource.cache
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.CoreCompileInputs.cache
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.CopyComplete
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\obj\Debug\Koperasi.exe
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\obj\Debug\Koperasi.xml
+D:\Folder Kuliah\Praktik Industri\Backup\koperasi\Koperasi\obj\Debug\Koperasi.pdb
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormAnggota.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormBackupDatabase.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormBayar.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormBuatBilling.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormBuatRekSimpSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormCariAnggota.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormCetakBukuSimpSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormCetakSampulBukuSimpSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormCetakSimpSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormDataTahun.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormIsiSimpananSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormKoreksiPembayaranNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormKoreksiPinjamorPiutangNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormLaporanNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormLihatTagihan.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormLogin.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPembayaranSimpKolektif.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPengambilanSimpPokoknWajib.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPerhitungaBungaSimpSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormProsesSHU.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormRestoreDatabase.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormUser.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormLihatTagihanNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPembayaranNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPembayaranPinjamanKolektif.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPinjam.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.JenisSimpanan.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanHistoriPembayaranPiutangNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanPembayaranBunga.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanPembayaranPiutangNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanPeminjaman.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanRekapitulasiPendapatanBunga.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanRekapitulasiSimpananPokok.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanSaldoPiutangNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanSimpananAnggota.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanTransaksiSimpananSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.PengambilanSimpananSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\obj\Debug\Koperasi.DataIdentitasKoperasi.resources
+D:\Folder Kuliah\Praktik Industri\PI\Koperasi\Koperasi\obj\Debug\Koperasi.FormBuatTagihanNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI\Koperasi\Koperasi\obj\Debug\Koperasi.LaporanNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI\Koperasi\Koperasi\obj\Debug\Koperasi.LaporanRekapitulasiSimpananSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI\Koperasi\Koperasi\obj\Debug\Koperasi.LaporanRekapitulasiSaldoPiutang.resources
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\Microsoft.Bcl.HashCode.dll
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\Npgsql.dll
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\System.Buffers.dll
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\System.Memory.dll
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\System.Numerics.Vectors.dll
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\System.Text.Encodings.Web.dll
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\System.Text.Json.dll
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\System.Threading.Channels.dll
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\System.ValueTuple.dll
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\Microsoft.Bcl.HashCode.xml
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\Npgsql.xml
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\System.Buffers.xml
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\System.Memory.xml
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\System.Numerics.Vectors.xml
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\System.Text.Encodings.Web.xml
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\System.Text.Json.xml
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\System.Threading.Channels.xml
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Folder Kuliah\Praktik Industri\PI\koperasi\Koperasi\bin\Debug\System.ValueTuple.xml
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Koperasi.exe.config
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Koperasi.exe
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Koperasi.pdb
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Koperasi.xml
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.Bcl.HashCode.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Npgsql.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Buffers.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Memory.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Numerics.Vectors.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Text.Encodings.Web.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Text.Json.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Threading.Channels.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.ValueTuple.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Windows.Forms.Ribbon.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.Bcl.HashCode.xml
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Npgsql.xml
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Buffers.xml
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Memory.xml
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Numerics.Vectors.xml
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Text.Encodings.Web.xml
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Text.Json.xml
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Threading.Channels.xml
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.ValueTuple.xml
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.vbprojAssemblyReference.cache
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.DataIdentitasKoperasi.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormAnggota.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormBackupDatabase.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormBayar.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormBuatBilling.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormBuatRekSimpSukarela.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormBuatTagihanNasabah.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormCariAnggota.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormCetakBukuSimpSukarela.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormCetakSampulBukuSimpSukarela.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormCetakSimpSukarela.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormDataTahun.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormIsiSimpananSukarela.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormKoreksiPembayaranNasabah.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormKoreksiPinjamorPiutangNasabah.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormLihatTagihan.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormLihatTagihanNasabah.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPembayaranNasabah.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPembayaranPinjamanKolektif.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPembayaranSimpKolektif.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPengambilanSimpPokoknWajib.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPerhitungaBungaSimpSukarela.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPinjam.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormProsesSHU.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormRestoreDatabase.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormUser.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.JenisSimpanan.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanHistoriPembayaranPiutangNasabah.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanNasabah.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanPembayaranBunga.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanPembayaranPiutangNasabah.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanPeminjaman.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanRekapitulasiPendapatanBunga.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanRekapitulasiSaldoPiutang.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanRekapitulasiSimpananPokok.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanRekapitulasiSimpananSukarela.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanSaldoPiutangNasabah.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanSimpananAnggota.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanTransaksiSimpananSukarela.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.MenuUtama.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.Resources.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PengambilanSimpananSukarela.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.GenerateResource.cache
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.CoreCompileInputs.cache
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.CopyComplete
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.exe
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.xml
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.pdb
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\RdlCompile.cache
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\RdlCompile.compiled
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.Design.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.SqlServer.Types.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\EnvDTE.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\stdole.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.MSXML.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewCetakSampul.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewCetakBuku.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\bin\Debug\koperasi.mdb
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewSimpSukarela.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanNasabah.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanSimpananAnggota.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewFormLihatTagihan.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanPembayaranAsuransi.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanPendapatanAdministrasi.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanPeminjaman.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanPembayaranAsuransi.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanPembayaranPiutangNasabah.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanPendapatanAdministrasi.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanSaldoPiutangNasabah.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanRekapitulasiPendapatanBunga.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewFormAnggota.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanHistoryPembayaranPiutangNasabah.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanPembayaranBunga.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanRekapitulasiSaldoPiutang.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanRekapitulasiSimpananSukarela.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanTransaksiSimpananSukarela.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewFormProsesSHU.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewContohBukuSimpananSukarela.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanRekapitulasiSimpananPokok.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewBuktiPembayaran.resources
+E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewFormPinjam.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.vbprojAssemblyReference.cache
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.DataIdentitasKoperasi.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormAnggota.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormBackupDatabase.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormBayar.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormBuatBilling.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormBuatRekSimpSukarela.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormBuatTagihanNasabah.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormCariAnggota.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormCetakBukuSimpSukarela.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormCetakSampulBukuSimpSukarela.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormCetakSimpSukarela.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormDataTahun.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormIsiSimpananSukarela.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormKoreksiPembayaranNasabah.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormKoreksiPinjamorPiutangNasabah.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormLihatTagihan.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormLihatTagihanNasabah.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPembayaranNasabah.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPembayaranPinjamanKolektif.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPembayaranSimpKolektif.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPengambilanSimpPokoknWajib.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPerhitungaBungaSimpSukarela.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPinjam.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormProsesSHU.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormRestoreDatabase.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormUser.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.JenisSimpanan.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanHistoriPembayaranPiutangNasabah.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanNasabah.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanPembayaranAsuransi.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanPembayaranBunga.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanPembayaranPiutangNasabah.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanPeminjaman.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanPendapatanAdministrasi.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanRekapitulasiPendapatanBunga.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanRekapitulasiSaldoPiutang.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanRekapitulasiSimpananPokok.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanRekapitulasiSimpananSukarela.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanSaldoPiutangNasabah.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanSimpananAnggota.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanTransaksiSimpananSukarela.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.MenuUtama.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.Resources.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PengambilanSimpananSukarela.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewBuktiPembayaran.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewCetakBuku.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewCetakSampul.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewContohBukuSimpananSukarela.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewFormAnggota.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewFormLihatTagihan.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewFormPinjam.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewFormProsesSHU.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanHistoryPembayaranPiutangNasabah.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanNasabah.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanPembayaranAsuransi.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanPembayaranBunga.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanPembayaranPiutangNasabah.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanPeminjaman.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanPendapatanAdministrasi.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanRekapitulasiPendapatanBunga.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanRekapitulasiSaldoPiutang.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanRekapitulasiSimpananPokok.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanRekapitulasiSimpananSukarela.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanSaldoPiutangNasabah.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanSimpananAnggota.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanTransaksiSimpananSukarela.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewSimpSukarela.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.GenerateResource.cache
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\RdlCompile.cache
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\RdlCompile.compiled
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.CoreCompileInputs.cache
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.exe
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.xml
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.pdb
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.Login.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\koperasi.mdb
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Koperasi.exe.config
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Koperasi.exe
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Koperasi.pdb
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Koperasi.xml
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.Bcl.HashCode.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Npgsql.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Buffers.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Memory.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Numerics.Vectors.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Text.Encodings.Web.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Text.Json.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Threading.Channels.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.ValueTuple.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Windows.Forms.Ribbon.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\EnvDTE.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\stdole.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.MSXML.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.Bcl.HashCode.xml
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\Npgsql.xml
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Buffers.xml
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Memory.xml
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Numerics.Vectors.xml
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Text.Encodings.Web.xml
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Text.Json.xml
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Threading.Channels.xml
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\System.ValueTuple.xml
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormGroupAkses.resources
+D:\Folder Kuliah\Contoh Laporan PI\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.CopyComplete
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\koperasi.mdb
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Koperasi.exe.config
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Koperasi.exe
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Koperasi.pdb
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Koperasi.xml
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.Bcl.HashCode.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Npgsql.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Buffers.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Memory.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Numerics.Vectors.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Text.Encodings.Web.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Text.Json.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Threading.Channels.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\System.ValueTuple.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Windows.Forms.Ribbon.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\EnvDTE.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\stdole.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.MSXML.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Microsoft.Bcl.HashCode.xml
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\Npgsql.xml
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Buffers.xml
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Memory.xml
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Numerics.Vectors.xml
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Text.Encodings.Web.xml
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Text.Json.xml
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Threading.Channels.xml
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\System.ValueTuple.xml
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.vbprojAssemblyReference.cache
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.DataIdentitasKoperasi.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormAnggota.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormBackupDatabase.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormBayar.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormBuatBilling.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormBuatRekSimpSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormBuatTagihanNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormCariAnggota.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormCetakBukuSimpSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormCetakSampulBukuSimpSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormCetakSimpSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormDataTahun.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormGroupAkses.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormIsiSimpananSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormKoreksiPembayaranNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormKoreksiPinjamorPiutangNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormLihatTagihan.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormLihatTagihanNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPembayaranNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPembayaranPinjamanKolektif.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPembayaranSimpKolektif.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPengambilanSimpPokoknWajib.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPerhitungaBungaSimpSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormPinjam.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormProsesSHU.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormRestoreDatabase.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.FormUser.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.JenisSimpanan.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanHistoriPembayaranPiutangNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanPembayaranAsuransi.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanPembayaranBunga.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanPembayaranPiutangNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanPeminjaman.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanPendapatanAdministrasi.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanRekapitulasiPendapatanBunga.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanRekapitulasiSaldoPiutang.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanRekapitulasiSimpananPokok.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanRekapitulasiSimpananSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanSaldoPiutangNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanSimpananAnggota.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.LaporanTransaksiSimpananSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.Login.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.MenuUtama.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.Resources.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PengambilanSimpananSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewBuktiPembayaran.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewCetakBuku.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewCetakSampul.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewContohBukuSimpananSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewFormAnggota.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewFormLihatTagihan.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewFormPinjam.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewFormProsesSHU.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanHistoryPembayaranPiutangNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanPembayaranAsuransi.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanPembayaranBunga.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanPembayaranPiutangNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanPeminjaman.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanPendapatanAdministrasi.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanRekapitulasiPendapatanBunga.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanRekapitulasiSaldoPiutang.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanRekapitulasiSimpananPokok.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanRekapitulasiSimpananSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanSaldoPiutangNasabah.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanSimpananAnggota.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewLaporanTransaksiSimpananSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.PreviewSimpSukarela.resources
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.GenerateResource.cache
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\RdlCompile.cache
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\RdlCompile.compiled
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.CoreCompileInputs.cache
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.CopyComplete
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.exe
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.xml
+D:\Folder Kuliah\Praktik Industri\PI_new\PI\koperasi\Koperasi\obj\Debug\Koperasi.pdb
