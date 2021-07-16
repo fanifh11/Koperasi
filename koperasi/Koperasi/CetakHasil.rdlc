@@ -22,10 +22,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>1.13453cm</Top>
-            <Left>0.31432cm</Left>
+            <Top>1cm</Top>
+            <Left>1cm</Left>
             <Height>0.6cm</Height>
-            <Width>1.865cm</Width>
+            <Width>2cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -51,10 +51,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>1.13453cm</Top>
-            <Left>2.35571cm</Left>
+            <Top>1cm</Top>
+            <Left>3cm</Left>
             <Height>0.6cm</Height>
-            <Width>1.52104cm</Width>
+            <Width>2cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -76,18 +76,20 @@
                   <TextRun>
                     <Value>= Parameters!debet.Value</Value>
                     <Style>
-                      <Format>'Rp'0.00;('Rp'0.00)</Format>
+                      <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <Style />
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>1.13453cm</Top>
-            <Left>4.05314cm</Left>
+            <Top>1cm</Top>
+            <Left>5cm</Left>
             <Height>0.6cm</Height>
-            <Width>1.49459cm</Width>
+            <Width>2cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -109,18 +111,20 @@
                   <TextRun>
                     <Value>= Parameters!kredit.Value</Value>
                     <Style>
-                      <Format>'Rp'0.00;('Rp'0.00)</Format>
+                      <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <Style />
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox4</rd:DefaultName>
-            <Top>1.13453cm</Top>
-            <Left>5.72412cm</Left>
-            <Height>0.54708cm</Height>
-            <Width>2.20896cm</Width>
+            <Top>1cm</Top>
+            <Left>7cm</Left>
+            <Height>0.6cm</Height>
+            <Width>2cm</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -142,18 +146,20 @@
                   <TextRun>
                     <Value>= Parameters!saldo.Value</Value>
                     <Style>
-                      <Format>'Rp'0.00;('Rp'0.00)</Format>
+                      <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <Style />
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox5</rd:DefaultName>
-            <Top>1.13453cm</Top>
-            <Left>8.10947cm</Left>
+            <Top>1cm</Top>
+            <Left>9cm</Left>
             <Height>0.6cm</Height>
-            <Width>2.36771cm</Width>
+            <Width>2cm</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -170,7 +176,7 @@
         <Height>10cm</Height>
         <Style />
       </Body>
-      <Width>10.8cm</Width>
+      <Width>12cm</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>

@@ -6,24 +6,24 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.28833cm</Width>
+              <Width>4.45291cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.38875cm</Width>
+              <Width>3.55333cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>4.66458cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>4.66458cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>4.66458cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.6cm</Height>
+              <Height>0.76771cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -109,7 +109,7 @@
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Right</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -143,7 +143,7 @@
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Right</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -177,7 +177,7 @@
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Right</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -198,7 +198,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.6cm</Height>
+              <Height>1.03229cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -274,7 +274,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>0</Value>
-                              <Style />
+                              <Style>
+                                <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -292,6 +294,7 @@
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
+                        <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -306,7 +309,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>1.000.000</Value>
-                              <Style />
+                              <Style>
+                                <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -324,6 +329,7 @@
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
+                        <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -338,7 +344,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>1.000.000</Value>
-                              <Style />
+                              <Style>
+                                <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -356,6 +364,7 @@
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
+                        <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -384,10 +393,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>1.87537cm</Top>
-        <Left>0.49953cm</Left>
-        <Height>1.2cm</Height>
-        <Width>11.17708cm</Width>
+        <Top>1cm</Top>
+        <Left>1cm</Left>
+        <Height>1.8cm</Height>
+        <Width>22cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -401,21 +410,23 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Lebar 12,5 cm X Tinggi 17 cm</Value>
+                <Value>Lebar 24 cm X Tinggi 15,3 cm</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox11</rd:DefaultName>
-        <Top>4.04495cm</Top>
-        <Left>2.78787cm</Left>
+        <Top>4cm</Top>
+        <Left>1cm</Left>
         <Height>0.6cm</Height>
-        <Width>6.03125cm</Width>
+        <Width>22cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -428,10 +439,10 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>10cm</Height>
+    <Height>15.3cm</Height>
     <Style />
   </Body>
-  <Width>12.20578cm</Width>
+  <Width>24cm</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>

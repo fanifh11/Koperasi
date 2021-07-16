@@ -343,5 +343,18 @@
         Login.Dispose()
     End Sub
 
+    Private Sub btnPembAsuransi_Click(sender As Object, e As EventArgs) Handles btnPembAsuransi.Click
+        LaporanPembayaranAsuransi.ShowDialog()
+        LaporanPembayaranAsuransi.Dispose()
+    End Sub
 
+    Private Sub btnByrAdmin_Click(sender As Object, e As EventArgs) Handles btnByrAdmin.Click
+        LaporanPendapatanAdministrasi.ShowDialog()
+        LaporanPendapatanAdministrasi.Dispose()
+    End Sub
+
+    Private Sub btnBukuSimpSukarela_Click(sender As Object, e As EventArgs) Handles btnBukuSimpSukarela.Click
+        PreviewContohBukuSimpananSukarela.ShowDialog()
+        PreviewContohBukuSimpananSukarela.Dispose()
+    End Sub
 End Class

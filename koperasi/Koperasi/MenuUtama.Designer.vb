@@ -29,6 +29,9 @@ Partial Class MenuUtama
         Me.btnIdentitas = New System.Windows.Forms.RibbonButton()
         Me.btnGroup = New System.Windows.Forms.RibbonButton()
         Me.btnUser = New System.Windows.Forms.RibbonButton()
+        Me.panelDB = New System.Windows.Forms.RibbonPanel()
+        Me.btnBackupDB = New System.Windows.Forms.RibbonButton()
+        Me.btnRestoreDB = New System.Windows.Forms.RibbonButton()
         Me.tabMaster = New System.Windows.Forms.RibbonTab()
         Me.panelKeanggotaan = New System.Windows.Forms.RibbonPanel()
         Me.btnAnggota = New System.Windows.Forms.RibbonButton()
@@ -92,9 +95,6 @@ Partial Class MenuUtama
         Me.RibbonPanel2 = New System.Windows.Forms.RibbonPanel()
         Me.Keluar = New System.Windows.Forms.RibbonButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.panelDB = New System.Windows.Forms.RibbonPanel()
-        Me.btnBackupDB = New System.Windows.Forms.RibbonButton()
-        Me.btnRestoreDB = New System.Windows.Forms.RibbonButton()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -102,7 +102,7 @@ Partial Class MenuUtama
         '
         Me.Ribbon1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Ribbon1.Location = New System.Drawing.Point(0, 0)
-        Me.Ribbon1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Ribbon1.Margin = New System.Windows.Forms.Padding(2)
         Me.Ribbon1.Minimized = False
         Me.Ribbon1.Name = "Ribbon1"
         '
@@ -170,6 +170,31 @@ Partial Class MenuUtama
         Me.btnUser.SmallImage = CType(resources.GetObject("btnUser.SmallImage"), System.Drawing.Image)
         Me.btnUser.Text = "User"
         Me.btnUser.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
+        '
+        'panelDB
+        '
+        Me.panelDB.Items.Add(Me.btnBackupDB)
+        Me.panelDB.Items.Add(Me.btnRestoreDB)
+        Me.panelDB.Name = "panelDB"
+        Me.panelDB.Text = "Database"
+        '
+        'btnBackupDB
+        '
+        Me.btnBackupDB.Image = CType(resources.GetObject("btnBackupDB.Image"), System.Drawing.Image)
+        Me.btnBackupDB.LargeImage = CType(resources.GetObject("btnBackupDB.LargeImage"), System.Drawing.Image)
+        Me.btnBackupDB.Name = "btnBackupDB"
+        Me.btnBackupDB.SmallImage = CType(resources.GetObject("btnBackupDB.SmallImage"), System.Drawing.Image)
+        Me.btnBackupDB.Text = "Backup"
+        Me.btnBackupDB.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
+        '
+        'btnRestoreDB
+        '
+        Me.btnRestoreDB.Image = CType(resources.GetObject("btnRestoreDB.Image"), System.Drawing.Image)
+        Me.btnRestoreDB.LargeImage = CType(resources.GetObject("btnRestoreDB.LargeImage"), System.Drawing.Image)
+        Me.btnRestoreDB.Name = "btnRestoreDB"
+        Me.btnRestoreDB.SmallImage = CType(resources.GetObject("btnRestoreDB.SmallImage"), System.Drawing.Image)
+        Me.btnRestoreDB.Text = "Restore"
+        Me.btnRestoreDB.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
         '
         'tabMaster
         '
@@ -688,37 +713,12 @@ Partial Class MenuUtama
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 162)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(745, 341)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
-        '
-        'panelDB
-        '
-        Me.panelDB.Items.Add(Me.btnBackupDB)
-        Me.panelDB.Items.Add(Me.btnRestoreDB)
-        Me.panelDB.Name = "panelDB"
-        Me.panelDB.Text = "Database"
-        '
-        'btnBackupDB
-        '
-        Me.btnBackupDB.Image = CType(resources.GetObject("btnBackupDB.Image"), System.Drawing.Image)
-        Me.btnBackupDB.LargeImage = CType(resources.GetObject("btnBackupDB.LargeImage"), System.Drawing.Image)
-        Me.btnBackupDB.Name = "btnBackupDB"
-        Me.btnBackupDB.SmallImage = CType(resources.GetObject("btnBackupDB.SmallImage"), System.Drawing.Image)
-        Me.btnBackupDB.Text = "Backup"
-        Me.btnBackupDB.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
-        '
-        'btnRestoreDB
-        '
-        Me.btnRestoreDB.Image = CType(resources.GetObject("btnRestoreDB.Image"), System.Drawing.Image)
-        Me.btnRestoreDB.LargeImage = CType(resources.GetObject("btnRestoreDB.LargeImage"), System.Drawing.Image)
-        Me.btnRestoreDB.Name = "btnRestoreDB"
-        Me.btnRestoreDB.SmallImage = CType(resources.GetObject("btnRestoreDB.SmallImage"), System.Drawing.Image)
-        Me.btnRestoreDB.Text = "Restore"
-        Me.btnRestoreDB.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
         '
         'MenuUtama
         '
@@ -730,7 +730,7 @@ Partial Class MenuUtama
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "MenuUtama"
         Me.Text = "Menu"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

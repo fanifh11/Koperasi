@@ -2,8 +2,11 @@
     Dim metode As String = ""
     Dim idAnggota As String = ""
 
+    Public sql As String
+
     Sub showData()
-        dgv_DataAnggota.DataSource = getData("select idanggota,anggota,noktp,tempatlahir,tanggallahir,alamat,jk,notelp,status,pekerjaan,namasaudara,hpsaudara,tahunmasuk from tblanggota where anggota ilike '%" & txtSearch.Text & "%'")
+        sql = "select idanggota,anggota,noktp,tempatlahir,tanggallahir,alamat,jk,notelp,status,pekerjaan,namasaudara,hpsaudara,tahunmasuk from tblanggota where anggota ilike '%" & txtSearch.Text & "%'"
+        dgv_DataAnggota.DataSource = getData(sql)
         dgv_DataAnggota.Columns(0).HeaderText = "Kode Anggota"
         dgv_DataAnggota.Columns(1).HeaderText = "Nama Anggota"
         dgv_DataAnggota.Columns(2).HeaderText = "No. KTP"
@@ -251,5 +254,10 @@
 
     Private Sub txt_TelpSaudara_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_TelpSaudara.KeyPress
         onlyNumber(e)
+    End Sub
+
+    Private Sub btn_CetakKartu_Click(sender As Object, e As EventArgs) Handles btn_CetakKartu.Click
+        PreviewFormAnggota.sql = Sql
+        PreviewFormAnggota.ShowDialog()
     End Sub
 End Class

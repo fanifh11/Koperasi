@@ -46,7 +46,7 @@ Partial Class FormLihatTagihan
         'group_SimpananPokok
         '
         Me.group_SimpananPokok.Controls.Add(Me.cmb_Pilihan)
-        Me.group_SimpananPokok.Location = New System.Drawing.Point(9, 52)
+        Me.group_SimpananPokok.Location = New System.Drawing.Point(9, 68)
         Me.group_SimpananPokok.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.group_SimpananPokok.Name = "group_SimpananPokok"
         Me.group_SimpananPokok.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -59,7 +59,7 @@ Partial Class FormLihatTagihan
         '
         Me.cmb_Pilihan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmb_Pilihan.FormattingEnabled = True
-        Me.cmb_Pilihan.Items.AddRange(New Object() {"POKOK", "WAJIB", "SALDO AWAL"})
+        Me.cmb_Pilihan.Items.AddRange(New Object() {"POKOK", "SUKARELA", "SALDO AWAL"})
         Me.cmb_Pilihan.Location = New System.Drawing.Point(18, 26)
         Me.cmb_Pilihan.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmb_Pilihan.Name = "cmb_Pilihan"
@@ -72,7 +72,7 @@ Partial Class FormLihatTagihan
         Me.GroupBox2.Controls.Add(Me.lbl_JumData)
         Me.GroupBox2.Controls.Add(Me.dgv_Data)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
-        Me.GroupBox2.Location = New System.Drawing.Point(10, 116)
+        Me.GroupBox2.Location = New System.Drawing.Point(9, 133)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -118,11 +118,11 @@ Partial Class FormLihatTagihan
         Me.GroupBox3.Controls.Add(Me.btn_Cetak)
         Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.GroupBox3.Location = New System.Drawing.Point(0, 398)
+        Me.GroupBox3.Location = New System.Drawing.Point(0, 413)
         Me.GroupBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox3.Size = New System.Drawing.Size(635, 41)
+        Me.GroupBox3.Size = New System.Drawing.Size(635, 43)
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         '
@@ -176,14 +176,14 @@ Partial Class FormLihatTagihan
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(635, 49)
+        Me.Panel1.Size = New System.Drawing.Size(635, 64)
         Me.Panel1.TabIndex = 0
         '
         'lbl_Subjudul
         '
         Me.lbl_Subjudul.AutoSize = True
         Me.lbl_Subjudul.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Italic)
-        Me.lbl_Subjudul.Location = New System.Drawing.Point(34, 25)
+        Me.lbl_Subjudul.Location = New System.Drawing.Point(34, 28)
         Me.lbl_Subjudul.Name = "lbl_Subjudul"
         Me.lbl_Subjudul.Size = New System.Drawing.Size(410, 15)
         Me.lbl_Subjudul.TabIndex = 11
@@ -203,7 +203,7 @@ Partial Class FormLihatTagihan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(635, 439)
+        Me.ClientSize = New System.Drawing.Size(635, 456)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.group_SimpananPokok)

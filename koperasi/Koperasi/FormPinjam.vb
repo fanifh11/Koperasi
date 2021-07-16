@@ -336,4 +336,9 @@
         openForm()
 
     End Sub
+
+    Private Sub btn_cetak_kwitansi_Click(sender As Object, e As EventArgs) Handles btn_cetak_kwitansi.Click
+        PreviewFormPinjam.idanggota = idanggota
+        PreviewFormPinjam.ShowDialog()
+    End Sub
 End Class

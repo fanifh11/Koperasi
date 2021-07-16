@@ -19,10 +19,10 @@
                 <Style />
               </Paragraph>
             </Paragraphs>
-            <Top>1.21391cm</Top>
-            <Left>0.3175cm</Left>
+            <Top>1cm</Top>
+            <Left>1cm</Left>
             <Height>0.6cm</Height>
-            <Width>3.69062cm</Width>
+            <Width>10cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -47,10 +47,10 @@
                 <Style />
               </Paragraph>
             </Paragraphs>
-            <Top>1.9903cm</Top>
-            <Left>0.3175cm</Left>
+            <Top>1.8cm</Top>
+            <Left>1cm</Left>
             <Height>0.6cm</Height>
-            <Width>2.5cm</Width>
+            <Width>10cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -76,10 +76,10 @@
                 <Style />
               </Paragraph>
             </Paragraphs>
-            <Top>2.76669cm</Top>
-            <Left>0.3175cm</Left>
+            <Top>2.6cm</Top>
+            <Left>1cm</Left>
             <Height>0.6cm</Height>
-            <Width>9.27333cm</Width>
+            <Width>10cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -105,10 +105,10 @@
                 <Style />
               </Paragraph>
             </Paragraphs>
-            <Top>3.54308cm</Top>
-            <Left>0.3175cm</Left>
+            <Top>3.4cm</Top>
+            <Left>1cm</Left>
             <Height>0.6cm</Height>
-            <Width>2.5cm</Width>
+            <Width>10cm</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -124,7 +124,7 @@
         <Height>10cm</Height>
         <Style />
       </Body>
-      <Width>10cm</Width>
+      <Width>12cm</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>

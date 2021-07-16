@@ -169,4 +169,9 @@
         showData()
 
     End Sub
+
+    Private Sub btn_cetak_kwitansi_Click(sender As Object, e As EventArgs) Handles btn_cetak_kwitansi.Click
+        PreviewBuktiPembayaran.idtagihan = idtagihan
+        PreviewBuktiPembayaran.ShowDialog()
+    End Sub
 End Class
