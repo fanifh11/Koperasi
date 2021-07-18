@@ -558,6 +558,12 @@
     <Compile Include="PreviewLaporanSimpananAnggota.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PreviewLaporanTagihan.Designer.vb">
+      <DependentUpon>PreviewLaporanTagihan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreviewLaporanTagihan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PreviewLaporanTransaksiSimpananSukarela.Designer.vb">
       <DependentUpon>PreviewLaporanTransaksiSimpananSukarela.vb</DependentUpon>
     </Compile>
@@ -717,6 +723,7 @@
     <EmbeddedResource Include="LaporanSimpananAnggota.resx">
       <DependentUpon>LaporanSimpananAnggota.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LaporanTagihan.rdlc" />
     <EmbeddedResource Include="LaporanTagihanSimpananPokok.rdlc" />
     <EmbeddedResource Include="LaporanTransaksiSimpananSukarela.rdlc" />
     <EmbeddedResource Include="LaporanTransaksiSimpananSukarela.resx">
@@ -799,6 +806,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PreviewLaporanSimpananAnggota.resx">
       <DependentUpon>PreviewLaporanSimpananAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreviewLaporanTagihan.resx">
+      <DependentUpon>PreviewLaporanTagihan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PreviewLaporanTransaksiSimpananSukarela.resx">
       <DependentUpon>PreviewLaporanTransaksiSimpananSukarela.vb</DependentUpon>

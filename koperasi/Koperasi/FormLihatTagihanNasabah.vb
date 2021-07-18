@@ -43,4 +43,7 @@
 
     End Sub
 
+    Private Sub btn_cetak_Click(sender As Object, e As EventArgs) Handles btn_cetak.Click
+        PreviewLaporanTagihan.ShowDialog()
+    End Sub
 End Class
