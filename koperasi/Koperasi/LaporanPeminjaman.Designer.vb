@@ -191,17 +191,17 @@ Partial Class LaporanPeminjaman
         Me.lbl_total_pinjam.ForeColor = System.Drawing.Color.Red
         Me.lbl_total_pinjam.Location = New System.Drawing.Point(3, 16)
         Me.lbl_total_pinjam.Name = "lbl_total_pinjam"
-        Me.lbl_total_pinjam.Size = New System.Drawing.Size(465, 14)
+        Me.lbl_total_pinjam.Size = New System.Drawing.Size(465, 24)
         Me.lbl_total_pinjam.TabIndex = 0
         Me.lbl_total_pinjam.Text = "Total Pinjam : Rp 0"
-        Me.lbl_total_pinjam.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lbl_total_pinjam.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.lbl_total_pinjam)
         Me.GroupBox3.Location = New System.Drawing.Point(0, 371)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(471, 33)
+        Me.GroupBox3.Size = New System.Drawing.Size(471, 43)
         Me.GroupBox3.TabIndex = 34
         Me.GroupBox3.TabStop = False
         '
@@ -217,7 +217,7 @@ Partial Class LaporanPeminjaman
         'GroupBox4
         '
         Me.GroupBox4.Controls.Add(Me.btn_keluar)
-        Me.GroupBox4.Location = New System.Drawing.Point(0, 403)
+        Me.GroupBox4.Location = New System.Drawing.Point(0, 420)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(471, 41)
         Me.GroupBox4.TabIndex = 35
@@ -227,7 +227,7 @@ Partial Class LaporanPeminjaman
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(471, 443)
+        Me.ClientSize = New System.Drawing.Size(471, 460)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.group_data_peminjaman)

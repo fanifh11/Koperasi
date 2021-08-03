@@ -741,8 +741,8 @@
             <DataSetName>DataSet1</DataSetName>
             <Top>1.2cm</Top>
             <Left>1cm</Left>
-            <Height>2.5cm</Height>
-            <Width>22cm</Width>
+            <Height>2.49999cm</Height>
+            <Width>21.99999cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>

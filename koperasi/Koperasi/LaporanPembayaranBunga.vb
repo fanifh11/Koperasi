@@ -10,7 +10,7 @@
     Public sql As String
 
     Sub showData()
-        sql = "select idanggota, anggota, kredit, tgltransaksi from qtransaksi where kettransaksi = 'B' and tgltransaksi between '" & dtp_mulai.Value.ToString("yyyy-MM-dd") & "' and '" & dtp_sampai.Value.ToString("yyyy-MM-dd") & "'"
+        sql = "select idanggota, anggota, kredit, to_char(tgltransaksi, 'DD-MM-YYYY') as tgltransaksi from qtransaksi where kettransaksi = 'B' and tgltransaksi between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'"
         dgv_data_simpanan.DataSource = getData(sql)
         dgv_data_simpanan.Columns(0).HeaderText = "ID Anggota"
         dgv_data_simpanan.Columns(1).HeaderText = "Nama Anggota"
@@ -26,8 +26,8 @@
 
     Private Sub btn_cetak_Click(sender As Object, e As EventArgs) Handles btn_cetak.Click
         PreviewLaporanPembayaranBunga.sql = sql
-        PreviewLaporanPembayaranBunga.mulai = dtp_mulai.Value.ToString("yyyy-MM-dd")
-        PreviewLaporanPembayaranBunga.sampai = dtp_sampai.Value.ToString("yyyy-MM-dd")
+        PreviewLaporanPembayaranBunga.mulai = dtp_mulai.Value.ToString("dd-MM-yyyy")
+        PreviewLaporanPembayaranBunga.sampai = dtp_sampai.Value.ToString("dd-MM-yyyy")
         PreviewLaporanPembayaranBunga.ShowDialog()
     End Sub
 End Class

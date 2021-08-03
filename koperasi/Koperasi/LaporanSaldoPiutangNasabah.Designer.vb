@@ -32,9 +32,9 @@ Partial Class LaporanSaldoPiutangNasabah
         Me.txt_search = New System.Windows.Forms.TextBox()
         Me.group_data_saldo_piutang = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.lbl_saldo_pinjam = New System.Windows.Forms.Label()
         Me.btn_keluar = New System.Windows.Forms.Button()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.lbl_saldo_pinjam = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgv_data_saldo_piutang, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -140,24 +140,6 @@ Partial Class LaporanSaldoPiutangNasabah
         Me.GroupBox3.TabIndex = 34
         Me.GroupBox3.TabStop = False
         '
-        'btn_keluar
-        '
-        Me.btn_keluar.Location = New System.Drawing.Point(390, 12)
-        Me.btn_keluar.Name = "btn_keluar"
-        Me.btn_keluar.Size = New System.Drawing.Size(75, 23)
-        Me.btn_keluar.TabIndex = 0
-        Me.btn_keluar.Text = "Keluar"
-        Me.btn_keluar.UseVisualStyleBackColor = True
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.Controls.Add(Me.btn_keluar)
-        Me.GroupBox4.Location = New System.Drawing.Point(0, 409)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(471, 35)
-        Me.GroupBox4.TabIndex = 35
-        Me.GroupBox4.TabStop = False
-        '
         'lbl_saldo_pinjam
         '
         Me.lbl_saldo_pinjam.Dock = System.Windows.Forms.DockStyle.Top
@@ -170,11 +152,29 @@ Partial Class LaporanSaldoPiutangNasabah
         Me.lbl_saldo_pinjam.Text = "Saldo Pinjam : 0"
         Me.lbl_saldo_pinjam.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
+        'btn_keluar
+        '
+        Me.btn_keluar.Location = New System.Drawing.Point(390, 12)
+        Me.btn_keluar.Name = "btn_keluar"
+        Me.btn_keluar.Size = New System.Drawing.Size(75, 23)
+        Me.btn_keluar.TabIndex = 0
+        Me.btn_keluar.Text = "Keluar"
+        Me.btn_keluar.UseVisualStyleBackColor = True
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.btn_keluar)
+        Me.GroupBox4.Location = New System.Drawing.Point(0, 421)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(471, 43)
+        Me.GroupBox4.TabIndex = 35
+        Me.GroupBox4.TabStop = False
+        '
         'LaporanSaldoPiutangNasabah
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(472, 443)
+        Me.ClientSize = New System.Drawing.Size(472, 463)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.group_data_saldo_piutang)

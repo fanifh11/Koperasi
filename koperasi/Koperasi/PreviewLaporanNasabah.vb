@@ -1,7 +1,7 @@
 ﻿Public Class PreviewLaporanNasabah
 
     Private Sub PreviewLaporanNasabah_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim sql As String = "select * from tblanggota"
+        Dim sql As String = "select idanggota, anggota, alamat, notelp, jk, to_char(tahunmasuk, 'DD-MM-YYYY') as tahunmasuk from tblanggota"
         Dim sqlidentitas As String = "select * from tblidentitas where idkoperasi = 1"
 
         ReportViewer1.Reset()

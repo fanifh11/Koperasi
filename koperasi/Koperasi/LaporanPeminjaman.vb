@@ -11,7 +11,7 @@
     Public sql As String
 
     Sub showData()
-        sql = "select idanggota, anggota, idpinjam, tglpinjam, besarpinjam, persenbunga, lamapinjam, asuransi, administrasi, diterima from qpinjam where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("yyyy-MM-dd") & "' and '" & dtp_sampai.Value.ToString("yyyy-MM-dd") & "'"
+        sql = "select idanggota, anggota, idpinjam, to_char(tglpinjam, 'DD-MM-YYYY') as tglpinjam, besarpinjam, persenbunga, lamapinjam, asuransi, administrasi, diterima from qpinjam where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'"
         dgv_data_peminjaman.DataSource = getData(sql)
         dgv_data_peminjaman.Columns(0).HeaderText = "ID Anggota"
         dgv_data_peminjaman.Columns(1).HeaderText = "Nama Anggota"
@@ -38,8 +38,8 @@
 
     Private Sub btn_cetak_Click(sender As Object, e As EventArgs) Handles btn_cetak.Click
         PreviewLaporanPeminjaman.sql = sql
-        PreviewLaporanPeminjaman.mulai = dtp_mulai.Value.ToString("yyyy-MM-dd")
-        PreviewLaporanPeminjaman.sampai = dtp_sampai.Value.ToString("yyyy-MM-dd")
+        PreviewLaporanPeminjaman.mulai = dtp_mulai.Value.ToString("dd-MM-yyyy")
+        PreviewLaporanPeminjaman.sampai = dtp_sampai.Value.ToString("dd-MM-yyyy")
         PreviewLaporanPeminjaman.ShowDialog()
     End Sub
 End Class

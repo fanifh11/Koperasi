@@ -10,7 +10,7 @@
     Public sql As String
     Sub showData()
 
-        sql = "select tblanggota.idanggota, tblanggota.anggota, sum(qtransaksi.debet) as debet, sum(qtransaksi.kredit) as kredit, sum(qtransaksi.kredit - qtransaksi.debet) as saldo from qtransaksi inner join tblanggota on tblanggota.idanggota = qtransaksi.idanggota where qtransaksi.anggota ilike '%" & txt_search.Text & "%' and qtransaksi.tgltransaksi between '" & dtp_mulai.Value.ToString("yyyy-MM-dd") & "' and '" & dtp_sampai.Value.ToString("yyyy-MM-dd") & "' group by tblanggota.idanggota"
+        sql = "select tblanggota.idanggota, tblanggota.anggota, sum(qtransaksi.debet) as debet, sum(qtransaksi.kredit) as kredit, sum(qtransaksi.kredit - qtransaksi.debet) as saldo from qtransaksi inner join tblanggota on tblanggota.idanggota = qtransaksi.idanggota where qtransaksi.anggota ilike '%" & txt_search.Text & "%' and qtransaksi.tgltransaksi between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "' group by tblanggota.idanggota"
         dgv_data_simpanan.DataSource = getData(sql)
         dgv_data_simpanan.Columns(0).HeaderText = "ID Anggota"
         dgv_data_simpanan.Columns(1).HeaderText = "Nama Anggota"
@@ -31,8 +31,8 @@
 
     Private Sub btn_cetak_Click(sender As Object, e As EventArgs) Handles btn_cetak.Click
         PreviewLaporanRekapitulasiSimpananSukarela.sql = sql
-        PreviewLaporanRekapitulasiSimpananSukarela.mulai = dtp_mulai.Value.ToString("yyyy-MM-dd")
-        PreviewLaporanRekapitulasiSimpananSukarela.sampai = dtp_sampai.Value.ToString("yyyy-MM-dd")
+        PreviewLaporanRekapitulasiSimpananSukarela.mulai = dtp_mulai.Value.ToString("dd-MM-yyyy")
+        PreviewLaporanRekapitulasiSimpananSukarela.sampai = dtp_sampai.Value.ToString("dd-MM-yyyy")
         PreviewLaporanRekapitulasiSimpananSukarela.ShowDialog()
     End Sub
 End Class

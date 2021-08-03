@@ -1,7 +1,7 @@
 ﻿Public Class PreviewLaporanTagihan
 
     Private Sub PreviewLaporanTagihan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim sql As String = "select * from qtagihan where flagtagihan = 0"
+        Dim sql As String = "select idanggota, anggota, besar, ketsimp, to_char(tglrek, 'DD-MM-YYYY') from qtagihan where flagtagihan = 0"
         Dim sqlidentitas As String = "select * from tblidentitas where idkoperasi = 1"
 
         ReportViewer1.Reset()

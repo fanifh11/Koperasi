@@ -194,7 +194,7 @@ Partial Class LaporanPembayaranPiutangNasabah
         Me.lbl_bayar.Size = New System.Drawing.Size(465, 26)
         Me.lbl_bayar.TabIndex = 0
         Me.lbl_bayar.Text = "Bayar : 0 ;- Pokok : 0 ;- Bunga : 0 ;-"
-        Me.lbl_bayar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lbl_bayar.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'GroupBox3
         '

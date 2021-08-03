@@ -53,7 +53,7 @@ Partial Class LaporanPendapatanAdministrasi
         Me.GroupBox3.Controls.Add(Me.lbl_total_administrasi)
         Me.GroupBox3.Location = New System.Drawing.Point(0, 371)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(471, 33)
+        Me.GroupBox3.Size = New System.Drawing.Size(471, 42)
         Me.GroupBox3.TabIndex = 39
         Me.GroupBox3.TabStop = False
         '
@@ -64,15 +64,15 @@ Partial Class LaporanPendapatanAdministrasi
         Me.lbl_total_administrasi.ForeColor = System.Drawing.Color.Red
         Me.lbl_total_administrasi.Location = New System.Drawing.Point(3, 16)
         Me.lbl_total_administrasi.Name = "lbl_total_administrasi"
-        Me.lbl_total_administrasi.Size = New System.Drawing.Size(465, 14)
+        Me.lbl_total_administrasi.Size = New System.Drawing.Size(465, 23)
         Me.lbl_total_administrasi.TabIndex = 0
         Me.lbl_total_administrasi.Text = "Total Administrasi : 0"
-        Me.lbl_total_administrasi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lbl_total_administrasi.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'GroupBox4
         '
         Me.GroupBox4.Controls.Add(Me.btn_keluar)
-        Me.GroupBox4.Location = New System.Drawing.Point(0, 403)
+        Me.GroupBox4.Location = New System.Drawing.Point(0, 419)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(471, 41)
         Me.GroupBox4.TabIndex = 40
@@ -227,7 +227,7 @@ Partial Class LaporanPendapatanAdministrasi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(471, 450)
+        Me.ClientSize = New System.Drawing.Size(471, 459)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.group_data_peminjaman)

@@ -191,7 +191,7 @@ Partial Class LaporanRekapitulasiPendapatanBunga
         Me.lbl_jumlah.ForeColor = System.Drawing.Color.Red
         Me.lbl_jumlah.Location = New System.Drawing.Point(3, 16)
         Me.lbl_jumlah.Name = "lbl_jumlah"
-        Me.lbl_jumlah.Size = New System.Drawing.Size(465, 15)
+        Me.lbl_jumlah.Size = New System.Drawing.Size(465, 17)
         Me.lbl_jumlah.TabIndex = 0
         Me.lbl_jumlah.Text = "Bayar : 0 ;- Pokok : 0 ;- Bunga : 0 ;-"
         Me.lbl_jumlah.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -201,7 +201,7 @@ Partial Class LaporanRekapitulasiPendapatanBunga
         Me.GroupBox3.Controls.Add(Me.lbl_jumlah)
         Me.GroupBox3.Location = New System.Drawing.Point(0, 371)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(471, 33)
+        Me.GroupBox3.Size = New System.Drawing.Size(471, 44)
         Me.GroupBox3.TabIndex = 34
         Me.GroupBox3.TabStop = False
         '
@@ -217,7 +217,7 @@ Partial Class LaporanRekapitulasiPendapatanBunga
         'GroupBox4
         '
         Me.GroupBox4.Controls.Add(Me.btn_keluar)
-        Me.GroupBox4.Location = New System.Drawing.Point(0, 403)
+        Me.GroupBox4.Location = New System.Drawing.Point(0, 421)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(471, 41)
         Me.GroupBox4.TabIndex = 35
@@ -227,7 +227,7 @@ Partial Class LaporanRekapitulasiPendapatanBunga
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(471, 443)
+        Me.ClientSize = New System.Drawing.Size(471, 461)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.group_data_pembayaran)

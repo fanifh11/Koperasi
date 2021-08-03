@@ -212,7 +212,7 @@ Partial Class LaporanRekapitulasiSimpananSukarela
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(471, 450)
+        Me.ClientSize = New System.Drawing.Size(471, 443)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.group_data_simpanan)
         Me.Controls.Add(Me.GroupBox3)

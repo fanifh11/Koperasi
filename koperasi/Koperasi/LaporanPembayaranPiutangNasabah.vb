@@ -10,7 +10,7 @@
     Public sql As String
 
     Sub showData()
-        sql = "select idanggota, anggota, idpinjam, tglbayar, besarbayar, besarpokok, besarbunga from qtagihan where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("yyyy-MM-dd") & "' and '" & dtp_sampai.Value.ToString("yyyy-MM-dd") & "'"
+        sql = "select idanggota, anggota, idpinjam, to_char(tglbayar, 'DD-MM-YYYY') as tglbayar, besarbayar, besarpokok, besarbunga from qtagihan where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'"
         dgv_data_pembayaran.DataSource = getData(sql)
         dgv_data_pembayaran.Columns(0).HeaderText = "ID Anggota"
         dgv_data_pembayaran.Columns(1).HeaderText = "Nama Anggota"
@@ -21,7 +21,7 @@
         dgv_data_pembayaran.Columns(6).HeaderText = "Bunga"
 
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_pembayaran.Rows.Count
-        lbl_bayar.Text = "Bayar : " & numberFor(toDouble(getValue("select sum(besarbayar) as besarbayar from qtagihan where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("yyyy-MM-dd") & "' and '" & dtp_sampai.Value.ToString("yyyy-MM-dd") & "'", "besarbayar")).ToString) & " Pokok : " & numberFor(toDouble(getValue("select sum(besarpokok) as besarpokok from qtagihan where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("yyyy-MM-dd") & "' and '" & dtp_sampai.Value.ToString("yyyy-MM-dd") & "'", "besarpokok")).ToString) & " Bunga : " & numberFor(toDouble(getValue("select sum(besarbunga) as besarbunga from qtagihan where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("yyyy-MM-dd") & "' and '" & dtp_sampai.Value.ToString("yyyy-MM-dd") & "'", "besarbunga")).ToString)
+        lbl_bayar.Text = "Bayar : " & numberFor(toDouble(getValue("select sum(besarbayar) as besarbayar from qtagihan where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'", "besarbayar")).ToString) & " Pokok : " & numberFor(toDouble(getValue("select sum(besarpokok) as besarpokok from qtagihan where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'", "besarpokok")).ToString) & " Bunga : " & numberFor(toDouble(getValue("select sum(besarbunga) as besarbunga from qtagihan where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'", "besarbunga")).ToString)
     End Sub
 
     Private Sub btn_refresh_Click(sender As Object, e As EventArgs) Handles btn_refresh.Click
@@ -34,8 +34,8 @@
 
     Private Sub btn_cetak_Click(sender As Object, e As EventArgs) Handles btn_cetak.Click
         PreviewLaporanPembayaranPiutangNasabah.sql = sql
-        PreviewLaporanPembayaranPiutangNasabah.mulai = dtp_mulai.Value.ToString("yyyy-MM-dd")
-        PreviewLaporanPembayaranPiutangNasabah.sampai = dtp_sampai.Value.ToString("yyyy-MM-dd")
+        PreviewLaporanPembayaranPiutangNasabah.mulai = dtp_mulai.Value.ToString("dd-MM-yyyy")
+        PreviewLaporanPembayaranPiutangNasabah.sampai = dtp_sampai.Value.ToString("dd-MM-yyyy")
         PreviewLaporanPembayaranPiutangNasabah.ShowDialog()
     End Sub
 End Class

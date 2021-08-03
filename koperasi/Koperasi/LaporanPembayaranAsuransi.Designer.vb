@@ -53,26 +53,26 @@ Partial Class LaporanPembayaranAsuransi
         Me.GroupBox3.Controls.Add(Me.lbl_total_asuransi)
         Me.GroupBox3.Location = New System.Drawing.Point(0, 371)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(471, 33)
+        Me.GroupBox3.Size = New System.Drawing.Size(471, 42)
         Me.GroupBox3.TabIndex = 39
         Me.GroupBox3.TabStop = False
         '
         'lbl_total_asuransi
         '
-        Me.lbl_total_asuransi.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_total_asuransi.Dock = System.Windows.Forms.DockStyle.Top
         Me.lbl_total_asuransi.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_total_asuransi.ForeColor = System.Drawing.Color.Red
         Me.lbl_total_asuransi.Location = New System.Drawing.Point(3, 16)
         Me.lbl_total_asuransi.Name = "lbl_total_asuransi"
-        Me.lbl_total_asuransi.Size = New System.Drawing.Size(465, 14)
+        Me.lbl_total_asuransi.Size = New System.Drawing.Size(465, 17)
         Me.lbl_total_asuransi.TabIndex = 0
         Me.lbl_total_asuransi.Text = "Total Asuransi : 0"
-        Me.lbl_total_asuransi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lbl_total_asuransi.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'GroupBox4
         '
         Me.GroupBox4.Controls.Add(Me.btn_keluar)
-        Me.GroupBox4.Location = New System.Drawing.Point(0, 403)
+        Me.GroupBox4.Location = New System.Drawing.Point(0, 419)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(471, 41)
         Me.GroupBox4.TabIndex = 40
@@ -227,7 +227,7 @@ Partial Class LaporanPembayaranAsuransi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(470, 450)
+        Me.ClientSize = New System.Drawing.Size(470, 459)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.group_data_peminjaman)

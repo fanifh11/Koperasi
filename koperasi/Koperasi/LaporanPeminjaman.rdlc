@@ -760,10 +760,8 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!PersenBunga.Value</Value>
-                                  <Style>
-                                    <Format>0.00%</Format>
-                                  </Style>
+                                  <Value>=Fields!PersenBunga.Value &amp; "%"</Value>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -1150,8 +1148,8 @@
             <DataSetName>DataSet1</DataSetName>
             <Top>1.2cm</Top>
             <Left>1cm</Left>
-            <Height>2.5cm</Height>
-            <Width>30cm</Width>
+            <Height>2.49999cm</Height>
+            <Width>29.99996cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>

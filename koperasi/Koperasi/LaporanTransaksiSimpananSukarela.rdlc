@@ -577,7 +577,7 @@
                                 <TextRun>
                                   <Value>=Fields!Debet.Value</Value>
                                   <Style>
-                                    <Format>'Rp'0.00;('Rp'0.00)</Format>
+                                    <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -612,7 +612,7 @@
                                 <TextRun>
                                   <Value>=Fields!Kredit.Value</Value>
                                   <Style>
-                                    <Format>'Rp'0.00;('Rp'0.00)</Format>
+                                    <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -790,7 +790,7 @@
                                   <Value>=Sum(Fields!Debet.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
-                                    <Format>'Rp'0.00;('Rp'0.00)</Format>
+                                    <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -826,7 +826,7 @@
                                   <Value>=Sum(Fields!Kredit.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
-                                    <Format>'Rp'0.00;('Rp'0.00)</Format>
+                                    <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -848,6 +848,7 @@
                             <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -883,8 +884,8 @@
             <DataSetName>DataSet1</DataSetName>
             <Top>1.2cm</Top>
             <Left>1cm</Left>
-            <Height>2.5cm</Height>
-            <Width>22cm</Width>
+            <Height>2.49999cm</Height>
+            <Width>22.00001cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>

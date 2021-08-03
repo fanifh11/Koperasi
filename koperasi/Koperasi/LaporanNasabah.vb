@@ -10,7 +10,7 @@
     End Sub
 
     Sub showData()
-        dgv_data_nasabah.DataSource = getData("select idanggota, anggota, alamat, notelp, jk, tahunmasuk from tblanggota where idanggota ilike '%" & txt_search.Text & "%' OR anggota ilike '%" & txt_search.Text & "%' ")
+        dgv_data_nasabah.DataSource = getData("select idanggota, anggota, alamat, notelp, jk, to_char(tahunmasuk, 'DD-MM-YYYY') as tahunmasuk from tblanggota where idanggota ilike '%" & txt_search.Text & "%' OR anggota ilike '%" & txt_search.Text & "%' ")
         dgv_data_nasabah.Columns(0).HeaderText = "ID Anggota"
         dgv_data_nasabah.Columns(1).HeaderText = "Nama Anggota"
         dgv_data_nasabah.Columns(2).HeaderText = "Alamat"

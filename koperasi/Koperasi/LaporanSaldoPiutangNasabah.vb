@@ -11,7 +11,7 @@
     Public sql As String
 
     Sub showData()
-        sql = "select idanggota, anggota, idpinjam, tglpinjam, besarpinjam, saldopinjam from qpinjam where idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%'"
+        sql = "select idanggota, anggota, idpinjam, to_char(tglpinjam, 'DD-MM-YYYY') as tglpinjam, besarpinjam, saldopinjam from qpinjam where idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%'"
         dgv_data_saldo_piutang.DataSource = getData(sql)
         dgv_data_saldo_piutang.Columns(0).HeaderText = "ID Anggota"
         dgv_data_saldo_piutang.Columns(1).HeaderText = "Nama Anggota"
@@ -30,7 +30,7 @@
 
     Private Sub btn_cetak_Click(sender As Object, e As EventArgs) Handles btn_cetak.Click
         PreviewLaporanSaldoPiutangNasabah.sql = sql
-        PreviewLaporanSaldoPiutangNasabah.sampai = Now().ToString("yyyy-MM-dd")
+        PreviewLaporanSaldoPiutangNasabah.sampai = Now().ToString("dd-MM-yyyy")
         PreviewLaporanSaldoPiutangNasabah.ShowDialog()
     End Sub
 End Class
