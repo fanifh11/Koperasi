@@ -18,15 +18,34 @@
     End Sub
 
     Private Sub btnUbah_Click(sender As Object, e As EventArgs) Handles btnUbah.Click
-        If dialog("Apakah Anda yakin ?") Then
-            Dim namakoperasi As String = txtNamaKoperasi.Text
-            Dim namainstansi As String = txtNamaInstansi.Text
-            Dim alamatkoperasi As String = txtAlamat.Text
-            Dim pimpinan As String = txtPimpinan.Text
-            Dim bendahara As String = txtBendahara.Text
-            Dim notelp As String = txtNoTelp.Text
+        If String.IsNullOrEmpty(txtNamaKoperasi.Text) Then
+            dialogError("Nama Koperasi masih kosong !")
+            Return
+        ElseIf String.IsNullOrEmpty(txtNamaInstansi.Text) Then
+            dialogError("Nama Instansi masih kosong !")
+            Return
+        ElseIf String.IsNullOrEmpty(txtAlamat.Text) Then
+            dialogError("Alamat masih kosong !")
+            Return
+        ElseIf String.IsNullOrEmpty(txtPimpinan.Text) Then
+            dialogError("Pimpinan masih kosong !")
+            Return
+        ElseIf String.IsNullOrEmpty(txtBendahara.Text) Then
+            dialogError("Bendahara masih kosong !")
+            Return
+        ElseIf String.IsNullOrEmpty(txtNoTelp.Text) Then
+            dialogError("Nomor telepon masih kosong !")
+            Return
+        Else
+            If dialog("Apakah Anda yakin ?") Then
+                Dim namakoperasi As String = txtNamaKoperasi.Text
+                Dim namainstansi As String = txtNamaInstansi.Text
+                Dim alamatkoperasi As String = txtAlamat.Text
+                Dim pimpinan As String = txtPimpinan.Text
+                Dim bendahara As String = txtBendahara.Text
+                Dim notelp As String = txtNoTelp.Text
 
-            exc("update tblidentitas set
+                exc("update tblidentitas set
                 namakoperasi = '" & namakoperasi & "',
                 namainstansi = '" & namainstansi & "',
                 alamatkoperasi = '" & alamatkoperasi & "',
@@ -36,7 +55,12 @@
 
                 where idkoperasi = '1'
                 ")
+            End If
         End If
+
     End Sub
 
+    Private Sub txtNoTelp_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNoTelp.KeyPress
+        onlyNumber(e)
+    End Sub
 End Class
