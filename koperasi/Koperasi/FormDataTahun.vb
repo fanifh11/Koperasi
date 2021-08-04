@@ -57,8 +57,6 @@
             If metode = "insert" Then
                 If getCount("select tahun from tbltahun where tahun = '" & tahun & "'") = 0 Then
                     exc("insert into tbltahun (tahun,flagaktif) values ('" & tahun & "','" & status & "')")
-
-
                 Else
                     dialogError("Ada duplikasi tahun!")
                     Return
@@ -114,10 +112,25 @@
 
     Private Sub btnHapus_Click(sender As Object, e As EventArgs) Handles btnHapus.Click
         If dialog("Apakah anda yakin untuk hapus data ini ?") Then
-            exc("delete from tbltahun where tahun = '" & idtahun & "' ")
-            showData()
-            dialogInfo("Data tahun berhasil terhapus!")
+            If adaKosong(group_DataThn) Then
+                dialogError("Silahkan pilih tahun terlebih dahulu")
+            Else
+                If getCount("select tahun from tbltahun where flagaktif = AKTIF ") > 0 Or getCount("select tahun from tblsukarela where tahun = '" & idtahun & "' ") > 0 Then
+                    dialogError("Tahun aktif tidak dapat dihapus karena tahun aktif atau mempunyai transaksi !")
+                    Return
+                Else
+                    If exc("delete from tbltahun where tahun = '" & idtahun & "' ") Then
+                        dialogInfo("Data tahun berhasil terhapus!")
+                    Else
+                        dialogError("Data gagal dihapus !")
+                        Return
+                    End If
+                    showData()
+                End If
+
+            End If
         End If
+
     End Sub
 
     Private Sub txt_Tahun_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_Tahun.KeyPress
