@@ -1,6 +1,8 @@
 ﻿Public Class FormGroupAkses
 
     Public idgroup As String = ""
+    Dim selectId As String = ""
+    Dim idAkses As String = ""
 
     Sub hitungJumlahMenu()
         lbl_JumlahMenu.Text = "Jumlah Menu : " & clb_HakAkses.CheckedItems.Count
@@ -106,11 +108,14 @@
 
     End Sub
 
+    Private Sub dgv_JumGroup_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_JumGroup.CellClick
+        If (e.RowIndex >= 0) Then
+            selectId = dgv_JumGroup.Rows(e.RowIndex).Cells(0).Value
+        End If
+    End Sub
+
     Private Sub btnHapus_Click(sender As Object, e As EventArgs) Handles btnHapus.Click
-
-        Dim selectId As String = dgv_JumGroup.CurrentCell.Value
-
-        If dialog("Apakah anda yakin untuk menghapus data?") Then
+        If dialog("Apakah Anda yakin untuk menghapus group akses ?") Then
             If getCount("select dgroup from tbluser where dgroup = '" & selectId & "' ") > 0 Then
                 dialogError("Group hak akses tidak dapat dihapus !")
                 Return
@@ -120,12 +125,9 @@
                 showDataGroup()
                 dialogInfo("Hapus hak akses berhasil")
             End If
-
+        Else
+            dialogInfo("Hapus batal !")
         End If
-        lockItem()
-        showComboBoxHakAkses()
-
-
 
     End Sub
 
@@ -151,7 +153,6 @@
 
     Private Sub btnSimpanHakAkses_Click(sender As Object, e As EventArgs) Handles btnSimpanHakAkses.Click
 
-
         Dim baris = 0
 
         For Each menu As String In clb_HakAkses.Items
@@ -170,8 +171,6 @@
             baris += 1
 
         Next
-
-
         dialogInfo("Update menu berhasil !")
         dialogInfo("Silahkan restart aplikasi untuk memperbarui menu !")
 
@@ -183,4 +182,5 @@
         lbl_JumlahMenu.Text = "Jumlah Menu : 0"
 
     End Sub
+
 End Class

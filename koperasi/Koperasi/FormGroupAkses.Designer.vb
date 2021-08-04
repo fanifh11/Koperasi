@@ -122,7 +122,7 @@ Partial Class FormGroupAkses
         Me.clb_HakAkses.Location = New System.Drawing.Point(69, 69)
         Me.clb_HakAkses.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.clb_HakAkses.Name = "clb_HakAkses"
-        Me.clb_HakAkses.Size = New System.Drawing.Size(355, 276)
+        Me.clb_HakAkses.Size = New System.Drawing.Size(355, 259)
         Me.clb_HakAkses.TabIndex = 2
         '
         'cmb_HakAkses
