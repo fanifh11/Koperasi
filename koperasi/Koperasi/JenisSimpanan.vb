@@ -114,20 +114,24 @@
 
     Private Sub btn_hapus_Click(sender As Object, e As EventArgs) Handles btn_hapus.Click
         If dialog("Apakah anda yakin untuk hapus data ini ?") Then
-            exc("delete from tbljenis where jenissimpanan = '" & tempjenissimpanan & "'")
-            showData()
-        End If
-    End Sub
-
-    Private Sub dgv_cari_data_jenis_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_cari_data_jenis.CellContentClick
-
-        If (e.RowIndex >= 0) Then
-            txt_nama_simpanan.Text = dgv_cari_data_jenis.Rows(e.RowIndex).Cells(0).Value
-            txt_kode_simpanan.Text = dgv_cari_data_jenis.Rows(e.RowIndex).Cells(1).Value
-            txt_bunga.Text = dgv_cari_data_jenis.Rows(e.RowIndex).Cells(2).Value
-            cmb_kategori.Text = dgv_cari_data_jenis.Rows(e.RowIndex).Cells(3).Value
-            txt_besar_simpanan.Text = dgv_cari_data_jenis.Rows(e.RowIndex).Cells(4).Value
-            tempjenissimpanan = dgv_cari_data_jenis.Rows(e.RowIndex).Cells(0).Value
+            If adaKosong(group_data_jenis) Then
+                dialogError("Harap pilih data yang ingin dihapus terlebih dahulu !")
+                Return
+            Else
+                MsgBox("select jenissimpanan from tblrekening where jenissimpanan = '" & tempjenissimpanan & "' ")
+                If getCount("select jenissimpanan from tblrekening where jenissimpanan = '" & tempjenissimpanan & "' ") > 0 Then
+                    dialogError("Data jenis simpanan tidak dapat dihapus karena memiliki transaksi !")
+                    Return
+                Else
+                    If exc("delete from tbljenis where jenissimpanan = '" & tempjenissimpanan & "'") Then
+                        dialogInfo("Hapus Berhasil !")
+                    Else
+                        dialogError("Hapus Gagal !")
+                        Return
+                    End If
+                End If
+                showData()
+            End If
         End If
 
     End Sub
@@ -138,5 +142,16 @@
 
     Private Sub txt_bunga_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_bunga.KeyPress
         onlyNumber(e)
+    End Sub
+
+    Private Sub dgv_cari_data_jenis_CellClick_1(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_cari_data_jenis.CellClick
+        If (e.RowIndex >= 0) Then
+            txt_nama_simpanan.Text = dgv_cari_data_jenis.Rows(e.RowIndex).Cells(0).Value
+            txt_kode_simpanan.Text = dgv_cari_data_jenis.Rows(e.RowIndex).Cells(1).Value
+            txt_bunga.Text = dgv_cari_data_jenis.Rows(e.RowIndex).Cells(2).Value
+            cmb_kategori.Text = dgv_cari_data_jenis.Rows(e.RowIndex).Cells(3).Value
+            txt_besar_simpanan.Text = dgv_cari_data_jenis.Rows(e.RowIndex).Cells(4).Value
+            tempjenissimpanan = dgv_cari_data_jenis.Rows(e.RowIndex).Cells(0).Value
+        End If
     End Sub
 End Class
