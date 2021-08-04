@@ -1,5 +1,7 @@
 ﻿Public Class FormUser
 
+    Dim selectIdUser As String = ""
+
     Sub lockForm()
         group_InputDataGroup.Enabled = False
         grupBtn.Enabled = True
@@ -140,14 +142,28 @@
     End Sub
 
     Private Sub btnHapus_Click(sender As Object, e As EventArgs) Handles btnHapus.Click
-        Dim selectIdUser As String = dgv_DaftarUser.CurrentCell.Value
 
         If dialog("Apakah Anda yakin untuk menghapus Akun Pengguna / User ?") Then
-            exc("delete from tbluser where iduser = '" & selectIdUser & "'")
+            If exc("delete from tbluser where iduser = '" & selectIdUser & "'") Then
+                dialogInfo("Hapus berhasil !")
+            Else
+                dialogError("Hapus gagal !")
+                Return
+            End If
 
+        Else
+            dialogInfo("Hapus akun batal !")
         End If
-        dialogInfo("Hapus akun berhasil!")
+
         showDataUser()
+
+    End Sub
+
+    Private Sub dgv_DaftarUser_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_DaftarUser.CellClick
+        If (e.RowIndex >= 0) Then
+            dgv_DaftarUser.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+            selectIdUser = dgv_DaftarUser.Rows(e.RowIndex).Cells(0).Value
+        End If
 
     End Sub
 End Class
