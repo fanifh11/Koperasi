@@ -24,6 +24,10 @@
         dgv_DataAnggota.Columns(3).HeaderText = "Kredit"
         dgv_DataAnggota.Columns(4).HeaderText = "Saldo"
 
+        dgv_DataAnggota.Columns(2).DefaultCellStyle.Format = "c0"
+        dgv_DataAnggota.Columns(3).DefaultCellStyle.Format = "c0"
+        dgv_DataAnggota.Columns(4).DefaultCellStyle.Format = "c0"
+
         lbl_JumlahData.Text = "Jumlah Data : " & dgv_DataAnggota.Rows.Count
     End Sub
 
