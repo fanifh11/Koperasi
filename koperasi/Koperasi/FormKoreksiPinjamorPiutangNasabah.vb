@@ -58,6 +58,15 @@
         dgv_DataPeminjaman.Columns(13).HeaderText = "Angsuran Bunga"
         dgv_DataPeminjaman.Columns(14).HeaderText = "Jumlah Angsuran"
 
+        dgv_DataPeminjaman.Columns(6).DefaultCellStyle.Format = "c0"
+        dgv_DataPeminjaman.Columns(9).DefaultCellStyle.Format = "c0"
+        dgv_DataPeminjaman.Columns(10).DefaultCellStyle.Format = "c0"
+        dgv_DataPeminjaman.Columns(11).DefaultCellStyle.Format = "c0"
+        dgv_DataPeminjaman.Columns(12).DefaultCellStyle.Format = "c0"
+        dgv_DataPeminjaman.Columns(13).DefaultCellStyle.Format = "c0"
+        dgv_DataPeminjaman.Columns(14).DefaultCellStyle.Format = "c0"
+
+
         lbl_JumData.Text = "Jumlah Data : " & dgv_DataPeminjaman.Rows.Count
 
     End Sub
