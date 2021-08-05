@@ -9,6 +9,8 @@
         dgv_DataAnggota.Columns(5).HeaderText = "Tgl Tagihan"
         dgv_DataAnggota.Columns(6).HeaderText = "Besar"
 
+        dgv_DataAnggota.Columns(6).DefaultCellStyle.Format = "c0"
+
         makeFillDG(dgv_DataAnggota)
         lbl_JumData.Text = "Jumlah Data : " & dgv_DataAnggota.Rows.Count
 
