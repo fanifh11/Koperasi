@@ -77,7 +77,7 @@ Partial Class FormPengambilanSimpPokoknWajib
         Me.GroupBox1.Controls.Add(Me.dgv_DataAnggota)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 80)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(441, 411)
+        Me.GroupBox1.Size = New System.Drawing.Size(364, 385)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Data Anggota"
@@ -85,7 +85,7 @@ Partial Class FormPengambilanSimpPokoknWajib
         'lbl_JumlahData
         '
         Me.lbl_JumlahData.AutoSize = True
-        Me.lbl_JumlahData.Location = New System.Drawing.Point(6, 383)
+        Me.lbl_JumlahData.Location = New System.Drawing.Point(9, 345)
         Me.lbl_JumlahData.Name = "lbl_JumlahData"
         Me.lbl_JumlahData.Size = New System.Drawing.Size(93, 15)
         Me.lbl_JumlahData.TabIndex = 3
@@ -101,16 +101,16 @@ Partial Class FormPengambilanSimpPokoknWajib
         Me.dgv_DataAnggota.ReadOnly = True
         Me.dgv_DataAnggota.RowHeadersWidth = 51
         Me.dgv_DataAnggota.RowTemplate.Height = 29
-        Me.dgv_DataAnggota.Size = New System.Drawing.Size(413, 350)
+        Me.dgv_DataAnggota.Size = New System.Drawing.Size(337, 322)
         Me.dgv_DataAnggota.TabIndex = 2
         '
         'Panel2
         '
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel2.Controls.Add(Me.lbl_NominalUang)
-        Me.Panel2.Location = New System.Drawing.Point(474, 88)
+        Me.Panel2.Location = New System.Drawing.Point(382, 89)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(679, 103)
+        Me.Panel2.Size = New System.Drawing.Size(483, 77)
         Me.Panel2.TabIndex = 3
         '
         'lbl_NominalUang
@@ -120,7 +120,7 @@ Partial Class FormPengambilanSimpPokoknWajib
         Me.lbl_NominalUang.ForeColor = System.Drawing.Color.Red
         Me.lbl_NominalUang.Location = New System.Drawing.Point(0, 0)
         Me.lbl_NominalUang.Name = "lbl_NominalUang"
-        Me.lbl_NominalUang.Size = New System.Drawing.Size(677, 101)
+        Me.lbl_NominalUang.Size = New System.Drawing.Size(481, 75)
         Me.lbl_NominalUang.TabIndex = 0
         Me.lbl_NominalUang.Text = "0"
         Me.lbl_NominalUang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -137,9 +137,9 @@ Partial Class FormPengambilanSimpPokoknWajib
         Me.group_InformasiAnggota.Controls.Add(Me.lbl_Nama)
         Me.group_InformasiAnggota.Controls.Add(Me.lbl_KodeAnggota)
         Me.group_InformasiAnggota.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!)
-        Me.group_InformasiAnggota.Location = New System.Drawing.Point(474, 198)
+        Me.group_InformasiAnggota.Location = New System.Drawing.Point(382, 172)
         Me.group_InformasiAnggota.Name = "group_InformasiAnggota"
-        Me.group_InformasiAnggota.Size = New System.Drawing.Size(679, 293)
+        Me.group_InformasiAnggota.Size = New System.Drawing.Size(483, 293)
         Me.group_InformasiAnggota.TabIndex = 4
         Me.group_InformasiAnggota.TabStop = False
         Me.group_InformasiAnggota.Text = "Informasi Anggota"
@@ -229,15 +229,15 @@ Partial Class FormPengambilanSimpPokoknWajib
         Me.groupBtn.Controls.Add(Me.btn_Tambah)
         Me.groupBtn.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.groupBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!)
-        Me.groupBtn.Location = New System.Drawing.Point(0, 491)
+        Me.groupBtn.Location = New System.Drawing.Point(0, 466)
         Me.groupBtn.Name = "groupBtn"
-        Me.groupBtn.Size = New System.Drawing.Size(1164, 46)
+        Me.groupBtn.Size = New System.Drawing.Size(874, 46)
         Me.groupBtn.TabIndex = 5
         Me.groupBtn.TabStop = False
         '
         'btn_Keluar
         '
-        Me.btn_Keluar.Location = New System.Drawing.Point(1058, 11)
+        Me.btn_Keluar.Location = New System.Drawing.Point(771, 11)
         Me.btn_Keluar.Name = "btn_Keluar"
         Me.btn_Keluar.Size = New System.Drawing.Size(94, 29)
         Me.btn_Keluar.TabIndex = 7
@@ -261,14 +261,14 @@ Partial Class FormPengambilanSimpPokoknWajib
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1164, 74)
+        Me.Panel1.Size = New System.Drawing.Size(874, 74)
         Me.Panel1.TabIndex = 0
         '
         'FormPengambilanSimpPokoknWajib
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1164, 537)
+        Me.ClientSize = New System.Drawing.Size(874, 512)
         Me.Controls.Add(Me.groupBtn)
         Me.Controls.Add(Me.group_InformasiAnggota)
         Me.Controls.Add(Me.Panel2)
