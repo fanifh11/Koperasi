@@ -21,6 +21,15 @@
         dgv_data_tagihan.Columns(15).HeaderText = "Bunga"
         dgv_data_tagihan.Columns(16).HeaderText = "Kode Tagihan"
 
+
+        dgv_data_tagihan.Columns(6).DefaultCellStyle.Format = "c0"
+        dgv_data_tagihan.Columns(8).DefaultCellStyle.Format = "c0"
+        dgv_data_tagihan.Columns(9).DefaultCellStyle.Format = "c0"
+        dgv_data_tagihan.Columns(10).DefaultCellStyle.Format = "c0"
+        dgv_data_tagihan.Columns(13).DefaultCellStyle.Format = "c0"
+        dgv_data_tagihan.Columns(14).DefaultCellStyle.Format = "c0"
+        dgv_data_tagihan.Columns(15).DefaultCellStyle.Format = "c0"
+
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_tagihan.Rows.Count
 
     End Sub
