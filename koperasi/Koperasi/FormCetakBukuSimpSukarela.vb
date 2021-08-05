@@ -24,7 +24,7 @@
 
         lbl_NominalUang.Text = numberFor(saldo)
 
-        saldoAsli = saldo
+        saldo = saldoAsli
         txt_maxCetak.Text = maxcetak
     End Sub
 
