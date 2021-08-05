@@ -30,6 +30,8 @@
         dgv_cari_data_jenis.Columns(3).HeaderText = "Kategori"
         dgv_cari_data_jenis.Columns(4).HeaderText = "Besar Simpanan"
 
+        dgv_cari_data_jenis.Columns(4).DefaultCellStyle.Format = "c0"
+
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_cari_data_jenis.Rows.Count
 
     End Sub
@@ -118,8 +120,8 @@
                 dialogError("Harap pilih data yang ingin dihapus terlebih dahulu !")
                 Return
             Else
-                MsgBox("select jenissimpanan from tblrekening where jenissimpanan = '" & tempjenissimpanan & "' ")
-                If getCount("select jenissimpanan from tblrekening where jenissimpanan = '" & tempjenissimpanan & "' ") > 0 Then
+                If getCount("select jenissimpanan from tblrekening where jenissimpanan = '" & tempjenissimpanan & "' ") > 0 Or
+                   getCount("select ketsukarela from tblsukarela where ketsukarela = '" & tempjenissimpanan & "' ") > 0 Then
                     dialogError("Data jenis simpanan tidak dapat dihapus karena memiliki transaksi !")
                     Return
                 Else
