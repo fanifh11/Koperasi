@@ -37,6 +37,10 @@
         dgv_data_peminjaman.Columns(4).HeaderText = "Bayar Pokok"
         dgv_data_peminjaman.Columns(5).HeaderText = "Bayar Bunga"
 
+        dgv_data_peminjaman.Columns(3).DefaultCellStyle.Format = "c0"
+        dgv_data_peminjaman.Columns(4).DefaultCellStyle.Format = "c0"
+        dgv_data_peminjaman.Columns(5).DefaultCellStyle.Format = "c0"
+
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_peminjaman.Rows.Count
 
 
