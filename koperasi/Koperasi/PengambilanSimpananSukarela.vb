@@ -2,6 +2,7 @@
     Public idsukarela As String = ""
     Public bunga As Double
     Dim tempidtransaksi As String = ""
+    Dim saldoAsli As Double
 
     Sub openMainForm()
         group_data_anggota.Enabled = False
@@ -32,17 +33,25 @@
             meng = Double.Parse(getValue(sql, "date_part"))
         End If
 
-        lbl_jumlah.Text = saldo
+        lbl_jumlah.Text = numberFor(saldo)
+        saldoAsli = saldo
         txt_bunga.Text = Math.Round(((Double.Parse(saldo) * bunga) / 30) * meng)
     End Sub
 
     Sub showData()
-        dgv_data_anggota.DataSource = getData("select anggota, jk, idanggota, ketsimp, besar from qrekening")
+        dgv_data_anggota.DataSource = getData("SELECT tblanggota.anggota, tbltransaksi.debet, tbltransaksi.kredit, tbltransaksi.saldo, tbltransaksi.kettransaksi, tbltransaksi.tgltransaksi
+        FROM tblanggota INNER JOIN (tblsukarela INNER JOIN tbltransaksi ON tblsukarela.idsukarela = tbltransaksi.idsukarela) ON tblanggota.idanggota = tblsukarela.idanggota where tbltransaksi.tgltransaksi between '" & Now().ToString("yyyy-MM-dd") & " 00:00' and '" & Now().ToString("yyyy-MM-dd") & " 23:59' ")
+
         dgv_data_anggota.Columns(0).HeaderText = "Nama Anggota"
-        dgv_data_anggota.Columns(1).HeaderText = "Jenis Kelamin"
-        dgv_data_anggota.Columns(2).HeaderText = "Kode Anggota"
-        dgv_data_anggota.Columns(3).HeaderText = "Keterangan Simpanan"
-        dgv_data_anggota.Columns(4).HeaderText = "Besar"
+        dgv_data_anggota.Columns(1).HeaderText = "Debet"
+        dgv_data_anggota.Columns(2).HeaderText = "Kredit"
+        dgv_data_anggota.Columns(3).HeaderText = "Saldo"
+        dgv_data_anggota.Columns(4).HeaderText = "Keterangan Transaksi"
+        dgv_data_anggota.Columns(5).HeaderText = "Tanggal Transaksi"
+
+        dgv_data_anggota.Columns(1).DefaultCellStyle.Format = "c0"
+        dgv_data_anggota.Columns(2).DefaultCellStyle.Format = "c0"
+        dgv_data_anggota.Columns(3).DefaultCellStyle.Format = "c0"
 
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_anggota.Rows.Count
     End Sub
@@ -76,35 +85,7 @@
 
             If dialog("Apakah anda yakin ?") Then
                 Dim faktur As String = Now.ToString("yyyyMMddHHmmss")
-                Dim saldobaru As String = (Double.Parse(saldo) - Double.Parse(besarsambil)).ToString
-                Debug.WriteLine("insert into tbltransaksi
-                    (
-                        fakturtransaksi,
-                        idsukarela,
-                        debet,
-                        kredit,
-                        tgltransaksi,
-                        kettransaksi,
-                        fb,
-                        nocetak,
-                        saldo,
-                        ketkode,
-                        flagpostingtransaksi
-                    )
-                    values
-                    (
-                        '" & faktur & "',
-                        '" & idsukarela & "',
-                        '" & besarsambil & "',
-                        0,
-                        '" & tanggalambil & "',
-                        '" & jenissimpanan & "',
-                        0,
-                        '" & nocetak & "',
-                        '" & saldobaru & "',
-                        '" & ketkode & "',
-                        0
-                    )")
+                Dim saldobaru As String = (saldoAsli - Double.Parse(besarsambil)).ToString
                 exc("insert into tbltransaksi
                     (
                         fakturtransaksi,
@@ -166,15 +147,19 @@
                     )")
                 End If
             End If
+            dialogInfo("Pengambilan simpanan sukarela sebesar " & "Rp." & besarsambil & " berhasil")
         End If
 
         lockMainForm()
+        showData()
         clearForm(group_informasi_anggota)
+        lbl_jumlah.Text = "0"
     End Sub
 
     Private Sub btn_batal_Click(sender As Object, e As EventArgs) Handles btn_batal.Click
         lockMainForm()
         clearForm(group_informasi_anggota)
+        lbl_jumlah.Text = "0"
 
     End Sub
 

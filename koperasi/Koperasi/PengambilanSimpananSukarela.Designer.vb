@@ -321,13 +321,15 @@ Partial Class PengambilanSimpananSukarela
         '
         'lbl_jumlah
         '
-        Me.lbl_jumlah.AutoSize = True
+        Me.lbl_jumlah.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lbl_jumlah.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_jumlah.Location = New System.Drawing.Point(163, 25)
+        Me.lbl_jumlah.ForeColor = System.Drawing.Color.Red
+        Me.lbl_jumlah.Location = New System.Drawing.Point(3, 16)
         Me.lbl_jumlah.Name = "lbl_jumlah"
-        Me.lbl_jumlah.Size = New System.Drawing.Size(29, 31)
+        Me.lbl_jumlah.Size = New System.Drawing.Size(345, 59)
         Me.lbl_jumlah.TabIndex = 0
         Me.lbl_jumlah.Text = "0"
+        Me.lbl_jumlah.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PengambilanSimpananSukarela
         '
@@ -353,7 +355,6 @@ Partial Class PengambilanSimpananSukarela
         Me.group_informasi_anggota.ResumeLayout(False)
         Me.group_informasi_anggota.PerformLayout()
         Me.group_Nominal.ResumeLayout(False)
-        Me.group_Nominal.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
