@@ -8,7 +8,7 @@
 
     Sub showData()
         If cmb_Pilihan.SelectedIndex = 0 Then
-            sql = "select idanggota, anggota, jk, jenissimpanan, besar, ketsimp, to_char(tglrek, 'DD-MM-YYYY') as tglrek from qrekening where anggota ilike '%" & txt_Cari.Text & "%' and kategori = 'POKOK'"
+            sql = "select idanggota, anggota, jk, jenissimpanan, besar, ketsimp, tglrek from qrekening where anggota ilike '%" & txt_Cari.Text & "%' and kategori = 'POKOK'"
             dgv_Data.DataSource = getData(sql)
             dgv_Data.Columns(0).HeaderText = "ID Anggota"
             dgv_Data.Columns(1).HeaderText = "Nama Anggota"
@@ -20,7 +20,7 @@
 
             lbl_JumData.Text = "Jumlah Data : " & dgv_Data.Rows.Count
         ElseIf cmb_Pilihan.SelectedIndex = 1 Then
-            sql = "select idanggota, anggota, jk, jenissimpanan, besar, ketsimp, to_char(tglrek, 'DD-MM-YYYY') as tglrek from qrekening where anggota ilike '%" & txt_Cari.Text & "%' and kategori = 'WAJIB'"
+            sql = "select idanggota, anggota, jk, jenissimpanan, besar, ketsimp, tglrek from qrekening where anggota ilike '%" & txt_Cari.Text & "%' and kategori = 'WAJIB'"
             dgv_Data.DataSource = getData(sql)
             dgv_Data.Columns(0).HeaderText = "ID Anggota"
             dgv_Data.Columns(1).HeaderText = "Nama Anggota"
@@ -32,7 +32,7 @@
 
             lbl_JumData.Text = "Jumlah Data : " & dgv_Data.Rows.Count
         ElseIf cmb_Pilihan.SelectedIndex = 2 Then
-            sql = "select idanggota, anggota, jk, jenissimpanan, besar, ketsimp, to_char(tglrek, 'DD-MM-YYYY') as tglrek from qrekening where anggota ilike '%" & txt_Cari.Text & "%' and kategori = 'SALDO AWAL'"
+            sql = "select idanggota, anggota, jk, jenissimpanan, besar, ketsimp, tglrek from qrekening where anggota ilike '%" & txt_Cari.Text & "%' and kategori = 'SALDO AWAL'"
             dgv_Data.DataSource = getData(sql)
             dgv_Data.Columns(0).HeaderText = "ID Anggota"
             dgv_Data.Columns(1).HeaderText = "Nama Anggota"

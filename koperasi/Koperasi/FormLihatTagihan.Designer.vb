@@ -59,7 +59,7 @@ Partial Class FormLihatTagihan
         '
         Me.cmb_Pilihan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmb_Pilihan.FormattingEnabled = True
-        Me.cmb_Pilihan.Items.AddRange(New Object() {"POKOK", "SUKARELA", "SALDO AWAL"})
+        Me.cmb_Pilihan.Items.AddRange(New Object() {"POKOK", "WAJIB", "SALDO AWAL"})
         Me.cmb_Pilihan.Location = New System.Drawing.Point(18, 26)
         Me.cmb_Pilihan.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmb_Pilihan.Name = "cmb_Pilihan"
