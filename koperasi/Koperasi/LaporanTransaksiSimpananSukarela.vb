@@ -21,6 +21,9 @@
             dgv_data_simpanan.Columns(4).HeaderText = "Debet"
             dgv_data_simpanan.Columns(5).HeaderText = "Kredit"
 
+            dgv_data_simpanan.Columns(4).DefaultCellStyle.Format = "c0"
+            dgv_data_simpanan.Columns(5).DefaultCellStyle.Format = "c0"
+
             lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_simpanan.Rows.Count
         ElseIf cmb_setoran.SelectedIndex = 1 Then
 
@@ -32,6 +35,9 @@
             dgv_data_simpanan.Columns(3).HeaderText = "Keterangan Transaksi"
             dgv_data_simpanan.Columns(4).HeaderText = "Debet"
             dgv_data_simpanan.Columns(5).HeaderText = "Kredit"
+
+            dgv_data_simpanan.Columns(4).DefaultCellStyle.Format = "c0"
+            dgv_data_simpanan.Columns(5).DefaultCellStyle.Format = "c0"
 
             lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_simpanan.Rows.Count
         End If

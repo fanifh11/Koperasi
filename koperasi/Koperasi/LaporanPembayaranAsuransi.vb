@@ -14,6 +14,8 @@
         dgv_laporan_pembayaran_asuransi.Columns(3).HeaderText = "Tanggal Pinjam"
         dgv_laporan_pembayaran_asuransi.Columns(4).HeaderText = "Asuransi"
 
+        dgv_laporan_pembayaran_asuransi.Columns(4).DefaultCellStyle.Format = "c0"
+
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_laporan_pembayaran_asuransi.Rows.Count
         lbl_total_asuransi.Text = "Total Asuransi : " & numberFor(toDouble(getValue("select sum(asuransi) as asuransi from qpinjam where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'", "asuransi")).ToString)
     End Sub

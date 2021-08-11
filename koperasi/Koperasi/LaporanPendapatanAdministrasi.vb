@@ -14,6 +14,8 @@
         dgv_laporan_pendapatan_administrasi.Columns(3).HeaderText = "Tanggal Pinjam"
         dgv_laporan_pendapatan_administrasi.Columns(4).HeaderText = "Administrasi"
 
+        dgv_laporan_pendapatan_administrasi.Columns(4).DefaultCellStyle.Format = "c0"
+
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_laporan_pendapatan_administrasi.Rows.Count
         lbl_total_administrasi.Text = "Total Administrasi : " & numberFor(toDouble(getValue("select sum(administrasi) as administrasi from qpinjam where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'", "administrasi")).ToString)
     End Sub

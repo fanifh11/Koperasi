@@ -5,7 +5,7 @@
 
     Sub showData()
 
-        dgv_DataAnggota.DataSource = getData("select tgltransaksi,fakturtransaksi,kettransaksi,debet,kredit,saldo 
+        dgv_DataAnggota.DataSource = getData("select to_char(tgltransaksi, 'DD-MM-YYYY') as tgltransaksi,fakturtransaksi,kettransaksi,debet,kredit,saldo 
         from qtransaksi inner join qsukarela on qtransaksi.idsukarela = qsukarela.idsukarela
         where qsukarela.idsukarela = " & idsukarela & " order by tgltransaksi desc ")
 

@@ -1,23 +1,20 @@
 ﻿Public Class PreviewFormPinjam
 
-    Public idanggota As String = ""
+    Public idpinjam As String = ""
 
     Private Sub PreviewFormPinjam_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim sql As String = "select * from qpinjam where idanggota = '" & idanggota & "'"
+        Dim sql As String = "select idpinjam, besarpinjam, jumlahangsuran, diterima, asuransi, administrasi, idanggota, 
+        anggota, jenisanggota, jk, tempatlahir, to_char(tanggallahir, 'DD-MM-YYYY') as tanggallahir, noktp, alamat, notelp, pekerjaan, status, namasaudara, 
+        hpsaudara, to_char(tahunmasuk, 'DD-MM-YYYY') as tahunmasuk from qpinjam where idpinjam = '" & idpinjam & "'"
         Dim sqlidentitas As String = "select * from tblidentitas where idkoperasi = 1"
         Dim t As New Terbilang()
         t.Text = getValue(sql, "besarpinjam").ToString
-
         ReportViewer1.Reset()
         ReportViewer1.LocalReport.ReportEmbeddedResource = "Koperasi.CetakKwitansiPinjaman.rdlc"
 
+        ReportViewer1.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", CType(getData(sql), DataTable)))
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("kodepinjam", getValue(sql, "idpinjam").ToString))
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("banyaknyauang", t.Text))
-        ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("besarpinjam", getValue(sql, "besarpinjam").ToString))
-        ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("lamaangsuran", getValue(sql, "jumlahangsuran").ToString))
-        ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("diterima", getValue(sql, "diterima").ToString))
-        ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("asuransi", getValue(sql, "asuransi").ToString))
-        ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("administrasi", getValue(sql, "administrasi").ToString))
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("opr", "admin"))
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("kode", getValue(sql, "idanggota").ToString))
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("nama", getValue(sql, "anggota").ToString))

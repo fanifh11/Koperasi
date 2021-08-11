@@ -18,6 +18,10 @@
         dgv_data_simpanan.Columns(3).HeaderText = "Jumlah Kredit"
         dgv_data_simpanan.Columns(4).HeaderText = "Saldo"
 
+        dgv_data_simpanan.Columns(2).DefaultCellStyle.Format = "c0"
+        dgv_data_simpanan.Columns(3).DefaultCellStyle.Format = "c0"
+        dgv_data_simpanan.Columns(4).DefaultCellStyle.Format = "c0"
+
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_simpanan.Rows.Count
     End Sub
 

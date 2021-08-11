@@ -235,7 +235,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>= "Laporan Tagihan Tanggal " &amp; today</Value>
+                    <Value>= "Laporan Tagihan Tanggal " &amp; Parameters!sekarang.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -1428,6 +1428,10 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="sekarang">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -1463,6 +1467,11 @@
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>1</RowIndex>
           <ParameterName>bendahara</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>sekarang</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

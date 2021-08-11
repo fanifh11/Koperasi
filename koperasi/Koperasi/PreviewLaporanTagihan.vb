@@ -1,8 +1,9 @@
 ﻿Public Class PreviewLaporanTagihan
 
     Private Sub PreviewLaporanTagihan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim sql As String = "select idanggota, anggota, besar, ketsimp, to_char(tglrek, 'DD-MM-YYYY') from qtagihan where flagtagihan = 0"
+        Dim sql As String = "select idanggota, anggota, idpinjam, to_char(tglbayar, 'DD-MM-YYYY') as tglbayar, totalangsur, totalpokok, totalbunga from qtagihan where flagtagihan = 0"
         Dim sqlidentitas As String = "select * from tblidentitas where idkoperasi = 1"
+        Dim sqlsekarang As String = "select to_char(now(), 'DD-MM-YYYY') as sekarang"
 
         ReportViewer1.Reset()
         ReportViewer1.LocalReport.ReportEmbeddedResource = "Koperasi.LaporanTagihan.rdlc"
@@ -14,6 +15,7 @@
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("notelp", getValue(sqlidentitas, "notelp").ToString))
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("pimpinan", getValue(sqlidentitas, "pimpinan").ToString))
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("bendahara", getValue(sqlidentitas, "bendahara").ToString))
+        ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("sekarang", getValue(sqlsekarang, "sekarang").ToString))
         ReportViewer1.RefreshReport()
     End Sub
 End Class

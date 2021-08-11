@@ -22,6 +22,10 @@
         dgv_data_pembayaran.Columns(5).HeaderText = "Pokok"
         dgv_data_pembayaran.Columns(6).HeaderText = "Bunga"
 
+        dgv_data_pembayaran.Columns(4).DefaultCellStyle.Format = "c0"
+        dgv_data_pembayaran.Columns(5).DefaultCellStyle.Format = "c0"
+        dgv_data_pembayaran.Columns(6).DefaultCellStyle.Format = "c0"
+
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_pembayaran.Rows.Count
         lbl_jumlah.Text = "Bayar : " & numberFor(toDouble(getValue("select sum(besarbayar) as besarbayar from qtagihan where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'", "besarbayar")).ToString) & " Pokok : " & numberFor(toDouble(getValue("select sum(besarpokok) as besarpokok from qtagihan where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'", "besarpokok")).ToString) & " Bunga : " & numberFor(toDouble(getValue("select sum(besarbunga) as besarbunga from qtagihan where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'", "besarbunga")).ToString)
     End Sub

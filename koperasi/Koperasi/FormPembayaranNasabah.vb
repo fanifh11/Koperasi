@@ -1,6 +1,6 @@
 ﻿Public Class FormPembayaranNasabah
 
-    Public idtagihan As String
+    Public idtagihan As String = ""
     Public idpinjam As String = "0"
     Public idnasabah As String
 
@@ -29,17 +29,18 @@
     End Sub
 
     Sub showData()
-        dgv_data_peminjaman.DataSource = getData("select idpinjam,anggota,cicilanke,besarbayar,besarpokok,besarbunga from qtagihan where idpinjam='" & idpinjam & "' and CAST(cicilanke as varchar) ilike '%" & txt_search.Text & "%' order by cicilanke asc ")
-        dgv_data_peminjaman.Columns(0).HeaderText = "Kode Pinjam"
-        dgv_data_peminjaman.Columns(1).HeaderText = "Nama"
-        dgv_data_peminjaman.Columns(2).HeaderText = "Cicilan Ke-"
-        dgv_data_peminjaman.Columns(3).HeaderText = "Total Bayar"
-        dgv_data_peminjaman.Columns(4).HeaderText = "Bayar Pokok"
-        dgv_data_peminjaman.Columns(5).HeaderText = "Bayar Bunga"
+        dgv_data_peminjaman.DataSource = getData("select idtagihan,idpinjam,anggota,cicilanke,besarbayar,besarpokok,besarbunga from qtagihan where idpinjam='" & idpinjam & "' and CAST(cicilanke as varchar) ilike '%" & txt_search.Text & "%' order by cicilanke asc ")
+        dgv_data_peminjaman.Columns(0).Visible = False
+        dgv_data_peminjaman.Columns(1).HeaderText = "Kode Pinjam"
+        dgv_data_peminjaman.Columns(2).HeaderText = "Nama"
+        dgv_data_peminjaman.Columns(3).HeaderText = "Cicilan Ke-"
+        dgv_data_peminjaman.Columns(4).HeaderText = "Total Bayar"
+        dgv_data_peminjaman.Columns(5).HeaderText = "Bayar Pokok"
+        dgv_data_peminjaman.Columns(6).HeaderText = "Bayar Bunga"
 
-        dgv_data_peminjaman.Columns(3).DefaultCellStyle.Format = "c0"
         dgv_data_peminjaman.Columns(4).DefaultCellStyle.Format = "c0"
         dgv_data_peminjaman.Columns(5).DefaultCellStyle.Format = "c0"
+        dgv_data_peminjaman.Columns(6).DefaultCellStyle.Format = "c0"
 
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_peminjaman.Rows.Count
 
@@ -175,7 +176,7 @@
     End Sub
 
     Private Sub btn_cetak_kwitansi_Click(sender As Object, e As EventArgs) Handles btn_cetak_kwitansi.Click
-        PreviewBuktiPembayaran.idtagihan = idtagihan
+        PreviewBuktiPembayaran.idtagihan = dgv_data_peminjaman.Rows(dgv_data_peminjaman.CurrentCell.RowIndex).Cells(0).Value.ToString
         PreviewBuktiPembayaran.ShowDialog()
     End Sub
 End Class

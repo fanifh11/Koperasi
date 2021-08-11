@@ -11,7 +11,7 @@
 
     Sub showData()
         If menu = "Bayar simpanan pokok" Then
-            dgv_DataAnggota.DataSource = getData("select norek, idanggota, anggota, jenissimpanan, ketsimp, tglrek, besar from qrekening where fbayar = 0 and (anggota ilike '%" & txt_CariDataAnggota.Text & "%' )")
+            dgv_DataAnggota.DataSource = getData("select norek, idanggota, anggota, jenissimpanan, ketsimp, to_char(tglrek, 'DD-MM-YYYY') as tglrek, besar from qrekening where fbayar = 0 and (anggota ilike '%" & txt_CariDataAnggota.Text & "%' )")
             dgv_DataAnggota.Columns(0).Visible = False
             dgv_DataAnggota.Columns(1).HeaderText = "ID Anggota"
             dgv_DataAnggota.Columns(2).HeaderText = "Anggota"

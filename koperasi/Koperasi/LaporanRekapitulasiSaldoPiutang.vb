@@ -19,6 +19,12 @@
         dgv_DataPembayaran.Columns(4).HeaderText = "Saldo Pinjam"
         dgv_DataPembayaran.Columns(5).HeaderText = "Bayar"
 
+        makeFillDG(dgv_DataPembayaran)
+
+        dgv_DataPembayaran.Columns(3).DefaultCellStyle.Format = "c0"
+        dgv_DataPembayaran.Columns(4).DefaultCellStyle.Format = "c0"
+        dgv_DataPembayaran.Columns(5).DefaultCellStyle.Format = "c0"
+
         lbl_JumData.Text = "Jumlah Data : " & dgv_DataPembayaran.Rows.Count
         lbl_Detail.Text = "Pinjam : " & numberFor(toDouble(getValue("select sum(besarpinjam) as besarpinjam from qpinjam where tglpinjam < '" & dtp_TglRekap.Value.ToString("dd-MM-yyyy") & "'", "besarpinjam"))) & " Bayar : " & numberFor(toDouble(getValue("select sum(besarpinjam - saldopinjam) as bayar from qpinjam where tglpinjam < '" & dtp_TglRekap.Value.ToString("dd-MM-yyyy") & "'", "bayar"))) & " Sisa : " & numberFor(toDouble(getValue("select sum(saldopinjam) as saldopinjam from qpinjam where tglpinjam < '" & dtp_TglRekap.Value.ToString("dd-MM-yyyy") & "'", "saldopinjam")))
     End Sub

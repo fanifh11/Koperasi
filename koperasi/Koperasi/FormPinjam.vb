@@ -1,5 +1,6 @@
 ﻿Public Class FormPinjam
     Public idanggota As String = "0"
+    Public idpinjam As String = ""
 
     Sub lockForm()
         group_informasi_nasabah.Enabled = False
@@ -30,7 +31,7 @@
     Dim metode As String = ""
 
     Sub showData()
-        dgv_data_peminjaman.DataSource = getData("select idpinjam,idanggota,anggota,jenis,tglpinjam,besarpinjam,lamapinjam,persenbunga,asuransi,administrasi,diterima,angsuranpokok,angsuranbunga,jumlahangsuran from qpinjam where idanggota='" & idanggota & "' and jenis ilike '%" & txt_search.Text & "%'  ")
+        dgv_data_peminjaman.DataSource = getData("select idpinjam,idanggota,anggota,jenis,to_char(tglpinjam, 'DD-MM-YYYY') as tglpinjam,besarpinjam,lamapinjam,persenbunga,asuransi,administrasi,diterima,angsuranpokok,angsuranbunga,jumlahangsuran,idanggota from qpinjam where idanggota='" & idanggota & "' and jenis ilike '%" & txt_search.Text & "%'  ")
         dgv_data_peminjaman.Columns(0).HeaderText = "Kode Pinjam"
         dgv_data_peminjaman.Columns(1).HeaderText = "Kode Anggota"
         dgv_data_peminjaman.Columns(2).HeaderText = "Nama"
@@ -97,7 +98,7 @@
         Dim besarBunga As Double = toDouble(txt_bunga.Text)
         Dim totalPokok As Double = toDouble(txt_angsuran_pokok.Text)
 
-        txt_angsuran_bunga.Text= Math.Ceiling((besarPinjam * besarBunga) / 100).ToString
+        txt_angsuran_bunga.Text = Math.Ceiling((besarPinjam * besarBunga) / 100).ToString
         hitungAngsuranPokok()
 
         hitungJumAngsuran()
@@ -346,7 +347,7 @@
     End Sub
 
     Private Sub btn_cetak_kwitansi_Click(sender As Object, e As EventArgs) Handles btn_cetak_kwitansi.Click
-        PreviewFormPinjam.idanggota = idanggota
+        PreviewFormPinjam.idpinjam = dgv_data_peminjaman.Rows(dgv_data_peminjaman.CurrentCell.RowIndex).Cells(0).Value.ToString
         PreviewFormPinjam.ShowDialog()
     End Sub
 End Class

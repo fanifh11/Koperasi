@@ -14,6 +14,8 @@
 
             makeFillDG(dgv_DataSimpanan)
 
+            dgv_DataSimpanan.Columns(1).DefaultCellStyle.Format = "c0"
+
             lbl_JumData.Text = "Jumlah Data: " & dgv_DataSimpanan.Rows.Count
 
             For Each row As DataGridViewRow In dgv_DataSimpanan.Rows

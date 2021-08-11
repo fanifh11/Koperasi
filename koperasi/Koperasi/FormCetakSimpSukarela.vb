@@ -17,7 +17,7 @@
     End Sub
 
     Public Sub showData()
-        dgv_DataAnggota.DataSource = getData("Select idsukarela, tgltransaksi, debet, kredit, saldo from tbltransaksi where idsukarela = '" & idsukarela & "'")
+        dgv_DataAnggota.DataSource = getData("Select idsukarela, to_char(tgltransaksi, 'DD-MM-YYYY') as tgltransaksi, debet, kredit, saldo from tbltransaksi where idsukarela = '" & idsukarela & "'")
         dgv_DataAnggota.Columns(0).HeaderText = "No Rek"
         dgv_DataAnggota.Columns(1).HeaderText = "Tanggal Transaksi"
         dgv_DataAnggota.Columns(2).HeaderText = "Debet"

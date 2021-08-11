@@ -20,6 +20,9 @@
         dgv_data_saldo_piutang.Columns(4).HeaderText = "Besar Pinjam"
         dgv_data_saldo_piutang.Columns(5).HeaderText = "Saldo"
 
+        dgv_data_saldo_piutang.Columns(4).DefaultCellStyle.Format = "c0"
+        dgv_data_saldo_piutang.Columns(5).DefaultCellStyle.Format = "c0"
+
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_saldo_piutang.Rows.Count
         lbl_saldo_pinjam.Text = "Saldo Pinjam : " & numberFor(toDouble(getValue("select sum(saldopinjam) as saldopinjam from qpinjam where idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%'", "saldopinjam")).ToString)
     End Sub

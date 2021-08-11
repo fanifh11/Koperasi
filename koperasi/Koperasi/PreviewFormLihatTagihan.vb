@@ -17,4 +17,8 @@
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("bendahara", getValue(sqlidentitas, "bendahara").ToString))
         ReportViewer1.RefreshReport()
     End Sub
+
+    Private Sub ReportViewer1_Load(sender As Object, e As EventArgs) Handles ReportViewer1.Load
+
+    End Sub
 End Class
