@@ -35,10 +35,6 @@
         group_DataAnggota.Enabled = True
     End Sub
 
-    Private Sub txt_Nama_TextChanged(sender As Object, e As EventArgs) Handles txt_Nama.TextChanged
-        showData()
-    End Sub
-
     Private Sub btn_Keluar_Click(sender As Object, e As EventArgs) Handles btn_Keluar.Click
         Me.Close()
     End Sub
