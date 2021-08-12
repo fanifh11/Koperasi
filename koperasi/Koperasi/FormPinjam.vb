@@ -5,14 +5,20 @@
     Sub lockForm()
         group_informasi_nasabah.Enabled = False
         group_informasi_peminjaman.Enabled = False
-        grupBtn.Enabled = True
+        btn_tambah.Enabled = True
+        btn_hapus.Enabled = True
+        btn_cetak_kwitansi.Enabled = True
+        btn_keluar.Enabled = True
 
     End Sub
 
     Sub openForm()
         group_informasi_nasabah.Enabled = True
         group_informasi_peminjaman.Enabled = True
-        grupBtn.Enabled = False
+        btn_tambah.Enabled = False
+        btn_hapus.Enabled = False
+        btn_cetak_kwitansi.Enabled = True
+        btn_keluar.Enabled = False
 
     End Sub
 
@@ -336,6 +342,7 @@
         lockForm()
         clearForm(group_informasi_nasabah)
         clearForm(group_informasi_peminjaman)
+        dgv_data_peminjaman.DataSource = Nothing
 
         txt_kode_pinjam.Text = Now.ToString("yyyyMMddHHmmss")
 
@@ -347,7 +354,13 @@
     End Sub
 
     Private Sub btn_cetak_kwitansi_Click(sender As Object, e As EventArgs) Handles btn_cetak_kwitansi.Click
-        PreviewFormPinjam.idpinjam = dgv_data_peminjaman.Rows(dgv_data_peminjaman.CurrentCell.RowIndex).Cells(0).Value.ToString
-        PreviewFormPinjam.ShowDialog()
+        If dgv_data_peminjaman.Rows.Count = 0 Then
+            dialogError("Data Nasabah belum dipilih atau kosong !")
+            Return
+        Else
+            PreviewFormPinjam.idpinjam = dgv_data_peminjaman.Rows(dgv_data_peminjaman.CurrentCell.RowIndex).Cells(0).Value.ToString
+            PreviewFormPinjam.ShowDialog()
+        End If
+
     End Sub
 End Class
