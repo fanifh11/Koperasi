@@ -102,7 +102,7 @@ Partial Class MenuUtama
         '
         Me.Ribbon1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Ribbon1.Location = New System.Drawing.Point(0, 0)
-        Me.Ribbon1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Ribbon1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Ribbon1.Minimized = False
         Me.Ribbon1.Name = "Ribbon1"
         '
@@ -115,7 +115,7 @@ Partial Class MenuUtama
         Me.Ribbon1.OrbDropDown.TabIndex = 0
         Me.Ribbon1.OrbStyle = System.Windows.Forms.RibbonOrbStyle.Office_2013
         Me.Ribbon1.RibbonTabFont = New System.Drawing.Font("Trebuchet MS", 9.0!)
-        Me.Ribbon1.Size = New System.Drawing.Size(745, 162)
+        Me.Ribbon1.Size = New System.Drawing.Size(993, 199)
         Me.Ribbon1.TabIndex = 0
         Me.Ribbon1.Tabs.Add(Me.tabUtilitas)
         Me.Ribbon1.Tabs.Add(Me.tabMaster)
@@ -268,7 +268,7 @@ Partial Class MenuUtama
         Me.panelBilling.Items.Add(Me.btnBillingSimpanan)
         Me.panelBilling.Items.Add(Me.btnLihatBilling)
         Me.panelBilling.Name = "panelBilling"
-        Me.panelBilling.Text = "Tagihan"
+        Me.panelBilling.Text = "Tagihan Simpanan Pokok"
         '
         'btnBillingSimpanan
         '
@@ -379,7 +379,7 @@ Partial Class MenuUtama
         Me.btnHitungBunga.MinSizeMode = System.Windows.Forms.RibbonElementSizeMode.Large
         Me.btnHitungBunga.Name = "btnHitungBunga"
         Me.btnHitungBunga.SmallImage = CType(resources.GetObject("btnHitungBunga.SmallImage"), System.Drawing.Image)
-        Me.btnHitungBunga.Text = "Hitung Bunga"
+        Me.btnHitungBunga.Text = "Hitung Bunga Sukarela"
         '
         'panelPembukuan
         '
@@ -606,7 +606,7 @@ Partial Class MenuUtama
         Me.btnRekapPendatan.LargeImage = CType(resources.GetObject("btnRekapPendatan.LargeImage"), System.Drawing.Image)
         Me.btnRekapPendatan.Name = "btnRekapPendatan"
         Me.btnRekapPendatan.SmallImage = CType(resources.GetObject("btnRekapPendatan.SmallImage"), System.Drawing.Image)
-        Me.btnRekapPendatan.Text = "Pendapatan"
+        Me.btnRekapPendatan.Text = "Pendapatan Bunga"
         '
         'btnRekapSaldoPiutang
         '
@@ -712,25 +712,25 @@ Partial Class MenuUtama
         Me.PictureBox1.BackColor = System.Drawing.SystemColors.Control
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 162)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 199)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(745, 341)
+        Me.PictureBox1.Size = New System.Drawing.Size(993, 420)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
         'MenuUtama
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(745, 503)
+        Me.ClientSize = New System.Drawing.Size(993, 619)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Ribbon1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "MenuUtama"
         Me.Text = "Menu"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
