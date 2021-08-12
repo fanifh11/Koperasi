@@ -105,8 +105,15 @@
     End Sub
 
     Private Sub btn_ubah_Click(sender As Object, e As EventArgs) Handles btn_ubah.Click
-        bukaForm()
-        metode = "update"
+
+        If adaKosong(group_data_jenis) Then
+            dialogError("Silahkan pilih data jenis simpanan terlebih dahulu !")
+            Return
+        Else
+            bukaForm()
+            metode = "update"
+        End If
+
     End Sub
 
     Private Sub btn_batal_Click(sender As Object, e As EventArgs) Handles btn_batal.Click
