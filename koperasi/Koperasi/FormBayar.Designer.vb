@@ -25,7 +25,6 @@ Partial Class FormBayar
         Me.btn_Keluar = New System.Windows.Forms.Button()
         Me.btn_Tambah = New System.Windows.Forms.Button()
         Me.grupBtn = New System.Windows.Forms.GroupBox()
-        Me.btn_Hapus = New System.Windows.Forms.Button()
         Me.btn_Batal = New System.Windows.Forms.Button()
         Me.btn_Bayar = New System.Windows.Forms.Button()
         Me.dtp_TglBayar = New System.Windows.Forms.DateTimePicker()
@@ -81,7 +80,6 @@ Partial Class FormBayar
         'grupBtn
         '
         Me.grupBtn.Controls.Add(Me.btn_Keluar)
-        Me.grupBtn.Controls.Add(Me.btn_Hapus)
         Me.grupBtn.Controls.Add(Me.btn_Tambah)
         Me.grupBtn.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.grupBtn.Location = New System.Drawing.Point(0, 401)
@@ -89,16 +87,6 @@ Partial Class FormBayar
         Me.grupBtn.Size = New System.Drawing.Size(1105, 50)
         Me.grupBtn.TabIndex = 20
         Me.grupBtn.TabStop = False
-        '
-        'btn_Hapus
-        '
-        Me.btn_Hapus.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!)
-        Me.btn_Hapus.Location = New System.Drawing.Point(133, 18)
-        Me.btn_Hapus.Name = "btn_Hapus"
-        Me.btn_Hapus.Size = New System.Drawing.Size(106, 26)
-        Me.btn_Hapus.TabIndex = 32
-        Me.btn_Hapus.Text = "Hapus"
-        Me.btn_Hapus.UseVisualStyleBackColor = True
         '
         'btn_Batal
         '
@@ -390,7 +378,6 @@ Partial Class FormBayar
     Friend WithEvents btn_Keluar As Button
     Friend WithEvents btn_Tambah As Button
     Friend WithEvents grupBtn As GroupBox
-    Friend WithEvents btn_Hapus As Button
     Friend WithEvents btn_Batal As Button
     Friend WithEvents btn_Bayar As Button
     Friend WithEvents dtp_TglBayar As DateTimePicker
