@@ -63,8 +63,14 @@
     End Sub
 
     Private Sub btn_Ubah_Click(sender As Object, e As EventArgs) Handles btn_Ubah.Click
-        openForm()
-        metode = "update"
+        If adaKosong(group_InformasiAnggota) Then
+            dialogError("Pilihlah data anggota terlebih dahulu pada tabel diatas !")
+            Return
+        Else
+            openForm()
+            metode = "update"
+        End If
+
     End Sub
 
     Private Sub btn_Simpan_Click(sender As Object, e As EventArgs) Handles btn_Simpan.Click
@@ -227,10 +233,22 @@
     End Sub
 
     Private Sub btn_Hapus_Click(sender As Object, e As EventArgs) Handles btn_Hapus.Click
-        If dialog("Apakah yakin untuk menghapus data ini? ") Then
-            exc("delete from tblanggota where idanggota = '" & idanggota & "' ")
-            showData()
-            clearForm(group_InformasiAnggota)
+        If adaKosong(group_InformasiAnggota) Then
+            dialogError("Harap pilih data anggota terlebih dahulu !")
+            Return
+        Else
+            If getCount("select idanggota from tblpinjam where idanggota = '" & idanggota & "' ") > 0 Or getCount("select idanggota from tblsukarela where idanggota='" & idanggota & "'") > 0 Then
+                dialogError("Data anggota tidak dapat dihapus karena memiliki pinjaman dan simpanan !")
+                Return
+            Else
+                If exc("delete from tblanggota where idanggota = '" & idanggota & "' ") Then
+                    dialogInfo("Hapus berhasil ")
+                Else
+                    dialogError("Hapus gagal ")
+                End If
+                clearForm(group_InformasiAnggota)
+                showData()
+            End If
         End If
     End Sub
 
