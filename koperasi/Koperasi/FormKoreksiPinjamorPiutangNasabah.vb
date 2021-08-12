@@ -230,4 +230,9 @@
         showData()
 
     End Sub
+
+    Private Sub btn_Batal_Click(sender As Object, e As EventArgs) Handles btn_Batal.Click
+        clearForm(group_InfoNasabah)
+        clearForm(group_InfoPeminjaman)
+    End Sub
 End Class
