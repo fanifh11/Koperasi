@@ -48,7 +48,6 @@ Partial Class FormIsiSimpananSukarela
         Me.lbl_KodeAnggota = New System.Windows.Forms.Label()
         Me.grupBtn = New System.Windows.Forms.GroupBox()
         Me.btn_Keluar = New System.Windows.Forms.Button()
-        Me.btn_Hapus = New System.Windows.Forms.Button()
         Me.btn_Tambah = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.group_DataAnggota.SuspendLayout()
@@ -322,7 +321,6 @@ Partial Class FormIsiSimpananSukarela
         'grupBtn
         '
         Me.grupBtn.Controls.Add(Me.btn_Keluar)
-        Me.grupBtn.Controls.Add(Me.btn_Hapus)
         Me.grupBtn.Controls.Add(Me.btn_Tambah)
         Me.grupBtn.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.grupBtn.Location = New System.Drawing.Point(0, 372)
@@ -343,17 +341,6 @@ Partial Class FormIsiSimpananSukarela
         Me.btn_Keluar.TabIndex = 2
         Me.btn_Keluar.Text = "Keluar"
         Me.btn_Keluar.UseVisualStyleBackColor = True
-        '
-        'btn_Hapus
-        '
-        Me.btn_Hapus.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!)
-        Me.btn_Hapus.Location = New System.Drawing.Point(93, 15)
-        Me.btn_Hapus.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btn_Hapus.Name = "btn_Hapus"
-        Me.btn_Hapus.Size = New System.Drawing.Size(70, 24)
-        Me.btn_Hapus.TabIndex = 1
-        Me.btn_Hapus.Text = "Hapus"
-        Me.btn_Hapus.UseVisualStyleBackColor = True
         '
         'btn_Tambah
         '
@@ -420,7 +407,6 @@ Partial Class FormIsiSimpananSukarela
     Friend WithEvents btn_CariAnggota As Button
     Friend WithEvents grupBtn As GroupBox
     Friend WithEvents btn_Keluar As Button
-    Friend WithEvents btn_Hapus As Button
     Friend WithEvents btn_Tambah As Button
     Friend WithEvents lbl As Label
     Friend WithEvents lbl_Saldo As Label
