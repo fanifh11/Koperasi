@@ -6,7 +6,9 @@
 
 
     Sub firstTimeLoad()
-        grupBtn.Enabled = True
+        btn_tambah.Enabled = True
+        btn_cetak_kwitansi.Enabled = True
+        btn_keluar.Enabled = True
         group_informasi_nasabah.Enabled = False
         group_informasi_peminjaman.Enabled = False
         group_pembayaran_pinjaman.Enabled = False
@@ -14,7 +16,9 @@
     End Sub
 
     Sub formLoad()
-        grupBtn.Enabled = False
+        btn_tambah.Enabled = False
+        btn_cetak_kwitansi.Enabled = True
+        btn_keluar.Enabled = False
         group_informasi_nasabah.Enabled = True
         group_informasi_peminjaman.Enabled = True
         group_pembayaran_pinjaman.Enabled = True
@@ -65,7 +69,10 @@
 
     Private Sub btn_batal_Click(sender As Object, e As EventArgs) Handles btn_batal.Click
         firstTimeLoad()
-
+        dgv_data_peminjaman.DataSource = Nothing
+        clearForm(group_pembayaran_pinjaman)
+        clearForm(group_informasi_nasabah)
+        clearForm(group_informasi_peminjaman)
 
     End Sub
 
@@ -176,7 +183,12 @@
     End Sub
 
     Private Sub btn_cetak_kwitansi_Click(sender As Object, e As EventArgs) Handles btn_cetak_kwitansi.Click
-        PreviewBuktiPembayaran.idtagihan = dgv_data_peminjaman.Rows(dgv_data_peminjaman.CurrentCell.RowIndex).Cells(0).Value.ToString
-        PreviewBuktiPembayaran.ShowDialog()
+        If dgv_data_peminjaman.Rows.Count = 0 Then
+            dialogError("Anda belum memilih data anggosta !")
+            Return
+        Else
+            PreviewBuktiPembayaran.idtagihan = dgv_data_peminjaman.Rows(dgv_data_peminjaman.CurrentCell.RowIndex).Cells(0).Value.ToString
+            PreviewBuktiPembayaran.ShowDialog()
+        End If
     End Sub
 End Class
