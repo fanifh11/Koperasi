@@ -106,4 +106,9 @@
 
     End Sub
 
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        clearForm(group_InformasiNasabah)
+        clearForm(group_InformasiPeminjaman)
+        clearForm(group_InformasiPinjaman)
+    End Sub
 End Class
