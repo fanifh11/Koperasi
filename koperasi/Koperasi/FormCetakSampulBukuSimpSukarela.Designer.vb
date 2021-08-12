@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormCetakSampulBukuSimpSukarela
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FormCetakSampulBukuSimpSukarela
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lbl_Subjudul = New System.Windows.Forms.Label()
@@ -86,12 +86,14 @@ Partial Class FormCetakSampulBukuSimpSukarela
         'lbl_Notice
         '
         Me.lbl_Notice.AutoSize = True
+        Me.lbl_Notice.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_Notice.ForeColor = System.Drawing.Color.Red
-        Me.lbl_Notice.Location = New System.Drawing.Point(416, 417)
+        Me.lbl_Notice.Location = New System.Drawing.Point(302, 417)
         Me.lbl_Notice.Name = "lbl_Notice"
-        Me.lbl_Notice.Size = New System.Drawing.Size(297, 18)
+        Me.lbl_Notice.Size = New System.Drawing.Size(549, 18)
         Me.lbl_Notice.TabIndex = 3
-        Me.lbl_Notice.Text = "KLIK PADA GRID UNTUK CETAK SAMPUL"
+        Me.lbl_Notice.Text = "KLIK PADA GRID UNTUK CETAK SAMPUL LALU KLIK TOMBOL CETAK"
+        Me.lbl_Notice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lbl_JumData
         '
