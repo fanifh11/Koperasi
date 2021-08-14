@@ -111,23 +111,32 @@
     Private Sub dgv_JumGroup_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_JumGroup.CellClick
         If (e.RowIndex >= 0) Then
             selectId = dgv_JumGroup.Rows(e.RowIndex).Cells(0).Value
+            idAkses = selectId
+
         End If
     End Sub
 
     Private Sub btnHapus_Click(sender As Object, e As EventArgs) Handles btnHapus.Click
-        If dialog("Apakah Anda yakin untuk menghapus group akses ?") Then
-            If getCount("select dgroup from tbluser where dgroup = '" & selectId & "' ") > 0 Then
-                dialogError("Group hak akses tidak dapat dihapus !")
-                Return
-            Else
-                exc("delete from tblgroup where dgroup = '" & selectId & "' ")
-                exc("delete from tblmenu where dgroup = '" & selectId & "' ")
-                showDataGroup()
-                dialogInfo("Hapus hak akses berhasil")
-            End If
+        If String.IsNullOrEmpty(idAkses) Then
+            dialogError("Harap pilih data terlebih dahulu !")
+            Return
         Else
-            dialogInfo("Hapus batal !")
+            If dialog("Apakah Anda yakin untuk menghapus group akses ?") Then
+                If getCount("select dgroup from tbluser where dgroup = '" & selectId & "' ") > 0 Then
+                    dialogError("Group hak akses tidak dapat dihapus !")
+                    Return
+                Else
+                    exc("delete from tblgroup where dgroup = '" & selectId & "' ")
+                    exc("delete from tblmenu where dgroup = '" & selectId & "' ")
+                    showDataGroup()
+                    dialogInfo("Hapus hak akses berhasil")
+                End If
+            Else
+                dialogInfo("Hapus batal !")
+            End If
         End If
+
+
 
     End Sub
 
