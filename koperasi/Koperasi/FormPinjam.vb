@@ -37,7 +37,7 @@
     Dim metode As String = ""
 
     Sub showData()
-        dgv_data_peminjaman.DataSource = getData("select idpinjam,idanggota,anggota,jenis,to_char(tglpinjam, 'DD-MM-YYYY') as tglpinjam,besarpinjam,lamapinjam,persenbunga,asuransi,administrasi,diterima,angsuranpokok,angsuranbunga,jumlahangsuran,idanggota from qpinjam where idanggota='" & idanggota & "' and jenis ilike '%" & txt_search.Text & "%'  ")
+        dgv_data_peminjaman.DataSource = getData("select idpinjam,idanggota,anggota,jenis,to_char(tglpinjam, 'DD-MM-YYYY') as tglpinjam,besarpinjam,lamapinjam,persenbunga,asuransi,administrasi,diterima,angsuranpokok,angsuranbunga,jumlahangsuran from qpinjam where idanggota='" & idanggota & "' and jenis ilike '%" & txt_search.Text & "%'  ")
         dgv_data_peminjaman.Columns(0).HeaderText = "Kode Pinjam"
         dgv_data_peminjaman.Columns(1).HeaderText = "Kode Anggota"
         dgv_data_peminjaman.Columns(2).HeaderText = "Nama"
