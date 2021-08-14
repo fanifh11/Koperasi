@@ -122,13 +122,13 @@
     End Sub
 
     Private Sub btn_hapus_Click(sender As Object, e As EventArgs) Handles btn_hapus.Click
-        If dialog("Apakah anda yakin untuk hapus data ini ?") Then
-            If adaKosong(group_data_jenis) Then
-                dialogError("Harap pilih data yang ingin dihapus terlebih dahulu !")
-                Return
-            Else
+        If adaKosong(group_data_jenis) Then
+            dialogError("Harap pilih data yang ingin dihapus terlebih dahulu !")
+            Return
+        Else
+            If dialog("Apakah anda yakin untuk hapus data ini ?") Then
                 If getCount("select jenissimpanan from tblrekening where jenissimpanan = '" & tempjenissimpanan & "' ") > 0 Or
-                   getCount("select ketsukarela from tblsukarela where ketsukarela = '" & tempjenissimpanan & "' ") > 0 Then
+                       getCount("select ketsukarela from tblsukarela where ketsukarela = '" & tempjenissimpanan & "' ") > 0 Then
                     dialogError("Data jenis simpanan tidak dapat dihapus karena memiliki transaksi !")
                     Return
                 Else
@@ -139,9 +139,11 @@
                         Return
                     End If
                 End If
-                showData()
             End If
+            showData()
         End If
+
+
 
     End Sub
 
