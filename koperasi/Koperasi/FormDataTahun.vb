@@ -111,10 +111,10 @@
     End Sub
 
     Private Sub btnHapus_Click(sender As Object, e As EventArgs) Handles btnHapus.Click
-        If dialog("Apakah anda yakin untuk hapus data ini ?") Then
-            If String.IsNullOrEmpty(txt_Tahun.Text) Then
-                dialogError("Silahkan pilih tahun terlebih dahulu")
-            Else
+        If String.IsNullOrEmpty(txt_Tahun.Text) Then
+            dialogError("Silahkan pilih tahun terlebih dahulu")
+        Else
+            If dialog("Apakah anda yakin untuk hapus data ini ?") Then
                 If getCount("select tahun from tbltahun where flagaktif = AKTIF ") > 0 Or getCount("select tahun from tblrekening where tahun = '" & idtahun & "' ") > 0 Then
                     dialogError("Tahun aktif tidak dapat dihapus karena tahun aktif atau mempunyai transaksi !")
                     Return
@@ -127,9 +127,12 @@
                     End If
                     showData()
                 End If
-
             End If
         End If
+
+
+
+
 
     End Sub
 
