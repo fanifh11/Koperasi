@@ -5,9 +5,12 @@
     Public idnasabah As String
 
 
+    Dim selectIDNasabah As String
+    Dim dataTerpilih As String
+
+
     Sub firstTimeLoad()
         btn_tambah.Enabled = True
-        btn_cetak_kwitansi.Enabled = True
         btn_keluar.Enabled = True
         group_informasi_nasabah.Enabled = False
         group_informasi_peminjaman.Enabled = False
@@ -17,7 +20,6 @@
 
     Sub formLoad()
         btn_tambah.Enabled = False
-        btn_cetak_kwitansi.Enabled = True
         btn_keluar.Enabled = False
         group_informasi_nasabah.Enabled = True
         group_informasi_peminjaman.Enabled = True
@@ -51,6 +53,14 @@
 
     End Sub
 
+    Sub kondisiBtnCetak()
+        If String.IsNullOrEmpty(dataTerpilih) Then
+            btn_cetak_kwitansi.Enabled = False
+        Else
+            btn_cetak_kwitansi.Enabled = True
+        End If
+    End Sub
+
     Private Sub btn_keluar_Click(sender As Object, e As EventArgs) Handles btn_keluar.Click
         Me.Close()
 
@@ -59,6 +69,7 @@
     Private Sub FormPembayaranNasabah_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         firstTimeLoad()
         showData()
+        kondisiBtnCetak()
 
     End Sub
 
@@ -167,9 +178,6 @@
         clearForm(group_pembayaran_pinjaman)
         clearForm(group_informasi_nasabah)
         showData()
-
-
-
     End Sub
 
     Private Sub txt_angsuran_pokok_TextChanged(sender As Object, e As EventArgs) Handles txt_angsuran_pokok.TextChanged
@@ -190,5 +198,15 @@
             PreviewBuktiPembayaran.idtagihan = dgv_data_peminjaman.Rows(dgv_data_peminjaman.CurrentCell.RowIndex).Cells(0).Value.ToString
             PreviewBuktiPembayaran.ShowDialog()
         End If
+    End Sub
+
+    Private Sub dgv_data_peminjaman_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_data_peminjaman.CellClick
+        If (e.RowIndex >= 0) Then
+            selectIDNasabah = dgv_data_peminjaman.Rows(e.RowIndex).Cells(0).Value
+            dataTerpilih = selectIDNasabah
+
+            kondisiBtnCetak()
+        End If
+
     End Sub
 End Class
