@@ -2,12 +2,12 @@
     Public idanggota As String = "0"
     Public idpinjam As String = ""
 
+    Dim selectKodePinjam As String = ""
+
     Sub lockForm()
         group_informasi_nasabah.Enabled = False
         group_informasi_peminjaman.Enabled = False
         btn_tambah.Enabled = True
-        btn_hapus.Enabled = True
-        btn_cetak_kwitansi.Enabled = True
         btn_keluar.Enabled = True
 
     End Sub
@@ -16,8 +16,6 @@
         group_informasi_nasabah.Enabled = True
         group_informasi_peminjaman.Enabled = True
         btn_tambah.Enabled = False
-        btn_hapus.Enabled = False
-        btn_cetak_kwitansi.Enabled = True
         btn_keluar.Enabled = False
 
     End Sub
@@ -34,6 +32,23 @@
         txt_jumlah_angsuran.Text = 0
 
     End Sub
+
+    Sub kondisiBtnCetak()
+        If String.IsNullOrEmpty(selectKodePinjam) Then
+            btn_cetak_kwitansi.Enabled = False
+        Else
+            btn_cetak_kwitansi.Enabled = True
+        End If
+    End Sub
+
+    Sub kondisiBtnHapus()
+        If String.IsNullOrEmpty(selectKodePinjam) Then
+            btn_hapus.Enabled = False
+        Else
+            btn_hapus.Enabled = True
+        End If
+    End Sub
+
     Dim metode As String = ""
 
     Sub showData()
@@ -144,6 +159,8 @@
         buatNilai0()
         lockForm()
 
+        kondisiBtnCetak()
+        kondisiBtnHapus()
         txt_kode_pinjam.Text = Now.ToString("yyyyMMddHHmmss")
     End Sub
     Private Sub txt_besar_pinjam_TextChanged(sender As Object, e As EventArgs) Handles txt_besar_pinjam.TextChanged
@@ -321,7 +338,9 @@
     End Sub
 
     Private Sub btn_hapus_Click(sender As Object, e As EventArgs) Handles btn_hapus.Click
-        Dim selectIdPinjam As String = dgv_data_peminjaman.CurrentCell.Value
+
+
+        Dim selectIdPinjam As String = dgv_data_peminjaman.Rows(dgv_data_peminjaman.CurrentCell.RowIndex).Cells(0).Value.ToString
 
         If dialog("Apakah anda yakin untuk menghapus data ?") Then
             If getCount("select idpinjam from tbltagihan where idpinjam = '" & selectIdPinjam & "'") > 0 Then
@@ -336,6 +355,8 @@
 
             End If
         End If
+
+
     End Sub
 
     Private Sub btn_batal_Click(sender As Object, e As EventArgs) Handles btn_batal.Click
@@ -350,17 +371,23 @@
 
     Private Sub btn_tambah_Click(sender As Object, e As EventArgs) Handles btn_tambah.Click
         openForm()
-
     End Sub
 
     Private Sub btn_cetak_kwitansi_Click(sender As Object, e As EventArgs) Handles btn_cetak_kwitansi.Click
-        If dgv_data_peminjaman.Rows.Count = 0 Then
-            dialogError("Data Nasabah belum dipilih atau kosong !")
-            Return
-        Else
-            PreviewFormPinjam.idpinjam = dgv_data_peminjaman.Rows(dgv_data_peminjaman.CurrentCell.RowIndex).Cells(0).Value.ToString
-            PreviewFormPinjam.ShowDialog()
-        End If
+        PreviewFormPinjam.idpinjam = dgv_data_peminjaman.Rows(dgv_data_peminjaman.CurrentCell.RowIndex).Cells(0).Value.ToString
+        PreviewFormPinjam.ShowDialog()
 
+
+    End Sub
+
+    Private Sub dgv_data_peminjaman_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_data_peminjaman.CellClick
+        If (e.RowIndex >= 0) Then
+            selectKodePinjam = dgv_data_peminjaman.Rows(e.RowIndex).Cells(0).Value
+            idpinjam = selectKodePinjam
+
+            kondisiBtnCetak()
+            kondisiBtnHapus()
+
+        End If
     End Sub
 End Class
