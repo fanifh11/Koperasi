@@ -62,7 +62,7 @@ Partial Class FormPembayaranPinjamanKolektif
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_subjudul)
         Me.Panel1.Controls.Add(Me.lbl_judul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -121,6 +121,7 @@ Partial Class FormPembayaranPinjamanKolektif
         '
         'GroupBox4
         '
+        Me.GroupBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.GroupBox4.Controls.Add(Me.btn_biaya_tagihan_kolektif)
         Me.GroupBox4.Controls.Add(Me.btn_keluar)
         Me.GroupBox4.Dock = System.Windows.Forms.DockStyle.Bottom

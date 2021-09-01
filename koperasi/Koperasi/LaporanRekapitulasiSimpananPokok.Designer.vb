@@ -38,8 +38,8 @@ Partial Class LaporanRekapitulasiSimpananPokok
         Me.lbl_subjudul = New System.Windows.Forms.Label()
         Me.lbl_judul = New System.Windows.Forms.Label()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.btn_keluar = New System.Windows.Forms.Button()
         Me.btn_cetak = New System.Windows.Forms.Button()
+        Me.btn_keluar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.group_data_simpanan.SuspendLayout()
         CType(Me.dgv_data_simpanan, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -163,7 +163,7 @@ Partial Class LaporanRekapitulasiSimpananPokok
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_subjudul)
         Me.Panel1.Controls.Add(Me.lbl_judul)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -193,6 +193,7 @@ Partial Class LaporanRekapitulasiSimpananPokok
         '
         'GroupBox4
         '
+        Me.GroupBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.GroupBox4.Controls.Add(Me.btn_cetak)
         Me.GroupBox4.Controls.Add(Me.btn_keluar)
         Me.GroupBox4.Location = New System.Drawing.Point(0, 430)
@@ -200,15 +201,6 @@ Partial Class LaporanRekapitulasiSimpananPokok
         Me.GroupBox4.Size = New System.Drawing.Size(471, 41)
         Me.GroupBox4.TabIndex = 40
         Me.GroupBox4.TabStop = False
-        '
-        'btn_keluar
-        '
-        Me.btn_keluar.Location = New System.Drawing.Point(390, 12)
-        Me.btn_keluar.Name = "btn_keluar"
-        Me.btn_keluar.Size = New System.Drawing.Size(75, 23)
-        Me.btn_keluar.TabIndex = 0
-        Me.btn_keluar.Text = "Keluar"
-        Me.btn_keluar.UseVisualStyleBackColor = True
         '
         'btn_cetak
         '
@@ -218,6 +210,15 @@ Partial Class LaporanRekapitulasiSimpananPokok
         Me.btn_cetak.TabIndex = 1
         Me.btn_cetak.Text = "Cetak"
         Me.btn_cetak.UseVisualStyleBackColor = True
+        '
+        'btn_keluar
+        '
+        Me.btn_keluar.Location = New System.Drawing.Point(390, 12)
+        Me.btn_keluar.Name = "btn_keluar"
+        Me.btn_keluar.Size = New System.Drawing.Size(75, 23)
+        Me.btn_keluar.TabIndex = 0
+        Me.btn_keluar.Text = "Keluar"
+        Me.btn_keluar.UseVisualStyleBackColor = True
         '
         'LaporanRekapitulasiSimpananPokok
         '

@@ -31,9 +31,7 @@ Partial Class FormLihatTagihanNasabah
         Me.group_data_tagihan = New System.Windows.Forms.GroupBox()
         Me.btn_keluar = New System.Windows.Forms.Button()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.btn_export = New System.Windows.Forms.Button()
         Me.btn_cetak = New System.Windows.Forms.Button()
-        Me.btn_hapus = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.dgv_data_tagihan, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.group_data_tagihan.SuspendLayout()
@@ -52,7 +50,7 @@ Partial Class FormLihatTagihanNasabah
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_subjudul)
         Me.Panel1.Controls.Add(Me.lbl_judul)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -123,9 +121,8 @@ Partial Class FormLihatTagihanNasabah
         '
         'GroupBox4
         '
-        Me.GroupBox4.Controls.Add(Me.btn_export)
+        Me.GroupBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.GroupBox4.Controls.Add(Me.btn_cetak)
-        Me.GroupBox4.Controls.Add(Me.btn_hapus)
         Me.GroupBox4.Controls.Add(Me.btn_keluar)
         Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.Location = New System.Drawing.Point(0, 381)
@@ -134,32 +131,14 @@ Partial Class FormLihatTagihanNasabah
         Me.GroupBox4.TabIndex = 40
         Me.GroupBox4.TabStop = False
         '
-        'btn_export
-        '
-        Me.btn_export.Location = New System.Drawing.Point(193, 12)
-        Me.btn_export.Name = "btn_export"
-        Me.btn_export.Size = New System.Drawing.Size(75, 23)
-        Me.btn_export.TabIndex = 3
-        Me.btn_export.Text = "Export Excel"
-        Me.btn_export.UseVisualStyleBackColor = True
-        '
         'btn_cetak
         '
-        Me.btn_cetak.Location = New System.Drawing.Point(100, 12)
+        Me.btn_cetak.Location = New System.Drawing.Point(13, 12)
         Me.btn_cetak.Name = "btn_cetak"
         Me.btn_cetak.Size = New System.Drawing.Size(87, 23)
         Me.btn_cetak.TabIndex = 2
         Me.btn_cetak.Text = "Cetak Tagihan"
         Me.btn_cetak.UseVisualStyleBackColor = True
-        '
-        'btn_hapus
-        '
-        Me.btn_hapus.Location = New System.Drawing.Point(6, 12)
-        Me.btn_hapus.Name = "btn_hapus"
-        Me.btn_hapus.Size = New System.Drawing.Size(88, 23)
-        Me.btn_hapus.TabIndex = 1
-        Me.btn_hapus.Text = "Hapus Tagihan"
-        Me.btn_hapus.UseVisualStyleBackColor = True
         '
         'FormLihatTagihanNasabah
         '
@@ -193,7 +172,5 @@ Partial Class FormLihatTagihanNasabah
     Friend WithEvents group_data_tagihan As GroupBox
     Friend WithEvents btn_keluar As Button
     Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents btn_export As Button
     Friend WithEvents btn_cetak As Button
-    Friend WithEvents btn_hapus As Button
 End Class

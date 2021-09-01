@@ -1,5 +1,17 @@
 ﻿Public Class FormLihatTagihanNasabah
 
+    Dim selectID As String
+    Dim IDterpilih As String
+
+    Sub kondisiBtnCetak()
+        If String.IsNullOrEmpty(selectID) Then
+            btn_cetak.Enabled = False
+        Else
+            btn_cetak.Enabled = True
+
+        End If
+    End Sub
+
     Sub showData()
         dgv_data_tagihan.DataSource = getData("select idtagihan,idpinjam,idanggota,anggota,alamat,jenis,besarpinjam,lamapinjam,angsuranpokok,angsuranbunga,jumlahangsuran,cicilanke,besarbayar,saldopinjam,totalpokok - besarpokok,totalbunga - besarbunga,kodetagihan
         from qtagihan where flagtagihan = 0 and anggota ilike '%" & txt_search.Text & "%'")
@@ -35,10 +47,7 @@
     End Sub
     Private Sub FormLihatTagihanNasabah_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         showData()
-
-    End Sub
-
-    Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles group_data_tagihan.Enter
+        kondisiBtnCetak()
 
     End Sub
 
@@ -54,5 +63,14 @@
 
     Private Sub btn_cetak_Click(sender As Object, e As EventArgs) Handles btn_cetak.Click
         PreviewLaporanTagihan.ShowDialog()
+    End Sub
+
+    Private Sub dgv_data_tagihan_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_data_tagihan.CellClick
+        If (e.RowIndex >= 0) Then
+            selectID = dgv_data_tagihan.Rows(e.RowIndex).Cells(0).Value
+            IDterpilih = selectID
+
+            kondisiBtnCetak()
+        End If
     End Sub
 End Class
