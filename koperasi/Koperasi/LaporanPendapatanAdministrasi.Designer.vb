@@ -52,9 +52,9 @@ Partial Class LaporanPendapatanAdministrasi
         '
         Me.GroupBox3.Controls.Add(Me.lbl_total_administrasi)
         Me.GroupBox3.Location = New System.Drawing.Point(0, 457)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox3.Size = New System.Drawing.Size(628, 52)
         Me.GroupBox3.TabIndex = 39
         Me.GroupBox3.TabStop = False
@@ -74,11 +74,12 @@ Partial Class LaporanPendapatanAdministrasi
         '
         'GroupBox4
         '
+        Me.GroupBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.GroupBox4.Controls.Add(Me.btn_keluar)
         Me.GroupBox4.Location = New System.Drawing.Point(0, 516)
-        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox4.Size = New System.Drawing.Size(628, 50)
         Me.GroupBox4.TabIndex = 40
         Me.GroupBox4.TabStop = False
@@ -86,7 +87,7 @@ Partial Class LaporanPendapatanAdministrasi
         'btn_keluar
         '
         Me.btn_keluar.Location = New System.Drawing.Point(520, 15)
-        Me.btn_keluar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_keluar.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_keluar.Name = "btn_keluar"
         Me.btn_keluar.Size = New System.Drawing.Size(100, 28)
         Me.btn_keluar.TabIndex = 0
@@ -99,9 +100,9 @@ Partial Class LaporanPendapatanAdministrasi
         Me.group_data_peminjaman.Controls.Add(Me.dgv_laporan_pendapatan_administrasi)
         Me.group_data_peminjaman.Controls.Add(Me.txt_search)
         Me.group_data_peminjaman.Location = New System.Drawing.Point(8, 146)
-        Me.group_data_peminjaman.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.group_data_peminjaman.Margin = New System.Windows.Forms.Padding(4)
         Me.group_data_peminjaman.Name = "group_data_peminjaman"
-        Me.group_data_peminjaman.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.group_data_peminjaman.Padding = New System.Windows.Forms.Padding(4)
         Me.group_data_peminjaman.Size = New System.Drawing.Size(607, 303)
         Me.group_data_peminjaman.TabIndex = 38
         Me.group_data_peminjaman.TabStop = False
@@ -123,7 +124,7 @@ Partial Class LaporanPendapatanAdministrasi
         Me.dgv_laporan_pendapatan_administrasi.AllowUserToDeleteRows = False
         Me.dgv_laporan_pendapatan_administrasi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_laporan_pendapatan_administrasi.Location = New System.Drawing.Point(9, 59)
-        Me.dgv_laporan_pendapatan_administrasi.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgv_laporan_pendapatan_administrasi.Margin = New System.Windows.Forms.Padding(4)
         Me.dgv_laporan_pendapatan_administrasi.Name = "dgv_laporan_pendapatan_administrasi"
         Me.dgv_laporan_pendapatan_administrasi.ReadOnly = True
         Me.dgv_laporan_pendapatan_administrasi.RowHeadersWidth = 51
@@ -133,7 +134,7 @@ Partial Class LaporanPendapatanAdministrasi
         'txt_search
         '
         Me.txt_search.Location = New System.Drawing.Point(9, 25)
-        Me.txt_search.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_search.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_search.Name = "txt_search"
         Me.txt_search.Size = New System.Drawing.Size(587, 22)
         Me.txt_search.TabIndex = 0
@@ -142,7 +143,7 @@ Partial Class LaporanPendapatanAdministrasi
         '
         Me.dtp_sampai.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtp_sampai.Location = New System.Drawing.Point(259, 14)
-        Me.dtp_sampai.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dtp_sampai.Margin = New System.Windows.Forms.Padding(4)
         Me.dtp_sampai.Name = "dtp_sampai"
         Me.dtp_sampai.Size = New System.Drawing.Size(121, 22)
         Me.dtp_sampai.TabIndex = 9
@@ -150,7 +151,7 @@ Partial Class LaporanPendapatanAdministrasi
         'btn_refresh
         '
         Me.btn_refresh.Location = New System.Drawing.Point(389, 12)
-        Me.btn_refresh.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_refresh.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_refresh.Name = "btn_refresh"
         Me.btn_refresh.Size = New System.Drawing.Size(100, 28)
         Me.btn_refresh.TabIndex = 6
@@ -170,7 +171,7 @@ Partial Class LaporanPendapatanAdministrasi
         'btn_cetak
         '
         Me.btn_cetak.Location = New System.Drawing.Point(497, 12)
-        Me.btn_cetak.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_cetak.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_cetak.Name = "btn_cetak"
         Me.btn_cetak.Size = New System.Drawing.Size(100, 28)
         Me.btn_cetak.TabIndex = 3
@@ -201,11 +202,11 @@ Partial Class LaporanPendapatanAdministrasi
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_subjudul)
         Me.Panel1.Controls.Add(Me.lbl_judul)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(628, 74)
         Me.Panel1.TabIndex = 36
@@ -214,7 +215,7 @@ Partial Class LaporanPendapatanAdministrasi
         '
         Me.dtp_mulai.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtp_mulai.Location = New System.Drawing.Point(64, 14)
-        Me.dtp_mulai.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dtp_mulai.Margin = New System.Windows.Forms.Padding(4)
         Me.dtp_mulai.Name = "dtp_mulai"
         Me.dtp_mulai.Size = New System.Drawing.Size(121, 22)
         Me.dtp_mulai.TabIndex = 7
@@ -228,9 +229,9 @@ Partial Class LaporanPendapatanAdministrasi
         Me.GroupBox1.Controls.Add(Me.lbl_mulai)
         Me.GroupBox1.Controls.Add(Me.btn_cetak)
         Me.GroupBox1.Location = New System.Drawing.Point(8, 81)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(607, 49)
         Me.GroupBox1.TabIndex = 37
         Me.GroupBox1.TabStop = False
@@ -256,7 +257,7 @@ Partial Class LaporanPendapatanAdministrasi
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "LaporanPendapatanAdministrasi"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.GroupBox3.ResumeLayout(False)

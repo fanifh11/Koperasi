@@ -67,7 +67,7 @@ Partial Class FormProsesSHU
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel2.Controls.Add(Me.lbl_Subjudul)
         Me.Panel2.Controls.Add(Me.lbl_Judul)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
@@ -197,6 +197,7 @@ Partial Class FormProsesSHU
         '
         'GroupBox3
         '
+        Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.GroupBox3.Controls.Add(Me.btn_Keluar)
         Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GroupBox3.Location = New System.Drawing.Point(0, 528)

@@ -114,15 +114,17 @@ Partial Class FormLihatTagihan
         '
         'GroupBox3
         '
+        Me.GroupBox3.AutoSize = True
+        Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.GroupBox3.Controls.Add(Me.btn_Keluar)
         Me.GroupBox3.Controls.Add(Me.btn_Cetak)
         Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.GroupBox3.Location = New System.Drawing.Point(0, 413)
+        Me.GroupBox3.Location = New System.Drawing.Point(0, 423)
         Me.GroupBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox3.Size = New System.Drawing.Size(635, 43)
+        Me.GroupBox3.Size = New System.Drawing.Size(635, 55)
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         '
@@ -169,7 +171,7 @@ Partial Class FormLihatTagihan
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_Subjudul)
         Me.Panel1.Controls.Add(Me.lbl_Judul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -203,7 +205,7 @@ Partial Class FormLihatTagihan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(635, 456)
+        Me.ClientSize = New System.Drawing.Size(635, 478)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.group_SimpananPokok)
@@ -222,6 +224,7 @@ Partial Class FormLihatTagihan
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents group_SimpananPokok As GroupBox
