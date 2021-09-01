@@ -40,7 +40,7 @@ Partial Class FormPembayaranSimpKolektif
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_Subjudul)
         Me.Panel1.Controls.Add(Me.lbl_Judul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -56,7 +56,7 @@ Partial Class FormPembayaranSimpKolektif
         Me.lbl_Subjudul.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Italic)
         Me.lbl_Subjudul.Location = New System.Drawing.Point(28, 37)
         Me.lbl_Subjudul.Name = "lbl_Subjudul"
-        Me.lbl_Subjudul.Size = New System.Drawing.Size(550, 18)
+        Me.lbl_Subjudul.Size = New System.Drawing.Size(459, 15)
         Me.lbl_Subjudul.TabIndex = 11
         Me.lbl_Subjudul.Text = "Form ini digunakan untuk pembayaran simpan pokok wajib anggota secara kolektif"
         '
@@ -66,7 +66,7 @@ Partial Class FormPembayaranSimpKolektif
         Me.lbl_Judul.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.lbl_Judul.Location = New System.Drawing.Point(18, 7)
         Me.lbl_Judul.Name = "lbl_Judul"
-        Me.lbl_Judul.Size = New System.Drawing.Size(314, 25)
+        Me.lbl_Judul.Size = New System.Drawing.Size(258, 20)
         Me.lbl_Judul.TabIndex = 10
         Me.lbl_Judul.Text = "Pembayaran Simpanan Kolektif"
         '
@@ -101,7 +101,7 @@ Partial Class FormPembayaranSimpKolektif
         Me.lbl_JumData.ForeColor = System.Drawing.Color.Red
         Me.lbl_JumData.Location = New System.Drawing.Point(6, 332)
         Me.lbl_JumData.Name = "lbl_JumData"
-        Me.lbl_JumData.Size = New System.Drawing.Size(111, 18)
+        Me.lbl_JumData.Size = New System.Drawing.Size(93, 15)
         Me.lbl_JumData.TabIndex = 2
         Me.lbl_JumData.Text = "Jumlah Data : 0"
         '
@@ -124,11 +124,12 @@ Partial Class FormPembayaranSimpKolektif
         Me.txt_CariDataAnggota.Location = New System.Drawing.Point(13, 20)
         Me.txt_CariDataAnggota.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_CariDataAnggota.Name = "txt_CariDataAnggota"
-        Me.txt_CariDataAnggota.Size = New System.Drawing.Size(893, 24)
+        Me.txt_CariDataAnggota.Size = New System.Drawing.Size(893, 21)
         Me.txt_CariDataAnggota.TabIndex = 0
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.GroupBox2.Controls.Add(Me.btn_PembayaranKolektif)
         Me.GroupBox2.Controls.Add(Me.btn_Keluar)
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -153,7 +154,7 @@ Partial Class FormPembayaranSimpKolektif
         '
         'FormPembayaranSimpKolektif
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(948, 489)
         Me.Controls.Add(Me.GroupBox2)

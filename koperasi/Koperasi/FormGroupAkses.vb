@@ -161,28 +161,30 @@
     End Sub
 
     Private Sub btnSimpanHakAkses_Click(sender As Object, e As EventArgs) Handles btnSimpanHakAkses.Click
+        If clb_HakAkses.Visible = False Then
+            dialogError("Pilih hak akses yang akan diupdate terlebih dahulu")
+        Else
 
-        Dim baris = 0
+            Dim baris = 0
 
-        For Each menu As String In clb_HakAkses.Items
-            Dim checked = False
-            Dim menuTag = baris + 1
+            For Each menu As String In clb_HakAkses.Items
+                Dim checked = False
+                Dim menuTag = baris + 1
 
-            Dim dgroup As String = cmb_HakAkses.SelectedValue
+                Dim dgroup As String = cmb_HakAkses.SelectedValue
 
-            If clb_HakAkses.GetItemChecked(baris) Then
-                checked = True
+                If clb_HakAkses.GetItemChecked(baris) Then
+                    checked = True
 
-            End If
-            exc("update tblmenu set flag = '" & checked.ToString & "' where dgroup = '" & dgroup & "' and menutag = '" & menuTag & "' ")
+                End If
+                exc("update tblmenu set flag = '" & checked.ToString & "' where dgroup = '" & dgroup & "' and menutag = '" & menuTag & "' ")
 
+                baris += 1
 
-            baris += 1
-
-        Next
-        dialogInfo("Update menu berhasil !")
-        dialogInfo("Silahkan restart aplikasi untuk memperbarui menu !")
-
+            Next
+            dialogInfo("Update menu berhasil !")
+            dialogInfo("Silahkan restart aplikasi untuk memperbarui menu !")
+        End If
 
     End Sub
 

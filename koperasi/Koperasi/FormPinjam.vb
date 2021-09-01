@@ -171,9 +171,14 @@
     End Sub
     Private Sub btn_simpan_Click(sender As Object, e As EventArgs) Handles btn_simpan.Click
 
-        If Modul.adaKosong(group_informasi_peminjaman) Then
-            dialogError("Lengkapi form isian anda terlebih dahulu !")
+        If adaKosong(group_informasi_nasabah) Then
+            dialogError("Pilih data nasabah terlebih dahulu !")
             Return
+        ElseIf txt_besar_pinjam.Text = "0" Or txt_lama_pinjam.Text = "0" Or txt_bunga.Text = "0" Then
+            dialogError("Lengkapi form data peminjmanan nasabah terlebih dahulu !")
+            Return
+        ElseIf adaKosong(group_informasi_peminjaman) Then
+            dialogError("Lengkapi form data peminjaman nasabah terlebih dahulu !")
         Else
             Dim kodeAnggota As String = txt_kode_nasabah.Text
             Dim kodePinjam As String = txt_kode_pinjam.Text
@@ -387,7 +392,6 @@
 
             kondisiBtnCetak()
             kondisiBtnHapus()
-
         End If
     End Sub
 End Class

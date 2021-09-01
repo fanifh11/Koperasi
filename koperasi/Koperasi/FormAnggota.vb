@@ -1,6 +1,5 @@
 ﻿Public Class FormAnggota
     Dim metode As String = ""
-
     Public idanggota As String = ""
 
     Sub showData()
@@ -237,17 +236,21 @@
             dialogError("Harap pilih data anggota terlebih dahulu !")
             Return
         Else
-            If getCount("select idanggota from tblpinjam where idanggota = '" & idanggota & "' ") > 0 Or getCount("select idanggota from tblsukarela where idanggota='" & idanggota & "'") > 0 Then
-                dialogError("Data anggota tidak dapat dihapus karena memiliki pinjaman dan simpanan !")
-                Return
-            Else
-                If exc("delete from tblanggota where idanggota = '" & idanggota & "' ") Then
-                    dialogInfo("Hapus berhasil ")
+            If dialog("Apakah Anda yakin untuk menghapus data ?") Then
+                If getCount("select idanggota from tblpinjam where idanggota = '" & idanggota & "' ") > 0 Or getCount("select idanggota from tblsukarela where idanggota='" & idanggota & "'") > 0 Then
+                    dialogError("Data anggota tidak dapat dihapus karena memiliki pinjaman dan simpanan !")
+                    Return
                 Else
-                    dialogError("Hapus gagal ")
+                    If exc("delete from tblanggota where idanggota = '" & idanggota & "' ") Then
+                        dialogInfo("Hapus berhasil ")
+                    Else
+                        dialogError("Hapus gagal ")
+                    End If
+                    clearForm(group_InformasiAnggota)
+                    showData()
                 End If
-                clearForm(group_InformasiAnggota)
-                showData()
+            Else
+                dialogError("Hapus batal atau gagal !")
             End If
         End If
     End Sub

@@ -175,10 +175,11 @@ Public Class FormIsiSimpananSukarela
                     ")
                 End If
             End If
+            dialogInfo("Pembayaran Sukses !")
 
         End If
         kunciForm()
-        dialogInfo("Pembayaran Sukses !")
+
     End Sub
 
     Private Sub btn_Batal_Click(sender As Object, e As EventArgs) Handles btn_Batal.Click

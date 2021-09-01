@@ -44,7 +44,12 @@
     End Sub
 
     Private Sub btn_Cetak_Click(sender As Object, e As EventArgs) Handles btn_Cetak.Click
-        PreviewSimpSukarela.idsukarela = idsukarela
-        PreviewSimpSukarela.ShowDialog()
+        If adaKosong(group_InformasiAnggota) Then
+            dialogError("Pilih data anggota terlebih dahulu !")
+        Else
+            PreviewSimpSukarela.idsukarela = idsukarela
+            PreviewSimpSukarela.ShowDialog()
+        End If
+
     End Sub
 End Class

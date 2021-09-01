@@ -1,6 +1,7 @@
 ﻿Public Class FormPerhitungaBungaSimpSukarela
 
     Dim pilihan As ArrayList = New ArrayList()
+    Dim pilihId As String
 
     Sub chooseAll()
         For Each idsukarela As DataGridViewRow In dgv_PilihData.Rows
@@ -67,7 +68,8 @@
                         0 
                     )
                     ")
-                dialogInfo("Berhasil")
+                dialogInfo("Bunga nasabah sebesar : " & "Rp. " & totalBunga)
+
             End If
         Else
             dialogError("Bunga terhitung adalah 0")
@@ -117,7 +119,9 @@
 
     Private Sub dgv_PilihData_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_PilihData.CellClick
         If (e.RowIndex >= 0) Then
-            pilihan.Add(dgv_PilihData.Rows(e.RowIndex).Cells(0).Value)
+            Dim selectId = pilihan.Add(dgv_PilihData.Rows(e.RowIndex).Cells(0).Value)
+            pilihId = selectId
+
             showData()
         End If
     End Sub
@@ -132,18 +136,22 @@
     End Sub
 
     Private Sub btn_Hitung_Click(sender As Object, e As EventArgs) Handles btn_Hitung.Click
-        If pilihan.Count > 0 Then
-            Dim baris
 
-            For Each row As DataGridViewRow In dgv_DataTerpilih.Rows
-                getBungaAndSaldo(baris)
-                baris = baris + 1
-            Next
+        If String.IsNullOrEmpty(pilihId) Then
+            dialogError("Pilih data nasabah terlebih dahulu !")
+            Return
+        Else
+            If pilihan.Count > 0 Then
+                Dim baris
 
+                For Each row As DataGridViewRow In dgv_DataTerpilih.Rows
+                    getBungaAndSaldo(baris)
+                    baris = baris + 1
+                Next
+
+            End If
+            removeAll()
         End If
-        removeAll()
-
-
     End Sub
 
     Private Sub btn_PindahSemua_Click(sender As Object, e As EventArgs) Handles btn_PindahSemua.Click

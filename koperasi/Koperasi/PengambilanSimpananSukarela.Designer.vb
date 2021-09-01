@@ -30,7 +30,6 @@ Partial Class PengambilanSimpananSukarela
         Me.group_data_anggota = New System.Windows.Forms.GroupBox()
         Me.button_keluar = New System.Windows.Forms.Button()
         Me.grupBtn = New System.Windows.Forms.GroupBox()
-        Me.btn_harpus = New System.Windows.Forms.Button()
         Me.btn_tambah = New System.Windows.Forms.Button()
         Me.group_informasi_anggota = New System.Windows.Forms.GroupBox()
         Me.btn_cari_anggota = New System.Windows.Forms.Button()
@@ -60,7 +59,7 @@ Partial Class PengambilanSimpananSukarela
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_subjudul)
         Me.Panel1.Controls.Add(Me.lbl_judul)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -131,7 +130,7 @@ Partial Class PengambilanSimpananSukarela
         '
         'grupBtn
         '
-        Me.grupBtn.Controls.Add(Me.btn_harpus)
+        Me.grupBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.grupBtn.Controls.Add(Me.btn_tambah)
         Me.grupBtn.Controls.Add(Me.button_keluar)
         Me.grupBtn.Location = New System.Drawing.Point(0, 381)
@@ -139,15 +138,6 @@ Partial Class PengambilanSimpananSukarela
         Me.grupBtn.Size = New System.Drawing.Size(632, 41)
         Me.grupBtn.TabIndex = 43
         Me.grupBtn.TabStop = False
-        '
-        'btn_harpus
-        '
-        Me.btn_harpus.Location = New System.Drawing.Point(93, 12)
-        Me.btn_harpus.Name = "btn_harpus"
-        Me.btn_harpus.Size = New System.Drawing.Size(75, 23)
-        Me.btn_harpus.TabIndex = 2
-        Me.btn_harpus.Text = "Hapus"
-        Me.btn_harpus.UseVisualStyleBackColor = True
         '
         'btn_tambah
         '
@@ -366,7 +356,6 @@ Partial Class PengambilanSimpananSukarela
     Friend WithEvents dgv_data_anggota As DataGridView
     Friend WithEvents button_keluar As Button
     Friend WithEvents grupBtn As GroupBox
-    Friend WithEvents btn_harpus As Button
     Friend WithEvents btn_tambah As Button
     Friend WithEvents group_informasi_anggota As GroupBox
     Friend WithEvents btn_batal As Button

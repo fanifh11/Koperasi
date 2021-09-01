@@ -73,10 +73,11 @@ Partial Class FormBuatRekSimpSukarela
         '
         'GroupBox4
         '
+        Me.GroupBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.GroupBox4.Controls.Add(Me.btn_Keluar)
         Me.GroupBox4.Controls.Add(Me.btn_BuatRekening)
         Me.GroupBox4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupBox4.Location = New System.Drawing.Point(0, 524)
+        Me.GroupBox4.Location = New System.Drawing.Point(0, 534)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(934, 56)
         Me.GroupBox4.TabIndex = 21
@@ -102,7 +103,7 @@ Partial Class FormBuatRekSimpSukarela
         Me.lbl_JumData2.ForeColor = System.Drawing.Color.Red
         Me.lbl_JumData2.Location = New System.Drawing.Point(12, 318)
         Me.lbl_JumData2.Name = "lbl_JumData2"
-        Me.lbl_JumData2.Size = New System.Drawing.Size(111, 18)
+        Me.lbl_JumData2.Size = New System.Drawing.Size(93, 15)
         Me.lbl_JumData2.TabIndex = 12
         Me.lbl_JumData2.Text = "Jumlah Data : 0"
         '
@@ -110,7 +111,7 @@ Partial Class FormBuatRekSimpSukarela
         '
         Me.txt_CariDataAnggota2.Location = New System.Drawing.Point(15, 26)
         Me.txt_CariDataAnggota2.Name = "txt_CariDataAnggota2"
-        Me.txt_CariDataAnggota2.Size = New System.Drawing.Size(374, 24)
+        Me.txt_CariDataAnggota2.Size = New System.Drawing.Size(374, 20)
         Me.txt_CariDataAnggota2.TabIndex = 13
         '
         'group_CariDataAnggota2
@@ -150,7 +151,7 @@ Partial Class FormBuatRekSimpSukarela
         '
         Me.txt_CariDataAnggota.Location = New System.Drawing.Point(12, 26)
         Me.txt_CariDataAnggota.Name = "txt_CariDataAnggota"
-        Me.txt_CariDataAnggota.Size = New System.Drawing.Size(374, 24)
+        Me.txt_CariDataAnggota.Size = New System.Drawing.Size(374, 20)
         Me.txt_CariDataAnggota.TabIndex = 0
         '
         'dgv_DataAnggota
@@ -173,7 +174,7 @@ Partial Class FormBuatRekSimpSukarela
         Me.lbl_JumData.ForeColor = System.Drawing.Color.Red
         Me.lbl_JumData.Location = New System.Drawing.Point(12, 318)
         Me.lbl_JumData.Name = "lbl_JumData"
-        Me.lbl_JumData.Size = New System.Drawing.Size(111, 18)
+        Me.lbl_JumData.Size = New System.Drawing.Size(93, 15)
         Me.lbl_JumData.TabIndex = 2
         Me.lbl_JumData.Text = "Jumlah Data : 0"
         '
@@ -196,7 +197,7 @@ Partial Class FormBuatRekSimpSukarela
         Me.cmb_JenisSimpanan.FormattingEnabled = True
         Me.cmb_JenisSimpanan.Location = New System.Drawing.Point(5, 25)
         Me.cmb_JenisSimpanan.Name = "cmb_JenisSimpanan"
-        Me.cmb_JenisSimpanan.Size = New System.Drawing.Size(415, 25)
+        Me.cmb_JenisSimpanan.Size = New System.Drawing.Size(415, 21)
         Me.cmb_JenisSimpanan.TabIndex = 0
         '
         'lbl_Bunga
@@ -204,7 +205,7 @@ Partial Class FormBuatRekSimpSukarela
         Me.lbl_Bunga.AutoSize = True
         Me.lbl_Bunga.Location = New System.Drawing.Point(522, 25)
         Me.lbl_Bunga.Name = "lbl_Bunga"
-        Me.lbl_Bunga.Size = New System.Drawing.Size(50, 18)
+        Me.lbl_Bunga.Size = New System.Drawing.Size(43, 15)
         Me.lbl_Bunga.TabIndex = 1
         Me.lbl_Bunga.Text = "Bunga"
         '
@@ -212,7 +213,7 @@ Partial Class FormBuatRekSimpSukarela
         '
         Me.txt_Bunga.Location = New System.Drawing.Point(572, 25)
         Me.txt_Bunga.Name = "txt_Bunga"
-        Me.txt_Bunga.Size = New System.Drawing.Size(136, 24)
+        Me.txt_Bunga.Size = New System.Drawing.Size(136, 20)
         Me.txt_Bunga.TabIndex = 2
         '
         'group_JenisSimpanan
@@ -234,7 +235,7 @@ Partial Class FormBuatRekSimpSukarela
         Me.lbl_Judul.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.lbl_Judul.Location = New System.Drawing.Point(11, 19)
         Me.lbl_Judul.Name = "lbl_Judul"
-        Me.lbl_Judul.Size = New System.Drawing.Size(402, 25)
+        Me.lbl_Judul.Size = New System.Drawing.Size(335, 20)
         Me.lbl_Judul.TabIndex = 12
         Me.lbl_Judul.Text = "Form Buat Rekening Simpanan Sukarela"
         '
@@ -244,13 +245,13 @@ Partial Class FormBuatRekSimpSukarela
         Me.lbl_Subjudul.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Italic)
         Me.lbl_Subjudul.Location = New System.Drawing.Point(26, 42)
         Me.lbl_Subjudul.Name = "lbl_Subjudul"
-        Me.lbl_Subjudul.Size = New System.Drawing.Size(378, 18)
+        Me.lbl_Subjudul.Size = New System.Drawing.Size(320, 15)
         Me.lbl_Subjudul.TabIndex = 13
         Me.lbl_Subjudul.Text = "Form ini digunakan untuk pembuatan simpanan sukarela"
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_Subjudul)
         Me.Panel1.Controls.Add(Me.lbl_Judul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -261,9 +262,9 @@ Partial Class FormBuatRekSimpSukarela
         '
         'FormBuatRekSimpSukarela
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(934, 580)
+        Me.ClientSize = New System.Drawing.Size(934, 590)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.group_CariDataAnggota2)
         Me.Controls.Add(Me.btn_First)

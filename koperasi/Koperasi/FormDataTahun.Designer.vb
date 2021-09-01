@@ -51,7 +51,7 @@ Partial Class FormDataTahun
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -215,12 +215,13 @@ Partial Class FormDataTahun
         '
         'grupBtn
         '
+        Me.grupBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.grupBtn.Controls.Add(Me.btnKeluar)
         Me.grupBtn.Controls.Add(Me.btnHapus)
         Me.grupBtn.Controls.Add(Me.btnUbah)
         Me.grupBtn.Controls.Add(Me.btnTambah)
         Me.grupBtn.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.grupBtn.Location = New System.Drawing.Point(0, 355)
+        Me.grupBtn.Location = New System.Drawing.Point(0, 365)
         Me.grupBtn.Name = "grupBtn"
         Me.grupBtn.Size = New System.Drawing.Size(722, 67)
         Me.grupBtn.TabIndex = 6
@@ -266,7 +267,7 @@ Partial Class FormDataTahun
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(722, 422)
+        Me.ClientSize = New System.Drawing.Size(722, 432)
         Me.Controls.Add(Me.grupBtn)
         Me.Controls.Add(Me.grupInformasiTahun)
         Me.Controls.Add(Me.group_DataThn)

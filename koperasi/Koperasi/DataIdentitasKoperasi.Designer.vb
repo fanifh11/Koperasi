@@ -53,12 +53,12 @@ Partial Class DataIdentitasKoperasi
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_Subjudul)
         Me.Panel1.Controls.Add(Me.lbl_Judul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(638, 55)
         Me.Panel1.TabIndex = 0
@@ -66,11 +66,12 @@ Partial Class DataIdentitasKoperasi
         'lbl_Subjudul
         '
         Me.lbl_Subjudul.AutoSize = True
-        Me.lbl_Subjudul.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_Subjudul.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_Subjudul.ForeColor = System.Drawing.Color.Black
         Me.lbl_Subjudul.Location = New System.Drawing.Point(32, 28)
         Me.lbl_Subjudul.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_Subjudul.Name = "lbl_Subjudul"
-        Me.lbl_Subjudul.Size = New System.Drawing.Size(261, 13)
+        Me.lbl_Subjudul.Size = New System.Drawing.Size(301, 15)
         Me.lbl_Subjudul.TabIndex = 1
         Me.lbl_Subjudul.Text = "Menu Ini digunakan untuk memasukan data koperasi "
         '
@@ -78,6 +79,7 @@ Partial Class DataIdentitasKoperasi
         '
         Me.lbl_Judul.AutoSize = True
         Me.lbl_Judul.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_Judul.ForeColor = System.Drawing.Color.Black
         Me.lbl_Judul.Location = New System.Drawing.Point(16, 7)
         Me.lbl_Judul.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_Judul.Name = "lbl_Judul"
@@ -101,9 +103,9 @@ Partial Class DataIdentitasKoperasi
         Me.group_InformasiKoperasi.Controls.Add(Me.lbl_NamaKoperasi)
         Me.group_InformasiKoperasi.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.group_InformasiKoperasi.Location = New System.Drawing.Point(10, 61)
-        Me.group_InformasiKoperasi.Margin = New System.Windows.Forms.Padding(2)
+        Me.group_InformasiKoperasi.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.group_InformasiKoperasi.Name = "group_InformasiKoperasi"
-        Me.group_InformasiKoperasi.Padding = New System.Windows.Forms.Padding(2)
+        Me.group_InformasiKoperasi.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.group_InformasiKoperasi.Size = New System.Drawing.Size(488, 177)
         Me.group_InformasiKoperasi.TabIndex = 1
         Me.group_InformasiKoperasi.TabStop = False
@@ -112,7 +114,7 @@ Partial Class DataIdentitasKoperasi
         'txtNoTelp
         '
         Me.txtNoTelp.Location = New System.Drawing.Point(125, 147)
-        Me.txtNoTelp.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtNoTelp.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtNoTelp.Name = "txtNoTelp"
         Me.txtNoTelp.Size = New System.Drawing.Size(354, 20)
         Me.txtNoTelp.TabIndex = 11
@@ -120,7 +122,7 @@ Partial Class DataIdentitasKoperasi
         'txtBendahara
         '
         Me.txtBendahara.Location = New System.Drawing.Point(125, 123)
-        Me.txtBendahara.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtBendahara.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtBendahara.Name = "txtBendahara"
         Me.txtBendahara.Size = New System.Drawing.Size(354, 20)
         Me.txtBendahara.TabIndex = 10
@@ -128,7 +130,7 @@ Partial Class DataIdentitasKoperasi
         'txtPimpinan
         '
         Me.txtPimpinan.Location = New System.Drawing.Point(125, 98)
-        Me.txtPimpinan.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtPimpinan.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtPimpinan.Name = "txtPimpinan"
         Me.txtPimpinan.Size = New System.Drawing.Size(354, 20)
         Me.txtPimpinan.TabIndex = 9
@@ -136,7 +138,7 @@ Partial Class DataIdentitasKoperasi
         'txtAlamat
         '
         Me.txtAlamat.Location = New System.Drawing.Point(125, 74)
-        Me.txtAlamat.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtAlamat.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtAlamat.Name = "txtAlamat"
         Me.txtAlamat.Size = New System.Drawing.Size(354, 20)
         Me.txtAlamat.TabIndex = 8
@@ -144,7 +146,7 @@ Partial Class DataIdentitasKoperasi
         'txtNamaInstansi
         '
         Me.txtNamaInstansi.Location = New System.Drawing.Point(125, 50)
-        Me.txtNamaInstansi.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtNamaInstansi.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtNamaInstansi.Name = "txtNamaInstansi"
         Me.txtNamaInstansi.Size = New System.Drawing.Size(354, 20)
         Me.txtNamaInstansi.TabIndex = 7
@@ -152,7 +154,7 @@ Partial Class DataIdentitasKoperasi
         'txtNamaKoperasi
         '
         Me.txtNamaKoperasi.Location = New System.Drawing.Point(125, 25)
-        Me.txtNamaKoperasi.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtNamaKoperasi.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtNamaKoperasi.Name = "txtNamaKoperasi"
         Me.txtNamaKoperasi.Size = New System.Drawing.Size(354, 20)
         Me.txtNamaKoperasi.TabIndex = 6
@@ -221,9 +223,9 @@ Partial Class DataIdentitasKoperasi
         '
         Me.GroupBox2.Controls.Add(Me.imgKoperasi)
         Me.GroupBox2.Location = New System.Drawing.Point(502, 60)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox2.Size = New System.Drawing.Size(122, 126)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
@@ -231,7 +233,7 @@ Partial Class DataIdentitasKoperasi
         'imgKoperasi
         '
         Me.imgKoperasi.Location = New System.Drawing.Point(4, 14)
-        Me.imgKoperasi.Margin = New System.Windows.Forms.Padding(2)
+        Me.imgKoperasi.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.imgKoperasi.Name = "imgKoperasi"
         Me.imgKoperasi.Size = New System.Drawing.Size(113, 107)
         Me.imgKoperasi.TabIndex = 0
@@ -240,7 +242,7 @@ Partial Class DataIdentitasKoperasi
         'btnCariLogi
         '
         Me.btnCariLogi.Location = New System.Drawing.Point(502, 191)
-        Me.btnCariLogi.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnCariLogi.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnCariLogi.Name = "btnCariLogi"
         Me.btnCariLogi.Size = New System.Drawing.Size(88, 30)
         Me.btnCariLogi.TabIndex = 3
@@ -249,14 +251,15 @@ Partial Class DataIdentitasKoperasi
         '
         'GroupBox3
         '
+        Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.GroupBox3.Controls.Add(Me.btnKeluar)
         Me.GroupBox3.Controls.Add(Me.btnUbah)
         Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.Location = New System.Drawing.Point(0, 244)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox3.Size = New System.Drawing.Size(638, 50)
         Me.GroupBox3.TabIndex = 4
         Me.GroupBox3.TabStop = False
@@ -264,7 +267,7 @@ Partial Class DataIdentitasKoperasi
         'btnKeluar
         '
         Me.btnKeluar.Location = New System.Drawing.Point(568, 17)
-        Me.btnKeluar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnKeluar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnKeluar.Name = "btnKeluar"
         Me.btnKeluar.Size = New System.Drawing.Size(56, 25)
         Me.btnKeluar.TabIndex = 1
@@ -274,7 +277,7 @@ Partial Class DataIdentitasKoperasi
         'btnUbah
         '
         Me.btnUbah.Location = New System.Drawing.Point(10, 15)
-        Me.btnUbah.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnUbah.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnUbah.Name = "btnUbah"
         Me.btnUbah.Size = New System.Drawing.Size(56, 25)
         Me.btnUbah.TabIndex = 0
@@ -292,7 +295,7 @@ Partial Class DataIdentitasKoperasi
         Me.Controls.Add(Me.group_InformasiKoperasi)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "DataIdentitasKoperasi"

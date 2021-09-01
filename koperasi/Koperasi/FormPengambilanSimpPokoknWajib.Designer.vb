@@ -55,7 +55,7 @@ Partial Class FormPengambilanSimpPokoknWajib
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Italic)
-        Me.Label2.Location = New System.Drawing.Point(29, 38)
+        Me.Label2.Location = New System.Drawing.Point(21, 43)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(372, 15)
         Me.Label2.TabIndex = 17
@@ -77,7 +77,7 @@ Partial Class FormPengambilanSimpPokoknWajib
         Me.GroupBox1.Controls.Add(Me.dgv_DataAnggota)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 80)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(364, 385)
+        Me.GroupBox1.Size = New System.Drawing.Size(364, 380)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Data Anggota"
@@ -85,6 +85,7 @@ Partial Class FormPengambilanSimpPokoknWajib
         'lbl_JumlahData
         '
         Me.lbl_JumlahData.AutoSize = True
+        Me.lbl_JumlahData.ForeColor = System.Drawing.Color.Red
         Me.lbl_JumlahData.Location = New System.Drawing.Point(9, 345)
         Me.lbl_JumlahData.Name = "lbl_JumlahData"
         Me.lbl_JumlahData.Size = New System.Drawing.Size(93, 15)
@@ -139,7 +140,7 @@ Partial Class FormPengambilanSimpPokoknWajib
         Me.group_InformasiAnggota.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!)
         Me.group_InformasiAnggota.Location = New System.Drawing.Point(382, 172)
         Me.group_InformasiAnggota.Name = "group_InformasiAnggota"
-        Me.group_InformasiAnggota.Size = New System.Drawing.Size(483, 293)
+        Me.group_InformasiAnggota.Size = New System.Drawing.Size(483, 288)
         Me.group_InformasiAnggota.TabIndex = 4
         Me.group_InformasiAnggota.TabStop = False
         Me.group_InformasiAnggota.Text = "Informasi Anggota"
@@ -225,6 +226,7 @@ Partial Class FormPengambilanSimpPokoknWajib
         '
         'groupBtn
         '
+        Me.groupBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.groupBtn.Controls.Add(Me.btn_Keluar)
         Me.groupBtn.Controls.Add(Me.btn_Tambah)
         Me.groupBtn.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -255,7 +257,7 @@ Partial Class FormPengambilanSimpPokoknWajib
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top

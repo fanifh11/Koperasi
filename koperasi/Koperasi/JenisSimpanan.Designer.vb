@@ -56,7 +56,7 @@ Partial Class JenisSimpanan
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_subjudul)
         Me.Panel1.Controls.Add(Me.lbl_judul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -250,6 +250,7 @@ Partial Class JenisSimpanan
         '
         'grupBtn
         '
+        Me.grupBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.grupBtn.Controls.Add(Me.btn_keluar)
         Me.grupBtn.Controls.Add(Me.btn_hapus)
         Me.grupBtn.Controls.Add(Me.btn_ubah)

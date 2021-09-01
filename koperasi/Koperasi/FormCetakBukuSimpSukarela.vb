@@ -54,8 +54,12 @@
 
     Private Sub btn_Cetak_Click(sender As Object, e As EventArgs) Handles btn_Cetak.Click
 
-        If adaKosong(group_InformasiAnggota) Then
+        If String.IsNullOrEmpty(txt_KodeAnggota.Text) Then
             dialogError("Harap pilih data nasabah terlebih dahulu !")
+            Return
+        ElseIf String.IsNullOrEmpty(txt_noCetak.Text) Then
+            dialogError("Isi nomor cetak terlebih dahulu !")
+            Return
         Else
             If Double.Parse(txt_maxCetak.Text) < Double.Parse(txt_noCetak.Text) Then
                 dialogError("No cetak tidak boleh lebih dari max cetak!")

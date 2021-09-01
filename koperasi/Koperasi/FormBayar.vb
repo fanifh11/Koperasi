@@ -65,8 +65,8 @@
                 exc("update tblrekening set fbayar = 1,tglbayar = '" & dtp_TglBayar.Value.ToString("yyyy-MM-dd HH:mm:ss") & "' where norek = '" & no_rek & "'")
             End If
             clearForm(group_InformasiAnggota)
+            dialogInfo("Pembayaran Berhasil!")
         End If
-        dialogInfo("Pembayaran Berhasil!")
 
         showData()
         lockForm()

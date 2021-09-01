@@ -2,6 +2,7 @@
     Dim metode As String = ""
     Dim tempjenissimpanan As String = ""
 
+
     Sub bukaForm()
         group_data_jenis.Enabled = True
         group_cari_data_jenis.Enabled = False
@@ -55,6 +56,9 @@
             Dim kategori As String = cmb_kategori.Text
             Dim besarsimpanan As String = txt_besar_simpanan.Text
 
+            Dim replacedot = bunga.Replace(",", ".")
+
+
             If metode = "insert" Then
                 If txt_bunga.Text > 100 Then
                     dialogError("Bunga anda berlebihan ! Harap cek kembali dan diganti")
@@ -73,7 +77,7 @@
                     (
                         '" & jenissimpanan & "',
                         '" & ketjenis & "',
-                        '" & bunga & "',
+                        '" & replacedot & "',
                         '" & kategori & "',
                         '" & besarsimpanan & "'
                      )")
@@ -87,7 +91,7 @@
                     exc("update tbljenis set 
                         jenissimpanan = '" & jenissimpanan & "',
                         ketjenis = '" & ketjenis & "',
-                        bunga = '" & bunga & "',
+                        bunga = '" & replacedot & "',
                         kategori = '" & kategori & "',
                         besarsimpanan = '" & besarsimpanan & "'
 

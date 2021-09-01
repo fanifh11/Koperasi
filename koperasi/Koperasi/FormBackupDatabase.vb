@@ -24,6 +24,9 @@
     End Sub
 
     Private Sub btn_LokalisasiHasilBckup_Click(sender As Object, e As EventArgs) Handles btn_LokalisasiHasilBckup.Click
+
+        getLocationDatabase()
+
         Dim folderDialog As New FolderBrowserDialog
         folderDialog.ShowNewFolderButton = True
 

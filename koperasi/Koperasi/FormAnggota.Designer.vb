@@ -29,7 +29,6 @@ Partial Class FormAnggota
         Me.btn_Ubah = New System.Windows.Forms.Button()
         Me.btn_Tambah = New System.Windows.Forms.Button()
         Me.btn_CetakKartu = New System.Windows.Forms.Button()
-        Me.radbtn_CetakBanyakKartu = New System.Windows.Forms.RadioButton()
         Me.dtp_TglLahir = New System.Windows.Forms.DateTimePicker()
         Me.lbl_Subjudul = New System.Windows.Forms.Label()
         Me.lbl_TglLahir = New System.Windows.Forms.Label()
@@ -45,7 +44,6 @@ Partial Class FormAnggota
         Me.txt_TmptLahir = New System.Windows.Forms.TextBox()
         Me.cmb_JK = New System.Windows.Forms.ComboBox()
         Me.txt_NoKTP = New System.Windows.Forms.TextBox()
-        Me.radbtn_CetakSatuKartu = New System.Windows.Forms.RadioButton()
         Me.group_InformasiAnggota = New System.Windows.Forms.GroupBox()
         Me.txt_Nama = New System.Windows.Forms.TextBox()
         Me.txt_KodeAnggota = New System.Windows.Forms.TextBox()
@@ -76,6 +74,7 @@ Partial Class FormAnggota
         '
         'grupBtn
         '
+        Me.grupBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.grupBtn.Controls.Add(Me.btn_Keluar)
         Me.grupBtn.Controls.Add(Me.btn_ImportAnggotaExcel)
         Me.grupBtn.Controls.Add(Me.btn_Hapus)
@@ -83,9 +82,9 @@ Partial Class FormAnggota
         Me.grupBtn.Controls.Add(Me.btn_Tambah)
         Me.grupBtn.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.grupBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.grupBtn.Location = New System.Drawing.Point(0, 512)
+        Me.grupBtn.Location = New System.Drawing.Point(0, 544)
         Me.grupBtn.Name = "grupBtn"
-        Me.grupBtn.Size = New System.Drawing.Size(1219, 73)
+        Me.grupBtn.Size = New System.Drawing.Size(1219, 62)
         Me.grupBtn.TabIndex = 7
         Me.grupBtn.TabStop = False
         '
@@ -147,17 +146,6 @@ Partial Class FormAnggota
         Me.btn_CetakKartu.TabIndex = 11
         Me.btn_CetakKartu.Text = "Cetak Kartu"
         Me.btn_CetakKartu.UseVisualStyleBackColor = True
-        '
-        'radbtn_CetakBanyakKartu
-        '
-        Me.radbtn_CetakBanyakKartu.AutoSize = True
-        Me.radbtn_CetakBanyakKartu.Location = New System.Drawing.Point(171, 389)
-        Me.radbtn_CetakBanyakKartu.Name = "radbtn_CetakBanyakKartu"
-        Me.radbtn_CetakBanyakKartu.Size = New System.Drawing.Size(131, 19)
-        Me.radbtn_CetakBanyakKartu.TabIndex = 9
-        Me.radbtn_CetakBanyakKartu.TabStop = True
-        Me.radbtn_CetakBanyakKartu.Text = "Cetak Banyak Kartu"
-        Me.radbtn_CetakBanyakKartu.UseVisualStyleBackColor = True
         '
         'dtp_TglLahir
         '
@@ -286,17 +274,6 @@ Partial Class FormAnggota
         Me.txt_NoKTP.Name = "txt_NoKTP"
         Me.txt_NoKTP.Size = New System.Drawing.Size(447, 20)
         Me.txt_NoKTP.TabIndex = 14
-        '
-        'radbtn_CetakSatuKartu
-        '
-        Me.radbtn_CetakSatuKartu.AutoSize = True
-        Me.radbtn_CetakSatuKartu.Location = New System.Drawing.Point(8, 389)
-        Me.radbtn_CetakSatuKartu.Name = "radbtn_CetakSatuKartu"
-        Me.radbtn_CetakSatuKartu.Size = New System.Drawing.Size(116, 19)
-        Me.radbtn_CetakSatuKartu.TabIndex = 8
-        Me.radbtn_CetakSatuKartu.TabStop = True
-        Me.radbtn_CetakSatuKartu.Text = "Cetak Satu Kartu"
-        Me.radbtn_CetakSatuKartu.UseVisualStyleBackColor = True
         '
         'group_InformasiAnggota
         '
@@ -475,8 +452,6 @@ Partial Class FormAnggota
         '
         Me.group_DataAnggota.Controls.Add(Me.btn_CetakKartu)
         Me.group_DataAnggota.Controls.Add(Me.lbl_JumlahData)
-        Me.group_DataAnggota.Controls.Add(Me.radbtn_CetakBanyakKartu)
-        Me.group_DataAnggota.Controls.Add(Me.radbtn_CetakSatuKartu)
         Me.group_DataAnggota.Controls.Add(Me.dgv_DataAnggota)
         Me.group_DataAnggota.Controls.Add(Me.txtSearch)
         Me.group_DataAnggota.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!)
@@ -491,7 +466,7 @@ Partial Class FormAnggota
         '
         Me.lbl_JumlahData.AutoSize = True
         Me.lbl_JumlahData.ForeColor = System.Drawing.Color.Red
-        Me.lbl_JumlahData.Location = New System.Drawing.Point(8, 414)
+        Me.lbl_JumlahData.Location = New System.Drawing.Point(8, 408)
         Me.lbl_JumlahData.Name = "lbl_JumlahData"
         Me.lbl_JumlahData.Size = New System.Drawing.Size(91, 15)
         Me.lbl_JumlahData.TabIndex = 10
@@ -507,7 +482,7 @@ Partial Class FormAnggota
         Me.dgv_DataAnggota.ReadOnly = True
         Me.dgv_DataAnggota.RowHeadersWidth = 51
         Me.dgv_DataAnggota.RowTemplate.Height = 29
-        Me.dgv_DataAnggota.Size = New System.Drawing.Size(494, 325)
+        Me.dgv_DataAnggota.Size = New System.Drawing.Size(494, 346)
         Me.dgv_DataAnggota.TabIndex = 7
         '
         'txtSearch
@@ -519,20 +494,20 @@ Partial Class FormAnggota
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_Subjudul)
         Me.Panel1.Controls.Add(Me.lbl_Judul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1219, 73)
+        Me.Panel1.Size = New System.Drawing.Size(1219, 61)
         Me.Panel1.TabIndex = 4
         '
         'FormAnggota
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1219, 585)
+        Me.ClientSize = New System.Drawing.Size(1219, 606)
         Me.Controls.Add(Me.grupBtn)
         Me.Controls.Add(Me.group_InformasiAnggota)
         Me.Controls.Add(Me.group_DataAnggota)
@@ -562,7 +537,6 @@ Partial Class FormAnggota
     Friend WithEvents btn_Ubah As Button
     Friend WithEvents btn_Tambah As Button
     Friend WithEvents btn_CetakKartu As Button
-    Friend WithEvents radbtn_CetakBanyakKartu As RadioButton
     Friend WithEvents dtp_TglLahir As DateTimePicker
     Friend WithEvents lbl_Subjudul As Label
     Friend WithEvents lbl_TglLahir As Label
@@ -578,7 +552,6 @@ Partial Class FormAnggota
     Friend WithEvents txt_TmptLahir As TextBox
     Friend WithEvents cmb_JK As ComboBox
     Friend WithEvents txt_NoKTP As TextBox
-    Friend WithEvents radbtn_CetakSatuKartu As RadioButton
     Friend WithEvents group_InformasiAnggota As GroupBox
     Friend WithEvents txt_Nama As TextBox
     Friend WithEvents txt_KodeAnggota As TextBox

@@ -71,8 +71,13 @@
     End Sub
 
     Private Sub btn_ambil_Click(sender As Object, e As EventArgs) Handles btn_ambil.Click
-        If String.IsNullOrEmpty(txt_besar_ambil.Text) Then
-            dialogError("Form besar ambil harus diisi!")
+        If String.IsNullOrEmpty(txt_kode_anggota.Text) Then
+            dialogError("Pilih anggota terlebih dahulu !")
+            Return
+            lbl_jumlah.Text = 0
+        ElseIf String.IsNullOrEmpty(txt_besar_ambil.Text) Then
+            dialogError("Kolom besar ambil harus diisi dahulu !")
+            Return
             lbl_jumlah.Text = 0
         Else
             Dim jenissimpanan As String = txt_jenis_simpanan.Text
@@ -170,7 +175,7 @@
 
     End Sub
 
-    Private Sub btn_harpus_Click(sender As Object, e As EventArgs) Handles btn_harpus.Click
+    Private Sub btn_harpus_Click(sender As Object, e As EventArgs)
         If dialog("Apakah anda yakin hapus data ini ?") Then
             exc("delete from tbltransaksi where idtransaksi = '" & tempidtransaksi & "'")
             showData()
