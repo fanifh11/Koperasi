@@ -115,7 +115,7 @@ Partial Class FormLihatTagihan
         'GroupBox3
         '
         Me.GroupBox3.AutoSize = True
-        Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(86, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.GroupBox3.Controls.Add(Me.btn_Keluar)
         Me.GroupBox3.Controls.Add(Me.btn_Cetak)
         Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -171,7 +171,7 @@ Partial Class FormLihatTagihan
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(86, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_Subjudul)
         Me.Panel1.Controls.Add(Me.lbl_Judul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -185,7 +185,8 @@ Partial Class FormLihatTagihan
         '
         Me.lbl_Subjudul.AutoSize = True
         Me.lbl_Subjudul.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Italic)
-        Me.lbl_Subjudul.Location = New System.Drawing.Point(34, 28)
+        Me.lbl_Subjudul.ForeColor = System.Drawing.Color.White
+        Me.lbl_Subjudul.Location = New System.Drawing.Point(34, 31)
         Me.lbl_Subjudul.Name = "lbl_Subjudul"
         Me.lbl_Subjudul.Size = New System.Drawing.Size(410, 15)
         Me.lbl_Subjudul.TabIndex = 11
@@ -195,7 +196,8 @@ Partial Class FormLihatTagihan
         '
         Me.lbl_Judul.AutoSize = True
         Me.lbl_Judul.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
-        Me.lbl_Judul.Location = New System.Drawing.Point(19, 8)
+        Me.lbl_Judul.ForeColor = System.Drawing.Color.White
+        Me.lbl_Judul.Location = New System.Drawing.Point(19, 11)
         Me.lbl_Judul.Name = "lbl_Judul"
         Me.lbl_Judul.Size = New System.Drawing.Size(370, 20)
         Me.lbl_Judul.TabIndex = 10
