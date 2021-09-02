@@ -308,7 +308,7 @@ Module Modul
     Function clearKoneksi() As Boolean
         Try
             Dim location As String = getLocationDatabase()
-            Dim Query32 = "Server=" & location & ";Port=5433;Database=koperasidb;username=postgres;password=fanixer123"
+            Dim Query32 = "Server=" & location & ";Port=5432;Database=db_koperasi;username=postgres;password=itbrain1milyar"
             Conn = New NpgsqlConnection(Query32)
             If Conn.State = Conn.State.Closed Then
                 Conn.Open()
@@ -324,7 +324,7 @@ Module Modul
         Dim location As String = getLocationDatabase()
 
 
-        Dim Query32 = "Server=" & location & ";Port=5433;Database=koperasidb;username=postgres;password=fanixer123"
+        Dim Query32 = "Server=" & location & ";Port=5432;Database=db_koperasi;username=postgres;password=itbrain1milyar"
         QUERY = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & location & ";Jet OLEDB:Database Password=itbrain1milyar;"
         Try
             If IsNothing(Conn) Then

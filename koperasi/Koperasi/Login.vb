@@ -17,7 +17,7 @@
         setLocationDatabase(txt_Address.Text)
         Dim usernameTxt = txt_Username.Text
         Dim passwordTxt = txt_Password.Text
-
+        Debug.WriteLine("select duser,dpassword from tbluser where duser = '" & usernameTxt & "' and dpassword = '" & passwordTxt & "' ")
         If getCount("select duser,dpassword from tbluser where duser = '" & usernameTxt & "' and dpassword = '" & passwordTxt & "' ") > 0 Then
 
             If clearKoneksi() Then
@@ -41,4 +41,7 @@
 
     End Sub
 
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

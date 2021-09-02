@@ -6,14 +6,14 @@
     Public sql As String
 
     Sub showData()
-        sql = "select idanggota, anggota, idpinjam, to_char(tglpinjam, 'DD-MM-YYYY') as tglpinjam, asuransi from qpinjam where asuransi > 0 and (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'"
+        sql = "select idanggota, anggota, idpinjam, to_char(tglpinjam, 'DD-MM-YYYY') as tglpinjam, asuransi from qpinjam where asuransi > 0 and (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("yyyy-MM-dd") & "' and '" & dtp_sampai.Value.ToString("yyyy-MM-dd") & "'"
         dgv_laporan_pembayaran_asuransi.DataSource = getData(sql)
         dgv_laporan_pembayaran_asuransi.Columns(0).HeaderText = "ID Anggota"
         dgv_laporan_pembayaran_asuransi.Columns(1).HeaderText = "Nama Anggota"
         dgv_laporan_pembayaran_asuransi.Columns(2).HeaderText = "ID Pinjam"
         dgv_laporan_pembayaran_asuransi.Columns(3).HeaderText = "Tanggal Pinjam"
         dgv_laporan_pembayaran_asuransi.Columns(4).HeaderText = "Asuransi"
-
+        dgv_laporan_pembayaran_asuransi.Columns(4).DefaultCellStyle.Format = "c0"
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_laporan_pembayaran_asuransi.Rows.Count
         lbl_total_asuransi.Text = "Total Asuransi : " & numberFor(toDouble(getValue("select sum(asuransi) as asuransi from qpinjam where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'", "asuransi")).ToString)
     End Sub

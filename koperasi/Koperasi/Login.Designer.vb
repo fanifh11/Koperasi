@@ -149,7 +149,7 @@ Partial Class Login
         Me.CBox_showPass.AutoSize = True
         Me.CBox_showPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CBox_showPass.Location = New System.Drawing.Point(204, 360)
-        Me.CBox_showPass.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CBox_showPass.Margin = New System.Windows.Forms.Padding(2)
         Me.CBox_showPass.Name = "CBox_showPass"
         Me.CBox_showPass.Size = New System.Drawing.Size(157, 21)
         Me.CBox_showPass.TabIndex = 23
@@ -174,7 +174,7 @@ Partial Class Login
         Me.Controls.Add(Me.img_Person)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Login"
