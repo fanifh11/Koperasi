@@ -68,6 +68,10 @@ Public Class FormIsiSimpananSukarela
         dgv_DataAnggota.Columns(5).HeaderText = "Kredit"
         dgv_DataAnggota.Columns(6).HeaderText = "Saldo"
 
+        dgv_DataAnggota.Columns(4).DefaultCellStyle.Format = "c0"
+        dgv_DataAnggota.Columns(5).DefaultCellStyle.Format = "c0"
+        dgv_DataAnggota.Columns(6).DefaultCellStyle.Format = "c0"
+
         lbl_JumData.Text = "Jumlah data : " & dgv_DataAnggota.Rows.Count
     End Sub
 
@@ -171,10 +175,11 @@ Public Class FormIsiSimpananSukarela
                     ")
                 End If
             End If
+            dialogInfo("Pembayaran Sukses !")
 
         End If
         kunciForm()
-        dialogInfo("Pembayaran Sukses !")
+
     End Sub
 
     Private Sub btn_Batal_Click(sender As Object, e As EventArgs) Handles btn_Batal.Click
@@ -197,5 +202,4 @@ Public Class FormIsiSimpananSukarela
         onlyNumber(e)
 
     End Sub
-
 End Class

@@ -54,7 +54,7 @@ Partial Class FormCetakBukuSimpSukarela
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_Subjudul)
         Me.Panel1.Controls.Add(Me.lbl_Judul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -69,7 +69,7 @@ Partial Class FormCetakBukuSimpSukarela
         Me.lbl_Subjudul.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Italic)
         Me.lbl_Subjudul.Location = New System.Drawing.Point(29, 45)
         Me.lbl_Subjudul.Name = "lbl_Subjudul"
-        Me.lbl_Subjudul.Size = New System.Drawing.Size(377, 18)
+        Me.lbl_Subjudul.Size = New System.Drawing.Size(316, 15)
         Me.lbl_Subjudul.TabIndex = 15
         Me.lbl_Subjudul.Text = "Form ini digunakan untuk cetak buku simpanan sukarela"
         '
@@ -79,7 +79,7 @@ Partial Class FormCetakBukuSimpSukarela
         Me.lbl_Judul.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.lbl_Judul.Location = New System.Drawing.Point(12, 25)
         Me.lbl_Judul.Name = "lbl_Judul"
-        Me.lbl_Judul.Size = New System.Drawing.Size(326, 25)
+        Me.lbl_Judul.Size = New System.Drawing.Size(269, 20)
         Me.lbl_Judul.TabIndex = 14
         Me.lbl_Judul.Text = "Form Cetak Buku Simp Sukarela" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -98,9 +98,10 @@ Partial Class FormCetakBukuSimpSukarela
         'lbl_JumData
         '
         Me.lbl_JumData.AutoSize = True
+        Me.lbl_JumData.ForeColor = System.Drawing.Color.Red
         Me.lbl_JumData.Location = New System.Drawing.Point(17, 349)
         Me.lbl_JumData.Name = "lbl_JumData"
-        Me.lbl_JumData.Size = New System.Drawing.Size(111, 18)
+        Me.lbl_JumData.Size = New System.Drawing.Size(93, 15)
         Me.lbl_JumData.TabIndex = 1
         Me.lbl_JumData.Text = "Jumlah Data : 0"
         '
@@ -122,9 +123,9 @@ Partial Class FormCetakBukuSimpSukarela
         Me.lbl_NominalUang.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lbl_NominalUang.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Italic)
         Me.lbl_NominalUang.ForeColor = System.Drawing.Color.Red
-        Me.lbl_NominalUang.Location = New System.Drawing.Point(3, 20)
+        Me.lbl_NominalUang.Location = New System.Drawing.Point(3, 17)
         Me.lbl_NominalUang.Name = "lbl_NominalUang"
-        Me.lbl_NominalUang.Size = New System.Drawing.Size(628, 77)
+        Me.lbl_NominalUang.Size = New System.Drawing.Size(628, 80)
         Me.lbl_NominalUang.TabIndex = 0
         Me.lbl_NominalUang.Text = "0"
         Me.lbl_NominalUang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -154,7 +155,7 @@ Partial Class FormCetakBukuSimpSukarela
         Me.txt_maxCetak.Location = New System.Drawing.Point(282, 130)
         Me.txt_maxCetak.Name = "txt_maxCetak"
         Me.txt_maxCetak.ReadOnly = True
-        Me.txt_maxCetak.Size = New System.Drawing.Size(125, 24)
+        Me.txt_maxCetak.Size = New System.Drawing.Size(125, 20)
         Me.txt_maxCetak.TabIndex = 9
         '
         'txt_noCetak
@@ -163,7 +164,7 @@ Partial Class FormCetakBukuSimpSukarela
         Me.txt_noCetak.Enabled = False
         Me.txt_noCetak.Location = New System.Drawing.Point(151, 130)
         Me.txt_noCetak.Name = "txt_noCetak"
-        Me.txt_noCetak.Size = New System.Drawing.Size(125, 24)
+        Me.txt_noCetak.Size = New System.Drawing.Size(125, 20)
         Me.txt_noCetak.TabIndex = 8
         '
         'txt_JenisSimpanan
@@ -171,7 +172,7 @@ Partial Class FormCetakBukuSimpSukarela
         Me.txt_JenisSimpanan.Location = New System.Drawing.Point(151, 93)
         Me.txt_JenisSimpanan.Name = "txt_JenisSimpanan"
         Me.txt_JenisSimpanan.ReadOnly = True
-        Me.txt_JenisSimpanan.Size = New System.Drawing.Size(419, 24)
+        Me.txt_JenisSimpanan.Size = New System.Drawing.Size(419, 20)
         Me.txt_JenisSimpanan.TabIndex = 7
         '
         'lbl_NoCetak
@@ -180,7 +181,7 @@ Partial Class FormCetakBukuSimpSukarela
         Me.lbl_NoCetak.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.lbl_NoCetak.Location = New System.Drawing.Point(21, 133)
         Me.lbl_NoCetak.Name = "lbl_NoCetak"
-        Me.lbl_NoCetak.Size = New System.Drawing.Size(79, 18)
+        Me.lbl_NoCetak.Size = New System.Drawing.Size(65, 15)
         Me.lbl_NoCetak.TabIndex = 6
         Me.lbl_NoCetak.Text = "No Cetak"
         '
@@ -189,7 +190,7 @@ Partial Class FormCetakBukuSimpSukarela
         Me.lbl_JenisSimpanan.AutoSize = True
         Me.lbl_JenisSimpanan.Location = New System.Drawing.Point(21, 96)
         Me.lbl_JenisSimpanan.Name = "lbl_JenisSimpanan"
-        Me.lbl_JenisSimpanan.Size = New System.Drawing.Size(113, 18)
+        Me.lbl_JenisSimpanan.Size = New System.Drawing.Size(96, 15)
         Me.lbl_JenisSimpanan.TabIndex = 5
         Me.lbl_JenisSimpanan.Text = "Jenis Simpanan"
         '
@@ -198,7 +199,7 @@ Partial Class FormCetakBukuSimpSukarela
         Me.txt_Nama.Location = New System.Drawing.Point(151, 62)
         Me.txt_Nama.Name = "txt_Nama"
         Me.txt_Nama.ReadOnly = True
-        Me.txt_Nama.Size = New System.Drawing.Size(300, 24)
+        Me.txt_Nama.Size = New System.Drawing.Size(300, 20)
         Me.txt_Nama.TabIndex = 4
         '
         'lbl_Nama
@@ -206,7 +207,7 @@ Partial Class FormCetakBukuSimpSukarela
         Me.lbl_Nama.AutoSize = True
         Me.lbl_Nama.Location = New System.Drawing.Point(21, 62)
         Me.lbl_Nama.Name = "lbl_Nama"
-        Me.lbl_Nama.Size = New System.Drawing.Size(48, 18)
+        Me.lbl_Nama.Size = New System.Drawing.Size(41, 15)
         Me.lbl_Nama.TabIndex = 3
         Me.lbl_Nama.Text = "Nama"
         '
@@ -224,7 +225,7 @@ Partial Class FormCetakBukuSimpSukarela
         Me.txt_KodeAnggota.Location = New System.Drawing.Point(151, 29)
         Me.txt_KodeAnggota.Name = "txt_KodeAnggota"
         Me.txt_KodeAnggota.ReadOnly = True
-        Me.txt_KodeAnggota.Size = New System.Drawing.Size(125, 24)
+        Me.txt_KodeAnggota.Size = New System.Drawing.Size(125, 20)
         Me.txt_KodeAnggota.TabIndex = 1
         '
         'lbl_KodeAnggota
@@ -232,12 +233,13 @@ Partial Class FormCetakBukuSimpSukarela
         Me.lbl_KodeAnggota.AutoSize = True
         Me.lbl_KodeAnggota.Location = New System.Drawing.Point(21, 29)
         Me.lbl_KodeAnggota.Name = "lbl_KodeAnggota"
-        Me.lbl_KodeAnggota.Size = New System.Drawing.Size(101, 18)
+        Me.lbl_KodeAnggota.Size = New System.Drawing.Size(84, 15)
         Me.lbl_KodeAnggota.TabIndex = 0
         Me.lbl_KodeAnggota.Text = "Kode Anggota"
         '
         'grupBtn
         '
+        Me.grupBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.grupBtn.Controls.Add(Me.btn_Keluar)
         Me.grupBtn.Controls.Add(Me.btn_Cetak)
         Me.grupBtn.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -278,7 +280,7 @@ Partial Class FormCetakBukuSimpSukarela
         '
         'FormCetakBukuSimpSukarela
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1135, 543)
         Me.Controls.Add(Me.GroupBox1)

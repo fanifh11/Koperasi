@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormCetakSampulBukuSimpSukarela
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FormCetakSampulBukuSimpSukarela
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lbl_Subjudul = New System.Windows.Forms.Label()
@@ -41,7 +41,7 @@ Partial Class FormCetakSampulBukuSimpSukarela
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_Subjudul)
         Me.Panel1.Controls.Add(Me.lbl_Judul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -56,7 +56,7 @@ Partial Class FormCetakSampulBukuSimpSukarela
         Me.lbl_Subjudul.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Italic)
         Me.lbl_Subjudul.Location = New System.Drawing.Point(28, 34)
         Me.lbl_Subjudul.Name = "lbl_Subjudul"
-        Me.lbl_Subjudul.Size = New System.Drawing.Size(429, 18)
+        Me.lbl_Subjudul.Size = New System.Drawing.Size(360, 15)
         Me.lbl_Subjudul.TabIndex = 13
         Me.lbl_Subjudul.Text = "Form ini digunakan untuk cetak sampul buku simpanan sukarela"
         '
@@ -66,7 +66,7 @@ Partial Class FormCetakSampulBukuSimpSukarela
         Me.lbl_Judul.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.lbl_Judul.Location = New System.Drawing.Point(12, 9)
         Me.lbl_Judul.Name = "lbl_Judul"
-        Me.lbl_Judul.Size = New System.Drawing.Size(398, 25)
+        Me.lbl_Judul.Size = New System.Drawing.Size(328, 20)
         Me.lbl_Judul.TabIndex = 12
         Me.lbl_Judul.Text = "Cetak Sampul Buku Simpanan Sukarela"
         '
@@ -86,12 +86,14 @@ Partial Class FormCetakSampulBukuSimpSukarela
         'lbl_Notice
         '
         Me.lbl_Notice.AutoSize = True
+        Me.lbl_Notice.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_Notice.ForeColor = System.Drawing.Color.Red
-        Me.lbl_Notice.Location = New System.Drawing.Point(416, 417)
+        Me.lbl_Notice.Location = New System.Drawing.Point(302, 417)
         Me.lbl_Notice.Name = "lbl_Notice"
-        Me.lbl_Notice.Size = New System.Drawing.Size(297, 18)
+        Me.lbl_Notice.Size = New System.Drawing.Size(452, 15)
         Me.lbl_Notice.TabIndex = 3
-        Me.lbl_Notice.Text = "KLIK PADA GRID UNTUK CETAK SAMPUL"
+        Me.lbl_Notice.Text = "KLIK PADA GRID UNTUK CETAK SAMPUL LALU KLIK TOMBOL CETAK"
+        Me.lbl_Notice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lbl_JumData
         '
@@ -99,7 +101,7 @@ Partial Class FormCetakSampulBukuSimpSukarela
         Me.lbl_JumData.ForeColor = System.Drawing.Color.Red
         Me.lbl_JumData.Location = New System.Drawing.Point(6, 417)
         Me.lbl_JumData.Name = "lbl_JumData"
-        Me.lbl_JumData.Size = New System.Drawing.Size(111, 18)
+        Me.lbl_JumData.Size = New System.Drawing.Size(93, 15)
         Me.lbl_JumData.TabIndex = 2
         Me.lbl_JumData.Text = "Jumlah Data : 0"
         '
@@ -120,11 +122,12 @@ Partial Class FormCetakSampulBukuSimpSukarela
         '
         Me.txt_CariDataAnggota.Location = New System.Drawing.Point(6, 26)
         Me.txt_CariDataAnggota.Name = "txt_CariDataAnggota"
-        Me.txt_CariDataAnggota.Size = New System.Drawing.Size(1080, 24)
+        Me.txt_CariDataAnggota.Size = New System.Drawing.Size(1080, 21)
         Me.txt_CariDataAnggota.TabIndex = 0
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.GroupBox2.Controls.Add(Me.btn_Keluar)
         Me.GroupBox2.Controls.Add(Me.btn_Cetak)
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -156,7 +159,7 @@ Partial Class FormCetakSampulBukuSimpSukarela
         '
         'FormCetakSampulBukuSimpSukarela
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1114, 586)
         Me.Controls.Add(Me.GroupBox2)

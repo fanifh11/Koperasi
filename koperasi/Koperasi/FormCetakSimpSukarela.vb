@@ -17,12 +17,16 @@
     End Sub
 
     Public Sub showData()
-        dgv_DataAnggota.DataSource = getData("Select idsukarela, tgltransaksi, debet, kredit, saldo from tbltransaksi where idsukarela = '" & idsukarela & "'")
+        dgv_DataAnggota.DataSource = getData("Select idsukarela, to_char(tgltransaksi, 'DD-MM-YYYY') as tgltransaksi, debet, kredit, saldo from tbltransaksi where idsukarela = '" & idsukarela & "'")
         dgv_DataAnggota.Columns(0).HeaderText = "No Rek"
         dgv_DataAnggota.Columns(1).HeaderText = "Tanggal Transaksi"
         dgv_DataAnggota.Columns(2).HeaderText = "Debet"
         dgv_DataAnggota.Columns(3).HeaderText = "Kredit"
         dgv_DataAnggota.Columns(4).HeaderText = "Saldo"
+
+        dgv_DataAnggota.Columns(2).DefaultCellStyle.Format = "c0"
+        dgv_DataAnggota.Columns(3).DefaultCellStyle.Format = "c0"
+        dgv_DataAnggota.Columns(4).DefaultCellStyle.Format = "c0"
 
         lbl_JumlahData.Text = "Jumlah Data : " & dgv_DataAnggota.Rows.Count
     End Sub
@@ -40,7 +44,12 @@
     End Sub
 
     Private Sub btn_Cetak_Click(sender As Object, e As EventArgs) Handles btn_Cetak.Click
-        PreviewSimpSukarela.idsukarela = idsukarela
-        PreviewSimpSukarela.ShowDialog()
+        If adaKosong(group_InformasiAnggota) Then
+            dialogError("Pilih data anggota terlebih dahulu !")
+        Else
+            PreviewSimpSukarela.idsukarela = idsukarela
+            PreviewSimpSukarela.ShowDialog()
+        End If
+
     End Sub
 End Class

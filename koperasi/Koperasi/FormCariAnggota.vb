@@ -11,7 +11,7 @@
 
     Sub showData()
         If menu = "Bayar simpanan pokok" Then
-            dgv_DataAnggota.DataSource = getData("select norek, idanggota, anggota, jenissimpanan, ketsimp, tglrek, besar from qrekening where fbayar = 0 and (anggota ilike '%" & txt_CariDataAnggota.Text & "%' )")
+            dgv_DataAnggota.DataSource = getData("select norek, idanggota, anggota, jenissimpanan, ketsimp, to_char(tglrek, 'DD-MM-YYYY') as tglrek, besar from qrekening where fbayar = 0 and (anggota ilike '%" & txt_CariDataAnggota.Text & "%' )")
             dgv_DataAnggota.Columns(0).Visible = False
             dgv_DataAnggota.Columns(1).HeaderText = "ID Anggota"
             dgv_DataAnggota.Columns(2).HeaderText = "Anggota"
@@ -19,6 +19,8 @@
             dgv_DataAnggota.Columns(4).HeaderText = "Keterangan"
             dgv_DataAnggota.Columns(5).HeaderText = "Tgl Tagihan"
             dgv_DataAnggota.Columns(6).HeaderText = "Besar"
+
+            dgv_DataAnggota.Columns(6).DefaultCellStyle.Format = "c0"
 
             makeFillDG(dgv_DataAnggota)
 
@@ -91,6 +93,15 @@
             dgv_DataAnggota.Columns(15).HeaderText = "Bunga"
             dgv_DataAnggota.Columns(16).HeaderText = "Kode Tagihan"
 
+            dgv_DataAnggota.Columns(6).DefaultCellStyle.Format = "c0"
+            dgv_DataAnggota.Columns(8).DefaultCellStyle.Format = "c0"
+            dgv_DataAnggota.Columns(9).DefaultCellStyle.Format = "c0"
+            dgv_DataAnggota.Columns(10).DefaultCellStyle.Format = "c0"
+            dgv_DataAnggota.Columns(12).DefaultCellStyle.Format = "c0"
+            dgv_DataAnggota.Columns(13).DefaultCellStyle.Format = "c0"
+            dgv_DataAnggota.Columns(14).DefaultCellStyle.Format = "c0"
+            dgv_DataAnggota.Columns(15).DefaultCellStyle.Format = "c0"
+
         ElseIf menu = "Koreksi Pembayaran Nasabah" Then
             dgv_DataAnggota.DataSource = getData("select idtagihan,idpinjam,idanggota,anggota,alamat,jenis,besarpinjam,lamapinjam,totalpokok,totalbunga,jumlahangsuran,cicilanke,totalangsur,saldopinjam,besarpokok,besarbunga,kodetagihan,besarbayar 
             from qtagihan where idtagihan in (select max(idtagihan) from tbltagihan where flagtagihan = 1 and anggota ilike '%" & txt_CariDataAnggota.Text & "%' group by idpinjam )")
@@ -114,6 +125,18 @@
             dgv_DataAnggota.Columns(16).HeaderText = "Kode Tagihan"
             dgv_DataAnggota.Columns(17).HeaderText = "Jumlah Bayar"
 
+
+
+            dgv_DataAnggota.Columns(6).DefaultCellStyle.Format = "c0"
+            dgv_DataAnggota.Columns(8).DefaultCellStyle.Format = "c0"
+            dgv_DataAnggota.Columns(9).DefaultCellStyle.Format = "c0"
+            dgv_DataAnggota.Columns(10).DefaultCellStyle.Format = "c0"
+            dgv_DataAnggota.Columns(12).DefaultCellStyle.Format = "c0"
+            dgv_DataAnggota.Columns(13).DefaultCellStyle.Format = "c0"
+            dgv_DataAnggota.Columns(14).DefaultCellStyle.Format = "c0"
+            dgv_DataAnggota.Columns(15).DefaultCellStyle.Format = "c0"
+            dgv_DataAnggota.Columns(17).DefaultCellStyle.Format = "c0"
+
         ElseIf menu = "Pengambilan Simpanan Pokok dan Wajib" Then
             dgv_DataAnggota.DataSource = getData("select tblanggota.idanggota,tblanggota.anggota,sum(besar) from tblrekening inner join tblanggota on tblanggota.idanggota = tblrekening.idanggota 
             where (ketkategori = 'POKOK' or ketkategori = 'WAJIB') and tglambil isnull and tblanggota.anggota ilike '%" & txt_CariDataAnggota.Text & "%' group by tblanggota.idanggota")
@@ -121,6 +144,8 @@
             dgv_DataAnggota.Columns(0).HeaderText = "ID Anggota"
             dgv_DataAnggota.Columns(1).HeaderText = "Nama"
             dgv_DataAnggota.Columns(2).HeaderText = "Besar"
+
+            dgv_DataAnggota.Columns(2).DefaultCellStyle.Format = "c0"
 
             makeFillDG(dgv_DataAnggota)
 
@@ -161,6 +186,7 @@
                 PengambilanSimpananSukarela.txt_nama.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(2).Value
                 PengambilanSimpananSukarela.txt_jenis_simpanan.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(3).Value
                 PengambilanSimpananSukarela.bunga = Double.Parse(dgv_DataAnggota.Rows(e.RowIndex).Cells(4).Value)
+
                 PengambilanSimpananSukarela.getBungaAndSaldo()
                 PengambilanSimpananSukarela.showData()
 
@@ -186,6 +212,10 @@
                 FormCetakBukuSimpSukarela.dgv_DataAnggota.Columns(3).HeaderText = "Debet"
                 FormCetakBukuSimpSukarela.dgv_DataAnggota.Columns(4).HeaderText = "Kredit"
                 FormCetakBukuSimpSukarela.dgv_DataAnggota.Columns(5).HeaderText = "Saldo"
+
+                FormCetakBukuSimpSukarela.dgv_DataAnggota.Columns(3).DefaultCellStyle.Format = "c0"
+                FormCetakBukuSimpSukarela.dgv_DataAnggota.Columns(4).DefaultCellStyle.Format = "c0"
+                FormCetakBukuSimpSukarela.dgv_DataAnggota.Columns(5).DefaultCellStyle.Format = "c0"
 
 
                 FormCetakBukuSimpSukarela.txt_noCetak.Enabled = True

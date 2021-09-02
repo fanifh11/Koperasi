@@ -2,6 +2,7 @@
     Dim metode As String = ""
     Dim tempjenissimpanan As String = ""
 
+
     Sub bukaForm()
         group_data_jenis.Enabled = True
         group_cari_data_jenis.Enabled = False
@@ -30,6 +31,8 @@
         dgv_cari_data_jenis.Columns(3).HeaderText = "Kategori"
         dgv_cari_data_jenis.Columns(4).HeaderText = "Besar Simpanan"
 
+        dgv_cari_data_jenis.Columns(4).DefaultCellStyle.Format = "c0"
+
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_cari_data_jenis.Rows.Count
 
     End Sub
@@ -53,6 +56,9 @@
             Dim kategori As String = cmb_kategori.Text
             Dim besarsimpanan As String = txt_besar_simpanan.Text
 
+            Dim replacedot = bunga.Replace(",", ".")
+
+
             If metode = "insert" Then
                 If txt_bunga.Text > 100 Then
                     dialogError("Bunga anda berlebihan ! Harap cek kembali dan diganti")
@@ -71,7 +77,7 @@
                     (
                         '" & jenissimpanan & "',
                         '" & ketjenis & "',
-                        '" & bunga & "',
+                        '" & replacedot & "',
                         '" & kategori & "',
                         '" & besarsimpanan & "'
                      )")
@@ -85,7 +91,7 @@
                     exc("update tbljenis set 
                         jenissimpanan = '" & jenissimpanan & "',
                         ketjenis = '" & ketjenis & "',
-                        bunga = '" & bunga & "',
+                        bunga = '" & replacedot & "',
                         kategori = '" & kategori & "',
                         besarsimpanan = '" & besarsimpanan & "'
 
@@ -103,8 +109,15 @@
     End Sub
 
     Private Sub btn_ubah_Click(sender As Object, e As EventArgs) Handles btn_ubah.Click
-        bukaForm()
-        metode = "update"
+
+        If adaKosong(group_data_jenis) Then
+            dialogError("Silahkan pilih data jenis simpanan terlebih dahulu !")
+            Return
+        Else
+            bukaForm()
+            metode = "update"
+        End If
+
     End Sub
 
     Private Sub btn_batal_Click(sender As Object, e As EventArgs) Handles btn_batal.Click
@@ -113,13 +126,13 @@
     End Sub
 
     Private Sub btn_hapus_Click(sender As Object, e As EventArgs) Handles btn_hapus.Click
-        If dialog("Apakah anda yakin untuk hapus data ini ?") Then
-            If adaKosong(group_data_jenis) Then
-                dialogError("Harap pilih data yang ingin dihapus terlebih dahulu !")
-                Return
-            Else
-                MsgBox("select jenissimpanan from tblrekening where jenissimpanan = '" & tempjenissimpanan & "' ")
-                If getCount("select jenissimpanan from tblrekening where jenissimpanan = '" & tempjenissimpanan & "' ") > 0 Then
+        If adaKosong(group_data_jenis) Then
+            dialogError("Harap pilih data yang ingin dihapus terlebih dahulu !")
+            Return
+        Else
+            If dialog("Apakah anda yakin untuk hapus data ini ?") Then
+                If getCount("select jenissimpanan from tblrekening where jenissimpanan = '" & tempjenissimpanan & "' ") > 0 Or
+                       getCount("select ketsukarela from tblsukarela where ketsukarela = '" & tempjenissimpanan & "' ") > 0 Then
                     dialogError("Data jenis simpanan tidak dapat dihapus karena memiliki transaksi !")
                     Return
                 Else
@@ -130,9 +143,11 @@
                         Return
                     End If
                 End If
-                showData()
             End If
+            showData()
         End If
+
+
 
     End Sub
 

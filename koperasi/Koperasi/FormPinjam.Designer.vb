@@ -174,12 +174,13 @@ Partial Class FormPinjam
         '
         'grupBtn
         '
+        Me.grupBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.grupBtn.Controls.Add(Me.btn_cetak_kwitansi)
         Me.grupBtn.Controls.Add(Me.btn_hapus)
         Me.grupBtn.Controls.Add(Me.btn_tambah)
         Me.grupBtn.Controls.Add(Me.btn_keluar)
         Me.grupBtn.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.grupBtn.Location = New System.Drawing.Point(0, 455)
+        Me.grupBtn.Location = New System.Drawing.Point(0, 464)
         Me.grupBtn.Name = "grupBtn"
         Me.grupBtn.Size = New System.Drawing.Size(750, 41)
         Me.grupBtn.TabIndex = 48
@@ -266,7 +267,7 @@ Partial Class FormPinjam
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_subjudul)
         Me.Panel1.Controls.Add(Me.lbl_judul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -317,7 +318,7 @@ Partial Class FormPinjam
         Me.cmb_JenisBunga.FormattingEnabled = True
         Me.cmb_JenisBunga.Items.AddRange(New Object() {"FLAT", "EFEKTIF", "ANUITAS"})
         Me.cmb_JenisBunga.Location = New System.Drawing.Point(311, 81)
-        Me.cmb_JenisBunga.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmb_JenisBunga.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmb_JenisBunga.Name = "cmb_JenisBunga"
         Me.cmb_JenisBunga.Size = New System.Drawing.Size(108, 21)
         Me.cmb_JenisBunga.TabIndex = 26
@@ -545,7 +546,7 @@ Partial Class FormPinjam
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(750, 496)
+        Me.ClientSize = New System.Drawing.Size(750, 505)
         Me.Controls.Add(Me.group_informasi_peminjaman)
         Me.Controls.Add(Me.group_informasi_nasabah)
         Me.Controls.Add(Me.grupBtn)

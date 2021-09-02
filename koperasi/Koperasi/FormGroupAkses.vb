@@ -111,23 +111,32 @@
     Private Sub dgv_JumGroup_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_JumGroup.CellClick
         If (e.RowIndex >= 0) Then
             selectId = dgv_JumGroup.Rows(e.RowIndex).Cells(0).Value
+            idAkses = selectId
+
         End If
     End Sub
 
     Private Sub btnHapus_Click(sender As Object, e As EventArgs) Handles btnHapus.Click
-        If dialog("Apakah Anda yakin untuk menghapus group akses ?") Then
-            If getCount("select dgroup from tbluser where dgroup = '" & selectId & "' ") > 0 Then
-                dialogError("Group hak akses tidak dapat dihapus !")
-                Return
-            Else
-                exc("delete from tblgroup where dgroup = '" & selectId & "' ")
-                exc("delete from tblmenu where dgroup = '" & selectId & "' ")
-                showDataGroup()
-                dialogInfo("Hapus hak akses berhasil")
-            End If
+        If String.IsNullOrEmpty(idAkses) Then
+            dialogError("Harap pilih data terlebih dahulu !")
+            Return
         Else
-            dialogInfo("Hapus batal !")
+            If dialog("Apakah Anda yakin untuk menghapus group akses ?") Then
+                If getCount("select dgroup from tbluser where dgroup = '" & selectId & "' ") > 0 Then
+                    dialogError("Group hak akses tidak dapat dihapus !")
+                    Return
+                Else
+                    exc("delete from tblgroup where dgroup = '" & selectId & "' ")
+                    exc("delete from tblmenu where dgroup = '" & selectId & "' ")
+                    showDataGroup()
+                    dialogInfo("Hapus hak akses berhasil")
+                End If
+            Else
+                dialogInfo("Hapus batal !")
+            End If
         End If
+
+
 
     End Sub
 
@@ -152,28 +161,30 @@
     End Sub
 
     Private Sub btnSimpanHakAkses_Click(sender As Object, e As EventArgs) Handles btnSimpanHakAkses.Click
+        If clb_HakAkses.Visible = False Then
+            dialogError("Pilih hak akses yang akan diupdate terlebih dahulu")
+        Else
 
-        Dim baris = 0
+            Dim baris = 0
 
-        For Each menu As String In clb_HakAkses.Items
-            Dim checked = False
-            Dim menuTag = baris + 1
+            For Each menu As String In clb_HakAkses.Items
+                Dim checked = False
+                Dim menuTag = baris + 1
 
-            Dim dgroup As String = cmb_HakAkses.SelectedValue
+                Dim dgroup As String = cmb_HakAkses.SelectedValue
 
-            If clb_HakAkses.GetItemChecked(baris) Then
-                checked = True
+                If clb_HakAkses.GetItemChecked(baris) Then
+                    checked = True
 
-            End If
-            exc("update tblmenu set flag = '" & checked.ToString & "' where dgroup = '" & dgroup & "' and menutag = '" & menuTag & "' ")
+                End If
+                exc("update tblmenu set flag = '" & checked.ToString & "' where dgroup = '" & dgroup & "' and menutag = '" & menuTag & "' ")
 
+                baris += 1
 
-            baris += 1
-
-        Next
-        dialogInfo("Update menu berhasil !")
-        dialogInfo("Silahkan restart aplikasi untuk memperbarui menu !")
-
+            Next
+            dialogInfo("Update menu berhasil !")
+            dialogInfo("Silahkan restart aplikasi untuk memperbarui menu !")
+        End If
 
     End Sub
 

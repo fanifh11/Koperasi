@@ -7,15 +7,14 @@
         Dim SHU As String = txt_SHU.Text
 
         If toDouble(SHU) > 0 Then
-            sql = "select (select anggota as jenissimpanan from tblanggota t3 where idanggota = tblrekening.idanggota), sum(besar) / (select sum(besar) from tblrekening t2  where fbayar = 1 and ketkategori != 'SALDO AWAL' and tglambil is NULL) * '" & SHU & "'  as besar from tblrekening where fbayar = 1 and ketkategori != 'SALDO AWAL' and tglambil is NULL group by idanggota  "
-
-
-            Debug.WriteLine(sql)
+            sql = "select (select anggota as jenissimpanan from tblanggota t3 where idanggota = tblrekening.idanggota), sum(besar) / (select sum(besar) from tblrekening t2  where fbayar = 1 and ketkategori != 'SALDO AWAL' ) * '" & SHU & "'  as besar from tblrekening where fbayar = 1 and ketkategori != 'SALDO AWAL' group by idanggota  "
             dgv_DataSimpanan.DataSource = getData(sql)
             dgv_DataSimpanan.Columns(0).HeaderText = "Nama Anggota"
             dgv_DataSimpanan.Columns(1).HeaderText = "Jumah SHU"
 
             makeFillDG(dgv_DataSimpanan)
+
+            dgv_DataSimpanan.Columns(1).DefaultCellStyle.Format = "c0"
 
             lbl_JumData.Text = "Jumlah Data: " & dgv_DataSimpanan.Rows.Count
 

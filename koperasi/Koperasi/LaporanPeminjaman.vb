@@ -24,6 +24,11 @@
         dgv_data_peminjaman.Columns(8).HeaderText = "Administrasi"
         dgv_data_peminjaman.Columns(9).HeaderText = "Diterima"
 
+        dgv_data_peminjaman.Columns(4).DefaultCellStyle.Format = "c0"
+        dgv_data_peminjaman.Columns(7).DefaultCellStyle.Format = "c0"
+        dgv_data_peminjaman.Columns(8).DefaultCellStyle.Format = "c0"
+        dgv_data_peminjaman.Columns(9).DefaultCellStyle.Format = "c0"
+
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_peminjaman.Rows.Count
         lbl_total_pinjam.Text = "Total Pinjam : " & numberFor(toDouble(getValue("select sum(besarpinjam) as besarpinjam from qpinjam where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("yyyy-MM-dd") & "' and '" & dtp_sampai.Value.ToString("yyyy-MM-dd") & "'", "besarpinjam")).ToString)
     End Sub

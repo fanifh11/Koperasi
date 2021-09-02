@@ -161,7 +161,7 @@ Partial Class FormKoreksiPembayaranNasabah
         '
         Me.TextBox15.Location = New System.Drawing.Point(520, 23)
         Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(171, 22)
+        Me.TextBox15.Size = New System.Drawing.Size(171, 20)
         Me.TextBox15.TabIndex = 7
         '
         'Label20
@@ -169,7 +169,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.Label20.AutoSize = True
         Me.Label20.Location = New System.Drawing.Point(408, 26)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(91, 17)
+        Me.Label20.Size = New System.Drawing.Size(69, 13)
         Me.Label20.TabIndex = 6
         Me.Label20.Text = " Kode Pinjam"
         '
@@ -177,7 +177,7 @@ Partial Class FormKoreksiPembayaranNasabah
         '
         Me.TextBox14.Location = New System.Drawing.Point(529, 189)
         Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(162, 22)
+        Me.TextBox14.Size = New System.Drawing.Size(162, 20)
         Me.TextBox14.TabIndex = 18
         '
         'Label19
@@ -185,7 +185,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.Label19.AutoSize = True
         Me.Label19.Location = New System.Drawing.Point(381, 189)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(118, 17)
+        Me.Label19.Size = New System.Drawing.Size(88, 13)
         Me.Label19.TabIndex = 18
         Me.Label19.Text = "Jumlah Angsuran"
         '
@@ -193,7 +193,7 @@ Partial Class FormKoreksiPembayaranNasabah
         '
         Me.TextBox13.Location = New System.Drawing.Point(529, 157)
         Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(162, 22)
+        Me.TextBox13.Size = New System.Drawing.Size(162, 20)
         Me.TextBox13.TabIndex = 17
         '
         'Label18
@@ -201,7 +201,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.Label18.AutoSize = True
         Me.Label18.Location = New System.Drawing.Point(381, 160)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(114, 17)
+        Me.Label18.Size = New System.Drawing.Size(86, 13)
         Me.Label18.TabIndex = 17
         Me.Label18.Text = "Angsuran Bunga"
         '
@@ -209,7 +209,7 @@ Partial Class FormKoreksiPembayaranNasabah
         '
         Me.TextBox12.Location = New System.Drawing.Point(529, 127)
         Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(162, 22)
+        Me.TextBox12.Size = New System.Drawing.Size(162, 20)
         Me.TextBox12.TabIndex = 16
         '
         'Label17
@@ -217,7 +217,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.Label17.AutoSize = True
         Me.Label17.Location = New System.Drawing.Point(379, 130)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(112, 17)
+        Me.Label17.Size = New System.Drawing.Size(86, 13)
         Me.Label17.TabIndex = 15
         Me.Label17.Text = "Angsuran Pokok"
         '
@@ -226,7 +226,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.Label16.AutoSize = True
         Me.Label16.Location = New System.Drawing.Point(210, 160)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(20, 17)
+        Me.Label16.Size = New System.Drawing.Size(15, 13)
         Me.Label16.TabIndex = 6
         Me.Label16.Text = "%"
         '
@@ -234,42 +234,42 @@ Partial Class FormKoreksiPembayaranNasabah
         '
         Me.TextBox11.Location = New System.Drawing.Point(131, 251)
         Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(193, 22)
+        Me.TextBox11.Size = New System.Drawing.Size(193, 20)
         Me.TextBox11.TabIndex = 14
         '
         'TextBox10
         '
         Me.TextBox10.Location = New System.Drawing.Point(131, 221)
         Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(193, 22)
+        Me.TextBox10.Size = New System.Drawing.Size(193, 20)
         Me.TextBox10.TabIndex = 13
         '
         'TextBox9
         '
         Me.TextBox9.Location = New System.Drawing.Point(131, 190)
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(193, 22)
+        Me.TextBox9.Size = New System.Drawing.Size(193, 20)
         Me.TextBox9.TabIndex = 12
         '
         'TextBox8
         '
         Me.TextBox8.Location = New System.Drawing.Point(131, 158)
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(71, 22)
+        Me.TextBox8.Size = New System.Drawing.Size(71, 20)
         Me.TextBox8.TabIndex = 11
         '
         'TextBox7
         '
         Me.TextBox7.Location = New System.Drawing.Point(131, 128)
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(101, 22)
+        Me.TextBox7.Size = New System.Drawing.Size(101, 20)
         Me.TextBox7.TabIndex = 10
         '
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(131, 98)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(244, 22)
+        Me.TextBox6.Size = New System.Drawing.Size(244, 20)
         Me.TextBox6.TabIndex = 9
         '
         'Label15
@@ -277,7 +277,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.Label15.AutoSize = True
         Me.Label15.Location = New System.Drawing.Point(6, 253)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(109, 17)
+        Me.Label15.Size = New System.Drawing.Size(81, 13)
         Me.Label15.TabIndex = 8
         Me.Label15.Text = "Jumlah Diterima"
         '
@@ -286,7 +286,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.Label14.AutoSize = True
         Me.Label14.Location = New System.Drawing.Point(6, 221)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(84, 17)
+        Me.Label14.Size = New System.Drawing.Size(62, 13)
         Me.Label14.TabIndex = 7
         Me.Label14.Text = "Administrasi"
         '
@@ -295,7 +295,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.Label13.AutoSize = True
         Me.Label13.Location = New System.Drawing.Point(6, 190)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(63, 17)
+        Me.Label13.Size = New System.Drawing.Size(47, 13)
         Me.Label13.TabIndex = 6
         Me.Label13.Text = "Asuransi"
         '
@@ -304,7 +304,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.Label12.AutoSize = True
         Me.Label12.Location = New System.Drawing.Point(6, 160)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(49, 17)
+        Me.Label12.Size = New System.Drawing.Size(38, 13)
         Me.Label12.TabIndex = 5
         Me.Label12.Text = "Bunga"
         '
@@ -313,7 +313,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.Label11.AutoSize = True
         Me.Label11.Location = New System.Drawing.Point(6, 130)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(89, 17)
+        Me.Label11.Size = New System.Drawing.Size(67, 13)
         Me.Label11.TabIndex = 4
         Me.Label11.Text = "Lama Pinjam"
         '
@@ -322,7 +322,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(7, 101)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(91, 17)
+        Me.Label10.Size = New System.Drawing.Size(68, 13)
         Me.Label10.TabIndex = 3
         Me.Label10.Text = "Besar Pinjam"
         '
@@ -343,7 +343,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(10, 485)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(107, 17)
+        Me.Label3.Size = New System.Drawing.Size(81, 13)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Jumlah Data : 0"
         '
@@ -361,7 +361,7 @@ Partial Class FormKoreksiPembayaranNasabah
         '
         Me.TextBox1.Location = New System.Drawing.Point(10, 23)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(385, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(385, 20)
         Me.TextBox1.TabIndex = 2
         '
         'GroupBox2
@@ -388,7 +388,7 @@ Partial Class FormKoreksiPembayaranNasabah
         '
         Me.DateTimePicker1.Location = New System.Drawing.Point(138, 17)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(269, 22)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(269, 20)
         Me.DateTimePicker1.TabIndex = 1
         '
         'Label4
@@ -396,7 +396,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(7, 21)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(106, 17)
+        Me.Label4.Size = New System.Drawing.Size(80, 13)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Tanggal Pinjam"
         '
@@ -405,7 +405,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateTimePicker2.Location = New System.Drawing.Point(131, 68)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(129, 22)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(129, 20)
         Me.DateTimePicker2.TabIndex = 2
         '
         'GroupBox3
@@ -429,7 +429,7 @@ Partial Class FormKoreksiPembayaranNasabah
         '
         Me.TextBox5.Location = New System.Drawing.Point(573, 30)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(118, 22)
+        Me.TextBox5.Size = New System.Drawing.Size(118, 20)
         Me.TextBox5.TabIndex = 8
         '
         'Label8
@@ -437,7 +437,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(524, 33)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(41, 17)
+        Me.Label8.Size = New System.Drawing.Size(31, 13)
         Me.Label8.TabIndex = 7
         Me.Label8.Text = "Jenis"
         '
@@ -445,14 +445,14 @@ Partial Class FormKoreksiPembayaranNasabah
         '
         Me.TextBox4.Location = New System.Drawing.Point(128, 96)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(425, 22)
+        Me.TextBox4.Size = New System.Drawing.Size(425, 20)
         Me.TextBox4.TabIndex = 6
         '
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(128, 65)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(337, 22)
+        Me.TextBox3.Size = New System.Drawing.Size(337, 20)
         Me.TextBox3.TabIndex = 5
         '
         'Label7
@@ -460,7 +460,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(16, 96)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(51, 17)
+        Me.Label7.Size = New System.Drawing.Size(39, 13)
         Me.Label7.TabIndex = 5
         Me.Label7.Text = "Alamat"
         '
@@ -469,7 +469,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(16, 65)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(45, 17)
+        Me.Label6.Size = New System.Drawing.Size(35, 13)
         Me.Label6.TabIndex = 4
         Me.Label6.Text = "Nama"
         '
@@ -477,7 +477,7 @@ Partial Class FormKoreksiPembayaranNasabah
         '
         Me.TextBox2.Location = New System.Drawing.Point(128, 33)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(171, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(171, 20)
         Me.TextBox2.TabIndex = 4
         '
         'Label5
@@ -485,7 +485,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(16, 36)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(102, 17)
+        Me.Label5.Size = New System.Drawing.Size(78, 13)
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Kode Nasabah"
         '
@@ -526,12 +526,13 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(7, 68)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(106, 17)
+        Me.Label9.Size = New System.Drawing.Size(80, 13)
         Me.Label9.TabIndex = 1
         Me.Label9.Text = "Tanggal Pinjam"
         '
         'GroupBox6
         '
+        Me.GroupBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.GroupBox6.Controls.Add(Me.btn_Keluar)
         Me.GroupBox6.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GroupBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!)
@@ -556,7 +557,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.txt_JenisPinjam.Location = New System.Drawing.Point(106, 30)
         Me.txt_JenisPinjam.Name = "txt_JenisPinjam"
         Me.txt_JenisPinjam.ReadOnly = True
-        Me.txt_JenisPinjam.Size = New System.Drawing.Size(171, 24)
+        Me.txt_JenisPinjam.Size = New System.Drawing.Size(171, 20)
         Me.txt_JenisPinjam.TabIndex = 7
         '
         'lbl_JenisPinjam
@@ -564,7 +565,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_JenisPinjam.AutoSize = True
         Me.lbl_JenisPinjam.Location = New System.Drawing.Point(7, 33)
         Me.lbl_JenisPinjam.Name = "lbl_JenisPinjam"
-        Me.lbl_JenisPinjam.Size = New System.Drawing.Size(108, 18)
+        Me.lbl_JenisPinjam.Size = New System.Drawing.Size(92, 15)
         Me.lbl_JenisPinjam.TabIndex = 6
         Me.lbl_JenisPinjam.Text = "Jenis Pinjaman"
         '
@@ -574,7 +575,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.txt_JumAngsuran.Location = New System.Drawing.Point(106, 167)
         Me.txt_JumAngsuran.Name = "txt_JumAngsuran"
         Me.txt_JumAngsuran.ReadOnly = True
-        Me.txt_JumAngsuran.Size = New System.Drawing.Size(162, 24)
+        Me.txt_JumAngsuran.Size = New System.Drawing.Size(162, 20)
         Me.txt_JumAngsuran.TabIndex = 18
         '
         'lbl_JumAngsuran
@@ -582,7 +583,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_JumAngsuran.AutoSize = True
         Me.lbl_JumAngsuran.Location = New System.Drawing.Point(4, 167)
         Me.lbl_JumAngsuran.Name = "lbl_JumAngsuran"
-        Me.lbl_JumAngsuran.Size = New System.Drawing.Size(122, 18)
+        Me.lbl_JumAngsuran.Size = New System.Drawing.Size(103, 15)
         Me.lbl_JumAngsuran.TabIndex = 18
         Me.lbl_JumAngsuran.Text = "Jumlah Angsuran"
         '
@@ -592,7 +593,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.txt_AngsuranBunga.Location = New System.Drawing.Point(106, 138)
         Me.txt_AngsuranBunga.Name = "txt_AngsuranBunga"
         Me.txt_AngsuranBunga.ReadOnly = True
-        Me.txt_AngsuranBunga.Size = New System.Drawing.Size(162, 24)
+        Me.txt_AngsuranBunga.Size = New System.Drawing.Size(162, 20)
         Me.txt_AngsuranBunga.TabIndex = 17
         '
         'lbl_AngsuranBunga
@@ -600,7 +601,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_AngsuranBunga.AutoSize = True
         Me.lbl_AngsuranBunga.Location = New System.Drawing.Point(6, 138)
         Me.lbl_AngsuranBunga.Name = "lbl_AngsuranBunga"
-        Me.lbl_AngsuranBunga.Size = New System.Drawing.Size(116, 18)
+        Me.lbl_AngsuranBunga.Size = New System.Drawing.Size(98, 15)
         Me.lbl_AngsuranBunga.TabIndex = 17
         Me.lbl_AngsuranBunga.Text = "Angsuran Bunga"
         '
@@ -610,7 +611,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.txt_AngsuranPokok.Location = New System.Drawing.Point(106, 110)
         Me.txt_AngsuranPokok.Name = "txt_AngsuranPokok"
         Me.txt_AngsuranPokok.ReadOnly = True
-        Me.txt_AngsuranPokok.Size = New System.Drawing.Size(162, 24)
+        Me.txt_AngsuranPokok.Size = New System.Drawing.Size(162, 20)
         Me.txt_AngsuranPokok.TabIndex = 16
         '
         'lbl_AngsuranPokok
@@ -618,7 +619,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_AngsuranPokok.AutoSize = True
         Me.lbl_AngsuranPokok.Location = New System.Drawing.Point(7, 113)
         Me.lbl_AngsuranPokok.Name = "lbl_AngsuranPokok"
-        Me.lbl_AngsuranPokok.Size = New System.Drawing.Size(118, 18)
+        Me.lbl_AngsuranPokok.Size = New System.Drawing.Size(96, 15)
         Me.lbl_AngsuranPokok.TabIndex = 15
         Me.lbl_AngsuranPokok.Text = "Angsuran Pokok"
         '
@@ -628,7 +629,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.txt_LamaPinjam.Location = New System.Drawing.Point(106, 82)
         Me.txt_LamaPinjam.Name = "txt_LamaPinjam"
         Me.txt_LamaPinjam.ReadOnly = True
-        Me.txt_LamaPinjam.Size = New System.Drawing.Size(101, 24)
+        Me.txt_LamaPinjam.Size = New System.Drawing.Size(101, 20)
         Me.txt_LamaPinjam.TabIndex = 10
         '
         'txt_BesarPinjam
@@ -637,7 +638,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.txt_BesarPinjam.Location = New System.Drawing.Point(106, 56)
         Me.txt_BesarPinjam.Name = "txt_BesarPinjam"
         Me.txt_BesarPinjam.ReadOnly = True
-        Me.txt_BesarPinjam.Size = New System.Drawing.Size(215, 24)
+        Me.txt_BesarPinjam.Size = New System.Drawing.Size(215, 20)
         Me.txt_BesarPinjam.TabIndex = 9
         '
         'lbl_LamaPinjam
@@ -645,7 +646,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_LamaPinjam.AutoSize = True
         Me.lbl_LamaPinjam.Location = New System.Drawing.Point(6, 84)
         Me.lbl_LamaPinjam.Name = "lbl_LamaPinjam"
-        Me.lbl_LamaPinjam.Size = New System.Drawing.Size(94, 18)
+        Me.lbl_LamaPinjam.Size = New System.Drawing.Size(81, 15)
         Me.lbl_LamaPinjam.TabIndex = 4
         Me.lbl_LamaPinjam.Text = "Lama Pinjam"
         '
@@ -654,13 +655,13 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_BesarPinjam.AutoSize = True
         Me.lbl_BesarPinjam.Location = New System.Drawing.Point(7, 59)
         Me.lbl_BesarPinjam.Name = "lbl_BesarPinjam"
-        Me.lbl_BesarPinjam.Size = New System.Drawing.Size(96, 18)
+        Me.lbl_BesarPinjam.Size = New System.Drawing.Size(81, 15)
         Me.lbl_BesarPinjam.TabIndex = 3
         Me.lbl_BesarPinjam.Text = "Besar Pinjam"
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_Subjudul)
         Me.Panel1.Controls.Add(Me.lbl_Judul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -675,7 +676,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_Subjudul.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Italic)
         Me.lbl_Subjudul.Location = New System.Drawing.Point(31, 39)
         Me.lbl_Subjudul.Name = "lbl_Subjudul"
-        Me.lbl_Subjudul.Size = New System.Drawing.Size(457, 18)
+        Me.lbl_Subjudul.Size = New System.Drawing.Size(383, 15)
         Me.lbl_Subjudul.TabIndex = 19
         Me.lbl_Subjudul.Text = "Form ini digunakan untuk memasukan koreksi pembayaran nasabah"
         '
@@ -685,7 +686,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_Judul.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.lbl_Judul.Location = New System.Drawing.Point(18, 13)
         Me.lbl_Judul.Name = "lbl_Judul"
-        Me.lbl_Judul.Size = New System.Drawing.Size(359, 25)
+        Me.lbl_Judul.Size = New System.Drawing.Size(294, 20)
         Me.lbl_Judul.TabIndex = 18
         Me.lbl_Judul.Text = "Form Koreksi Pembayaran Nasabah"
         '
@@ -723,7 +724,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.txt_KodePinjam.Location = New System.Drawing.Point(292, 31)
         Me.txt_KodePinjam.Name = "txt_KodePinjam"
         Me.txt_KodePinjam.ReadOnly = True
-        Me.txt_KodePinjam.Size = New System.Drawing.Size(120, 24)
+        Me.txt_KodePinjam.Size = New System.Drawing.Size(120, 20)
         Me.txt_KodePinjam.TabIndex = 8
         '
         'lbl_KodePinjam
@@ -731,7 +732,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_KodePinjam.AutoSize = True
         Me.lbl_KodePinjam.Location = New System.Drawing.Point(217, 34)
         Me.lbl_KodePinjam.Name = "lbl_KodePinjam"
-        Me.lbl_KodePinjam.Size = New System.Drawing.Size(92, 18)
+        Me.lbl_KodePinjam.Size = New System.Drawing.Size(78, 15)
         Me.lbl_KodePinjam.TabIndex = 7
         Me.lbl_KodePinjam.Text = "Kode Pinjam"
         '
@@ -740,7 +741,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.txt_Alamat.Location = New System.Drawing.Point(102, 86)
         Me.txt_Alamat.Name = "txt_Alamat"
         Me.txt_Alamat.ReadOnly = True
-        Me.txt_Alamat.Size = New System.Drawing.Size(410, 24)
+        Me.txt_Alamat.Size = New System.Drawing.Size(410, 20)
         Me.txt_Alamat.TabIndex = 6
         '
         'txt_Nama
@@ -748,7 +749,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.txt_Nama.Location = New System.Drawing.Point(102, 59)
         Me.txt_Nama.Name = "txt_Nama"
         Me.txt_Nama.ReadOnly = True
-        Me.txt_Nama.Size = New System.Drawing.Size(298, 24)
+        Me.txt_Nama.Size = New System.Drawing.Size(298, 20)
         Me.txt_Nama.TabIndex = 5
         '
         'lbl_Alamat
@@ -756,7 +757,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_Alamat.AutoSize = True
         Me.lbl_Alamat.Location = New System.Drawing.Point(16, 86)
         Me.lbl_Alamat.Name = "lbl_Alamat"
-        Me.lbl_Alamat.Size = New System.Drawing.Size(53, 18)
+        Me.lbl_Alamat.Size = New System.Drawing.Size(45, 15)
         Me.lbl_Alamat.TabIndex = 5
         Me.lbl_Alamat.Text = "Alamat"
         '
@@ -765,7 +766,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_Nama.AutoSize = True
         Me.lbl_Nama.Location = New System.Drawing.Point(16, 59)
         Me.lbl_Nama.Name = "lbl_Nama"
-        Me.lbl_Nama.Size = New System.Drawing.Size(48, 18)
+        Me.lbl_Nama.Size = New System.Drawing.Size(41, 15)
         Me.lbl_Nama.TabIndex = 4
         Me.lbl_Nama.Text = "Nama"
         '
@@ -774,7 +775,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.txt_KodeNasabah.Location = New System.Drawing.Point(102, 33)
         Me.txt_KodeNasabah.Name = "txt_KodeNasabah"
         Me.txt_KodeNasabah.ReadOnly = True
-        Me.txt_KodeNasabah.Size = New System.Drawing.Size(112, 24)
+        Me.txt_KodeNasabah.Size = New System.Drawing.Size(112, 20)
         Me.txt_KodeNasabah.TabIndex = 4
         '
         'lbl_KodeNasabah
@@ -782,7 +783,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_KodeNasabah.AutoSize = True
         Me.lbl_KodeNasabah.Location = New System.Drawing.Point(16, 36)
         Me.lbl_KodeNasabah.Name = "lbl_KodeNasabah"
-        Me.lbl_KodeNasabah.Size = New System.Drawing.Size(106, 18)
+        Me.lbl_KodeNasabah.Size = New System.Drawing.Size(89, 15)
         Me.lbl_KodeNasabah.TabIndex = 0
         Me.lbl_KodeNasabah.Text = "Kode Nasabah"
         '
@@ -820,7 +821,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.txt_SaldoPiutang.Location = New System.Drawing.Point(367, 162)
         Me.txt_SaldoPiutang.Name = "txt_SaldoPiutang"
         Me.txt_SaldoPiutang.ReadOnly = True
-        Me.txt_SaldoPiutang.Size = New System.Drawing.Size(162, 24)
+        Me.txt_SaldoPiutang.Size = New System.Drawing.Size(162, 20)
         Me.txt_SaldoPiutang.TabIndex = 23
         '
         'lbl_SaldoPiutang
@@ -828,7 +829,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_SaldoPiutang.AutoSize = True
         Me.lbl_SaldoPiutang.Location = New System.Drawing.Point(274, 167)
         Me.lbl_SaldoPiutang.Name = "lbl_SaldoPiutang"
-        Me.lbl_SaldoPiutang.Size = New System.Drawing.Size(115, 18)
+        Me.lbl_SaldoPiutang.Size = New System.Drawing.Size(94, 15)
         Me.lbl_SaldoPiutang.TabIndex = 24
         Me.lbl_SaldoPiutang.Text = "Saldo PIUTANG"
         '
@@ -838,7 +839,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.txt_SdhDiByr.Location = New System.Drawing.Point(366, 136)
         Me.txt_SdhDiByr.Name = "txt_SdhDiByr"
         Me.txt_SdhDiByr.ReadOnly = True
-        Me.txt_SdhDiByr.Size = New System.Drawing.Size(162, 24)
+        Me.txt_SdhDiByr.Size = New System.Drawing.Size(162, 20)
         Me.txt_SdhDiByr.TabIndex = 21
         '
         'lbl_SdhDibyr
@@ -846,7 +847,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_SdhDibyr.AutoSize = True
         Me.lbl_SdhDibyr.Location = New System.Drawing.Point(274, 139)
         Me.lbl_SdhDibyr.Name = "lbl_SdhDibyr"
-        Me.lbl_SdhDibyr.Size = New System.Drawing.Size(107, 18)
+        Me.lbl_SdhDibyr.Size = New System.Drawing.Size(90, 15)
         Me.lbl_SdhDibyr.TabIndex = 22
         Me.lbl_SdhDibyr.Text = "Sudah di Bayar"
         '
@@ -856,7 +857,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.txt_AngsKe.Location = New System.Drawing.Point(365, 110)
         Me.txt_AngsKe.Name = "txt_AngsKe"
         Me.txt_AngsKe.ReadOnly = True
-        Me.txt_AngsKe.Size = New System.Drawing.Size(77, 24)
+        Me.txt_AngsKe.Size = New System.Drawing.Size(77, 20)
         Me.txt_AngsKe.TabIndex = 20
         '
         'lbl_AngsuranKe
@@ -864,7 +865,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_AngsuranKe.AutoSize = True
         Me.lbl_AngsuranKe.Location = New System.Drawing.Point(274, 110)
         Me.lbl_AngsuranKe.Name = "lbl_AngsuranKe"
-        Me.lbl_AngsuranKe.Size = New System.Drawing.Size(92, 18)
+        Me.lbl_AngsuranKe.Size = New System.Drawing.Size(77, 15)
         Me.lbl_AngsuranKe.TabIndex = 19
         Me.lbl_AngsuranKe.Text = "Angsuran Ke"
         '
@@ -916,7 +917,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.txt_KodeTagihan.Location = New System.Drawing.Point(400, 72)
         Me.txt_KodeTagihan.Name = "txt_KodeTagihan"
         Me.txt_KodeTagihan.ReadOnly = True
-        Me.txt_KodeTagihan.Size = New System.Drawing.Size(102, 24)
+        Me.txt_KodeTagihan.Size = New System.Drawing.Size(102, 20)
         Me.txt_KodeTagihan.TabIndex = 26
         '
         'lbl_KodeTagihan
@@ -924,7 +925,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_KodeTagihan.AutoSize = True
         Me.lbl_KodeTagihan.Location = New System.Drawing.Point(400, 54)
         Me.lbl_KodeTagihan.Name = "lbl_KodeTagihan"
-        Me.lbl_KodeTagihan.Size = New System.Drawing.Size(99, 18)
+        Me.lbl_KodeTagihan.Size = New System.Drawing.Size(84, 15)
         Me.lbl_KodeTagihan.TabIndex = 25
         Me.lbl_KodeTagihan.Text = "Kode Tagihan"
         '
@@ -952,7 +953,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.txt_JumBayar.Location = New System.Drawing.Point(400, 25)
         Me.txt_JumBayar.Name = "txt_JumBayar"
         Me.txt_JumBayar.ReadOnly = True
-        Me.txt_JumBayar.Size = New System.Drawing.Size(103, 24)
+        Me.txt_JumBayar.Size = New System.Drawing.Size(103, 20)
         Me.txt_JumBayar.TabIndex = 22
         '
         'lbl_JumBayar
@@ -960,7 +961,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_JumBayar.AutoSize = True
         Me.lbl_JumBayar.Location = New System.Drawing.Point(312, 28)
         Me.lbl_JumBayar.Name = "lbl_JumBayar"
-        Me.lbl_JumBayar.Size = New System.Drawing.Size(98, 18)
+        Me.lbl_JumBayar.Size = New System.Drawing.Size(82, 15)
         Me.lbl_JumBayar.TabIndex = 21
         Me.lbl_JumBayar.Text = "Jumlah Bayar"
         '
@@ -970,7 +971,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.txt_BayarBunga.Enabled = False
         Me.txt_BayarBunga.Location = New System.Drawing.Point(106, 80)
         Me.txt_BayarBunga.Name = "txt_BayarBunga"
-        Me.txt_BayarBunga.Size = New System.Drawing.Size(132, 24)
+        Me.txt_BayarBunga.Size = New System.Drawing.Size(132, 20)
         Me.txt_BayarBunga.TabIndex = 20
         '
         'txt_BayarPokok
@@ -979,7 +980,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.txt_BayarPokok.Enabled = False
         Me.txt_BayarPokok.Location = New System.Drawing.Point(106, 54)
         Me.txt_BayarPokok.Name = "txt_BayarPokok"
-        Me.txt_BayarPokok.Size = New System.Drawing.Size(132, 24)
+        Me.txt_BayarPokok.Size = New System.Drawing.Size(132, 20)
         Me.txt_BayarPokok.TabIndex = 19
         '
         'dtp_TglBayar
@@ -987,7 +988,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.dtp_TglBayar.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtp_TglBayar.Location = New System.Drawing.Point(106, 25)
         Me.dtp_TglBayar.Name = "dtp_TglBayar"
-        Me.dtp_TglBayar.Size = New System.Drawing.Size(132, 24)
+        Me.dtp_TglBayar.Size = New System.Drawing.Size(132, 20)
         Me.dtp_TglBayar.TabIndex = 10
         '
         'lbl_BayarBunga
@@ -995,7 +996,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_BayarBunga.AutoSize = True
         Me.lbl_BayarBunga.Location = New System.Drawing.Point(7, 85)
         Me.lbl_BayarBunga.Name = "lbl_BayarBunga"
-        Me.lbl_BayarBunga.Size = New System.Drawing.Size(92, 18)
+        Me.lbl_BayarBunga.Size = New System.Drawing.Size(77, 15)
         Me.lbl_BayarBunga.TabIndex = 9
         Me.lbl_BayarBunga.Text = "Bayar Bunga"
         '
@@ -1004,7 +1005,7 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_BayarPokok.AutoSize = True
         Me.lbl_BayarPokok.Location = New System.Drawing.Point(7, 57)
         Me.lbl_BayarPokok.Name = "lbl_BayarPokok"
-        Me.lbl_BayarPokok.Size = New System.Drawing.Size(94, 18)
+        Me.lbl_BayarPokok.Size = New System.Drawing.Size(75, 15)
         Me.lbl_BayarPokok.TabIndex = 8
         Me.lbl_BayarPokok.Text = "Bayar Pokok"
         '
@@ -1013,13 +1014,13 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.lbl_TglByr.AutoSize = True
         Me.lbl_TglByr.Location = New System.Drawing.Point(6, 28)
         Me.lbl_TglByr.Name = "lbl_TglByr"
-        Me.lbl_TglByr.Size = New System.Drawing.Size(102, 18)
+        Me.lbl_TglByr.Size = New System.Drawing.Size(86, 15)
         Me.lbl_TglByr.TabIndex = 7
         Me.lbl_TglByr.Text = "Tanggal Bayar"
         '
         'FormKoreksiPembayaranNasabah
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(562, 597)
         Me.Controls.Add(Me.group_InformasiPinjaman)

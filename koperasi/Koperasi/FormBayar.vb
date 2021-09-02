@@ -28,6 +28,8 @@
         dgv_DataAnggota.Columns(3).HeaderText = "Jenis Simpan"
         dgv_DataAnggota.Columns(4).HeaderText = "Besar"
 
+        dgv_DataAnggota.Columns(4).DefaultCellStyle.Format = "c0"
+
         lbl_JumData.Text = "Jumlah Data :" & dgv_DataAnggota.Rows.Count
     End Sub
 
@@ -63,8 +65,8 @@
                 exc("update tblrekening set fbayar = 1,tglbayar = '" & dtp_TglBayar.Value.ToString("yyyy-MM-dd HH:mm:ss") & "' where norek = '" & no_rek & "'")
             End If
             clearForm(group_InformasiAnggota)
+            dialogInfo("Pembayaran Berhasil!")
         End If
-        dialogInfo("Pembayaran Berhasil!")
 
         showData()
         lockForm()

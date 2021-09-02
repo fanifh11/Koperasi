@@ -24,6 +24,13 @@
             dgv_data_pembayaran.Columns(7).HeaderText = "Total Pokok"
             dgv_data_pembayaran.Columns(8).HeaderText = "Total Bunga"
 
+            dgv_data_pembayaran.Columns(3).DefaultCellStyle.Format = "c0"
+            dgv_data_pembayaran.Columns(4).DefaultCellStyle.Format = "c0"
+            dgv_data_pembayaran.Columns(5).DefaultCellStyle.Format = "c0"
+            dgv_data_pembayaran.Columns(6).DefaultCellStyle.Format = "c0"
+            dgv_data_pembayaran.Columns(7).DefaultCellStyle.Format = "c0"
+            dgv_data_pembayaran.Columns(8).DefaultCellStyle.Format = "c0"
+
             lbl_jumlah_data.Text = "Jumlah Data " & dgv_data_pembayaran.Rows.Count
             lbl_bayar.Text = "Bayar : " & numberFor(toDouble(getValue("select sum(totalangsur) as totalangsur from qtagihan where anggota ilike '%" & txt_search.Text & "%' and saldopinjam > 0", "totalangsur")).ToString) & " Pokok : " & numberFor(toDouble(getValue("select sum(totalpokok) as totalpokok from qtagihan where anggota ilike '%" & txt_search.Text & "%' and saldopinjam > 0", "totalpokok")).ToString) & " Bunga : " & numberFor(toDouble(getValue("select sum(totalbunga) as totalbunga from qtagihan where anggota ilike '%" & txt_search.Text & "%' and saldopinjam > 0", "totalbunga")).ToString)
         ElseIf cmb_status_pembayaran.SelectedIndex = 1 Then
@@ -39,6 +46,13 @@
             dgv_data_pembayaran.Columns(7).HeaderText = "Total Pokok"
             dgv_data_pembayaran.Columns(8).HeaderText = "Total Bunga"
 
+            dgv_data_pembayaran.Columns(3).DefaultCellStyle.Format = "c0"
+            dgv_data_pembayaran.Columns(4).DefaultCellStyle.Format = "c0"
+            dgv_data_pembayaran.Columns(5).DefaultCellStyle.Format = "c0"
+            dgv_data_pembayaran.Columns(6).DefaultCellStyle.Format = "c0"
+            dgv_data_pembayaran.Columns(7).DefaultCellStyle.Format = "c0"
+            dgv_data_pembayaran.Columns(8).DefaultCellStyle.Format = "c0"
+
             lbl_jumlah_data.Text = "Jumlah Data " & dgv_data_pembayaran.Rows.Count
             lbl_bayar.Text = "Bayar : " & numberFor(toDouble(getValue("select sum(totalangsur) as totalangsur from qtagihan where anggota ilike '%" & txt_search.Text & "%' and saldopinjam <= 0", "totalangsur")).ToString) & " Pokok : " & numberFor(toDouble(getValue("select sum(totalpokok) as totalpokok from qtagihan where anggota ilike '%" & txt_search.Text & "%' and saldopinjam <= 0", "totalpokok")).ToString) & " Bunga : " & numberFor(toDouble(getValue("select sum(totalbunga) as totalbunga from qtagihan where anggota ilike '%" & txt_search.Text & "%' and saldopinjam <= 0", "totalbunga")).ToString)
         ElseIf cmb_status_pembayaran.SelectedIndex = 2 Then
@@ -53,6 +67,13 @@
             dgv_data_pembayaran.Columns(6).HeaderText = "Total Angsur"
             dgv_data_pembayaran.Columns(7).HeaderText = "Total Pokok"
             dgv_data_pembayaran.Columns(8).HeaderText = "Total Bunga"
+
+            dgv_data_pembayaran.Columns(3).DefaultCellStyle.Format = "c0"
+            dgv_data_pembayaran.Columns(4).DefaultCellStyle.Format = "c0"
+            dgv_data_pembayaran.Columns(5).DefaultCellStyle.Format = "c0"
+            dgv_data_pembayaran.Columns(6).DefaultCellStyle.Format = "c0"
+            dgv_data_pembayaran.Columns(7).DefaultCellStyle.Format = "c0"
+            dgv_data_pembayaran.Columns(8).DefaultCellStyle.Format = "c0"
 
             lbl_jumlah_data.Text = "Jumlah Data " & dgv_data_pembayaran.Rows.Count
             lbl_bayar.Text = "Bayar : " & numberFor(toDouble(getValue("select sum(totalangsur) as totalangsur from qtagihan where anggota ilike '%" & txt_search.Text & "%'", "totalangsur")).ToString) & " Pokok : " & numberFor(toDouble(getValue("select sum(totalpokok) as totalpokok from qtagihan where anggota ilike '%" & txt_search.Text & "%'", "totalpokok")).ToString) & " Bunga : " & numberFor(toDouble(getValue("select sum(totalbunga) as totalbunga from qtagihan where anggota ilike '%" & txt_search.Text & "%'", "totalbunga")).ToString)

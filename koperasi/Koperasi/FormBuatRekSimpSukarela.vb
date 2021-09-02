@@ -167,6 +167,9 @@
                 For Each idanggota As String In terpilih
                     Dim ketsukarela As String = cmb_JenisSimpanan.SelectedValue
                     Dim bunga As String = txt_Bunga.Text
+
+                    Dim replacedot = bunga.Replace(",", ".")
+
                     exc("insert into tblsukarela
                         (
                             idanggota,
@@ -182,7 +185,7 @@
                             'NOW()',
                             '0',
                             '" & ketsukarela & "',
-                            '" & bunga & "',
+                            '" & replacedot & "',
                             '0'
                         )")
                 Next

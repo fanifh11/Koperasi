@@ -23,6 +23,8 @@
         dgv_DataAnggota.Columns(1).HeaderText = "Nama"
         dgv_DataAnggota.Columns(2).HeaderText = "Besar"
 
+        dgv_DataAnggota.Columns(2).DefaultCellStyle.Format = "c0"
+
         makeFillDG(dgv_DataAnggota)
         lbl_JumlahData.Text = "Jumlah Data : " & dgv_DataAnggota.Rows.Count
 

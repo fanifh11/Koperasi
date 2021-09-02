@@ -80,6 +80,7 @@ Partial Class FormBuatBilling
         '
         'GroupBox4
         '
+        Me.GroupBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.GroupBox4.Controls.Add(Me.btn_Keluar)
         Me.GroupBox4.Controls.Add(Me.btn_BuatBiling)
         Me.GroupBox4.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -106,7 +107,7 @@ Partial Class FormBuatBilling
         '
         Me.txt_CariDataAnggota2.Location = New System.Drawing.Point(16, 24)
         Me.txt_CariDataAnggota2.Name = "txt_CariDataAnggota2"
-        Me.txt_CariDataAnggota2.Size = New System.Drawing.Size(351, 24)
+        Me.txt_CariDataAnggota2.Size = New System.Drawing.Size(351, 20)
         Me.txt_CariDataAnggota2.TabIndex = 13
         '
         'lbl_JumData2
@@ -115,7 +116,7 @@ Partial Class FormBuatBilling
         Me.lbl_JumData2.ForeColor = System.Drawing.Color.Red
         Me.lbl_JumData2.Location = New System.Drawing.Point(13, 340)
         Me.lbl_JumData2.Name = "lbl_JumData2"
-        Me.lbl_JumData2.Size = New System.Drawing.Size(111, 18)
+        Me.lbl_JumData2.Size = New System.Drawing.Size(93, 15)
         Me.lbl_JumData2.TabIndex = 12
         Me.lbl_JumData2.Text = "Jumlah Data : 0"
         '
@@ -148,7 +149,7 @@ Partial Class FormBuatBilling
         Me.lbl_JumData1.ForeColor = System.Drawing.Color.Red
         Me.lbl_JumData1.Location = New System.Drawing.Point(6, 340)
         Me.lbl_JumData1.Name = "lbl_JumData1"
-        Me.lbl_JumData1.Size = New System.Drawing.Size(111, 18)
+        Me.lbl_JumData1.Size = New System.Drawing.Size(93, 15)
         Me.lbl_JumData1.TabIndex = 11
         Me.lbl_JumData1.Text = "Jumlah Data : 0"
         '
@@ -169,7 +170,7 @@ Partial Class FormBuatBilling
         '
         Me.txt_CariDataAnggota1.Location = New System.Drawing.Point(6, 24)
         Me.txt_CariDataAnggota1.Name = "txt_CariDataAnggota1"
-        Me.txt_CariDataAnggota1.Size = New System.Drawing.Size(350, 24)
+        Me.txt_CariDataAnggota1.Size = New System.Drawing.Size(350, 20)
         Me.txt_CariDataAnggota1.TabIndex = 5
         '
         'group_CariDataAnggota1
@@ -189,7 +190,7 @@ Partial Class FormBuatBilling
         '
         Me.txt_BesarSimpanan.Location = New System.Drawing.Point(637, 20)
         Me.txt_BesarSimpanan.Name = "txt_BesarSimpanan"
-        Me.txt_BesarSimpanan.Size = New System.Drawing.Size(184, 24)
+        Me.txt_BesarSimpanan.Size = New System.Drawing.Size(184, 20)
         Me.txt_BesarSimpanan.TabIndex = 3
         '
         'lbl_BesarSimpanan
@@ -198,7 +199,7 @@ Partial Class FormBuatBilling
         Me.lbl_BesarSimpanan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!)
         Me.lbl_BesarSimpanan.Location = New System.Drawing.Point(505, 23)
         Me.lbl_BesarSimpanan.Name = "lbl_BesarSimpanan"
-        Me.lbl_BesarSimpanan.Size = New System.Drawing.Size(117, 18)
+        Me.lbl_BesarSimpanan.Size = New System.Drawing.Size(99, 15)
         Me.lbl_BesarSimpanan.TabIndex = 2
         Me.lbl_BesarSimpanan.Text = "Besar Simpanan"
         '
@@ -207,7 +208,7 @@ Partial Class FormBuatBilling
         Me.txt_Tahun.Location = New System.Drawing.Point(311, 23)
         Me.txt_Tahun.Name = "txt_Tahun"
         Me.txt_Tahun.ReadOnly = True
-        Me.txt_Tahun.Size = New System.Drawing.Size(139, 24)
+        Me.txt_Tahun.Size = New System.Drawing.Size(139, 20)
         Me.txt_Tahun.TabIndex = 2
         '
         'lbl_Tahun
@@ -216,7 +217,7 @@ Partial Class FormBuatBilling
         Me.lbl_Tahun.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!)
         Me.lbl_Tahun.Location = New System.Drawing.Point(257, 27)
         Me.lbl_Tahun.Name = "lbl_Tahun"
-        Me.lbl_Tahun.Size = New System.Drawing.Size(49, 18)
+        Me.lbl_Tahun.Size = New System.Drawing.Size(42, 15)
         Me.lbl_Tahun.TabIndex = 1
         Me.lbl_Tahun.Text = "Tahun"
         '
@@ -227,7 +228,7 @@ Partial Class FormBuatBilling
         Me.cmb_JenisSimpanan.Items.AddRange(New Object() {"POKOK", "WAJIB", "SALDO AWAL"})
         Me.cmb_JenisSimpanan.Location = New System.Drawing.Point(12, 23)
         Me.cmb_JenisSimpanan.Name = "cmb_JenisSimpanan"
-        Me.cmb_JenisSimpanan.Size = New System.Drawing.Size(213, 25)
+        Me.cmb_JenisSimpanan.Size = New System.Drawing.Size(213, 21)
         Me.cmb_JenisSimpanan.TabIndex = 0
         '
         'group_JenisSimpanan
@@ -255,7 +256,7 @@ Partial Class FormBuatBilling
         Me.cmb_Bulan.Items.AddRange(New Object() {"JANUARI", "FEBRUARI", "MARET", "APRIL", "MEI ", "JUNI", "JULI", "AGUSTUS", "SEPTEMBER", "OKTOBER", "NOVEMBER", "DESEMBER"})
         Me.cmb_Bulan.Location = New System.Drawing.Point(311, 53)
         Me.cmb_Bulan.Name = "cmb_Bulan"
-        Me.cmb_Bulan.Size = New System.Drawing.Size(139, 25)
+        Me.cmb_Bulan.Size = New System.Drawing.Size(139, 21)
         Me.cmb_Bulan.TabIndex = 6
         Me.cmb_Bulan.Visible = False
         '
@@ -265,7 +266,7 @@ Partial Class FormBuatBilling
         Me.lbl_Bulan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!)
         Me.lbl_Bulan.Location = New System.Drawing.Point(260, 56)
         Me.lbl_Bulan.Name = "lbl_Bulan"
-        Me.lbl_Bulan.Size = New System.Drawing.Size(45, 18)
+        Me.lbl_Bulan.Size = New System.Drawing.Size(39, 15)
         Me.lbl_Bulan.TabIndex = 5
         Me.lbl_Bulan.Text = "Bulan"
         Me.lbl_Bulan.Visible = False
@@ -276,7 +277,7 @@ Partial Class FormBuatBilling
         Me.cmb_JenisSimp.FormattingEnabled = True
         Me.cmb_JenisSimp.Location = New System.Drawing.Point(12, 53)
         Me.cmb_JenisSimp.Name = "cmb_JenisSimp"
-        Me.cmb_JenisSimp.Size = New System.Drawing.Size(213, 25)
+        Me.cmb_JenisSimp.Size = New System.Drawing.Size(213, 21)
         Me.cmb_JenisSimp.TabIndex = 4
         '
         'lbl_Subjudul
@@ -285,7 +286,7 @@ Partial Class FormBuatBilling
         Me.lbl_Subjudul.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Italic)
         Me.lbl_Subjudul.Location = New System.Drawing.Point(38, 33)
         Me.lbl_Subjudul.Name = "lbl_Subjudul"
-        Me.lbl_Subjudul.Size = New System.Drawing.Size(668, 23)
+        Me.lbl_Subjudul.Size = New System.Drawing.Size(447, 15)
         Me.lbl_Subjudul.TabIndex = 7
         Me.lbl_Subjudul.Text = "Form ini digunakan untuk membuat tagihan Simpanan Pokok, Wajib, Saldo Awal"
         '
@@ -295,7 +296,7 @@ Partial Class FormBuatBilling
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.Label1.Location = New System.Drawing.Point(14, 8)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(630, 31)
+        Me.Label1.Size = New System.Drawing.Size(413, 20)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Buat Tagihan Simpanan Pokok , Wajib, Saldo Awal"
         '
@@ -311,7 +312,7 @@ Partial Class FormBuatBilling
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_Subjudul)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -332,7 +333,7 @@ Partial Class FormBuatBilling
         '
         'FormBuatBilling
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(864, 597)
         Me.Controls.Add(Me.GroupBox1)

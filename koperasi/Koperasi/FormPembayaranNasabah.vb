@@ -1,12 +1,17 @@
 ﻿Public Class FormPembayaranNasabah
 
-    Public idtagihan As String
+    Public idtagihan As String = ""
     Public idpinjam As String = "0"
     Public idnasabah As String
 
 
+    Dim selectIDNasabah As String
+    Dim dataTerpilih As String
+
+
     Sub firstTimeLoad()
-        grupBtn.Enabled = True
+        btn_tambah.Enabled = True
+        btn_keluar.Enabled = True
         group_informasi_nasabah.Enabled = False
         group_informasi_peminjaman.Enabled = False
         group_pembayaran_pinjaman.Enabled = False
@@ -14,7 +19,8 @@
     End Sub
 
     Sub formLoad()
-        grupBtn.Enabled = False
+        btn_tambah.Enabled = False
+        btn_keluar.Enabled = False
         group_informasi_nasabah.Enabled = True
         group_informasi_peminjaman.Enabled = True
         group_pembayaran_pinjaman.Enabled = True
@@ -29,17 +35,30 @@
     End Sub
 
     Sub showData()
-        dgv_data_peminjaman.DataSource = getData("select idpinjam,anggota,cicilanke,besarbayar,besarpokok,besarbunga from qtagihan where idpinjam='" & idpinjam & "' and CAST(cicilanke as varchar) ilike '%" & txt_search.Text & "%' order by cicilanke asc ")
-        dgv_data_peminjaman.Columns(0).HeaderText = "Kode Pinjam"
-        dgv_data_peminjaman.Columns(1).HeaderText = "Nama"
-        dgv_data_peminjaman.Columns(2).HeaderText = "Cicilan Ke-"
-        dgv_data_peminjaman.Columns(3).HeaderText = "Total Bayar"
-        dgv_data_peminjaman.Columns(4).HeaderText = "Bayar Pokok"
-        dgv_data_peminjaman.Columns(5).HeaderText = "Bayar Bunga"
+        dgv_data_peminjaman.DataSource = getData("select idtagihan,idpinjam,anggota,cicilanke,besarbayar,besarpokok,besarbunga from qtagihan where idpinjam='" & idpinjam & "' and CAST(cicilanke as varchar) ilike '%" & txt_search.Text & "%' order by cicilanke asc ")
+        dgv_data_peminjaman.Columns(0).Visible = False
+        dgv_data_peminjaman.Columns(1).HeaderText = "Kode Pinjam"
+        dgv_data_peminjaman.Columns(2).HeaderText = "Nama"
+        dgv_data_peminjaman.Columns(3).HeaderText = "Cicilan Ke-"
+        dgv_data_peminjaman.Columns(4).HeaderText = "Total Bayar"
+        dgv_data_peminjaman.Columns(5).HeaderText = "Bayar Pokok"
+        dgv_data_peminjaman.Columns(6).HeaderText = "Bayar Bunga"
+
+        dgv_data_peminjaman.Columns(4).DefaultCellStyle.Format = "c0"
+        dgv_data_peminjaman.Columns(5).DefaultCellStyle.Format = "c0"
+        dgv_data_peminjaman.Columns(6).DefaultCellStyle.Format = "c0"
 
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_peminjaman.Rows.Count
 
 
+    End Sub
+
+    Sub kondisiBtnCetak()
+        If String.IsNullOrEmpty(dataTerpilih) Then
+            btn_cetak_kwitansi.Enabled = False
+        Else
+            btn_cetak_kwitansi.Enabled = True
+        End If
     End Sub
 
     Private Sub btn_keluar_Click(sender As Object, e As EventArgs) Handles btn_keluar.Click
@@ -50,6 +69,7 @@
     Private Sub FormPembayaranNasabah_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         firstTimeLoad()
         showData()
+        kondisiBtnCetak()
 
     End Sub
 
@@ -60,7 +80,10 @@
 
     Private Sub btn_batal_Click(sender As Object, e As EventArgs) Handles btn_batal.Click
         firstTimeLoad()
-
+        dgv_data_peminjaman.DataSource = Nothing
+        clearForm(group_pembayaran_pinjaman)
+        clearForm(group_informasi_nasabah)
+        clearForm(group_informasi_peminjaman)
 
     End Sub
 
@@ -155,9 +178,6 @@
         clearForm(group_pembayaran_pinjaman)
         clearForm(group_informasi_nasabah)
         showData()
-
-
-
     End Sub
 
     Private Sub txt_angsuran_pokok_TextChanged(sender As Object, e As EventArgs) Handles txt_angsuran_pokok.TextChanged
@@ -171,7 +191,22 @@
     End Sub
 
     Private Sub btn_cetak_kwitansi_Click(sender As Object, e As EventArgs) Handles btn_cetak_kwitansi.Click
-        PreviewBuktiPembayaran.idtagihan = idtagihan
-        PreviewBuktiPembayaran.ShowDialog()
+        If dgv_data_peminjaman.Rows.Count = 0 Then
+            dialogError("Anda belum memilih data anggosta !")
+            Return
+        Else
+            PreviewBuktiPembayaran.idtagihan = dgv_data_peminjaman.Rows(dgv_data_peminjaman.CurrentCell.RowIndex).Cells(0).Value.ToString
+            PreviewBuktiPembayaran.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub dgv_data_peminjaman_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_data_peminjaman.CellClick
+        If (e.RowIndex >= 0) Then
+            selectIDNasabah = dgv_data_peminjaman.Rows(e.RowIndex).Cells(0).Value
+            dataTerpilih = selectIDNasabah
+
+            kondisiBtnCetak()
+        End If
+
     End Sub
 End Class

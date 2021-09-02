@@ -9,8 +9,6 @@
         txt_AngsuranPokok.Text = Math.Ceiling(besarPinjam / lamaPinjam).ToString
 
         hitungJumlahAngsuran()
-
-
     End Sub
 
     Sub hitungBunga()
@@ -41,25 +39,31 @@
     End Sub
 
     Sub showData()
-        dgv_DataPeminjaman.DataSource = getData("select distinct idanggota,anggota,alamat,jenis,idpinjam,tglpinjam,besarpinjam,lamapinjam,persenbunga,asuransi,administrasi,diterima,angsuranpokok,angsuranbunga,jumlahangsuran from qtagihan where flagtagihan = 1 and anggota ilike '%" & txt_CariData.Text & "%'")
+        dgv_DataPeminjaman.DataSource = getData("select distinct idanggota,anggota,jenis,idpinjam,tglpinjam,besarpinjam,lamapinjam,persenbunga,asuransi,administrasi,diterima,angsuranpokok,angsuranbunga,jumlahangsuran from qtagihan where flagtagihan = 1 and anggota ilike '%" & txt_CariData.Text & "%' and tglpinjam <= '" & dtp_Pinjam.Value.ToString("yyyyMMdd") & "' ")
         dgv_DataPeminjaman.Columns(0).HeaderText = "Kode Anggota"
         dgv_DataPeminjaman.Columns(1).HeaderText = "Nama"
-        dgv_DataPeminjaman.Columns(2).Visible = False 'Alamat
-        dgv_DataPeminjaman.Columns(3).HeaderText = "Jenis Pinjam"
-        dgv_DataPeminjaman.Columns(4).HeaderText = "Kode Pinjam"
-        dgv_DataPeminjaman.Columns(5).HeaderText = "Tanggal Pinjam"
-        dgv_DataPeminjaman.Columns(6).HeaderText = "Besar Pinjam"
-        dgv_DataPeminjaman.Columns(7).HeaderText = "Lama Pinjam"
-        dgv_DataPeminjaman.Columns(8).HeaderText = "Persen Bunga"
-        dgv_DataPeminjaman.Columns(9).HeaderText = "Asuransi"
-        dgv_DataPeminjaman.Columns(10).HeaderText = "Administrasi"
-        dgv_DataPeminjaman.Columns(11).HeaderText = "Uang Diterima"
-        dgv_DataPeminjaman.Columns(12).HeaderText = "Angsuran Pokok"
-        dgv_DataPeminjaman.Columns(13).HeaderText = "Angsuran Bunga"
-        dgv_DataPeminjaman.Columns(14).HeaderText = "Jumlah Angsuran"
+        dgv_DataPeminjaman.Columns(2).HeaderText = "Jenis Pinjam"
+        dgv_DataPeminjaman.Columns(3).HeaderText = "Kode Pinjam"
+        dgv_DataPeminjaman.Columns(4).HeaderText = "Tanggal Pinjam"
+        dgv_DataPeminjaman.Columns(5).HeaderText = "Besar Pinjam"
+        dgv_DataPeminjaman.Columns(6).HeaderText = "Lama Pinjam"
+        dgv_DataPeminjaman.Columns(7).HeaderText = "Persen Bunga"
+        dgv_DataPeminjaman.Columns(8).HeaderText = "Asuransi"
+        dgv_DataPeminjaman.Columns(9).HeaderText = "Administrasi"
+        dgv_DataPeminjaman.Columns(10).HeaderText = "Uang Diterima"
+        dgv_DataPeminjaman.Columns(11).HeaderText = "Angsuran Pokok"
+        dgv_DataPeminjaman.Columns(12).HeaderText = "Angsuran Bunga"
+        dgv_DataPeminjaman.Columns(13).HeaderText = "Jumlah Angsuran"
+
+        dgv_DataPeminjaman.Columns(5).DefaultCellStyle.Format = "c0"
+        dgv_DataPeminjaman.Columns(8).DefaultCellStyle.Format = "c0"
+        dgv_DataPeminjaman.Columns(9).DefaultCellStyle.Format = "c0"
+        dgv_DataPeminjaman.Columns(10).DefaultCellStyle.Format = "c0"
+        dgv_DataPeminjaman.Columns(11).DefaultCellStyle.Format = "c0"
+        dgv_DataPeminjaman.Columns(12).DefaultCellStyle.Format = "c0"
+        dgv_DataPeminjaman.Columns(13).DefaultCellStyle.Format = "c0"
 
         lbl_JumData.Text = "Jumlah Data : " & dgv_DataPeminjaman.Rows.Count
-
     End Sub
     Private Sub btn_Keluar_Click(sender As Object, e As EventArgs) Handles btn_Keluar.Click
         Me.Close()
@@ -218,6 +222,16 @@
     End Sub
 
     Private Sub txt_CariData_TextChanged(sender As Object, e As EventArgs) Handles txt_CariData.TextChanged
+        showData()
+
+    End Sub
+
+    Private Sub btn_Batal_Click(sender As Object, e As EventArgs) Handles btn_Batal.Click
+        clearForm(group_InfoNasabah)
+        clearForm(group_InfoPeminjaman)
+    End Sub
+
+    Private Sub btn_Refresh_Click(sender As Object, e As EventArgs) Handles btn_Refresh.Click
         showData()
 
     End Sub

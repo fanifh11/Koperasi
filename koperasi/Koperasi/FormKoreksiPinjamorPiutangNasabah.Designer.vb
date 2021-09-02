@@ -81,7 +81,7 @@ Partial Class FormKoreksiPinjamorPiutangNasabah
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_Subjudul)
         Me.Panel1.Controls.Add(Me.lbl_Judul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -527,6 +527,7 @@ Partial Class FormKoreksiPinjamorPiutangNasabah
         '
         'GroupBox5
         '
+        Me.GroupBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.GroupBox5.Controls.Add(Me.btn_Keluar)
         Me.GroupBox5.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GroupBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!)

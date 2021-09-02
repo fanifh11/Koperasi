@@ -50,7 +50,7 @@ Partial Class FormPerhitungaBungaSimpSukarela
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_Subjudul)
         Me.Panel1.Controls.Add(Me.lbl_Judul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -65,7 +65,7 @@ Partial Class FormPerhitungaBungaSimpSukarela
         Me.lbl_Subjudul.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Italic)
         Me.lbl_Subjudul.Location = New System.Drawing.Point(29, 40)
         Me.lbl_Subjudul.Name = "lbl_Subjudul"
-        Me.lbl_Subjudul.Size = New System.Drawing.Size(425, 18)
+        Me.lbl_Subjudul.Size = New System.Drawing.Size(361, 15)
         Me.lbl_Subjudul.TabIndex = 13
         Me.lbl_Subjudul.Text = "Form ini digunakan untuk perhitungan bunga simpanan sukarela"
         '
@@ -75,7 +75,7 @@ Partial Class FormPerhitungaBungaSimpSukarela
         Me.lbl_Judul.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.lbl_Judul.Location = New System.Drawing.Point(12, 20)
         Me.lbl_Judul.Name = "lbl_Judul"
-        Me.lbl_Judul.Size = New System.Drawing.Size(343, 25)
+        Me.lbl_Judul.Size = New System.Drawing.Size(284, 20)
         Me.lbl_Judul.TabIndex = 12
         Me.lbl_Judul.Text = "Perhitungan Bunga Simp Sukarela"
         '
@@ -93,7 +93,7 @@ Partial Class FormPerhitungaBungaSimpSukarela
         '
         Me.dtp_TglHitung.Location = New System.Drawing.Point(132, 30)
         Me.dtp_TglHitung.Name = "dtp_TglHitung"
-        Me.dtp_TglHitung.Size = New System.Drawing.Size(279, 24)
+        Me.dtp_TglHitung.Size = New System.Drawing.Size(279, 21)
         Me.dtp_TglHitung.TabIndex = 1
         '
         'lbl_TglHitung
@@ -101,7 +101,7 @@ Partial Class FormPerhitungaBungaSimpSukarela
         Me.lbl_TglHitung.AutoSize = True
         Me.lbl_TglHitung.Location = New System.Drawing.Point(16, 30)
         Me.lbl_TglHitung.Name = "lbl_TglHitung"
-        Me.lbl_TglHitung.Size = New System.Drawing.Size(106, 18)
+        Me.lbl_TglHitung.Size = New System.Drawing.Size(91, 15)
         Me.lbl_TglHitung.TabIndex = 0
         Me.lbl_TglHitung.Text = "Tanggal Hitung"
         '
@@ -122,7 +122,7 @@ Partial Class FormPerhitungaBungaSimpSukarela
         Me.lbl_JumData.AutoSize = True
         Me.lbl_JumData.Location = New System.Drawing.Point(17, 330)
         Me.lbl_JumData.Name = "lbl_JumData"
-        Me.lbl_JumData.Size = New System.Drawing.Size(111, 18)
+        Me.lbl_JumData.Size = New System.Drawing.Size(93, 15)
         Me.lbl_JumData.TabIndex = 1
         Me.lbl_JumData.Text = "Jumlah Data : 0"
         '
@@ -141,19 +141,20 @@ Partial Class FormPerhitungaBungaSimpSukarela
         '
         'GroupBox3
         '
+        Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.GroupBox3.Controls.Add(Me.btn_Keluar)
         Me.GroupBox3.Controls.Add(Me.btn_Hitung)
         Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!)
-        Me.GroupBox3.Location = New System.Drawing.Point(0, 552)
+        Me.GroupBox3.Location = New System.Drawing.Point(0, 531)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(895, 62)
+        Me.GroupBox3.Size = New System.Drawing.Size(895, 56)
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         '
         'btn_Keluar
         '
-        Me.btn_Keluar.Location = New System.Drawing.Point(795, 11)
+        Me.btn_Keluar.Location = New System.Drawing.Point(789, 15)
         Me.btn_Keluar.Name = "btn_Keluar"
         Me.btn_Keluar.Size = New System.Drawing.Size(94, 29)
         Me.btn_Keluar.TabIndex = 1
@@ -162,7 +163,7 @@ Partial Class FormPerhitungaBungaSimpSukarela
         '
         'btn_Hitung
         '
-        Me.btn_Hitung.Location = New System.Drawing.Point(12, 11)
+        Me.btn_Hitung.Location = New System.Drawing.Point(16, 15)
         Me.btn_Hitung.Name = "btn_Hitung"
         Me.btn_Hitung.Size = New System.Drawing.Size(94, 29)
         Me.btn_Hitung.TabIndex = 0
@@ -186,7 +187,7 @@ Partial Class FormPerhitungaBungaSimpSukarela
         Me.lbl_JumData2.AutoSize = True
         Me.lbl_JumData2.Location = New System.Drawing.Point(17, 330)
         Me.lbl_JumData2.Name = "lbl_JumData2"
-        Me.lbl_JumData2.Size = New System.Drawing.Size(111, 18)
+        Me.lbl_JumData2.Size = New System.Drawing.Size(93, 15)
         Me.lbl_JumData2.TabIndex = 1
         Me.lbl_JumData2.Text = "Jumlah Data : 0"
         '
@@ -223,9 +224,9 @@ Partial Class FormPerhitungaBungaSimpSukarela
         '
         'FormPerhitungaBungaSimpSukarela
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(895, 614)
+        Me.ClientSize = New System.Drawing.Size(895, 587)
         Me.Controls.Add(Me.btn_KembalikaSemua)
         Me.Controls.Add(Me.btn_PindahSemua)
         Me.Controls.Add(Me.group_DataTerpilih)

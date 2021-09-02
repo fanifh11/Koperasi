@@ -1,12 +1,9 @@
 ﻿Public Class FormAnggota
     Dim metode As String = ""
-    Dim idAnggota As String = ""
-
-    Public sql As String
+    Public idanggota As String = ""
 
     Sub showData()
-        sql = "select idanggota,anggota,noktp,tempatlahir,tanggallahir,alamat,jk,notelp,status,pekerjaan,namasaudara,hpsaudara,tahunmasuk from tblanggota where anggota ilike '%" & txtSearch.Text & "%'"
-        dgv_DataAnggota.DataSource = getData(sql)
+        dgv_DataAnggota.DataSource = getData("select idanggota,anggota,noktp,tempatlahir,to_char(tanggallahir, 'DD-MM-YYYY') as tanggallahir,alamat,jk,notelp,status,pekerjaan,namasaudara,hpsaudara,to_char(tahunmasuk, 'DD-MM-YYYY') as tahunmasuk from tblanggota where anggota ilike '%" & txtSearch.Text & "%'")
         dgv_DataAnggota.Columns(0).HeaderText = "Kode Anggota"
         dgv_DataAnggota.Columns(1).HeaderText = "Nama Anggota"
         dgv_DataAnggota.Columns(2).HeaderText = "No. KTP"
@@ -37,10 +34,6 @@
         group_DataAnggota.Enabled = True
     End Sub
 
-    Private Sub txt_Nama_TextChanged(sender As Object, e As EventArgs) Handles txt_Nama.TextChanged
-        showData()
-    End Sub
-
     Private Sub btn_Keluar_Click(sender As Object, e As EventArgs) Handles btn_Keluar.Click
         Me.Close()
     End Sub
@@ -69,8 +62,14 @@
     End Sub
 
     Private Sub btn_Ubah_Click(sender As Object, e As EventArgs) Handles btn_Ubah.Click
-        openForm()
-        metode = "update"
+        If adaKosong(group_InformasiAnggota) Then
+            dialogError("Pilihlah data anggota terlebih dahulu pada tabel diatas !")
+            Return
+        Else
+            openForm()
+            metode = "update"
+        End If
+
     End Sub
 
     Private Sub btn_Simpan_Click(sender As Object, e As EventArgs) Handles btn_Simpan.Click
@@ -137,7 +136,7 @@
 
 
             Else
-                If getCount("select idanggota from tblanggota where ( idanggota = '" & kodeAnggota & "' or anggota = '" & namaAnggota & "' or noktp = '" & noKtp & "' ) and idanggota != '" & idAnggota & "' ") = 0 Then
+                If getCount("select idanggota from tblanggota where ( idanggota = '" & kodeAnggota & "' or anggota = '" & namaAnggota & "' or noktp = '" & noKtp & "' ) and idanggota != '" & idanggota & "' ") = 0 Then
                     exc("update tblanggota set
                       idanggota = '" & kodeAnggota & "',
                       anggota =  '" & namaAnggota & "',
@@ -153,7 +152,7 @@
                       hpsaudara = '" & telpSaudara & "',
                       tahunmasuk = '" & tglDaftar & "'
 
-                      where idanggota = '" & idAnggota & "'
+                      where idanggota = '" & idanggota & "'
                 ")
                 Else
                     dialogError("Ada duplikasi data !")
@@ -169,7 +168,7 @@
     Private Sub dgv_DataAnggota_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_DataAnggota.CellClick
 
         If (e.RowIndex >= 0) Then
-            idAnggota = dgv_DataAnggota.Rows(e.RowIndex).Cells(0).Value
+            idanggota = dgv_DataAnggota.Rows(e.RowIndex).Cells(0).Value
 
             txt_KodeAnggota.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(0).Value
             txt_Nama.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(1).Value
@@ -226,7 +225,6 @@
 
             dtp_TglDaftar.Value = dgv_DataAnggota.Rows(e.RowIndex).Cells(12).Value
 
-
         End If
 
 
@@ -234,17 +232,16 @@
     End Sub
 
     Private Sub btn_Hapus_Click(sender As Object, e As EventArgs) Handles btn_Hapus.Click
-
-        If dialog("Apakah yakin untuk menghapus data ini? ") Then
-            If adaKosong(group_InformasiAnggota) Then
-                dialogError("Harap pilih data anggota terlebih dahulu !")
-                Return
-            Else
-                If getCount("select idanggota from tblpinjam where idanggota = '" & idAnggota & "' ") > 0 Or getCount("select idanggota from tblsukarela where idanggota='" & idAnggota & "'") > 0 Then
+        If adaKosong(group_InformasiAnggota) Then
+            dialogError("Harap pilih data anggota terlebih dahulu !")
+            Return
+        Else
+            If dialog("Apakah Anda yakin untuk menghapus data ?") Then
+                If getCount("select idanggota from tblpinjam where idanggota = '" & idanggota & "' ") > 0 Or getCount("select idanggota from tblsukarela where idanggota='" & idanggota & "'") > 0 Then
                     dialogError("Data anggota tidak dapat dihapus karena memiliki pinjaman dan simpanan !")
                     Return
                 Else
-                    If exc("delete from tblanggota where idanggota = '" & idAnggota & "' ") Then
+                    If exc("delete from tblanggota where idanggota = '" & idanggota & "' ") Then
                         dialogInfo("Hapus berhasil ")
                     Else
                         dialogError("Hapus gagal ")
@@ -252,10 +249,10 @@
                     clearForm(group_InformasiAnggota)
                     showData()
                 End If
+            Else
+                dialogError("Hapus batal atau gagal !")
             End If
         End If
-
-
     End Sub
 
     Private Sub txt_NoKTP_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_NoKTP.KeyPress
@@ -275,7 +272,7 @@
     End Sub
 
     Private Sub btn_CetakKartu_Click(sender As Object, e As EventArgs) Handles btn_CetakKartu.Click
-        PreviewFormAnggota.sql = Sql
+        PreviewFormAnggota.idanggota = dgv_DataAnggota.Rows(dgv_DataAnggota.CurrentCell.RowIndex).Cells(0).Value.ToString
         PreviewFormAnggota.ShowDialog()
     End Sub
 End Class

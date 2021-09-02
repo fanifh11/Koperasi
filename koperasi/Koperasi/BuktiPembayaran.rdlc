@@ -10,6 +10,220 @@
       <rd:DataSourceID>433611f8-4d8b-4c50-8f79-56527d9c3cc7</rd:DataSourceID>
     </DataSource>
   </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>koperasiDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="idTagihan">
+          <DataField>idTagihan</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="idPinjam">
+          <DataField>idPinjam</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TglTagihan">
+          <DataField>TglTagihan</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="TglBayar">
+          <DataField>TglBayar</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="BesarBayar">
+          <DataField>BesarBayar</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="BesarPokok">
+          <DataField>BesarPokok</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="BesarBunga">
+          <DataField>BesarBunga</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="TotalPokok">
+          <DataField>TotalPokok</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="TotalAngsur">
+          <DataField>TotalAngsur</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="TotalBunga">
+          <DataField>TotalBunga</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CicilanKe">
+          <DataField>CicilanKe</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="FlagTagihan">
+          <DataField>FlagTagihan</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="KodeTagihan">
+          <DataField>KodeTagihan</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="addTagihan">
+          <DataField>addTagihan</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FlagPostingTagihan">
+          <DataField>FlagPostingTagihan</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="idAnggota">
+          <DataField>idAnggota</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="jenis">
+          <DataField>jenis</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TglPinjam">
+          <DataField>TglPinjam</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="BesarPinjam">
+          <DataField>BesarPinjam</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="LamaPinjam">
+          <DataField>LamaPinjam</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="PersenBunga">
+          <DataField>PersenBunga</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="Administrasi">
+          <DataField>Administrasi</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Asuransi">
+          <DataField>Asuransi</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="AngsuranPokok">
+          <DataField>AngsuranPokok</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="AngsuranBunga">
+          <DataField>AngsuranBunga</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="JumlahAngsuran">
+          <DataField>JumlahAngsuran</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Diterima">
+          <DataField>Diterima</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="BayarPokok">
+          <DataField>BayarPokok</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="BayarBunga">
+          <DataField>BayarBunga</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="SaldoPinjam">
+          <DataField>SaldoPinjam</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="StatusPinjam">
+          <DataField>StatusPinjam</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="FlagPinjam">
+          <DataField>FlagPinjam</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="addpinjam">
+          <DataField>addpinjam</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JenisAnggota">
+          <DataField>JenisAnggota</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Anggota">
+          <DataField>Anggota</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JK">
+          <DataField>JK</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TempatLahir">
+          <DataField>TempatLahir</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TanggalLahir">
+          <DataField>TanggalLahir</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="NoKTP">
+          <DataField>NoKTP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Alamat">
+          <DataField>Alamat</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Notelp">
+          <DataField>Notelp</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Pekerjaan">
+          <DataField>Pekerjaan</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Status">
+          <DataField>Status</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NamaSaudara">
+          <DataField>NamaSaudara</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HPSaudara">
+          <DataField>HPSaudara</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Foto">
+          <DataField>Foto</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+        <Field Name="TahunMasuk">
+          <DataField>TahunMasuk</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="StatusAnggota">
+          <DataField>StatusAnggota</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="flagPostingPinjam">
+          <DataField>flagPostingPinjam</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>koperasiDataSet</rd:DataSetName>
+        <rd:SchemaPath>E:\TUGAS KULIAH\TUGAS KULIAH SEMESTER 6\PRAKTEK INDUSTRI\Koperasi-main\koperasi\Koperasi\koperasiDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>QTagihan</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>QTagihanTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -36,7 +250,6 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
                 <Top>0.2cm</Top>
-                <Left>0cm</Left>
                 <Height>0.6cm</Height>
                 <Width>22cm</Width>
                 <Style>
@@ -69,7 +282,6 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
                 <Top>1cm</Top>
-                <Left>0cm</Left>
                 <Height>0.6cm</Height>
                 <Width>22cm</Width>
                 <ZIndex>1</ZIndex>
@@ -103,7 +315,6 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
                 <Top>2cm</Top>
-                <Left>0cm</Left>
                 <Height>0.6cm</Height>
                 <Width>22cm</Width>
                 <ZIndex>2</ZIndex>
@@ -667,7 +878,6 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
                 <Top>12.2cm</Top>
-                <Left>0cm</Left>
                 <Height>0.6cm</Height>
                 <Width>22cm</Width>
                 <ZIndex>20</ZIndex>
@@ -701,7 +911,6 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
                 <Top>13cm</Top>
-                <Left>0cm</Left>
                 <Height>0.6cm</Height>
                 <Width>22cm</Width>
                 <ZIndex>21</ZIndex>
@@ -735,7 +944,6 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
                 <Top>14cm</Top>
-                <Left>0cm</Left>
                 <Height>0.6cm</Height>
                 <Width>22cm</Width>
                 <ZIndex>22</ZIndex>
@@ -1129,7 +1337,6 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
                 <Top>20.8cm</Top>
-                <Left>0cm</Left>
                 <Height>0.6cm</Height>
                 <Width>6.78625cm</Width>
                 <ZIndex>35</ZIndex>
@@ -1164,7 +1371,6 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
                 <Top>23cm</Top>
-                <Left>0cm</Left>
                 <Height>0.6cm</Height>
                 <Width>6.78625cm</Width>
                 <ZIndex>36</ZIndex>
@@ -1278,7 +1484,6 @@
               </Textbox>
               <Line Name="Line2">
                 <Top>2.8cm</Top>
-                <Left>0cm</Left>
                 <Height>0cm</Height>
                 <Width>22cm</Width>
                 <ZIndex>40</ZIndex>
@@ -1290,7 +1495,6 @@
               </Line>
               <Line Name="Line3">
                 <Top>4.6cm</Top>
-                <Left>0cm</Left>
                 <Height>0cm</Height>
                 <Width>22cm</Width>
                 <ZIndex>41</ZIndex>
@@ -1302,7 +1506,6 @@
               </Line>
               <Line Name="Line4">
                 <Top>12cm</Top>
-                <Left>0cm</Left>
                 <Height>0cm</Height>
                 <Width>22cm</Width>
                 <ZIndex>42</ZIndex>
@@ -1314,7 +1517,6 @@
               </Line>
               <Line Name="Line5">
                 <Top>13.8cm</Top>
-                <Left>0cm</Left>
                 <Height>0cm</Height>
                 <Width>22cm</Width>
                 <ZIndex>43</ZIndex>
@@ -1326,7 +1528,6 @@
               </Line>
               <Line Name="Line6">
                 <Top>14.8cm</Top>
-                <Left>0cm</Left>
                 <Height>0cm</Height>
                 <Width>22cm</Width>
                 <ZIndex>44</ZIndex>
@@ -1338,7 +1539,6 @@
               </Line>
               <Line Name="Line7">
                 <Top>16.6cm</Top>
-                <Left>0cm</Left>
                 <Height>0cm</Height>
                 <Width>22cm</Width>
                 <ZIndex>45</ZIndex>
@@ -2136,113 +2336,6 @@
                   <PaddingBottom>2pt</PaddingBottom>
                 </Style>
               </Textbox>
-              <Textbox Name="Textbox154">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>= Parameters!besarpembayaran.Value</Value>
-                        <Style>
-                          <FontWeight>Bold</FontWeight>
-                          <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Left</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox152</rd:DefaultName>
-                <Top>4.8cm</Top>
-                <Left>5.4cm</Left>
-                <Height>0.6cm</Height>
-                <Width>5.4cm</Width>
-                <ZIndex>72</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                  <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox155">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>= Parameters!besarpokok.Value</Value>
-                        <Style>
-                          <FontWeight>Bold</FontWeight>
-                          <Format>#,0.00;(#,0.00)</Format>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Left</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox152</rd:DefaultName>
-                <Top>5.6cm</Top>
-                <Left>5.4cm</Left>
-                <Height>0.6cm</Height>
-                <Width>5.4cm</Width>
-                <ZIndex>73</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox156">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>= Parameters!besarbunga.Value</Value>
-                        <Style>
-                          <FontWeight>Bold</FontWeight>
-                          <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Left</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox152</rd:DefaultName>
-                <Top>6.4cm</Top>
-                <Left>5.4cm</Left>
-                <Height>0.6cm</Height>
-                <Width>5.4cm</Width>
-                <ZIndex>74</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                  <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
-                </Style>
-              </Textbox>
               <Textbox Name="Textbox157">
                 <CanGrow>true</CanGrow>
                 <KeepTogether>true</KeepTogether>
@@ -2266,7 +2359,7 @@
                 <Left>5.4cm</Left>
                 <Height>0.6cm</Height>
                 <Width>5.4cm</Width>
-                <ZIndex>75</ZIndex>
+                <ZIndex>72</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -2298,7 +2391,7 @@
                 <Left>16.2cm</Left>
                 <Height>0.6cm</Height>
                 <Width>5.8cm</Width>
-                <ZIndex>76</ZIndex>
+                <ZIndex>73</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -2332,7 +2425,7 @@
                 <Left>16.2cm</Left>
                 <Height>0.6cm</Height>
                 <Width>5.8cm</Width>
-                <ZIndex>77</ZIndex>
+                <ZIndex>74</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -2341,112 +2434,6 @@
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
                   <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox160">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>= Parameters!angsuranke.Value</Value>
-                        <Style>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Left</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox152</rd:DefaultName>
-                <Top>4.8cm</Top>
-                <Left>16.22743cm</Left>
-                <Height>0.6cm</Height>
-                <Width>5.77257cm</Width>
-                <ZIndex>78</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox161">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>= Parameters!besarpinjaman.Value</Value>
-                        <Style>
-                          <FontWeight>Bold</FontWeight>
-                          <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Left</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox152</rd:DefaultName>
-                <Top>5.6cm</Top>
-                <Left>16.22743cm</Left>
-                <Height>0.6cm</Height>
-                <Width>5.77257cm</Width>
-                <ZIndex>79</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                  <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox162">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>= Parameters!saldopinjaman.Value</Value>
-                        <Style>
-                          <FontWeight>Bold</FontWeight>
-                          <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Left</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox152</rd:DefaultName>
-                <Top>6.4cm</Top>
-                <Left>16.22743cm</Left>
-                <Height>0.6cm</Height>
-                <Width>5.77257cm</Width>
-                <ZIndex>80</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                  <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
                 </Style>
               </Textbox>
               <Textbox Name="Textbox163">
@@ -2469,10 +2456,10 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox152</rd:DefaultName>
                 <Top>7.2cm</Top>
-                <Left>16.22743cm</Left>
+                <Left>16.2cm</Left>
                 <Height>0.6cm</Height>
-                <Width>5.77257cm</Width>
-                <ZIndex>81</ZIndex>
+                <Width>5.8cm</Width>
+                <ZIndex>75</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -2506,7 +2493,7 @@
                 <Left>5.4cm</Left>
                 <Height>0.6cm</Height>
                 <Width>5.4cm</Width>
-                <ZIndex>82</ZIndex>
+                <ZIndex>76</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -2540,7 +2527,7 @@
                 <Left>5.4cm</Left>
                 <Height>0.6cm</Height>
                 <Width>5.4cm</Width>
-                <ZIndex>83</ZIndex>
+                <ZIndex>77</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -2549,114 +2536,6 @@
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
                   <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox166">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>= Parameters!besarpembayaran.Value</Value>
-                        <Style>
-                          <FontWeight>Bold</FontWeight>
-                          <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Left</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox152</rd:DefaultName>
-                <Top>16.8cm</Top>
-                <Left>5.4cm</Left>
-                <Height>0.6cm</Height>
-                <Width>5.4cm</Width>
-                <ZIndex>84</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                  <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox167">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>= Parameters!besarpokok.Value</Value>
-                        <Style>
-                          <FontWeight>Bold</FontWeight>
-                          <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Left</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox152</rd:DefaultName>
-                <Top>17.6cm</Top>
-                <Left>5.4cm</Left>
-                <Height>0.6cm</Height>
-                <Width>5.4cm</Width>
-                <ZIndex>85</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                  <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox168">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>= Parameters!besarbunga.Value</Value>
-                        <Style>
-                          <FontWeight>Bold</FontWeight>
-                          <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Left</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox152</rd:DefaultName>
-                <Top>18.4cm</Top>
-                <Left>5.4cm</Left>
-                <Height>0.6cm</Height>
-                <Width>5.4cm</Width>
-                <ZIndex>86</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                  <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
                 </Style>
               </Textbox>
               <Textbox Name="Textbox169">
@@ -2682,7 +2561,7 @@
                 <Left>5.4cm</Left>
                 <Height>0.6cm</Height>
                 <Width>5.4cm</Width>
-                <ZIndex>87</ZIndex>
+                <ZIndex>78</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -2714,7 +2593,7 @@
                 <Left>16.2cm</Left>
                 <Height>0.6cm</Height>
                 <Width>5.8cm</Width>
-                <ZIndex>88</ZIndex>
+                <ZIndex>79</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -2748,7 +2627,7 @@
                 <Left>16.2cm</Left>
                 <Height>0.6cm</Height>
                 <Width>5.8cm</Width>
-                <ZIndex>89</ZIndex>
+                <ZIndex>80</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -2757,112 +2636,6 @@
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
                   <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox172">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>= Parameters!angsuranke.Value</Value>
-                        <Style>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Left</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox152</rd:DefaultName>
-                <Top>16.8cm</Top>
-                <Left>16.2cm</Left>
-                <Height>0.6cm</Height>
-                <Width>5.8cm</Width>
-                <ZIndex>90</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox173">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>= Parameters!besarpinjaman.Value</Value>
-                        <Style>
-                          <FontWeight>Bold</FontWeight>
-                          <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Left</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox152</rd:DefaultName>
-                <Top>17.6cm</Top>
-                <Left>16.2cm</Left>
-                <Height>0.6cm</Height>
-                <Width>5.8cm</Width>
-                <ZIndex>91</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                  <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox174">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>= Parameters!saldopinjaman.Value</Value>
-                        <Style>
-                          <FontWeight>Bold</FontWeight>
-                          <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style>
-                      <TextAlign>Left</TextAlign>
-                    </Style>
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox152</rd:DefaultName>
-                <Top>18.4cm</Top>
-                <Left>16.2cm</Left>
-                <Height>0.6cm</Height>
-                <Width>5.8cm</Width>
-                <ZIndex>92</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                  <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
                 </Style>
               </Textbox>
               <Textbox Name="Textbox175">
@@ -2888,7 +2661,7 @@
                 <Left>16.2cm</Left>
                 <Height>0.6cm</Height>
                 <Width>5.8cm</Width>
-                <ZIndex>93</ZIndex>
+                <ZIndex>81</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -2901,16 +2674,913 @@
               </Textbox>
               <Line Name="Line1">
                 <Top>1.8cm</Top>
-                <Left>0cm</Left>
                 <Height>0cm</Height>
                 <Width>22cm</Width>
-                <ZIndex>94</ZIndex>
+                <ZIndex>82</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
                   </Border>
                 </Style>
               </Line>
+              <Tablix Name="Tablix2">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>5.4cm</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.6cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="BesarBayar">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!BesarBayar.Value</Value>
+                                      <Style>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BesarBayar</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="Details" />
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>DataSet1</DataSetName>
+                <Top>4.8cm</Top>
+                <Left>5.4cm</Left>
+                <Height>0.6cm</Height>
+                <Width>5.4cm</Width>
+                <ZIndex>83</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Tablix>
+              <Tablix Name="Tablix3">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>5.4cm</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.6cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="BesarPokok">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!BesarPokok.Value</Value>
+                                      <Style>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BesarPokok</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="Details1" />
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>DataSet1</DataSetName>
+                <Top>5.6cm</Top>
+                <Left>5.4cm</Left>
+                <Height>0.6cm</Height>
+                <Width>5.4cm</Width>
+                <ZIndex>84</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Tablix>
+              <Tablix Name="Tablix4">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>5.4cm</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.6cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="BesarBunga">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!BesarBunga.Value</Value>
+                                      <Style>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BesarBunga</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="Details2" />
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>DataSet1</DataSetName>
+                <Top>6.4cm</Top>
+                <Left>5.4cm</Left>
+                <Height>0.6cm</Height>
+                <Width>5.4cm</Width>
+                <ZIndex>85</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Tablix>
+              <Tablix Name="Tablix5">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>5.8cm</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.6cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="CicilanKe">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!CicilanKe.Value</Value>
+                                      <Style>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Format>#,0;(#,0)</Format>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>CicilanKe</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="Details3" />
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>DataSet1</DataSetName>
+                <Top>4.8cm</Top>
+                <Left>16.2cm</Left>
+                <Height>0.6cm</Height>
+                <Width>5.8cm</Width>
+                <ZIndex>86</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Tablix>
+              <Tablix Name="Tablix6">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>5.8cm</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.6cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="BesarPinjam">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!BesarPinjam.Value</Value>
+                                      <Style>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BesarPinjam</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="Details4" />
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>DataSet1</DataSetName>
+                <Top>5.6cm</Top>
+                <Left>16.2cm</Left>
+                <Height>0.6cm</Height>
+                <Width>5.8cm</Width>
+                <ZIndex>87</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Tablix>
+              <Tablix Name="Tablix7">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>5.8cm</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.6cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="SaldoPinjam">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!SaldoPinjam.Value</Value>
+                                      <Style>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>SaldoPinjam</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="Details5" />
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>DataSet1</DataSetName>
+                <Top>6.4cm</Top>
+                <Left>16.2cm</Left>
+                <Height>0.6cm</Height>
+                <Width>5.8cm</Width>
+                <ZIndex>88</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Tablix>
+              <Tablix Name="Tablix8">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>5.4cm</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.6cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="BesarBayar1">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!BesarBayar.Value</Value>
+                                      <Style>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BesarBayar1</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="Details6" />
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>DataSet1</DataSetName>
+                <Top>16.8cm</Top>
+                <Left>5.4cm</Left>
+                <Height>0.6cm</Height>
+                <Width>5.4cm</Width>
+                <ZIndex>89</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Tablix>
+              <Tablix Name="Tablix9">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>5.4cm</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.6cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="BesarPokok1">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!BesarPokok.Value</Value>
+                                      <Style>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BesarPokok1</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="Details7" />
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>DataSet1</DataSetName>
+                <Top>17.6cm</Top>
+                <Left>5.4cm</Left>
+                <Height>0.6cm</Height>
+                <Width>5.4cm</Width>
+                <ZIndex>90</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Tablix>
+              <Tablix Name="Tablix10">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>5.4cm</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.6cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="BesarBunga1">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!BesarBunga.Value</Value>
+                                      <Style>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BesarBunga1</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="Details8" />
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>DataSet1</DataSetName>
+                <Top>18.4cm</Top>
+                <Left>5.4cm</Left>
+                <Height>0.6cm</Height>
+                <Width>5.4cm</Width>
+                <ZIndex>91</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Tablix>
+              <Tablix Name="Tablix11">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>5.8cm</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.6cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="CicilanKe1">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!CicilanKe.Value</Value>
+                                      <Style>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Format>#,0;(#,0)</Format>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>CicilanKe1</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="Details9" />
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>DataSet1</DataSetName>
+                <Top>16.8cm</Top>
+                <Left>16.2cm</Left>
+                <Height>0.6cm</Height>
+                <Width>5.8cm</Width>
+                <ZIndex>92</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Tablix>
+              <Tablix Name="Tablix12">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>5.8cm</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.6cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="BesarPinjam1">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!BesarPinjam.Value</Value>
+                                      <Style>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BesarPinjam1</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="Details10" />
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>DataSet1</DataSetName>
+                <Top>17.6cm</Top>
+                <Left>16.2cm</Left>
+                <Height>0.6cm</Height>
+                <Width>5.8cm</Width>
+                <ZIndex>93</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Tablix>
+              <Tablix Name="Tablix13">
+                <TablixBody>
+                  <TablixColumns>
+                    <TablixColumn>
+                      <Width>5.8cm</Width>
+                    </TablixColumn>
+                  </TablixColumns>
+                  <TablixRows>
+                    <TablixRow>
+                      <Height>0.6cm</Height>
+                      <TablixCells>
+                        <TablixCell>
+                          <CellContents>
+                            <Textbox Name="SaldoPinjam1">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!SaldoPinjam.Value</Value>
+                                      <Style>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>SaldoPinjam1</rd:DefaultName>
+                              <Style>
+                                <Border>
+                                  <Color>LightGrey</Color>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <rd:FormatSymbolCulture>id-ID</rd:FormatSymbolCulture>
+                              </Style>
+                            </Textbox>
+                          </CellContents>
+                        </TablixCell>
+                      </TablixCells>
+                    </TablixRow>
+                  </TablixRows>
+                </TablixBody>
+                <TablixColumnHierarchy>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixColumnHierarchy>
+                <TablixRowHierarchy>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="Details11" />
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixRowHierarchy>
+                <DataSetName>DataSet1</DataSetName>
+                <Top>18.4cm</Top>
+                <Left>16.2cm</Left>
+                <Height>0.6cm</Height>
+                <Width>5.8cm</Width>
+                <ZIndex>94</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Tablix>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
             <Top>1cm</Top>
@@ -2961,18 +3631,6 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
-    <ReportParameter Name="besarpembayaran">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="besarpokok">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="besarbunga">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
     <ReportParameter Name="terbilang">
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
@@ -2982,18 +3640,6 @@
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
     <ReportParameter Name="tanggalbayar">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="angsuranke">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="besarpinjaman">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="saldopinjaman">
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
@@ -3033,21 +3679,6 @@
           <ParameterName>namaanggota</ParameterName>
         </CellDefinition>
         <CellDefinition>
-          <ColumnIndex>3</ColumnIndex>
-          <RowIndex>1</RowIndex>
-          <ParameterName>besarpembayaran</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>0</ColumnIndex>
-          <RowIndex>2</RowIndex>
-          <ParameterName>besarpokok</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>1</ColumnIndex>
-          <RowIndex>2</RowIndex>
-          <ParameterName>besarbunga</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
           <ColumnIndex>2</ColumnIndex>
           <RowIndex>2</RowIndex>
           <ParameterName>terbilang</ParameterName>
@@ -3061,21 +3692,6 @@
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>3</RowIndex>
           <ParameterName>tanggalbayar</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>1</ColumnIndex>
-          <RowIndex>3</RowIndex>
-          <ParameterName>angsuranke</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>2</ColumnIndex>
-          <RowIndex>3</RowIndex>
-          <ParameterName>besarpinjaman</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>3</ColumnIndex>
-          <RowIndex>3</RowIndex>
-          <ParameterName>saldopinjaman</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>

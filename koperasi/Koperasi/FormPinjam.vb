@@ -1,17 +1,22 @@
 ﻿Public Class FormPinjam
     Public idanggota As String = "0"
+    Public idpinjam As String = ""
+
+    Dim selectKodePinjam As String = ""
 
     Sub lockForm()
         group_informasi_nasabah.Enabled = False
         group_informasi_peminjaman.Enabled = False
-        grupBtn.Enabled = True
+        btn_tambah.Enabled = True
+        btn_keluar.Enabled = True
 
     End Sub
 
     Sub openForm()
         group_informasi_nasabah.Enabled = True
         group_informasi_peminjaman.Enabled = True
-        grupBtn.Enabled = False
+        btn_tambah.Enabled = False
+        btn_keluar.Enabled = False
 
     End Sub
 
@@ -27,10 +32,27 @@
         txt_jumlah_angsuran.Text = 0
 
     End Sub
+
+    Sub kondisiBtnCetak()
+        If String.IsNullOrEmpty(selectKodePinjam) Then
+            btn_cetak_kwitansi.Enabled = False
+        Else
+            btn_cetak_kwitansi.Enabled = True
+        End If
+    End Sub
+
+    Sub kondisiBtnHapus()
+        If String.IsNullOrEmpty(selectKodePinjam) Then
+            btn_hapus.Enabled = False
+        Else
+            btn_hapus.Enabled = True
+        End If
+    End Sub
+
     Dim metode As String = ""
 
     Sub showData()
-        dgv_data_peminjaman.DataSource = getData("select idpinjam,idanggota,anggota,jenis,tglpinjam,besarpinjam,lamapinjam,persenbunga,asuransi,administrasi,diterima,angsuranpokok,angsuranbunga,jumlahangsuran from qpinjam where idanggota='" & idanggota & "' and jenis ilike '%" & txt_search.Text & "%'  ")
+        dgv_data_peminjaman.DataSource = getData("select idpinjam,idanggota,anggota,jenis,to_char(tglpinjam, 'DD-MM-YYYY') as tglpinjam,besarpinjam,lamapinjam,persenbunga,asuransi,administrasi,diterima,angsuranpokok,angsuranbunga,jumlahangsuran from qpinjam where idanggota='" & idanggota & "' and jenis ilike '%" & txt_search.Text & "%'  ")
         dgv_data_peminjaman.Columns(0).HeaderText = "Kode Pinjam"
         dgv_data_peminjaman.Columns(1).HeaderText = "Kode Anggota"
         dgv_data_peminjaman.Columns(2).HeaderText = "Nama"
@@ -45,6 +67,14 @@
         dgv_data_peminjaman.Columns(11).HeaderText = "Angsuran Pokok"
         dgv_data_peminjaman.Columns(12).HeaderText = "Angsuran Bunga"
         dgv_data_peminjaman.Columns(13).HeaderText = "Jumlah Angsuran"
+
+        dgv_data_peminjaman.Columns(5).DefaultCellStyle.Format = "c0"
+        dgv_data_peminjaman.Columns(8).DefaultCellStyle.Format = "c0"
+        dgv_data_peminjaman.Columns(9).DefaultCellStyle.Format = "c0"
+        dgv_data_peminjaman.Columns(10).DefaultCellStyle.Format = "c0"
+        dgv_data_peminjaman.Columns(11).DefaultCellStyle.Format = "c0"
+        dgv_data_peminjaman.Columns(12).DefaultCellStyle.Format = "c0"
+        dgv_data_peminjaman.Columns(13).DefaultCellStyle.Format = "c0"
 
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_peminjaman.Rows.Count
 
@@ -89,7 +119,7 @@
         Dim besarBunga As Double = toDouble(txt_bunga.Text)
         Dim totalPokok As Double = toDouble(txt_angsuran_pokok.Text)
 
-        txt_angsuran_bunga.Text= Math.Ceiling((besarPinjam * besarBunga) / 100).ToString
+        txt_angsuran_bunga.Text = Math.Ceiling((besarPinjam * besarBunga) / 100).ToString
         hitungAngsuranPokok()
 
         hitungJumAngsuran()
@@ -129,6 +159,8 @@
         buatNilai0()
         lockForm()
 
+        kondisiBtnCetak()
+        kondisiBtnHapus()
         txt_kode_pinjam.Text = Now.ToString("yyyyMMddHHmmss")
     End Sub
     Private Sub txt_besar_pinjam_TextChanged(sender As Object, e As EventArgs) Handles txt_besar_pinjam.TextChanged
@@ -139,9 +171,14 @@
     End Sub
     Private Sub btn_simpan_Click(sender As Object, e As EventArgs) Handles btn_simpan.Click
 
-        If Modul.adaKosong(group_informasi_peminjaman) Then
-            dialogError("Lengkapi form isian anda terlebih dahulu !")
+        If adaKosong(group_informasi_nasabah) Then
+            dialogError("Pilih data nasabah terlebih dahulu !")
             Return
+        ElseIf txt_besar_pinjam.Text = "0" Or txt_lama_pinjam.Text = "0" Or txt_bunga.Text = "0" Then
+            dialogError("Lengkapi form data peminjmanan nasabah terlebih dahulu !")
+            Return
+        ElseIf adaKosong(group_informasi_peminjaman) Then
+            dialogError("Lengkapi form data peminjaman nasabah terlebih dahulu !")
         Else
             Dim kodeAnggota As String = txt_kode_nasabah.Text
             Dim kodePinjam As String = txt_kode_pinjam.Text
@@ -306,7 +343,9 @@
     End Sub
 
     Private Sub btn_hapus_Click(sender As Object, e As EventArgs) Handles btn_hapus.Click
-        Dim selectIdPinjam As String = dgv_data_peminjaman.CurrentCell.Value
+
+
+        Dim selectIdPinjam As String = dgv_data_peminjaman.Rows(dgv_data_peminjaman.CurrentCell.RowIndex).Cells(0).Value.ToString
 
         If dialog("Apakah anda yakin untuk menghapus data ?") Then
             If getCount("select idpinjam from tbltagihan where idpinjam = '" & selectIdPinjam & "'") > 0 Then
@@ -321,12 +360,15 @@
 
             End If
         End If
+
+
     End Sub
 
     Private Sub btn_batal_Click(sender As Object, e As EventArgs) Handles btn_batal.Click
         lockForm()
         clearForm(group_informasi_nasabah)
         clearForm(group_informasi_peminjaman)
+        dgv_data_peminjaman.DataSource = Nothing
 
         txt_kode_pinjam.Text = Now.ToString("yyyyMMddHHmmss")
 
@@ -334,11 +376,22 @@
 
     Private Sub btn_tambah_Click(sender As Object, e As EventArgs) Handles btn_tambah.Click
         openForm()
-
     End Sub
 
     Private Sub btn_cetak_kwitansi_Click(sender As Object, e As EventArgs) Handles btn_cetak_kwitansi.Click
-        PreviewFormPinjam.idanggota = idanggota
+        PreviewFormPinjam.idpinjam = dgv_data_peminjaman.Rows(dgv_data_peminjaman.CurrentCell.RowIndex).Cells(0).Value.ToString
         PreviewFormPinjam.ShowDialog()
+
+
+    End Sub
+
+    Private Sub dgv_data_peminjaman_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_data_peminjaman.CellClick
+        If (e.RowIndex >= 0) Then
+            selectKodePinjam = dgv_data_peminjaman.Rows(e.RowIndex).Cells(0).Value
+            idpinjam = selectKodePinjam
+
+            kondisiBtnCetak()
+            kondisiBtnHapus()
+        End If
     End Sub
 End Class

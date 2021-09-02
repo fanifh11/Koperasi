@@ -20,6 +20,10 @@
             dgv_data_simpanan.Columns(3).HeaderText = "Pokok"
             dgv_data_simpanan.Columns(4).HeaderText = "Saldo Awal"
 
+            dgv_data_simpanan.Columns(2).DefaultCellStyle.Format = "c0"
+            dgv_data_simpanan.Columns(3).DefaultCellStyle.Format = "c0"
+            dgv_data_simpanan.Columns(4).DefaultCellStyle.Format = "c0"
+
             lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_simpanan.Rows.Count
         ElseIf cmb_anggota.SelectedIndex = 1 Then
             sql = "select anggota, to_char(now(), 'DD-MM-YYYY') as tglrekap, (select coalesce (sum(besar), 0) from qrekening where kategori = 'WAJIB' and idanggota = tblanggota.idanggota and tglrek between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "') as wajib, (select coalesce (sum(besar), 0) from qrekening where kategori = 'POKOK' and idanggota = tblanggota.idanggota and tglrek between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "') as pokok, (select coalesce(sum(besar), 0) from qrekening where kategori = 'SALDO AWAL' and idanggota = tblanggota.idanggota and tglrek between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "') as saldoawal from tblanggota where anggota ilike '%" & txt_search.Text & "%' and idanggota not in (select idanggota from tblrekening group by idanggota)"
@@ -30,6 +34,10 @@
             dgv_data_simpanan.Columns(3).HeaderText = "Pokok"
             dgv_data_simpanan.Columns(4).HeaderText = "Saldo Awal"
 
+            dgv_data_simpanan.Columns(2).DefaultCellStyle.Format = "c0"
+            dgv_data_simpanan.Columns(3).DefaultCellStyle.Format = "c0"
+            dgv_data_simpanan.Columns(4).DefaultCellStyle.Format = "c0"
+
             lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_simpanan.Rows.Count
         ElseIf cmb_anggota.SelectedIndex = 2 Then
             sql = "select anggota, to_char(now(), 'DD-MM-YYYY') as tglrekap, (select coalesce (sum(besar), 0) from qrekening where kategori = 'WAJIB' and idanggota = tblanggota.idanggota and tglrek between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "') as wajib, (select coalesce (sum(besar), 0) from qrekening where kategori = 'POKOK' and idanggota = tblanggota.idanggota and tglrek between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "') as pokok, (select coalesce(sum(besar), 0) from qrekening where kategori = 'SALDO AWAL' and idanggota = tblanggota.idanggota and tglrek between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "') as saldoawal from tblanggota where anggota ilike '%" & txt_search.Text & "%'"
@@ -39,6 +47,10 @@
             dgv_data_simpanan.Columns(2).HeaderText = "Wajib"
             dgv_data_simpanan.Columns(3).HeaderText = "Pokok"
             dgv_data_simpanan.Columns(4).HeaderText = "Saldo Awal"
+
+            dgv_data_simpanan.Columns(2).DefaultCellStyle.Format = "c0"
+            dgv_data_simpanan.Columns(3).DefaultCellStyle.Format = "c0"
+            dgv_data_simpanan.Columns(4).DefaultCellStyle.Format = "c0"
 
             lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_simpanan.Rows.Count
         End If

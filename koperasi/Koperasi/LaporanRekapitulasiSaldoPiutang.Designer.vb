@@ -54,7 +54,7 @@ Partial Class LaporanRekapitulasiSaldoPiutang
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_Subjudul)
         Me.Panel1.Controls.Add(Me.lbl_Judul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -204,6 +204,7 @@ Partial Class LaporanRekapitulasiSaldoPiutang
         '
         'Panel4
         '
+        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Panel4.Controls.Add(Me.btn_Keluar)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom

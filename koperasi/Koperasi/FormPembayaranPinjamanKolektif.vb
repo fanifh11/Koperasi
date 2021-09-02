@@ -2,16 +2,21 @@
 
     Sub showData()
 
-        dgv_data_tagihan.DataSource = getData("select idtagihan,idpinjam,idanggota,anggota,jk,besarpinjam,totalpokok,totalangsur,totalbunga from qtagihan where anggota ilike '%" & txt_search.Text & "%' and flagtagihan = 0")
+        dgv_data_tagihan.DataSource = getData("select idtagihan,idpinjam,idanggota,anggota,jk,besarpinjam,totalpokok,totalbunga,totalangsur from qtagihan where anggota ilike '%" & txt_search.Text & "%' and flagtagihan = 0")
         dgv_data_tagihan.Columns(0).HeaderText = "Kode Tagihan"
         dgv_data_tagihan.Columns(1).Visible = False
         dgv_data_tagihan.Columns(2).HeaderText = "Kode Anggota"
         dgv_data_tagihan.Columns(3).HeaderText = "Nama"
         dgv_data_tagihan.Columns(4).HeaderText = "Jenis Kelamin"
         dgv_data_tagihan.Columns(5).HeaderText = "Besar Pinjam"
-        dgv_data_tagihan.Columns(6).Visible = False
-        dgv_data_tagihan.Columns(7).Visible = False
-        dgv_data_tagihan.Columns(8).Visible = False
+        dgv_data_tagihan.Columns(6).HeaderText = "Total Pokok"
+        dgv_data_tagihan.Columns(7).HeaderText = "Total Bunga"
+        dgv_data_tagihan.Columns(8).HeaderText = "Total Angsur"
+
+        dgv_data_tagihan.Columns(5).DefaultCellStyle.Format = "c0"
+        dgv_data_tagihan.Columns(6).DefaultCellStyle.Format = "c0"
+        dgv_data_tagihan.Columns(7).DefaultCellStyle.Format = "c0"
+        dgv_data_tagihan.Columns(8).DefaultCellStyle.Format = "c0"
 
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_tagihan.Rows.Count
 
@@ -70,7 +75,9 @@
                 exc("update tblpinjam set saldopinjam = besarpinjam - (select sum(tbltagihan.besarpokok) from tbltagihan where tbltagihan.idpinjam = tblpinjam.idpinjam) where idpinjam in " & idtagihan & " ")
             End If
         End If
+        dialogInfo("Pembayaran kolektif sukses !")
         showData()
+
 
     End Sub
 End Class

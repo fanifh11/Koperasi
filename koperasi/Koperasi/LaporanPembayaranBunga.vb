@@ -17,6 +17,8 @@
         dgv_data_simpanan.Columns(2).HeaderText = "Kredit"
         dgv_data_simpanan.Columns(3).HeaderText = "Tanggal Transaksi"
 
+        dgv_data_simpanan.Columns(2).DefaultCellStyle.Format = "c0"
+
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_simpanan.Rows.Count
     End Sub
 
