@@ -59,9 +59,10 @@ Partial Class LaporanNasabah
         '
         'GroupBox4
         '
-        Me.GroupBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.GroupBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(86, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.GroupBox4.Controls.Add(Me.btn_cetak)
         Me.GroupBox4.Controls.Add(Me.btn_keluar)
+        Me.GroupBox4.ForeColor = System.Drawing.Color.White
         Me.GroupBox4.Location = New System.Drawing.Point(0, 372)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(509, 41)
@@ -70,6 +71,7 @@ Partial Class LaporanNasabah
         '
         'btn_cetak
         '
+        Me.btn_cetak.ForeColor = System.Drawing.Color.Black
         Me.btn_cetak.Location = New System.Drawing.Point(6, 12)
         Me.btn_cetak.Name = "btn_cetak"
         Me.btn_cetak.Size = New System.Drawing.Size(75, 23)
@@ -79,6 +81,7 @@ Partial Class LaporanNasabah
         '
         'btn_keluar
         '
+        Me.btn_keluar.ForeColor = System.Drawing.Color.Black
         Me.btn_keluar.Location = New System.Drawing.Point(423, 12)
         Me.btn_keluar.Name = "btn_keluar"
         Me.btn_keluar.Size = New System.Drawing.Size(75, 23)
@@ -129,9 +132,10 @@ Partial Class LaporanNasabah
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(86, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_subjudul)
         Me.Panel1.Controls.Add(Me.lbl_judul)
+        Me.Panel1.ForeColor = System.Drawing.Color.White
         Me.Panel1.Location = New System.Drawing.Point(0, 1)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(509, 60)
