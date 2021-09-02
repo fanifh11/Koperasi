@@ -48,7 +48,7 @@ Partial Class LaporanSimpananAnggota
         '
         'GroupBox4
         '
-        Me.GroupBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.GroupBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(86, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.GroupBox4.Controls.Add(Me.btn_cetak)
         Me.GroupBox4.Controls.Add(Me.btn_keluar)
         Me.GroupBox4.Location = New System.Drawing.Point(0, 413)
@@ -79,6 +79,7 @@ Partial Class LaporanSimpananAnggota
         '
         Me.lbl_subjudul.AutoSize = True
         Me.lbl_subjudul.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_subjudul.ForeColor = System.Drawing.Color.White
         Me.lbl_subjudul.Location = New System.Drawing.Point(25, 33)
         Me.lbl_subjudul.Name = "lbl_subjudul"
         Me.lbl_subjudul.Size = New System.Drawing.Size(255, 13)
@@ -89,6 +90,7 @@ Partial Class LaporanSimpananAnggota
         '
         Me.lbl_judul.AutoSize = True
         Me.lbl_judul.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lbl_judul.ForeColor = System.Drawing.Color.White
         Me.lbl_judul.Location = New System.Drawing.Point(13, 13)
         Me.lbl_judul.Name = "lbl_judul"
         Me.lbl_judul.Size = New System.Drawing.Size(233, 20)
@@ -97,7 +99,7 @@ Partial Class LaporanSimpananAnggota
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(86, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_subjudul)
         Me.Panel1.Controls.Add(Me.lbl_judul)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)

@@ -52,4 +52,8 @@
             masuk()
         End If
     End Sub
+
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        txt_Address.Text = "localhost"
+    End Sub
 End Class

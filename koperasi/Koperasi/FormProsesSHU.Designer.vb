@@ -49,6 +49,7 @@ Partial Class FormProsesSHU
         '
         Me.lbl_Subjudul.AutoSize = True
         Me.lbl_Subjudul.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Italic)
+        Me.lbl_Subjudul.ForeColor = System.Drawing.Color.White
         Me.lbl_Subjudul.Location = New System.Drawing.Point(35, 34)
         Me.lbl_Subjudul.Name = "lbl_Subjudul"
         Me.lbl_Subjudul.Size = New System.Drawing.Size(387, 15)
@@ -59,6 +60,7 @@ Partial Class FormProsesSHU
         '
         Me.lbl_Judul.AutoSize = True
         Me.lbl_Judul.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lbl_Judul.ForeColor = System.Drawing.Color.White
         Me.lbl_Judul.Location = New System.Drawing.Point(19, 14)
         Me.lbl_Judul.Name = "lbl_Judul"
         Me.lbl_Judul.Size = New System.Drawing.Size(259, 20)
@@ -67,7 +69,7 @@ Partial Class FormProsesSHU
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(86, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.Panel2.Controls.Add(Me.lbl_Subjudul)
         Me.Panel2.Controls.Add(Me.lbl_Judul)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
@@ -197,7 +199,7 @@ Partial Class FormProsesSHU
         '
         'GroupBox3
         '
-        Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(86, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.GroupBox3.Controls.Add(Me.btn_Keluar)
         Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GroupBox3.Location = New System.Drawing.Point(0, 528)

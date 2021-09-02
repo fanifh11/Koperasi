@@ -39,23 +39,25 @@ Partial Class FormCariAnggota
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(86, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.lbl_Judul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1077, 74)
+        Me.Panel1.Size = New System.Drawing.Size(808, 60)
         Me.Panel1.TabIndex = 0
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Italic)
-        Me.Label2.Location = New System.Drawing.Point(35, 39)
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(26, 32)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(288, 18)
+        Me.Label2.Size = New System.Drawing.Size(242, 15)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "Form ini digunakan untuk mencari Anggota"
         '
@@ -63,9 +65,11 @@ Partial Class FormCariAnggota
         '
         Me.lbl_Judul.AutoSize = True
         Me.lbl_Judul.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
-        Me.lbl_Judul.Location = New System.Drawing.Point(19, 15)
+        Me.lbl_Judul.ForeColor = System.Drawing.Color.White
+        Me.lbl_Judul.Location = New System.Drawing.Point(14, 12)
+        Me.lbl_Judul.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_Judul.Name = "lbl_Judul"
-        Me.lbl_Judul.Size = New System.Drawing.Size(139, 25)
+        Me.lbl_Judul.Size = New System.Drawing.Size(114, 20)
         Me.lbl_Judul.TabIndex = 8
         Me.lbl_Judul.Text = "Cari Anggota"
         '
@@ -75,11 +79,11 @@ Partial Class FormCariAnggota
         Me.group_CariDataAnggota.Controls.Add(Me.dgv_DataAnggota)
         Me.group_CariDataAnggota.Controls.Add(Me.txt_CariDataAnggota)
         Me.group_CariDataAnggota.ForeColor = System.Drawing.Color.Black
-        Me.group_CariDataAnggota.Location = New System.Drawing.Point(12, 79)
-        Me.group_CariDataAnggota.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
+        Me.group_CariDataAnggota.Location = New System.Drawing.Point(9, 64)
+        Me.group_CariDataAnggota.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.group_CariDataAnggota.Name = "group_CariDataAnggota"
-        Me.group_CariDataAnggota.Padding = New System.Windows.Forms.Padding(3, 1, 3, 1)
-        Me.group_CariDataAnggota.Size = New System.Drawing.Size(1053, 394)
+        Me.group_CariDataAnggota.Padding = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.group_CariDataAnggota.Size = New System.Drawing.Size(790, 320)
         Me.group_CariDataAnggota.TabIndex = 1
         Me.group_CariDataAnggota.TabStop = False
         Me.group_CariDataAnggota.Text = "Cari Data Anggota"
@@ -88,9 +92,10 @@ Partial Class FormCariAnggota
         '
         Me.lbl_JumData.AutoSize = True
         Me.lbl_JumData.ForeColor = System.Drawing.Color.Red
-        Me.lbl_JumData.Location = New System.Drawing.Point(2, 363)
+        Me.lbl_JumData.Location = New System.Drawing.Point(2, 295)
+        Me.lbl_JumData.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_JumData.Name = "lbl_JumData"
-        Me.lbl_JumData.Size = New System.Drawing.Size(107, 17)
+        Me.lbl_JumData.Size = New System.Drawing.Size(81, 13)
         Me.lbl_JumData.TabIndex = 2
         Me.lbl_JumData.Text = "Jumlah Data : 0"
         '
@@ -99,57 +104,59 @@ Partial Class FormCariAnggota
         Me.dgv_DataAnggota.AllowUserToAddRows = False
         Me.dgv_DataAnggota.AllowUserToDeleteRows = False
         Me.dgv_DataAnggota.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv_DataAnggota.Location = New System.Drawing.Point(4, 55)
-        Me.dgv_DataAnggota.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
+        Me.dgv_DataAnggota.Location = New System.Drawing.Point(3, 45)
+        Me.dgv_DataAnggota.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.dgv_DataAnggota.Name = "dgv_DataAnggota"
         Me.dgv_DataAnggota.ReadOnly = True
         Me.dgv_DataAnggota.RowHeadersWidth = 51
         Me.dgv_DataAnggota.RowTemplate.Height = 29
-        Me.dgv_DataAnggota.Size = New System.Drawing.Size(1043, 298)
+        Me.dgv_DataAnggota.Size = New System.Drawing.Size(782, 242)
         Me.dgv_DataAnggota.TabIndex = 1
         '
         'txt_CariDataAnggota
         '
-        Me.txt_CariDataAnggota.Location = New System.Drawing.Point(5, 21)
-        Me.txt_CariDataAnggota.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
+        Me.txt_CariDataAnggota.Location = New System.Drawing.Point(4, 17)
+        Me.txt_CariDataAnggota.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.txt_CariDataAnggota.Name = "txt_CariDataAnggota"
-        Me.txt_CariDataAnggota.Size = New System.Drawing.Size(1041, 22)
+        Me.txt_CariDataAnggota.Size = New System.Drawing.Size(782, 20)
         Me.txt_CariDataAnggota.TabIndex = 0
         '
         'GroupBox2
         '
-        Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(86, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.GroupBox2.Controls.Add(Me.btn_Keluar)
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupBox2.Location = New System.Drawing.Point(0, 475)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
+        Me.GroupBox2.ForeColor = System.Drawing.Color.White
+        Me.GroupBox2.Location = New System.Drawing.Point(0, 386)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 1, 3, 1)
-        Me.GroupBox2.Size = New System.Drawing.Size(1077, 53)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.GroupBox2.Size = New System.Drawing.Size(808, 43)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         '
         'btn_Keluar
         '
         Me.btn_Keluar.Font = New System.Drawing.Font("Segoe UI", 8.5!)
-        Me.btn_Keluar.Location = New System.Drawing.Point(965, 15)
-        Me.btn_Keluar.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
+        Me.btn_Keluar.ForeColor = System.Drawing.Color.Black
+        Me.btn_Keluar.Location = New System.Drawing.Point(724, 12)
+        Me.btn_Keluar.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.btn_Keluar.Name = "btn_Keluar"
-        Me.btn_Keluar.Size = New System.Drawing.Size(93, 33)
+        Me.btn_Keluar.Size = New System.Drawing.Size(70, 27)
         Me.btn_Keluar.TabIndex = 0
         Me.btn_Keluar.Text = "Keluar"
         Me.btn_Keluar.UseVisualStyleBackColor = True
         '
         'FormCariAnggota
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1077, 528)
+        Me.ClientSize = New System.Drawing.Size(808, 429)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.group_CariDataAnggota)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "FormCariAnggota"
