@@ -60,13 +60,13 @@ Partial Class FormGroupAkses
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(644, 65)
         Me.Panel1.TabIndex = 0
@@ -75,7 +75,7 @@ Partial Class FormGroupAkses
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Black
+        Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(20, 30)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
@@ -87,7 +87,7 @@ Partial Class FormGroupAkses
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Black
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(8, 6)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
@@ -102,9 +102,9 @@ Partial Class FormGroupAkses
         Me.group_HakAkses.Controls.Add(Me.cmb_HakAkses)
         Me.group_HakAkses.Controls.Add(Me.Label3)
         Me.group_HakAkses.Location = New System.Drawing.Point(10, 71)
-        Me.group_HakAkses.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.group_HakAkses.Margin = New System.Windows.Forms.Padding(2)
         Me.group_HakAkses.Name = "group_HakAkses"
-        Me.group_HakAkses.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.group_HakAkses.Padding = New System.Windows.Forms.Padding(2)
         Me.group_HakAkses.Size = New System.Drawing.Size(322, 320)
         Me.group_HakAkses.TabIndex = 1
         Me.group_HakAkses.TabStop = False
@@ -125,7 +125,7 @@ Partial Class FormGroupAkses
         Me.clb_HakAkses.FormattingEnabled = True
         Me.clb_HakAkses.Items.AddRange(New Object() {"Utilitas", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Identitas", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Group", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    User", "Master", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Anggota", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Tahun Aktif", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Jenis Simpanan", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Buku Simpanan Sukarela", "Simpanan", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Buat Tagihan Simpanan", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Lihat Tagihan", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Pembayaran Simpanan Pokok Wajib", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Pembayaran Kolektif Simpanan Pokok Wajib", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Pengambulan Simpanan Pokok Wajib", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Buat Rekening Simpanan Sukarela", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Pembayaran Simpanan Sukarela", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Pengambilan Simpanan Sukarela", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Cetak Simpanan Sukarela", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Hitung Bunga Simpanan", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Cetak Sampul Buku Simpanan", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Cetak Buku Simpanan", "Pinjaman" & Global.Microsoft.VisualBasic.ChrW(9), "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Buat Pinjaman", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Buat Tagihan", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Lihat Tagihan", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Pembayaran Pinjaman Perorangan", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Pembayaran Kolektif Pinjaman", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Koreksi Pinjaman Nasabah", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Koreksi Pembayaran Nasabah", "Laporan", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Anggota", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Peminjaman", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Pembayaran Asuransi", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Pembayaran Administrasi", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Pembayaran Pinjaman", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Histori Pembayaran Pinjaman", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Saldo Piutang", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Rekapitulasi Pendapatan", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Rekapitulasi Saldo Piutang", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Rekapitulasi Simpanan Pokok Wajib", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Rekapitulasi Simpanan Sukarela", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Lap. Transaksi Simpanan Sukarela", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Lap. Simpanan Pokok Wajib", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Lap. Tunggakan Simpanan", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Lap. Pembayaran Bunga", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Proses SHU", "Keluar Aplikasi", "" & Global.Microsoft.VisualBasic.ChrW(9) & "    Keluar"})
         Me.clb_HakAkses.Location = New System.Drawing.Point(52, 56)
-        Me.clb_HakAkses.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.clb_HakAkses.Margin = New System.Windows.Forms.Padding(2)
         Me.clb_HakAkses.Name = "clb_HakAkses"
         Me.clb_HakAkses.Size = New System.Drawing.Size(267, 199)
         Me.clb_HakAkses.TabIndex = 2
@@ -135,7 +135,7 @@ Partial Class FormGroupAkses
         Me.cmb_HakAkses.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmb_HakAkses.FormattingEnabled = True
         Me.cmb_HakAkses.Location = New System.Drawing.Point(52, 24)
-        Me.cmb_HakAkses.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmb_HakAkses.Margin = New System.Windows.Forms.Padding(2)
         Me.cmb_HakAkses.Name = "cmb_HakAkses"
         Me.cmb_HakAkses.Size = New System.Drawing.Size(267, 21)
         Me.cmb_HakAkses.TabIndex = 1
@@ -155,9 +155,9 @@ Partial Class FormGroupAkses
         Me.groupBtnHakAkses.Controls.Add(Me.btnSimpanHakAkses)
         Me.groupBtnHakAkses.Controls.Add(Me.btnTampilkanMenu)
         Me.groupBtnHakAkses.Location = New System.Drawing.Point(9, 390)
-        Me.groupBtnHakAkses.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.groupBtnHakAkses.Margin = New System.Windows.Forms.Padding(2)
         Me.groupBtnHakAkses.Name = "groupBtnHakAkses"
-        Me.groupBtnHakAkses.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.groupBtnHakAkses.Padding = New System.Windows.Forms.Padding(2)
         Me.groupBtnHakAkses.Size = New System.Drawing.Size(323, 48)
         Me.groupBtnHakAkses.TabIndex = 2
         Me.groupBtnHakAkses.TabStop = False
@@ -165,7 +165,7 @@ Partial Class FormGroupAkses
         'btnSimpanHakAkses
         '
         Me.btnSimpanHakAkses.Location = New System.Drawing.Point(159, 12)
-        Me.btnSimpanHakAkses.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnSimpanHakAkses.Margin = New System.Windows.Forms.Padding(2)
         Me.btnSimpanHakAkses.Name = "btnSimpanHakAkses"
         Me.btnSimpanHakAkses.Size = New System.Drawing.Size(141, 25)
         Me.btnSimpanHakAkses.TabIndex = 3
@@ -175,7 +175,7 @@ Partial Class FormGroupAkses
         'btnTampilkanMenu
         '
         Me.btnTampilkanMenu.Location = New System.Drawing.Point(25, 12)
-        Me.btnTampilkanMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnTampilkanMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.btnTampilkanMenu.Name = "btnTampilkanMenu"
         Me.btnTampilkanMenu.Size = New System.Drawing.Size(130, 25)
         Me.btnTampilkanMenu.TabIndex = 0
@@ -191,9 +191,9 @@ Partial Class FormGroupAkses
         Me.group_DataGroup.Controls.Add(Me.Label5)
         Me.group_DataGroup.Controls.Add(Me.txt_Group)
         Me.group_DataGroup.Location = New System.Drawing.Point(337, 71)
-        Me.group_DataGroup.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.group_DataGroup.Margin = New System.Windows.Forms.Padding(2)
         Me.group_DataGroup.Name = "group_DataGroup"
-        Me.group_DataGroup.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.group_DataGroup.Padding = New System.Windows.Forms.Padding(2)
         Me.group_DataGroup.Size = New System.Drawing.Size(298, 110)
         Me.group_DataGroup.TabIndex = 3
         Me.group_DataGroup.TabStop = False
@@ -202,7 +202,7 @@ Partial Class FormGroupAkses
         'btnBatal
         '
         Me.btnBatal.Location = New System.Drawing.Point(152, 69)
-        Me.btnBatal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnBatal.Margin = New System.Windows.Forms.Padding(2)
         Me.btnBatal.Name = "btnBatal"
         Me.btnBatal.Size = New System.Drawing.Size(68, 25)
         Me.btnBatal.TabIndex = 5
@@ -212,7 +212,7 @@ Partial Class FormGroupAkses
         'txt_Keterangan
         '
         Me.txt_Keterangan.Location = New System.Drawing.Point(79, 46)
-        Me.txt_Keterangan.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txt_Keterangan.Margin = New System.Windows.Forms.Padding(2)
         Me.txt_Keterangan.Name = "txt_Keterangan"
         Me.txt_Keterangan.Size = New System.Drawing.Size(186, 20)
         Me.txt_Keterangan.TabIndex = 4
@@ -230,7 +230,7 @@ Partial Class FormGroupAkses
         'btnSimpan
         '
         Me.btnSimpan.Location = New System.Drawing.Point(79, 69)
-        Me.btnSimpan.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnSimpan.Margin = New System.Windows.Forms.Padding(2)
         Me.btnSimpan.Name = "btnSimpan"
         Me.btnSimpan.Size = New System.Drawing.Size(68, 25)
         Me.btnSimpan.TabIndex = 4
@@ -250,7 +250,7 @@ Partial Class FormGroupAkses
         'txt_Group
         '
         Me.txt_Group.Location = New System.Drawing.Point(79, 24)
-        Me.txt_Group.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txt_Group.Margin = New System.Windows.Forms.Padding(2)
         Me.txt_Group.Name = "txt_Group"
         Me.txt_Group.Size = New System.Drawing.Size(186, 20)
         Me.txt_Group.TabIndex = 0
@@ -260,9 +260,9 @@ Partial Class FormGroupAkses
         Me.GroupBox4.Controls.Add(Me.lbl_JumDataGroup)
         Me.GroupBox4.Controls.Add(Me.dgv_JumGroup)
         Me.GroupBox4.Location = New System.Drawing.Point(337, 180)
-        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox4.Size = New System.Drawing.Size(298, 211)
         Me.GroupBox4.TabIndex = 5
         Me.GroupBox4.TabStop = False
@@ -283,7 +283,7 @@ Partial Class FormGroupAkses
         Me.dgv_JumGroup.AllowUserToDeleteRows = False
         Me.dgv_JumGroup.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_JumGroup.Location = New System.Drawing.Point(4, 11)
-        Me.dgv_JumGroup.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dgv_JumGroup.Margin = New System.Windows.Forms.Padding(2)
         Me.dgv_JumGroup.Name = "dgv_JumGroup"
         Me.dgv_JumGroup.ReadOnly = True
         Me.dgv_JumGroup.RowHeadersWidth = 51
@@ -296,9 +296,9 @@ Partial Class FormGroupAkses
         Me.groupBtnInputData.Controls.Add(Me.btnHapus)
         Me.groupBtnInputData.Controls.Add(Me.btnTambah)
         Me.groupBtnInputData.Location = New System.Drawing.Point(337, 390)
-        Me.groupBtnInputData.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.groupBtnInputData.Margin = New System.Windows.Forms.Padding(2)
         Me.groupBtnInputData.Name = "groupBtnInputData"
-        Me.groupBtnInputData.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.groupBtnInputData.Padding = New System.Windows.Forms.Padding(2)
         Me.groupBtnInputData.Size = New System.Drawing.Size(298, 48)
         Me.groupBtnInputData.TabIndex = 6
         Me.groupBtnInputData.TabStop = False
@@ -306,7 +306,7 @@ Partial Class FormGroupAkses
         'btnHapus
         '
         Me.btnHapus.Location = New System.Drawing.Point(94, 12)
-        Me.btnHapus.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnHapus.Margin = New System.Windows.Forms.Padding(2)
         Me.btnHapus.Name = "btnHapus"
         Me.btnHapus.Size = New System.Drawing.Size(75, 25)
         Me.btnHapus.TabIndex = 7
@@ -316,7 +316,7 @@ Partial Class FormGroupAkses
         'btnTambah
         '
         Me.btnTambah.Location = New System.Drawing.Point(14, 12)
-        Me.btnTambah.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnTambah.Margin = New System.Windows.Forms.Padding(2)
         Me.btnTambah.Name = "btnTambah"
         Me.btnTambah.Size = New System.Drawing.Size(75, 25)
         Me.btnTambah.TabIndex = 0
@@ -325,13 +325,13 @@ Partial Class FormGroupAkses
         '
         'groupBtnBottom
         '
-        Me.groupBtnBottom.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.groupBtnBottom.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
         Me.groupBtnBottom.Controls.Add(Me.btnKeluar)
         Me.groupBtnBottom.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.groupBtnBottom.Location = New System.Drawing.Point(0, 450)
-        Me.groupBtnBottom.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.groupBtnBottom.Margin = New System.Windows.Forms.Padding(2)
         Me.groupBtnBottom.Name = "groupBtnBottom"
-        Me.groupBtnBottom.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.groupBtnBottom.Padding = New System.Windows.Forms.Padding(2)
         Me.groupBtnBottom.Size = New System.Drawing.Size(644, 46)
         Me.groupBtnBottom.TabIndex = 7
         Me.groupBtnBottom.TabStop = False
@@ -339,7 +339,7 @@ Partial Class FormGroupAkses
         'btnKeluar
         '
         Me.btnKeluar.Location = New System.Drawing.Point(522, 13)
-        Me.btnKeluar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnKeluar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnKeluar.Name = "btnKeluar"
         Me.btnKeluar.Size = New System.Drawing.Size(75, 25)
         Me.btnKeluar.TabIndex = 8
@@ -359,7 +359,7 @@ Partial Class FormGroupAkses
         Me.Controls.Add(Me.group_HakAkses)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "FormGroupAkses"

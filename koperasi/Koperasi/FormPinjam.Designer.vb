@@ -174,7 +174,7 @@ Partial Class FormPinjam
         '
         'grupBtn
         '
-        Me.grupBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.grupBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
         Me.grupBtn.Controls.Add(Me.btn_cetak_kwitansi)
         Me.grupBtn.Controls.Add(Me.btn_hapus)
         Me.grupBtn.Controls.Add(Me.btn_tambah)
@@ -259,6 +259,7 @@ Partial Class FormPinjam
         '
         Me.lbl_judul.AutoSize = True
         Me.lbl_judul.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lbl_judul.ForeColor = System.Drawing.Color.White
         Me.lbl_judul.Location = New System.Drawing.Point(13, 13)
         Me.lbl_judul.Name = "lbl_judul"
         Me.lbl_judul.Size = New System.Drawing.Size(291, 20)
@@ -267,10 +268,11 @@ Partial Class FormPinjam
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_subjudul)
         Me.Panel1.Controls.Add(Me.lbl_judul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.ForeColor = System.Drawing.Color.White
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(750, 60)
@@ -318,7 +320,7 @@ Partial Class FormPinjam
         Me.cmb_JenisBunga.FormattingEnabled = True
         Me.cmb_JenisBunga.Items.AddRange(New Object() {"FLAT", "EFEKTIF", "ANUITAS"})
         Me.cmb_JenisBunga.Location = New System.Drawing.Point(311, 81)
-        Me.cmb_JenisBunga.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmb_JenisBunga.Margin = New System.Windows.Forms.Padding(2)
         Me.cmb_JenisBunga.Name = "cmb_JenisBunga"
         Me.cmb_JenisBunga.Size = New System.Drawing.Size(108, 21)
         Me.cmb_JenisBunga.TabIndex = 26

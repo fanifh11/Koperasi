@@ -59,7 +59,7 @@ Partial Class FormUser
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -73,6 +73,7 @@ Partial Class FormUser
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Italic)
+        Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(25, 25)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(423, 15)
@@ -83,6 +84,7 @@ Partial Class FormUser
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(17, 8)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(93, 20)
@@ -193,7 +195,7 @@ Partial Class FormUser
         '
         Me.cekBox_ShowPass.AutoSize = True
         Me.cekBox_ShowPass.Location = New System.Drawing.Point(291, 136)
-        Me.cekBox_ShowPass.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cekBox_ShowPass.Margin = New System.Windows.Forms.Padding(2)
         Me.cekBox_ShowPass.Name = "cekBox_ShowPass"
         Me.cekBox_ShowPass.Size = New System.Drawing.Size(140, 19)
         Me.cekBox_ShowPass.TabIndex = 13
@@ -203,7 +205,7 @@ Partial Class FormUser
         'btnSimpan
         '
         Me.btnSimpan.Location = New System.Drawing.Point(111, 193)
-        Me.btnSimpan.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnSimpan.Margin = New System.Windows.Forms.Padding(2)
         Me.btnSimpan.Name = "btnSimpan"
         Me.btnSimpan.Size = New System.Drawing.Size(79, 24)
         Me.btnSimpan.TabIndex = 12
@@ -213,7 +215,7 @@ Partial Class FormUser
         'btnBatal
         '
         Me.btnBatal.Location = New System.Drawing.Point(194, 193)
-        Me.btnBatal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnBatal.Margin = New System.Windows.Forms.Padding(2)
         Me.btnBatal.Name = "btnBatal"
         Me.btnBatal.Size = New System.Drawing.Size(79, 24)
         Me.btnBatal.TabIndex = 12
@@ -314,7 +316,7 @@ Partial Class FormUser
         'btnHapus
         '
         Me.btnHapus.Location = New System.Drawing.Point(101, 15)
-        Me.btnHapus.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnHapus.Margin = New System.Windows.Forms.Padding(2)
         Me.btnHapus.Name = "btnHapus"
         Me.btnHapus.Size = New System.Drawing.Size(79, 24)
         Me.btnHapus.TabIndex = 11
@@ -324,7 +326,7 @@ Partial Class FormUser
         'btnTambah
         '
         Me.btnTambah.Location = New System.Drawing.Point(18, 15)
-        Me.btnTambah.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnTambah.Margin = New System.Windows.Forms.Padding(2)
         Me.btnTambah.Name = "btnTambah"
         Me.btnTambah.Size = New System.Drawing.Size(79, 24)
         Me.btnTambah.TabIndex = 10
@@ -333,7 +335,7 @@ Partial Class FormUser
         '
         'grupBtn
         '
-        Me.grupBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.grupBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
         Me.grupBtn.Controls.Add(Me.btnHapus)
         Me.grupBtn.Controls.Add(Me.btnTambah)
         Me.grupBtn.Controls.Add(Me.btnKeluar)
@@ -349,7 +351,7 @@ Partial Class FormUser
         'btnKeluar
         '
         Me.btnKeluar.Location = New System.Drawing.Point(710, 15)
-        Me.btnKeluar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnKeluar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnKeluar.Name = "btnKeluar"
         Me.btnKeluar.Size = New System.Drawing.Size(79, 24)
         Me.btnKeluar.TabIndex = 13

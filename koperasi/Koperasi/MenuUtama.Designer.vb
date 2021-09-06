@@ -24,14 +24,6 @@ Partial Class MenuUtama
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuUtama))
         Me.Ribbon1 = New System.Windows.Forms.Ribbon()
-        Me.tabUtilitas = New System.Windows.Forms.RibbonTab()
-        Me.panelSetting = New System.Windows.Forms.RibbonPanel()
-        Me.btnIdentitas = New System.Windows.Forms.RibbonButton()
-        Me.btnGroup = New System.Windows.Forms.RibbonButton()
-        Me.btnUser = New System.Windows.Forms.RibbonButton()
-        Me.panelDB = New System.Windows.Forms.RibbonPanel()
-        Me.btnBackupDB = New System.Windows.Forms.RibbonButton()
-        Me.btnRestoreDB = New System.Windows.Forms.RibbonButton()
         Me.tabMaster = New System.Windows.Forms.RibbonTab()
         Me.panelKeanggotaan = New System.Windows.Forms.RibbonPanel()
         Me.btnAnggota = New System.Windows.Forms.RibbonButton()
@@ -91,10 +83,21 @@ Partial Class MenuUtama
         Me.btnLapPemBunga = New System.Windows.Forms.RibbonButton()
         Me.panelSHU = New System.Windows.Forms.RibbonPanel()
         Me.btnProsesSHU = New System.Windows.Forms.RibbonButton()
+        Me.tabUtilitas = New System.Windows.Forms.RibbonTab()
+        Me.panelSetting = New System.Windows.Forms.RibbonPanel()
+        Me.btnIdentitas = New System.Windows.Forms.RibbonButton()
+        Me.btnGroup = New System.Windows.Forms.RibbonButton()
+        Me.btnUser = New System.Windows.Forms.RibbonButton()
+        Me.panelDB = New System.Windows.Forms.RibbonPanel()
+        Me.btnBackupDB = New System.Windows.Forms.RibbonButton()
+        Me.btnRestoreDB = New System.Windows.Forms.RibbonButton()
         Me.tabKeluar = New System.Windows.Forms.RibbonTab()
         Me.RibbonPanel2 = New System.Windows.Forms.RibbonPanel()
         Me.Keluar = New System.Windows.Forms.RibbonButton()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnResetData = New System.Windows.Forms.RibbonButton()
+        Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -115,86 +118,17 @@ Partial Class MenuUtama
         Me.Ribbon1.OrbDropDown.TabIndex = 0
         Me.Ribbon1.OrbStyle = System.Windows.Forms.RibbonOrbStyle.Office_2013
         Me.Ribbon1.RibbonTabFont = New System.Drawing.Font("Trebuchet MS", 9.0!)
-        Me.Ribbon1.Size = New System.Drawing.Size(653, 168)
+        Me.Ribbon1.Size = New System.Drawing.Size(653, 142)
         Me.Ribbon1.TabIndex = 0
-        Me.Ribbon1.Tabs.Add(Me.tabUtilitas)
         Me.Ribbon1.Tabs.Add(Me.tabMaster)
         Me.Ribbon1.Tabs.Add(Me.tabSimpanan)
         Me.Ribbon1.Tabs.Add(Me.tabPinjaman)
         Me.Ribbon1.Tabs.Add(Me.tabLaporan)
+        Me.Ribbon1.Tabs.Add(Me.tabUtilitas)
         Me.Ribbon1.Tabs.Add(Me.tabKeluar)
         Me.Ribbon1.TabSpacing = 4
+        Me.Ribbon1.TabStop = False
         Me.Ribbon1.Text = "Ribbon1"
-        '
-        'tabUtilitas
-        '
-        Me.tabUtilitas.Name = "tabUtilitas"
-        Me.tabUtilitas.Panels.Add(Me.panelSetting)
-        Me.tabUtilitas.Panels.Add(Me.panelDB)
-        Me.tabUtilitas.Text = "Utilitas"
-        '
-        'panelSetting
-        '
-        Me.panelSetting.Items.Add(Me.btnIdentitas)
-        Me.panelSetting.Items.Add(Me.btnGroup)
-        Me.panelSetting.Items.Add(Me.btnUser)
-        Me.panelSetting.Name = "panelSetting"
-        Me.panelSetting.Text = "Setting"
-        '
-        'btnIdentitas
-        '
-        Me.btnIdentitas.Image = CType(resources.GetObject("btnIdentitas.Image"), System.Drawing.Image)
-        Me.btnIdentitas.LargeImage = CType(resources.GetObject("btnIdentitas.LargeImage"), System.Drawing.Image)
-        Me.btnIdentitas.MinSizeMode = System.Windows.Forms.RibbonElementSizeMode.Large
-        Me.btnIdentitas.Name = "btnIdentitas"
-        Me.btnIdentitas.SmallImage = CType(resources.GetObject("btnIdentitas.SmallImage"), System.Drawing.Image)
-        Me.btnIdentitas.Text = "Identitas"
-        Me.btnIdentitas.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
-        '
-        'btnGroup
-        '
-        Me.btnGroup.Image = CType(resources.GetObject("btnGroup.Image"), System.Drawing.Image)
-        Me.btnGroup.LargeImage = CType(resources.GetObject("btnGroup.LargeImage"), System.Drawing.Image)
-        Me.btnGroup.MinSizeMode = System.Windows.Forms.RibbonElementSizeMode.Large
-        Me.btnGroup.Name = "btnGroup"
-        Me.btnGroup.SmallImage = CType(resources.GetObject("btnGroup.SmallImage"), System.Drawing.Image)
-        Me.btnGroup.Text = "Group"
-        Me.btnGroup.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
-        '
-        'btnUser
-        '
-        Me.btnUser.Image = CType(resources.GetObject("btnUser.Image"), System.Drawing.Image)
-        Me.btnUser.LargeImage = CType(resources.GetObject("btnUser.LargeImage"), System.Drawing.Image)
-        Me.btnUser.MinSizeMode = System.Windows.Forms.RibbonElementSizeMode.Large
-        Me.btnUser.Name = "btnUser"
-        Me.btnUser.SmallImage = CType(resources.GetObject("btnUser.SmallImage"), System.Drawing.Image)
-        Me.btnUser.Text = "User"
-        Me.btnUser.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
-        '
-        'panelDB
-        '
-        Me.panelDB.Items.Add(Me.btnBackupDB)
-        Me.panelDB.Items.Add(Me.btnRestoreDB)
-        Me.panelDB.Name = "panelDB"
-        Me.panelDB.Text = "Database"
-        '
-        'btnBackupDB
-        '
-        Me.btnBackupDB.Image = CType(resources.GetObject("btnBackupDB.Image"), System.Drawing.Image)
-        Me.btnBackupDB.LargeImage = CType(resources.GetObject("btnBackupDB.LargeImage"), System.Drawing.Image)
-        Me.btnBackupDB.Name = "btnBackupDB"
-        Me.btnBackupDB.SmallImage = CType(resources.GetObject("btnBackupDB.SmallImage"), System.Drawing.Image)
-        Me.btnBackupDB.Text = "Backup"
-        Me.btnBackupDB.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
-        '
-        'btnRestoreDB
-        '
-        Me.btnRestoreDB.Image = CType(resources.GetObject("btnRestoreDB.Image"), System.Drawing.Image)
-        Me.btnRestoreDB.LargeImage = CType(resources.GetObject("btnRestoreDB.LargeImage"), System.Drawing.Image)
-        Me.btnRestoreDB.Name = "btnRestoreDB"
-        Me.btnRestoreDB.SmallImage = CType(resources.GetObject("btnRestoreDB.SmallImage"), System.Drawing.Image)
-        Me.btnRestoreDB.Text = "Restore"
-        Me.btnRestoreDB.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
         '
         'tabMaster
         '
@@ -687,6 +621,77 @@ Partial Class MenuUtama
         Me.btnProsesSHU.SmallImage = CType(resources.GetObject("btnProsesSHU.SmallImage"), System.Drawing.Image)
         Me.btnProsesSHU.Text = "Proses SHU"
         '
+        'tabUtilitas
+        '
+        Me.tabUtilitas.Name = "tabUtilitas"
+        Me.tabUtilitas.Panels.Add(Me.panelSetting)
+        Me.tabUtilitas.Panels.Add(Me.panelDB)
+        Me.tabUtilitas.Text = "Utilitas"
+        '
+        'panelSetting
+        '
+        Me.panelSetting.Items.Add(Me.btnIdentitas)
+        Me.panelSetting.Items.Add(Me.btnGroup)
+        Me.panelSetting.Items.Add(Me.btnUser)
+        Me.panelSetting.Name = "panelSetting"
+        Me.panelSetting.Text = "Setting"
+        '
+        'btnIdentitas
+        '
+        Me.btnIdentitas.Image = CType(resources.GetObject("btnIdentitas.Image"), System.Drawing.Image)
+        Me.btnIdentitas.LargeImage = CType(resources.GetObject("btnIdentitas.LargeImage"), System.Drawing.Image)
+        Me.btnIdentitas.MinSizeMode = System.Windows.Forms.RibbonElementSizeMode.Large
+        Me.btnIdentitas.Name = "btnIdentitas"
+        Me.btnIdentitas.SmallImage = CType(resources.GetObject("btnIdentitas.SmallImage"), System.Drawing.Image)
+        Me.btnIdentitas.Text = "Identitas"
+        Me.btnIdentitas.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
+        '
+        'btnGroup
+        '
+        Me.btnGroup.Image = CType(resources.GetObject("btnGroup.Image"), System.Drawing.Image)
+        Me.btnGroup.LargeImage = CType(resources.GetObject("btnGroup.LargeImage"), System.Drawing.Image)
+        Me.btnGroup.MinSizeMode = System.Windows.Forms.RibbonElementSizeMode.Large
+        Me.btnGroup.Name = "btnGroup"
+        Me.btnGroup.SmallImage = CType(resources.GetObject("btnGroup.SmallImage"), System.Drawing.Image)
+        Me.btnGroup.Text = "Group"
+        Me.btnGroup.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
+        '
+        'btnUser
+        '
+        Me.btnUser.Image = CType(resources.GetObject("btnUser.Image"), System.Drawing.Image)
+        Me.btnUser.LargeImage = CType(resources.GetObject("btnUser.LargeImage"), System.Drawing.Image)
+        Me.btnUser.MinSizeMode = System.Windows.Forms.RibbonElementSizeMode.Large
+        Me.btnUser.Name = "btnUser"
+        Me.btnUser.SmallImage = CType(resources.GetObject("btnUser.SmallImage"), System.Drawing.Image)
+        Me.btnUser.Text = "User"
+        Me.btnUser.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
+        '
+        'panelDB
+        '
+        Me.panelDB.Items.Add(Me.btnBackupDB)
+        Me.panelDB.Items.Add(Me.btnRestoreDB)
+        Me.panelDB.Items.Add(Me.btnResetData)
+        Me.panelDB.Name = "panelDB"
+        Me.panelDB.Text = "Database"
+        '
+        'btnBackupDB
+        '
+        Me.btnBackupDB.Image = CType(resources.GetObject("btnBackupDB.Image"), System.Drawing.Image)
+        Me.btnBackupDB.LargeImage = CType(resources.GetObject("btnBackupDB.LargeImage"), System.Drawing.Image)
+        Me.btnBackupDB.Name = "btnBackupDB"
+        Me.btnBackupDB.SmallImage = CType(resources.GetObject("btnBackupDB.SmallImage"), System.Drawing.Image)
+        Me.btnBackupDB.Text = "Backup"
+        Me.btnBackupDB.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
+        '
+        'btnRestoreDB
+        '
+        Me.btnRestoreDB.Image = CType(resources.GetObject("btnRestoreDB.Image"), System.Drawing.Image)
+        Me.btnRestoreDB.LargeImage = CType(resources.GetObject("btnRestoreDB.LargeImage"), System.Drawing.Image)
+        Me.btnRestoreDB.Name = "btnRestoreDB"
+        Me.btnRestoreDB.SmallImage = CType(resources.GetObject("btnRestoreDB.SmallImage"), System.Drawing.Image)
+        Me.btnRestoreDB.Text = "Restore"
+        Me.btnRestoreDB.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
+        '
         'tabKeluar
         '
         Me.tabKeluar.Name = "tabKeluar"
@@ -707,25 +712,45 @@ Partial Class MenuUtama
         Me.Keluar.SmallImage = CType(resources.GetObject("Keluar.SmallImage"), System.Drawing.Image)
         Me.Keluar.Text = "Kembali Ke Menu Login"
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel1.Location = New System.Drawing.Point(0, 142)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Padding = New System.Windows.Forms.Padding(100)
+        Me.Panel1.Size = New System.Drawing.Size(653, 347)
+        Me.Panel1.TabIndex = 1
+        '
         'PictureBox1
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(111, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 168)
+        Me.PictureBox1.Location = New System.Drawing.Point(100, 100)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(653, 321)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.Padding = New System.Windows.Forms.Padding(20)
+        Me.PictureBox1.Size = New System.Drawing.Size(453, 147)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
+        '
+        'btnResetData
+        '
+        Me.btnResetData.Image = CType(resources.GetObject("btnResetData.Image"), System.Drawing.Image)
+        Me.btnResetData.LargeImage = CType(resources.GetObject("btnResetData.LargeImage"), System.Drawing.Image)
+        Me.btnResetData.Name = "btnResetData"
+        Me.btnResetData.SmallImage = CType(resources.GetObject("btnResetData.SmallImage"), System.Drawing.Image)
+        Me.btnResetData.Text = "Reset Data"
         '
         'MenuUtama
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(653, 489)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Ribbon1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -734,6 +759,7 @@ Partial Class MenuUtama
         Me.Name = "MenuUtama"
         Me.Text = "Menu"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -807,8 +833,10 @@ Partial Class MenuUtama
     Friend WithEvents tabKeluar As RibbonTab
     Friend WithEvents RibbonPanel2 As RibbonPanel
     Friend WithEvents Keluar As RibbonButton
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents panelDB As RibbonPanel
     Friend WithEvents btnBackupDB As RibbonButton
     Friend WithEvents btnRestoreDB As RibbonButton
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btnResetData As RibbonButton
 End Class

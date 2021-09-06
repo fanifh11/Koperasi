@@ -55,7 +55,8 @@ Partial Class FormPengambilanSimpPokoknWajib
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Italic)
-        Me.Label2.Location = New System.Drawing.Point(21, 43)
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(21, 38)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(372, 15)
         Me.Label2.TabIndex = 17
@@ -65,6 +66,7 @@ Partial Class FormPengambilanSimpPokoknWajib
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(12, 18)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(335, 20)
@@ -226,7 +228,7 @@ Partial Class FormPengambilanSimpPokoknWajib
         '
         'groupBtn
         '
-        Me.groupBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.groupBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
         Me.groupBtn.Controls.Add(Me.btn_Keluar)
         Me.groupBtn.Controls.Add(Me.btn_Tambah)
         Me.groupBtn.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -257,7 +259,7 @@ Partial Class FormPengambilanSimpPokoknWajib
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top

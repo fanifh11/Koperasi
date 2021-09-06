@@ -80,7 +80,7 @@ Partial Class FormBuatBilling
         '
         'GroupBox4
         '
-        Me.GroupBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.GroupBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
         Me.GroupBox4.Controls.Add(Me.btn_Keluar)
         Me.GroupBox4.Controls.Add(Me.btn_BuatBiling)
         Me.GroupBox4.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -284,7 +284,8 @@ Partial Class FormBuatBilling
         '
         Me.lbl_Subjudul.AutoSize = True
         Me.lbl_Subjudul.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Italic)
-        Me.lbl_Subjudul.Location = New System.Drawing.Point(38, 33)
+        Me.lbl_Subjudul.ForeColor = System.Drawing.Color.White
+        Me.lbl_Subjudul.Location = New System.Drawing.Point(39, 37)
         Me.lbl_Subjudul.Name = "lbl_Subjudul"
         Me.lbl_Subjudul.Size = New System.Drawing.Size(447, 15)
         Me.lbl_Subjudul.TabIndex = 7
@@ -294,7 +295,8 @@ Partial Class FormBuatBilling
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
-        Me.Label1.Location = New System.Drawing.Point(14, 8)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(15, 12)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(413, 20)
         Me.Label1.TabIndex = 6
@@ -312,7 +314,7 @@ Partial Class FormBuatBilling
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_Subjudul)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top

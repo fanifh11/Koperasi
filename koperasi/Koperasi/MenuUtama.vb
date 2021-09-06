@@ -201,14 +201,14 @@
     End Sub
 
     Private Sub btnBackupDB_Click(sender As Object, e As EventArgs) Handles btnBackupDB.Click
-        FormBackupDatabase.ShowDialog()
-        FormBackupDatabase.Dispose()
+        DialogBackup.ShowDialog()
+        DialogBackup.Dispose()
 
     End Sub
 
     Private Sub btnRestoreDB_Click(sender As Object, e As EventArgs) Handles btnRestoreDB.Click
-        FormRestoreDatabase.ShowDialog()
-        FormRestoreDatabase.Dispose()
+        DialogRestore.ShowDialog()
+        DialogRestore.Dispose()
 
     End Sub
 
@@ -356,5 +356,14 @@
     Private Sub btnBukuSimpSukarela_Click(sender As Object, e As EventArgs) Handles btnBukuSimpSukarela.Click
         PreviewContohBukuSimpananSukarela.ShowDialog()
         PreviewContohBukuSimpananSukarela.Dispose()
+    End Sub
+
+    Private Sub MenuUtama_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Application.Exit()
+    End Sub
+
+    Private Sub btnResetData_Click(sender As Object, e As EventArgs) Handles btnResetData.Click
+        DialogReset.ShowDialog()
+        DialogReset.Dispose()
     End Sub
 End Class

@@ -5,7 +5,7 @@ Imports System.Security.Cryptography
 Imports Npgsql
 Module Modul
     'ITBrainPOSTheToko25122020ONLINE
-    Dim kodeaplikasi As String = "ITBrainPOSTheToko25122020" '25122020  khusus taufiq tambahi ini
+    Public kodeaplikasi As String = "KoperasiSP" '25122020  khusus taufiq tambahi ini
     Public versi As String = "1.0.0"
     Public fullver As Boolean = False
     Dim release As Boolean = True

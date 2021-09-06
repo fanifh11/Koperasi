@@ -39,6 +39,7 @@ Partial Class LaporanRekapitulasiSaldoPiutang
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.btn_Keluar = New System.Windows.Forms.Button()
         Me.RibbonLabel1 = New System.Windows.Forms.RibbonLabel()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.Panel1.SuspendLayout()
         Me.group_DataPembayaran.SuspendLayout()
         CType(Me.dgv_DataPembayaran, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,7 +55,7 @@ Partial Class LaporanRekapitulasiSaldoPiutang
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
         Me.Panel1.Controls.Add(Me.lbl_Subjudul)
         Me.Panel1.Controls.Add(Me.lbl_Judul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -68,6 +69,7 @@ Partial Class LaporanRekapitulasiSaldoPiutang
         '
         Me.lbl_Subjudul.AutoSize = True
         Me.lbl_Subjudul.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_Subjudul.ForeColor = System.Drawing.Color.White
         Me.lbl_Subjudul.Location = New System.Drawing.Point(38, 34)
         Me.lbl_Subjudul.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_Subjudul.Name = "lbl_Subjudul"
@@ -79,6 +81,7 @@ Partial Class LaporanRekapitulasiSaldoPiutang
         '
         Me.lbl_Judul.AutoSize = True
         Me.lbl_Judul.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_Judul.ForeColor = System.Drawing.Color.White
         Me.lbl_Judul.Location = New System.Drawing.Point(19, 11)
         Me.lbl_Judul.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_Judul.Name = "lbl_Judul"
@@ -204,7 +207,7 @@ Partial Class LaporanRekapitulasiSaldoPiutang
         '
         'Panel4
         '
-        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Panel4.Controls.Add(Me.btn_Keluar)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -275,4 +278,5 @@ Partial Class LaporanRekapitulasiSaldoPiutang
     Friend WithEvents Panel4 As Panel
     Friend WithEvents RibbonLabel1 As RibbonLabel
     Friend WithEvents btn_Keluar As Button
+    Friend WithEvents SaveFileDialog1 As SaveFileDialog
 End Class

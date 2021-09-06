@@ -169,4 +169,20 @@
             tempjenissimpanan = dgv_cari_data_jenis.Rows(e.RowIndex).Cells(0).Value
         End If
     End Sub
+
+    Private Sub cmb_kategori_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_kategori.SelectedIndexChanged
+        PergantianKategoriSimpanan()
+    End Sub
+
+    Sub PergantianKategoriSimpanan()
+        If cmb_kategori.SelectedIndex = 0 Then
+            txt_bunga.Enabled = True
+            txt_besar_simpanan.Text = "0"
+            txt_besar_simpanan.Enabled = False
+        Else
+            txt_besar_simpanan.Enabled = True
+            txt_bunga.Text = "0"
+            txt_bunga.Enabled = False
+        End If
+    End Sub
 End Class

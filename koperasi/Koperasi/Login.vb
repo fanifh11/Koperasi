@@ -11,7 +11,7 @@
         setLocationDatabase(txt_Address.Text)
         Dim usernameTxt = txt_Username.Text
         Dim passwordTxt = txt_Password.Text
-        Debug.WriteLine("select duser,dpassword from tbluser where duser = '" & usernameTxt & "' and dpassword = '" & passwordTxt & "' ")
+
         If getCount("select duser,dpassword from tbluser where duser = '" & usernameTxt & "' and dpassword = '" & passwordTxt & "' ") > 0 Then
 
             If clearKoneksi() Then
@@ -51,5 +51,9 @@
         If e.KeyValue = 13 Then
             masuk()
         End If
+    End Sub
+
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        txt_Address.Text = "localhost"
     End Sub
 End Class

@@ -797,3 +797,6 @@ F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.CopyComplet
 F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.exe
 F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.xml
 F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.pdb
+F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.DialogBackup.resources
+F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.DialogRestore.resources
+F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.DialogReset.resources
