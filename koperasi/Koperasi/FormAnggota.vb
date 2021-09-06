@@ -275,4 +275,9 @@
         PreviewFormAnggota.idanggota = dgv_DataAnggota.Rows(dgv_DataAnggota.CurrentCell.RowIndex).Cells(0).Value.ToString
         PreviewFormAnggota.ShowDialog()
     End Sub
+
+    Private Sub btn_ImportAnggotaExcel_Click(sender As Object, e As EventArgs) Handles btn_ImportAnggotaExcel.Click
+        ImportAnggota.ShowDialog()
+        ImportAnggota.Dispose()
+    End Sub
 End Class

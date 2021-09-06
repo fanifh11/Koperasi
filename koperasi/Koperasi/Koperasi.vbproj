@@ -320,6 +320,12 @@
     <Compile Include="FormUser.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ImportAnggota.Designer.vb">
+      <DependentUpon>ImportAnggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ImportAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="JenisSimpanan.Designer.vb">
       <DependentUpon>JenisSimpanan.vb</DependentUpon>
     </Compile>
@@ -597,6 +603,7 @@
     <Compile Include="PreviewSimpSukarela.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="QueryModule.vb" />
     <Compile Include="Terbilang.vb" />
   </ItemGroup>
   <ItemGroup>
@@ -612,6 +619,9 @@
     <EmbeddedResource Include="DataSimpananSukarela.rdlc" />
     <EmbeddedResource Include="DialogBackup.resx">
       <DependentUpon>DialogBackup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportAnggota.resx">
+      <DependentUpon>ImportAnggota.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DialogReset.resx">
       <DependentUpon>DialogReset.vb</DependentUpon>
