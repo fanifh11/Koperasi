@@ -36,6 +36,7 @@ Partial Class FormLihatTagihan
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lbl_Subjudul = New System.Windows.Forms.Label()
         Me.lbl_Judul = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.group_SimpananPokok.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.dgv_Data, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -116,6 +117,7 @@ Partial Class FormLihatTagihan
         '
         Me.GroupBox3.AutoSize = True
         Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.GroupBox3.Controls.Add(Me.Button1)
         Me.GroupBox3.Controls.Add(Me.btn_Keluar)
         Me.GroupBox3.Controls.Add(Me.btn_Cetak)
         Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -203,6 +205,17 @@ Partial Class FormLihatTagihan
         Me.lbl_Judul.TabIndex = 10
         Me.lbl_Judul.Text = "Lihat Tagihan Simp Pokok, Wajib, Saldo Awal"
         '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.Button1.Location = New System.Drawing.Point(146, 10)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(131, 27)
+        Me.Button1.TabIndex = 4
+        Me.Button1.Text = "Hapus Tagihan"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'FormLihatTagihan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -243,4 +256,5 @@ Partial Class FormLihatTagihan
     Friend WithEvents lbl_Subjudul As Label
     Friend WithEvents lbl_Judul As Label
     Friend WithEvents txt_Cari As TextBox
+    Friend WithEvents Button1 As Button
 End Class

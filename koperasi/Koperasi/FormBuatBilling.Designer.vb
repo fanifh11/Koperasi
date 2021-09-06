@@ -48,6 +48,7 @@ Partial Class FormBuatBilling
         Me.btn_PilihSemua = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btn_lihat_tagihan = New System.Windows.Forms.Button()
         Me.GroupBox4.SuspendLayout()
         CType(Me.dgv_DataAnggota2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.group_CariDataAnggota2.SuspendLayout()
@@ -71,7 +72,7 @@ Partial Class FormBuatBilling
         'btn_BuatBiling
         '
         Me.btn_BuatBiling.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!)
-        Me.btn_BuatBiling.Location = New System.Drawing.Point(19, 16)
+        Me.btn_BuatBiling.Location = New System.Drawing.Point(339, 16)
         Me.btn_BuatBiling.Name = "btn_BuatBiling"
         Me.btn_BuatBiling.Size = New System.Drawing.Size(180, 26)
         Me.btn_BuatBiling.TabIndex = 15
@@ -81,6 +82,7 @@ Partial Class FormBuatBilling
         'GroupBox4
         '
         Me.GroupBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.GroupBox4.Controls.Add(Me.btn_lihat_tagihan)
         Me.GroupBox4.Controls.Add(Me.btn_Keluar)
         Me.GroupBox4.Controls.Add(Me.btn_BuatBiling)
         Me.GroupBox4.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -333,6 +335,15 @@ Partial Class FormBuatBilling
         Me.GroupBox1.TabIndex = 20
         Me.GroupBox1.TabStop = False
         '
+        'btn_lihat_tagihan
+        '
+        Me.btn_lihat_tagihan.Location = New System.Drawing.Point(19, 16)
+        Me.btn_lihat_tagihan.Name = "btn_lihat_tagihan"
+        Me.btn_lihat_tagihan.Size = New System.Drawing.Size(93, 23)
+        Me.btn_lihat_tagihan.TabIndex = 17
+        Me.btn_lihat_tagihan.Text = "Lihat Tagihan"
+        Me.btn_lihat_tagihan.UseVisualStyleBackColor = True
+        '
         'FormBuatBilling
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -392,4 +403,5 @@ Partial Class FormBuatBilling
     Friend WithEvents cmb_Bulan As ComboBox
     Friend WithEvents lbl_Bulan As Label
     Friend WithEvents cmb_JenisSimp As ComboBox
+    Friend WithEvents btn_lihat_tagihan As Button
 End Class

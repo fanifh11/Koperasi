@@ -196,4 +196,9 @@
         onlyNumber(e)
 
     End Sub
+
+    Private Sub btn_lihat_tagihan_Click(sender As Object, e As EventArgs) Handles btn_lihat_tagihan.Click
+        FormLihatTagihan.ShowDialog()
+        FormLihatTagihan.Dispose()
+    End Sub
 End Class
