@@ -174,11 +174,19 @@ Public Class FormIsiSimpananSukarela
                     )
                     ")
                 End If
-            End If
-            dialogInfo("Pembayaran Sukses !")
+                dialogInfo("Pembayaran Sukses !")
 
+                If dialog("Apakah anda ingin mencetak buku ?") Then
+                    PreviewCetakBuku.idsukarela = idsukarela
+                    PreviewCetakBuku.nocetak = nocetak
+                    PreviewCetakBuku.ShowDialog()
+                End If
+            End If
         End If
         kunciForm()
+        showData()
+
+        lbl_Saldo.Text = "0"
 
     End Sub
 

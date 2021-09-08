@@ -122,15 +122,13 @@
                     insertData(baris)
                     baris = baris + 1
                 Next
+                dialogInfo("Buat tagihan sukses !")
             End If
-            dialogInfo("Buat tagihan sukses !")
+
         ElseIf pilihan.Count = 0 Then
             dialogError("Pilihan Nasabah Anda Masih Kosong !")
             Return
-
-
         End If
-
         removeAll()
 
     End Sub

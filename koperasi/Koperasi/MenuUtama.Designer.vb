@@ -91,12 +91,12 @@ Partial Class MenuUtama
         Me.panelDB = New System.Windows.Forms.RibbonPanel()
         Me.btnBackupDB = New System.Windows.Forms.RibbonButton()
         Me.btnRestoreDB = New System.Windows.Forms.RibbonButton()
+        Me.btnResetData = New System.Windows.Forms.RibbonButton()
         Me.tabKeluar = New System.Windows.Forms.RibbonTab()
         Me.RibbonPanel2 = New System.Windows.Forms.RibbonPanel()
         Me.Keluar = New System.Windows.Forms.RibbonButton()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnResetData = New System.Windows.Forms.RibbonButton()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -692,6 +692,14 @@ Partial Class MenuUtama
         Me.btnRestoreDB.Text = "Restore"
         Me.btnRestoreDB.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
         '
+        'btnResetData
+        '
+        Me.btnResetData.Image = CType(resources.GetObject("btnResetData.Image"), System.Drawing.Image)
+        Me.btnResetData.LargeImage = CType(resources.GetObject("btnResetData.LargeImage"), System.Drawing.Image)
+        Me.btnResetData.Name = "btnResetData"
+        Me.btnResetData.SmallImage = CType(resources.GetObject("btnResetData.SmallImage"), System.Drawing.Image)
+        Me.btnResetData.Text = "Reset Data"
+        '
         'tabKeluar
         '
         Me.tabKeluar.Name = "tabKeluar"
@@ -735,14 +743,6 @@ Partial Class MenuUtama
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
-        '
-        'btnResetData
-        '
-        Me.btnResetData.Image = CType(resources.GetObject("btnResetData.Image"), System.Drawing.Image)
-        Me.btnResetData.LargeImage = CType(resources.GetObject("btnResetData.LargeImage"), System.Drawing.Image)
-        Me.btnResetData.Name = "btnResetData"
-        Me.btnResetData.SmallImage = CType(resources.GetObject("btnResetData.SmallImage"), System.Drawing.Image)
-        Me.btnResetData.Text = "Reset Data"
         '
         'MenuUtama
         '

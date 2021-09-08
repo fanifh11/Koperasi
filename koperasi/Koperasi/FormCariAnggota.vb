@@ -125,8 +125,6 @@
             dgv_DataAnggota.Columns(16).HeaderText = "Kode Tagihan"
             dgv_DataAnggota.Columns(17).HeaderText = "Jumlah Bayar"
 
-
-
             dgv_DataAnggota.Columns(6).DefaultCellStyle.Format = "c0"
             dgv_DataAnggota.Columns(8).DefaultCellStyle.Format = "c0"
             dgv_DataAnggota.Columns(9).DefaultCellStyle.Format = "c0"
@@ -139,7 +137,7 @@
 
         ElseIf menu = "Pengambilan Simpanan Pokok dan Wajib" Then
             dgv_DataAnggota.DataSource = getData("select tblanggota.idanggota,tblanggota.anggota,sum(besar) from tblrekening inner join tblanggota on tblanggota.idanggota = tblrekening.idanggota 
-            where (ketkategori = 'POKOK' or ketkategori = 'WAJIB') and tglambil isnull and tblanggota.anggota ilike '%" & txt_CariDataAnggota.Text & "%' group by tblanggota.idanggota")
+            where (ketkategori = 'POKOK' or ketkategori = 'WAJIB') and fbayar = 1  and tglambil isnull and tblanggota.anggota ilike '%" & txt_CariDataAnggota.Text & "%' group by tblanggota.idanggota")
 
             dgv_DataAnggota.Columns(0).HeaderText = "ID Anggota"
             dgv_DataAnggota.Columns(1).HeaderText = "Nama"

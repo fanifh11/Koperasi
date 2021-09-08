@@ -17,7 +17,7 @@
 
     Sub showData()
         dgv_DataAnggota.DataSource = getData("select tblanggota.idanggota,tblanggota.anggota,sum(besar) from tblrekening inner join tblanggota on tblanggota.idanggota = tblrekening.idanggota 
-            where (ketkategori = 'POKOK' or ketkategori = 'WAJIB') and tglambil isnull group by tblanggota.idanggota")
+            where (ketkategori = 'POKOK' or ketkategori = 'WAJIB') and fbayar = 1 and tglambil isnull group by tblanggota.idanggota")
 
         dgv_DataAnggota.Columns(0).HeaderText = "Kode Anggota"
         dgv_DataAnggota.Columns(1).HeaderText = "Nama"

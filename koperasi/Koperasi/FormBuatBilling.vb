@@ -180,6 +180,7 @@
                      ) 
                     ")
                 Next
+                dialogInfo("Buat tagihan simpanan sukses !")
             End If
 
             If cmb_JenisSimpanan.SelectedIndex = 2 Then
@@ -188,7 +189,7 @@
 
         End If
 
-        dialogInfo("Buat tagihan simpanan sukses !")
+
         removeAll()
     End Sub
 
