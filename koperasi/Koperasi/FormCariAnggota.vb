@@ -157,6 +157,7 @@
         showData()
     End Sub
 
+
     Private Sub dgv_DataAnggota_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_DataAnggota.CellClick
 
         If e.RowIndex >= 0 Then
@@ -235,6 +236,8 @@
                 FormPinjam.txt_alamat.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(2).Value
 
             ElseIf menu = "Pembayaran Nasabah" Then
+
+
                 FormPembayaranNasabah.idtagihan = dgv_DataAnggota.Rows(e.RowIndex).Cells(0).Value
 
                 FormPembayaranNasabah.txt_kode_pinjam.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(1).Value
@@ -243,15 +246,15 @@
                 FormPembayaranNasabah.txt_alamat.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(4).Value
                 FormPembayaranNasabah.txt_jenis_pinjaman.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(5).Value
 
-                FormPembayaranNasabah.txt_besar_pinjam.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(6).Value
+                FormPembayaranNasabah.txt_besar_pinjam.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(6).Value)
                 FormPembayaranNasabah.txt_lama_pinjam.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(7).Value
-                FormPembayaranNasabah.txt_angsuran_pokok.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(8).Value
-                FormPembayaranNasabah.txt_angsuran_bunga.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(9).Value
-                FormPembayaranNasabah.txt_jumlah_angsuran.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(10).Value
+                FormPembayaranNasabah.txt_angsuran_pokok.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(8).Value)
+                FormPembayaranNasabah.txt_angsuran_bunga.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(9).Value)
+                FormPembayaranNasabah.txt_jumlah_angsuran.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(10).Value)
 
                 FormPembayaranNasabah.txt_angsuran_ke.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(11).Value
                 FormPembayaranNasabah.txt_sudah_dibayar.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(12).Value
-                FormPembayaranNasabah.txt_saldo_piutang.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(13).Value
+                FormPembayaranNasabah.txt_saldo_piutang.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(13).Value)
                 FormPembayaranNasabah.txt_biaya_pokok.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(14).Value
                 FormPembayaranNasabah.txt_bayar_bunga.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(15).Value
                 FormPembayaranNasabah.txt_kode_tagihan.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(16).Value
@@ -269,23 +272,23 @@
                 FormKoreksiPembayaranNasabah.txt_Alamat.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(4).Value
                 FormKoreksiPembayaranNasabah.txt_JenisPinjam.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(5).Value
 
-                FormKoreksiPembayaranNasabah.txt_BesarPinjam.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(6).Value
+                FormKoreksiPembayaranNasabah.txt_BesarPinjam.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(6).Value)
                 FormKoreksiPembayaranNasabah.txt_LamaPinjam.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(7).Value
-                FormKoreksiPembayaranNasabah.txt_AngsuranPokok.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(8).Value
-                FormKoreksiPembayaranNasabah.txt_AngsuranBunga.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(9).Value
-                FormKoreksiPembayaranNasabah.txt_JumAngsuran.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(10).Value
+                FormKoreksiPembayaranNasabah.txt_AngsuranPokok.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(8).Value)
+                FormKoreksiPembayaranNasabah.txt_AngsuranBunga.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(9).Value)
+                FormKoreksiPembayaranNasabah.txt_JumAngsuran.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(10).Value)
 
                 FormKoreksiPembayaranNasabah.txt_AngsKe.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(11).Value
-                FormKoreksiPembayaranNasabah.txt_SdhDiByr.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(12).Value
-                FormKoreksiPembayaranNasabah.txt_SaldoPiutang.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(13).Value
-                FormKoreksiPembayaranNasabah.txt_BayarPokok.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(14).Value
-                FormKoreksiPembayaranNasabah.txt_BayarBunga.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(15).Value
+                FormKoreksiPembayaranNasabah.txt_SdhDiByr.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(12).Value)
+                FormKoreksiPembayaranNasabah.txt_SaldoPiutang.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(13).Value)
+                FormKoreksiPembayaranNasabah.txt_BayarPokok.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(14).Value)
+                FormKoreksiPembayaranNasabah.txt_BayarBunga.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(15).Value)
                 FormKoreksiPembayaranNasabah.txt_KodeTagihan.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(16).Value
 
-                FormKoreksiPembayaranNasabah.txt_JumBayar.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(17).Value
+                FormKoreksiPembayaranNasabah.txt_JumBayar.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(17).Value)
 
-                FormKoreksiPembayaranNasabah.bayarPokok = dgv_DataAnggota.Rows(e.RowIndex).Cells(14).Value
-                FormKoreksiPembayaranNasabah.bayarBunga = dgv_DataAnggota.Rows(e.RowIndex).Cells(15).Value
+                FormKoreksiPembayaranNasabah.bayarPokok = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(14).Value)
+                FormKoreksiPembayaranNasabah.bayarBunga = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(15).Value)
 
 
                 FormKoreksiPembayaranNasabah.idpinjam = dgv_DataAnggota.Rows(e.RowIndex).Cells(1).Value

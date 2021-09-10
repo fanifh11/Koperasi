@@ -4,12 +4,28 @@
     Public bayarPokok As Double
     Public bayarBunga As Double
 
+    Dim cekSeparator As Boolean = True
+    Private Sub textChanged_moneySeparator(sender As Object, e As EventArgs) Handles txt_BesarPinjam.TextChanged, txt_AngsuranPokok.TextChanged, txt_AngsuranBunga.TextChanged, txt_JumAngsuran.TextChanged, txt_SdhDiByr.TextChanged, txt_SaldoPiutang.TextChanged, txt_BayarPokok.TextChanged, txt_BayarBunga.TextChanged, txt_JumBayar.TextChanged
+
+        Try
+            If cekSeparator Then
+                cekSeparator = False
+                sender.Text = numberFormat(unnumberFormat(sender.Text))
+                sender.SelectionStart = Len(sender.text)
+                sender.SelectionLength = 0
+                cekSeparator = True
+            End If
+        Catch ex As Exception
+            cekSeparator = True
+        End Try
+
+    End Sub
 
     Sub hitungJumlahBayar()
-        Dim bayarPokok = toDouble(txt_BayarPokok.Text)
-        Dim bayarBunga = toDouble(txt_BayarBunga.Text)
+        Dim bayarPokok = toDouble(unnumberFormat(txt_BayarPokok.Text))
+        Dim bayarBunga = toDouble(unnumberFormat(txt_BayarBunga.Text))
 
-        txt_JumBayar.Text = (bayarPokok + bayarBunga).ToString
+        txt_JumBayar.Text = numberFormat(bayarPokok + bayarBunga).ToString
 
     End Sub
     Private Sub btn_Keluar_Click(sender As Object, e As EventArgs) Handles btn_Keluar.Click
@@ -47,7 +63,6 @@
 
     Private Sub txt_BayarPokok_TextChanged(sender As Object, e As EventArgs) Handles txt_BayarPokok.TextChanged
         hitungJumlahBayar()
-
     End Sub
 
     Private Sub txt_BayarBunga_TextChanged(sender As Object, e As EventArgs) Handles txt_BayarBunga.TextChanged
@@ -57,8 +72,8 @@
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
         Dim tglBayar As String = dtp_TglBayar.Value.ToString("G")
-        Dim txtbayarPokok As Double = toDouble(txt_BayarPokok.Text)
-        Dim txtbayarBunga As Double = toDouble(txt_BayarBunga.Text)
+        Dim txtbayarPokok As Double = toDouble(unnumberFormat(txt_BayarPokok.Text))
+        Dim txtbayarBunga As Double = toDouble(unnumberFormat(txt_BayarBunga.Text))
 
         Dim jumlahBayar As String = txt_JumBayar.Text
 
@@ -96,9 +111,11 @@
                    ")
 
                 exc("update tblpinjam set saldopinjam = besarpinjam - (select sum(tbltagihan.besarpokok) from tbltagihan where tbltagihan.idpinjam = tblpinjam.idpinjam)")
+
+                dialogInfo("Edit data sukses !")
             End If
         End If
-        dialogInfo("Edit data sukses !")
+
 
         clearForm(group_InformasiNasabah)
         clearForm(group_InformasiPinjaman)

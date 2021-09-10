@@ -10,6 +10,25 @@
     Dim tagihan As String
 
 
+    Dim cekSeparator As Boolean = True
+    Private Sub textChanged_moneySeparator(sender As Object, e As EventArgs) Handles txt_biaya_pokok.TextChanged, txt_bayar_bunga.TextChanged,
+        txt_jumlah_bayar.TextChanged, txt_besar_pinjam.TextChanged, txt_angsuran_pokok.TextChanged, txt_angsuran_bunga.TextChanged,
+        txt_jumlah_angsuran.TextChanged, txt_saldo_piutang.TextChanged
+        Try
+            If cekSeparator Then
+                cekSeparator = False
+                sender.Text = numberFormat(unnumberFormat(sender.Text))
+                sender.SelectionStart = Len(sender.text)
+                sender.SelectionLength = 0
+                cekSeparator = True
+            End If
+        Catch ex As Exception
+            cekSeparator = True
+        End Try
+
+    End Sub
+
+
     Sub firstTimeLoad()
         btn_tambah.Enabled = True
         btn_keluar.Enabled = True
@@ -29,10 +48,11 @@
     End Sub
 
     Sub jumlahBayar()
-        Dim bayarPokok As Double = toDouble(txt_biaya_pokok.Text)
-        Dim bayarBunga As Double = toDouble(txt_bayar_bunga.Text)
+        Dim bayarPokok As Double = toDouble(unnumberFormat(txt_biaya_pokok.Text))
+        Dim bayarBunga As Double = toDouble(unnumberFormat(txt_bayar_bunga.Text))
 
-        txt_jumlah_bayar.Text = (bayarPokok + bayarBunga).ToString
+        txt_jumlah_bayar.Text = numberFormat((bayarPokok + bayarBunga).ToString)
+
     End Sub
 
     Sub showData()
@@ -92,6 +112,15 @@
 
     Private Sub btn_tambah_Click(sender As Object, e As EventArgs) Handles btn_tambah.Click
         formLoad()
+        dgv_data_peminjaman.Enabled = False
+
+        If btn_simpan.Enabled = False Then
+            clearForm(group_informasi_nasabah)
+            clearForm(group_informasi_peminjaman)
+            clearForm(group_pembayaran_pinjaman)
+
+            btn_simpan.Enabled = True
+        End If
 
     End Sub
 
@@ -101,13 +130,15 @@
         clearForm(group_informasi_nasabah)
         clearForm(group_informasi_peminjaman)
 
+        dgv_data_peminjaman.Enabled = True
+
         btn_simpan.Enabled = True
 
     End Sub
 
     Sub kurangBayarPokok()
-        Dim angsuranPokok = toDouble(txt_angsuran_pokok.Text)
-        Dim biayaPokok = toDouble(txt_biaya_pokok.Text)
+        Dim angsuranPokok = toDouble(unnumberFormat(txt_angsuran_pokok.Text))
+        Dim biayaPokok = toDouble(unnumberFormat(txt_biaya_pokok.Text))
 
         txt_biaya_pokok.Text = (angsuranPokok - biayaPokok).ToString
 
@@ -115,6 +146,7 @@
 
     Private Sub btn_cari_Click(sender As Object, e As EventArgs) Handles btn_cari.Click
         FormCariAnggota.menu = "Pembayaran Nasabah"
+
         FormCariAnggota.ShowDialog()
         FormCariAnggota.Dispose()
         showData()
@@ -133,7 +165,7 @@
         onlyNumber(e)
     End Sub
 
-    Private Sub txt_biaya_pokok_TextChanged(sender As Object, e As EventArgs) Handles txt_biaya_pokok.TextChanged
+    Private Sub txt_biaya_pokok_TextChanged(sender As Object, e As EventArgs)
         jumlahBayar()
     End Sub
 
@@ -146,9 +178,9 @@
 
     Private Sub btn_simpan_Click(sender As Object, e As EventArgs) Handles btn_simpan.Click
         Dim tglBayar As String = dtp_tanggal_bayar.Value.ToString("G")
-        Dim txtbayarPokok As Double = toDouble(txt_biaya_pokok.Text)
-        Dim txtbayarBunga As Double = toDouble(txt_bayar_bunga.Text)
-        Dim jumlahBayar As String = txt_jumlah_bayar.Text
+        Dim txtbayarPokok As Double = toDouble(unnumberFormat(txt_biaya_pokok.Text))
+        Dim txtbayarBunga As Double = toDouble(unnumberFormat(txt_bayar_bunga.Text))
+        Dim jumlahBayar As String = unnumberFormat(txt_jumlah_bayar.Text)
 
         If adaKosong(group_pembayaran_pinjaman) Then
             dialogError("Harap lengkapi form isian anda!")
@@ -184,16 +216,19 @@
                     ")
 
                 exc("update tblpinjam set saldopinjam = besarpinjam - (select sum(tbltagihan.besarpokok) from tbltagihan where tbltagihan.idpinjam = tblpinjam.idpinjam)")
+
+                dialogInfo("Bayar Sukses !")
+
+                dgv_data_peminjaman.Enabled = True
+                clearForm(group_data_peminjaman)
+                clearForm(group_informasi_peminjaman)
+                clearForm(group_pembayaran_pinjaman)
+                clearForm(group_informasi_nasabah)
             End If
-            dialogInfo("Bayar Sukses !")
-
         End If
-
-        clearForm(group_data_peminjaman)
-        clearForm(group_informasi_peminjaman)
-        clearForm(group_pembayaran_pinjaman)
-        clearForm(group_informasi_nasabah)
         showData()
+        firstTimeLoad()
+
 
     End Sub
 
@@ -263,6 +298,7 @@
 
     End Sub
 
-
-
+    Private Sub txt_jumlah_bayar_TextChanged(sender As Object, e As EventArgs) Handles txt_jumlah_bayar.TextChanged
+        jumlahBayar()
+    End Sub
 End Class
