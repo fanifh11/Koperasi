@@ -100,7 +100,7 @@ Public Class FormIsiSimpananSukarela
             Dim ketTransaksi As String = txt_JenisSimpanan.Text
             Dim tglTransaksi As String = dtp_TglSimpanan.Value.ToString("yyyy-MM-dd")
 
-            Dim besarSimpan As String = txt_BesarSimpanan.Text
+            Dim besarSimpan As String = unnumberFormat(txt_BesarSimpanan.Text)
             Dim bunga As String = txt_Bunga.Text
             Dim nocetak As Integer = getCount("select * from tbltransaksi where idsukarela = '" & idsukarela & "' ") + 1
             Dim ketkode As String = getValue("select ketjenis from tbljenis where jenissimpanan = '" & ketTransaksi & "' ", "ketjenis")
@@ -208,6 +208,22 @@ Public Class FormIsiSimpananSukarela
 
     Private Sub txt_BesarSimpanan_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_BesarSimpanan.KeyPress
         onlyNumber(e)
+
+    End Sub
+
+    Dim checkJual2 As Boolean = True
+    Private Sub TBJual2_TextChanged(sender As Object, e As EventArgs) Handles txt_BesarSimpanan.TextChanged
+        Try
+            If checkJual2 Then
+                checkJual2 = False
+                sender.Text = numberFormat(unnumberFormat(sender.Text))
+                sender.SelectionStart = Len(sender.text)
+                sender.SelectionLength = 0
+                checkJual2 = True
+            End If
+        Catch ex As Exception
+            checkJual2 = True
+        End Try
 
     End Sub
 End Class

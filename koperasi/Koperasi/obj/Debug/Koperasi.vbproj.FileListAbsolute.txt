@@ -718,7 +718,6 @@ F:\Magang\Unesa\Koperasi\koperasi\Koperasi\bin\Debug\pt\Microsoft.ReportViewer.W
 F:\Magang\Unesa\Koperasi\koperasi\Koperasi\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 F:\Magang\Unesa\Koperasi\koperasi\Koperasi\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 F:\Magang\Unesa\Koperasi\koperasi\Koperasi\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.AssemblyReference.cache
 F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.DataIdentitasKoperasi.resources
 F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.FormAnggota.resources
 F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.FormBackupDatabase.resources

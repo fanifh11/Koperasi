@@ -54,7 +54,7 @@
             Dim ketjenis As String = txt_kode_simpanan.Text
             Dim bunga As String = txt_bunga.Text
             Dim kategori As String = cmb_kategori.Text
-            Dim besarsimpanan As String = txt_besar_simpanan.Text
+            Dim besarsimpanan As String = unnumberFormat(txt_besar_simpanan.Text)
 
             Dim replacedot = bunga.Replace(",", ".")
 
@@ -184,5 +184,23 @@
             txt_bunga.Text = "0"
             txt_bunga.Enabled = False
         End If
+    End Sub
+
+
+
+    Dim checkJual2 As Boolean = True
+    Private Sub TBJual2_TextChanged(sender As Object, e As EventArgs) Handles txt_besar_simpanan.TextChanged
+        Try
+            If checkJual2 Then
+                checkJual2 = False
+                sender.Text = numberFormat(unnumberFormat(sender.Text))
+                sender.SelectionStart = Len(sender.text)
+                sender.SelectionLength = 0
+                checkJual2 = True
+            End If
+        Catch ex As Exception
+            checkJual2 = True
+        End Try
+
     End Sub
 End Class

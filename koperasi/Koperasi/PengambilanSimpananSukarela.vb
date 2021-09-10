@@ -82,7 +82,7 @@
         Else
             Dim jenissimpanan As String = txt_jenis_simpanan.Text
             Dim tanggalambil As String = dtp_tanggal_ambil.Value.ToString("yyyy-MM-dd")
-            Dim besarsambil As String = txt_besar_ambil.Text
+            Dim besarsambil As String = unnumberFormat(txt_besar_ambil.Text)
             Dim bunga As String = txt_bunga.Text
             Dim nocetak As Integer = getCount("select * from tbltransaksi where idsukarela = '" & idsukarela & "'") + 1
             Dim saldo As String = lbl_jumlah.Text
@@ -184,5 +184,21 @@
 
     Private Sub txt_besar_ambil_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_besar_ambil.KeyPress
         onlyNumber(e)
+    End Sub
+
+    Dim checkJual2 As Boolean = True
+    Private Sub TBJual2_TextChanged(sender As Object, e As EventArgs) Handles txt_besar_ambil.TextChanged
+        Try
+            If checkJual2 Then
+                checkJual2 = False
+                sender.Text = numberFormat(unnumberFormat(sender.Text))
+                sender.SelectionStart = Len(sender.text)
+                sender.SelectionLength = 0
+                checkJual2 = True
+            End If
+        Catch ex As Exception
+            checkJual2 = True
+        End Try
+
     End Sub
 End Class
