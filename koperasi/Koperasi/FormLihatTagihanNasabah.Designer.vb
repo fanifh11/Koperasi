@@ -32,6 +32,7 @@ Partial Class FormLihatTagihanNasabah
         Me.btn_keluar = New System.Windows.Forms.Button()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.btn_cetak = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.dgv_data_tagihan, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.group_data_tagihan.SuspendLayout()
@@ -124,6 +125,7 @@ Partial Class FormLihatTagihanNasabah
         'GroupBox4
         '
         Me.GroupBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.GroupBox4.Controls.Add(Me.Button1)
         Me.GroupBox4.Controls.Add(Me.btn_cetak)
         Me.GroupBox4.Controls.Add(Me.btn_keluar)
         Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -141,6 +143,15 @@ Partial Class FormLihatTagihanNasabah
         Me.btn_cetak.TabIndex = 2
         Me.btn_cetak.Text = "Cetak Tagihan"
         Me.btn_cetak.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(106, 12)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(87, 23)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Hapus"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'FormLihatTagihanNasabah
         '
@@ -175,4 +186,5 @@ Partial Class FormLihatTagihanNasabah
     Friend WithEvents btn_keluar As Button
     Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents btn_cetak As Button
+    Friend WithEvents Button1 As Button
 End Class

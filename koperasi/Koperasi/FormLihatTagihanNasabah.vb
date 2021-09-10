@@ -73,4 +73,20 @@
             kondisiBtnCetak()
         End If
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        deleteTagihan()
+    End Sub
+
+    Sub deleteTagihan()
+        If Not dgv_data_tagihan.SelectedCells.Count = 1 Then
+            dialogError("Harap pilih tagihan yang akan dihapus")
+            Return
+        End If
+        If dialog("Apakah anda yakin untuk menghapus tagihan ini ?") Then
+            Dim norek = dgv_data_tagihan.Rows(dgv_data_tagihan.SelectedCells(0).RowIndex).Cells(0).Value
+            exc($"DELETE FROM tbltagihan WHERE idtagihan='{norek}'")
+            showData()
+        End If
+    End Sub
 End Class
