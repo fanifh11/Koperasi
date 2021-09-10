@@ -505,7 +505,12 @@ Module Modul
             uang = 0
         End Try
         Dim hasil As String = uang.ToString("N1")
-        Return hasil.Substring(0, hasil.Count - 2)
+        If Len(hasil) > 2 Then
+            Return hasil.Substring(0, hasil.Count - 2)
+        Else
+            Return hasil
+        End If
+
     End Function
 
     Function numberFor(te As String)

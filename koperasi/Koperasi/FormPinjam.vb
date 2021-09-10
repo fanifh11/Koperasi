@@ -82,11 +82,12 @@
     End Sub
 
     Public Sub hitungAngsuranPokok()
-        Dim besarPinjam As Double = toDouble(txt_besar_pinjam.Text)
+
+        Dim besarPinjam As Double = toDouble(unnumberFormat(txt_besar_pinjam.Text))
         Dim lamaPinjam As Double = toDouble(txt_lama_pinjam.Text)
 
-        Dim besarBunga As Double = toDouble(txt_bunga.Text)
-        Dim totalPokok As Double = toDouble(txt_angsuran_pokok.Text)
+        Dim besarBunga As Double = toDouble(unnumberFormat(txt_bunga.Text))
+        Dim totalPokok As Double = toDouble(unnumberFormat(txt_angsuran_pokok.Text))
 
 
         If cmb_JenisBunga.SelectedIndex = 2 Then
@@ -100,13 +101,13 @@
 
             total = (besarPinjam * besarBunga / 12) / (1 - 1 / (1 + besarBunga / 12) ^ lamaPinjam)
 
-            txt_angsuran_pokok.Text = Math.Ceiling(total - toDouble(txt_angsuran_bunga.Text)).ToString
+            txt_angsuran_pokok.Text = numberFormat(Math.Ceiling(total - toDouble(unnumberFormat(txt_angsuran_bunga.Text))).ToString)
 
         ElseIf cmb_JenisBunga.SelectedIndex = 1 Then
-            txt_angsuran_pokok.Text = Math.Ceiling(besarPinjam / lamaPinjam).ToString
+            txt_angsuran_pokok.Text = numberFormat(Math.Ceiling(besarPinjam / lamaPinjam).ToString)
 
         ElseIf cmb_JenisBunga.SelectedIndex = 0 Then
-            txt_angsuran_pokok.Text = Math.Ceiling(besarPinjam / lamaPinjam).ToString
+            txt_angsuran_pokok.Text = numberFormat(Math.Ceiling(besarPinjam / lamaPinjam).ToString)
         End If
 
 
@@ -115,11 +116,11 @@
     End Sub
 
     Sub hitungBunga()
-        Dim besarPinjam As Double = toDouble(txt_besar_pinjam.Text)
-        Dim besarBunga As Double = toDouble(txt_bunga.Text)
-        Dim totalPokok As Double = toDouble(txt_angsuran_pokok.Text)
+        Dim besarPinjam As Double = toDouble(unnumberFormat(txt_besar_pinjam.Text))
+        Dim besarBunga As Double = toDouble(unnumberFormat(txt_bunga.Text))
+        Dim totalPokok As Double = toDouble(unnumberFormat(txt_angsuran_pokok.Text))
 
-        txt_angsuran_bunga.Text = Math.Ceiling((besarPinjam * besarBunga) / 100).ToString
+        txt_angsuran_bunga.Text = numberFormat(Math.Ceiling((besarPinjam * besarBunga) / 100).ToString)
         hitungAngsuranPokok()
 
         hitungJumAngsuran()
@@ -127,18 +128,18 @@
     End Sub
 
     Sub hitungJumAngsuran()
-        Dim jumAngsuranPokok As Double = toDouble(txt_angsuran_pokok.Text)
-        Dim jumAngsuranBunga As Double = toDouble(txt_angsuran_bunga.Text)
+        Dim jumAngsuranPokok As Double = toDouble(unnumberFormat(txt_angsuran_pokok.Text))
+        Dim jumAngsuranBunga As Double = toDouble(unnumberFormat(txt_angsuran_bunga.Text))
 
-        txt_jumlah_angsuran.Text = (jumAngsuranPokok + jumAngsuranBunga).ToString
+        txt_jumlah_angsuran.Text = numberFormat((jumAngsuranPokok + jumAngsuranBunga).ToString)
     End Sub
 
     Sub jumUangDiterima()
-        Dim besarPinjam As Double = toDouble(txt_besar_pinjam.Text)
-        Dim biayaAsuransi As Double = toDouble(txt_asuransi.Text)
-        Dim biayaAdministrasi As Double = toDouble(txt_administrasi.Text)
+        Dim besarPinjam As Double = toDouble(unnumberFormat(txt_besar_pinjam.Text))
+        Dim biayaAsuransi As Double = toDouble(unnumberFormat(txt_asuransi.Text))
+        Dim biayaAdministrasi As Double = toDouble(unnumberFormat(txt_administrasi.Text))
 
-        txt_jumlah_diterima.Text = (besarPinjam - (biayaAdministrasi + biayaAsuransi)).ToString
+        txt_jumlah_diterima.Text = numberFormat((besarPinjam - (biayaAdministrasi + biayaAsuransi)).ToString)
 
     End Sub
     Private Sub btn_keluar_Click(sender As Object, e As EventArgs) Handles btn_keluar.Click
@@ -184,16 +185,16 @@
             Dim kodePinjam As String = txt_kode_pinjam.Text
             Dim jenisPinjam As String = cmb_JenisBunga.Text
             Dim tglPinjam As String = dtp_tanggal_pinjam.Value
-            Dim besarPinjam As String = txt_besar_pinjam.Text
+            Dim besarPinjam As String = unnumberFormat(txt_besar_pinjam.Text)
             Dim lamaPinjam As String = txt_lama_pinjam.Text
             Dim persenBunga As String = txt_bunga.Text
-            Dim asuransi As String = txt_asuransi.Text
-            Dim administrasi As String = txt_administrasi.Text
-            Dim diterima As String = txt_jumlah_diterima.Text
+            Dim asuransi As String = unnumberFormat(txt_asuransi.Text)
+            Dim administrasi As String = unnumberFormat(txt_administrasi.Text)
+            Dim diterima As String = unnumberFormat(txt_jumlah_diterima.Text)
 
-            Dim angsuranPokok As String = txt_angsuran_pokok.Text
-            Dim angsuranBunga As String = txt_angsuran_bunga.Text
-            Dim jumAngsuran As String = txt_jumlah_angsuran.Text
+            Dim angsuranPokok As String = unnumberformat(txt_angsuran_pokok.Text)
+            Dim angsuranBunga As String = unnumberformat(txt_angsuran_bunga.Text)
+            Dim jumAngsuran As String = unnumberFormat(txt_jumlah_angsuran.Text)
 
             If dialog("Apakah yakin untuk membuat pinjaman ?") Then
                 If getCount("select idpinjam from tblpinjam where idpinjam = '" & kodePinjam & "' ") = 0 Then
@@ -394,4 +395,21 @@
             kondisiBtnHapus()
         End If
     End Sub
+
+    Dim checkJual2 As Boolean = True
+    Private Sub TBJual2_TextChanged(sender As Object, e As EventArgs) Handles txt_administrasi.TextChanged, txt_besar_pinjam.TextChanged, txt_asuransi.TextChanged
+        Try
+            If checkJual2 Then
+                checkJual2 = False
+                sender.Text = numberFormat(unnumberFormat(sender.Text))
+                sender.SelectionStart = Len(sender.text)
+                sender.SelectionLength = 0
+                checkJual2 = True
+            End If
+        Catch ex As Exception
+            checkJual2 = True
+        End Try
+
+    End Sub
+
 End Class
