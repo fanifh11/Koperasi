@@ -16,5 +16,6 @@
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("pimpinan", getValue(sqlidentitas, "pimpinan").ToString))
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("bendahara", getValue(sqlidentitas, "bendahara").ToString))
         ReportViewer1.RefreshReport()
+        ReportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout)
     End Sub
 End Class

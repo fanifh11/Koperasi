@@ -12,7 +12,7 @@
 
     Sub showData()
         If cmb_status_pembayaran.SelectedIndex = 0 Then
-            sql = "select idanggota, anggota, idpinjam, besarbayar, besarpokok, besarbunga, totalangsur, totalpokok, totalbunga from qtagihan where anggota ilike '%" & txt_search.Text & "%' and saldopinjam > 0 and tglbayar is not null"
+            sql = "select idanggota, anggota, idpinjam, besarbayar, besarpokok, besarbunga, totalangsur, totalpokok, totalbunga,TglBayar,BesarPinjam,SaldoPinjam,cicilanKe from qtagihan where anggota ilike '%" & txt_search.Text & "%' and saldopinjam > 0 and tglbayar is not null"
             dgv_data_pembayaran.DataSource = getData(sql)
             dgv_data_pembayaran.Columns(0).HeaderText = "ID Anggota"
             dgv_data_pembayaran.Columns(1).HeaderText = "Nama Anggota"
@@ -34,7 +34,7 @@
             lbl_jumlah_data.Text = "Jumlah Data " & dgv_data_pembayaran.Rows.Count
             lbl_bayar.Text = "Bayar : " & numberFor(toDouble(getValue("select sum(totalangsur) as totalangsur from qtagihan where anggota ilike '%" & txt_search.Text & "%' and saldopinjam > 0", "totalangsur")).ToString) & " Pokok : " & numberFor(toDouble(getValue("select sum(totalpokok) as totalpokok from qtagihan where anggota ilike '%" & txt_search.Text & "%' and saldopinjam > 0", "totalpokok")).ToString) & " Bunga : " & numberFor(toDouble(getValue("select sum(totalbunga) as totalbunga from qtagihan where anggota ilike '%" & txt_search.Text & "%' and saldopinjam > 0", "totalbunga")).ToString)
         ElseIf cmb_status_pembayaran.SelectedIndex = 1 Then
-            sql = "select idanggota, anggota, idpinjam, besarbayar, besarpokok, besarbunga, totalangsur, totalpokok, totalbunga from qtagihan where anggota ilike '%" & txt_search.Text & "%' and saldopinjam = 0 and tglbayar is not null"
+            sql = "select idanggota, anggota, idpinjam, besarbayar, besarpokok, besarbunga, totalangsur, totalpokok, totalbunga,TglBayar,BesarPinjam,SaldoPinjam,cicilanKe from qtagihan where anggota ilike '%" & txt_search.Text & "%' and saldopinjam = 0 and tglbayar is not null"
             dgv_data_pembayaran.DataSource = getData(sql)
             dgv_data_pembayaran.Columns(0).HeaderText = "ID Anggota"
             dgv_data_pembayaran.Columns(1).HeaderText = "Nama Anggota"
@@ -56,7 +56,7 @@
             lbl_jumlah_data.Text = "Jumlah Data " & dgv_data_pembayaran.Rows.Count
             lbl_bayar.Text = "Bayar : " & numberFor(toDouble(getValue("select sum(totalangsur) as totalangsur from qtagihan where anggota ilike '%" & txt_search.Text & "%' and saldopinjam <= 0", "totalangsur")).ToString) & " Pokok : " & numberFor(toDouble(getValue("select sum(totalpokok) as totalpokok from qtagihan where anggota ilike '%" & txt_search.Text & "%' and saldopinjam <= 0", "totalpokok")).ToString) & " Bunga : " & numberFor(toDouble(getValue("select sum(totalbunga) as totalbunga from qtagihan where anggota ilike '%" & txt_search.Text & "%' and saldopinjam <= 0", "totalbunga")).ToString)
         ElseIf cmb_status_pembayaran.SelectedIndex = 2 Then
-            sql = "select idanggota, anggota, idpinjam, besarbayar, besarpokok, besarbunga, totalangsur, totalpokok, totalbunga from qtagihan where anggota ilike '%" & txt_search.Text & "%' and tglbayar is not null"
+            sql = "select idanggota, anggota, idpinjam, besarbayar, besarpokok, besarbunga, totalangsur, totalpokok, totalbunga,TglBayar,BesarPinjam,SaldoPinjam,cicilanKe from qtagihan where anggota ilike '%" & txt_search.Text & "%' and tglbayar is not null"
             dgv_data_pembayaran.DataSource = getData(sql)
             dgv_data_pembayaran.Columns(0).HeaderText = "ID Anggota"
             dgv_data_pembayaran.Columns(1).HeaderText = "Nama Anggota"
@@ -78,6 +78,10 @@
             lbl_jumlah_data.Text = "Jumlah Data " & dgv_data_pembayaran.Rows.Count
             lbl_bayar.Text = "Bayar : " & numberFor(toDouble(getValue("select sum(totalangsur) as totalangsur from qtagihan where anggota ilike '%" & txt_search.Text & "%'", "totalangsur")).ToString) & " Pokok : " & numberFor(toDouble(getValue("select sum(totalpokok) as totalpokok from qtagihan where anggota ilike '%" & txt_search.Text & "%'", "totalpokok")).ToString) & " Bunga : " & numberFor(toDouble(getValue("select sum(totalbunga) as totalbunga from qtagihan where anggota ilike '%" & txt_search.Text & "%'", "totalbunga")).ToString)
         End If
+        dgv_data_pembayaran.Columns(9).Visible = False
+        dgv_data_pembayaran.Columns(10).Visible = False
+        dgv_data_pembayaran.Columns(11).Visible = False
+        dgv_data_pembayaran.Columns(12).Visible = False
     End Sub
 
     Private Sub txt_search_TextChanged(sender As Object, e As EventArgs) Handles txt_search.TextChanged

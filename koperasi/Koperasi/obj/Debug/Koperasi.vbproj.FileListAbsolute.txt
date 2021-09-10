@@ -800,3 +800,4 @@ F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.DialogBackup.resou
 F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.DialogRestore.resources
 F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.DialogReset.resources
 F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.ImportAnggota.resources
+F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.AssemblyReference.cache
