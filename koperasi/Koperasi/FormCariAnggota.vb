@@ -253,10 +253,10 @@
                 FormPembayaranNasabah.txt_jumlah_angsuran.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(10).Value)
 
                 FormPembayaranNasabah.txt_angsuran_ke.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(11).Value
-                FormPembayaranNasabah.txt_sudah_dibayar.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(12).Value
+                FormPembayaranNasabah.txt_sudah_dibayar.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(12).Value)
                 FormPembayaranNasabah.txt_saldo_piutang.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(13).Value)
-                FormPembayaranNasabah.txt_biaya_pokok.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(14).Value
-                FormPembayaranNasabah.txt_bayar_bunga.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(15).Value
+                FormPembayaranNasabah.txt_biaya_pokok.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(14).Value)
+                FormPembayaranNasabah.txt_bayar_bunga.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(15).Value)
                 FormPembayaranNasabah.txt_kode_tagihan.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(16).Value
 
                 FormPembayaranNasabah.bayarPokok = toDouble(dgv_DataAnggota.Rows(e.RowIndex).Cells(14).Value)
