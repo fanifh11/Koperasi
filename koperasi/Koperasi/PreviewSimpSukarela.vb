@@ -2,7 +2,7 @@
     Public idsukarela As String = ""
 
     Private Sub PreviewSimpSukarela_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim sql As String = "select nocetak, to_char(tgltransaksi, 'DD-MM-YYYY') as tgltransaksi, kettransaksi, debet, kredit, saldo from qtransaksi where idsukarela = '" & idsukarela & "'"
+        Dim sql As String = "select nocetak, anggota, idsukarela, to_char(tgltransaksi, 'DD-MM-YYYY') as tgltransaksi, kettransaksi, debet, kredit, saldo from qtransaksi where idsukarela = '" & idsukarela & "'"
         Dim sqlidentitas As String = "select * from tblidentitas where idkoperasi = 1"
 
         ReportViewer1.Reset()
