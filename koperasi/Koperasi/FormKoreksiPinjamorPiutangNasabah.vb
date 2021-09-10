@@ -56,10 +56,11 @@
     End Sub
 
     Sub showData()
-        dgv_DataPeminjaman.DataSource = getData("select distinct idanggota,anggota,alamat,jenis,idpinjam,tglpinjam,besarpinjam,lamapinjam,persenbunga,asuransi,administrasi,diterima,angsuranpokok,angsuranbunga,jumlahangsuran from qtagihan where flagtagihan = 1 and anggota ilike '%" & txt_CariData.Text & "%' and tglpinjam <= '" & dtp_Pinjam.Value.ToString("yyyyMMdd") & "' ")
+        dgv_DataPeminjaman.DataSource = getData("select distinct idanggota,anggota,alamat,jenis,idpinjam,tglpinjam,besarpinjam,lamapinjam,persenbunga,asuransi,administrasi,diterima,angsuranpokok,angsuranbunga,jumlahangsuran from qtagihan where flagtagihan = 1 and anggota ilike '%" & txt_CariData.Text & "%' and tglpinjam <='" & dtp_Pinjam.Value.ToString("dd-MM-yyyy") & "' ")
+
         dgv_DataPeminjaman.Columns(0).HeaderText = "Kode Anggota"
         dgv_DataPeminjaman.Columns(1).HeaderText = "Nama"
-        dgv_DataPeminjaman.Columns(2).Visible = False
+        dgv_DataPeminjaman.Columns(2).HeaderText = "Alamat"
         dgv_DataPeminjaman.Columns(3).HeaderText = "Jenis Pinjam"
         dgv_DataPeminjaman.Columns(4).HeaderText = "Kode Pinjam"
         dgv_DataPeminjaman.Columns(5).HeaderText = "Tanggal Pinjam"
@@ -89,6 +90,7 @@
 
     Private Sub FormKoreksiPinjamorPiutangNasabah_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         showData()
+
         cmb_Jenis.SelectedIndex = 1
 
     End Sub
