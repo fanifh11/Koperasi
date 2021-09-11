@@ -180,6 +180,11 @@
             Return
         ElseIf adaKosong(group_informasi_peminjaman) Then
             dialogError("Lengkapi form data peminjaman nasabah terlebih dahulu !")
+            Return
+        ElseIf txt_jumlah_diterima.Text < 0 Then
+            dialogError("Harap cek kembali transaksi anda !")
+            Return
+
         Else
             Dim kodeAnggota As String = txt_kode_nasabah.Text
             Dim kodePinjam As String = txt_kode_pinjam.Text

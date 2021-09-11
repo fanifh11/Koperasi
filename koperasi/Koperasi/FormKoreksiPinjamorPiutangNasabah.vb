@@ -125,6 +125,10 @@
     Private Sub btn_Simpan_Click(sender As Object, e As EventArgs) Handles btn_Simpan.Click
         If Modul.adaKosong(group_InfoPeminjaman) Then
             dialogError("Form Isian Anda masih ada yang kosong, harap diisi dengan lengkap!")
+            Return
+        ElseIf txt_UangDiterima.Text <= 0 Then
+            dialogError("Silahkan cek transaksi anda sekali lagi !")
+            Return
         Else
             Dim kodeAnggota As String = txt_KodeNasabah.Text
             Dim kodePinjam As String = txt_KodePinjam.Text

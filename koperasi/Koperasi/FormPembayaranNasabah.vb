@@ -11,9 +11,8 @@
 
 
     Dim cekSeparator As Boolean = True
-    Private Sub textChanged_moneySeparator(sender As Object, e As EventArgs) Handles txt_biaya_pokok.TextChanged, txt_bayar_bunga.TextChanged,
-        txt_jumlah_bayar.TextChanged, txt_besar_pinjam.TextChanged, txt_angsuran_pokok.TextChanged, txt_angsuran_bunga.TextChanged,
-        txt_jumlah_angsuran.TextChanged, txt_saldo_piutang.TextChanged
+    Private Sub textChanged_moneySeparator(sender As Object, e As EventArgs) Handles txt_besar_pinjam.TextChanged, txt_angsuran_pokok.TextChanged, txt_angsuran_bunga.TextChanged,
+        txt_jumlah_angsuran.TextChanged, txt_saldo_piutang.TextChanged, txt_bayar_bunga.TextChanged, txt_biaya_pokok.TextChanged
         Try
             If cekSeparator Then
                 cekSeparator = False
@@ -51,8 +50,7 @@
         Dim bayarPokok As Double = toDouble(unnumberFormat(txt_biaya_pokok.Text))
         Dim bayarBunga As Double = toDouble(unnumberFormat(txt_bayar_bunga.Text))
 
-        txt_jumlah_bayar.Text = numberFormat((bayarPokok + bayarBunga).ToString)
-
+        txt_jumlah_bayar.Text = numberFormat(bayarPokok + bayarBunga).ToString
     End Sub
 
     Sub showData()
@@ -75,6 +73,7 @@
         dgv_data_peminjaman.Columns(14).HeaderText = "Pokok"
         dgv_data_peminjaman.Columns(15).HeaderText = "Bunga"
         dgv_data_peminjaman.Columns(16).Visible = False
+        dgv_data_peminjaman.Columns(17).HeaderText = "Besar yang dibayar"
 
         dgv_data_peminjaman.Columns(6).DefaultCellStyle.Format = "c0"
         dgv_data_peminjaman.Columns(8).DefaultCellStyle.Format = "c0"
@@ -84,7 +83,7 @@
         dgv_data_peminjaman.Columns(13).DefaultCellStyle.Format = "c0"
         dgv_data_peminjaman.Columns(14).DefaultCellStyle.Format = "c0"
         dgv_data_peminjaman.Columns(15).DefaultCellStyle.Format = "c0"
-
+        dgv_data_peminjaman.Columns(17).DefaultCellStyle.Format = "c0"
 
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_peminjaman.Rows.Count
     End Sub
@@ -112,14 +111,22 @@
 
     Private Sub btn_tambah_Click(sender As Object, e As EventArgs) Handles btn_tambah.Click
         formLoad()
-        dgv_data_peminjaman.Enabled = False
 
-        If btn_simpan.Enabled = False Then
-            clearForm(group_informasi_nasabah)
-            clearForm(group_informasi_peminjaman)
-            clearForm(group_pembayaran_pinjaman)
 
-            btn_simpan.Enabled = True
+        clearForm(group_informasi_nasabah)
+        clearForm(group_informasi_peminjaman)
+        clearForm(group_pembayaran_pinjaman)
+
+        If btn_tambah.Enabled = False Then
+
+            dgv_data_peminjaman.Enabled = True
+
+            btn_cetak_kwitansi.Enabled = False
+
+        Else
+
+            dgv_data_peminjaman.Enabled = True
+            btn_cetak_kwitansi.Enabled = False
         End If
 
     End Sub
@@ -130,9 +137,15 @@
         clearForm(group_informasi_nasabah)
         clearForm(group_informasi_peminjaman)
 
-        dgv_data_peminjaman.Enabled = True
 
-        btn_simpan.Enabled = True
+        If btn_tambah.Enabled = True Then
+            btn_cetak_kwitansi.Enabled = False
+            dgv_data_peminjaman.Enabled = True
+        Else
+            dgv_data_peminjaman.Enabled = True
+            btn_cetak_kwitansi.Enabled = False
+
+        End If
 
     End Sub
 
@@ -163,14 +176,6 @@
 
     Private Sub txt_biaya_pokok_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_biaya_pokok.KeyPress, txt_bayar_bunga.KeyPress
         onlyNumber(e)
-    End Sub
-
-    Private Sub txt_biaya_pokok_TextChanged(sender As Object, e As EventArgs)
-        jumlahBayar()
-    End Sub
-
-    Private Sub txt_bayar_bunga_TextChanged(sender As Object, e As EventArgs) Handles txt_bayar_bunga.TextChanged
-        jumlahBayar()
     End Sub
 
     Public bayarPokok As Double
@@ -220,7 +225,7 @@
                 dialogInfo("Bayar Sukses !")
 
                 dgv_data_peminjaman.Enabled = True
-                clearForm(group_data_peminjaman)
+
                 clearForm(group_informasi_peminjaman)
                 clearForm(group_pembayaran_pinjaman)
                 clearForm(group_informasi_nasabah)
@@ -252,14 +257,14 @@
     End Sub
 
     Private Sub dgv_data_peminjaman_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_data_peminjaman.CellClick
-        If String.IsNullOrEmpty(txt_kode_nasabah.Text) Then
+        If btn_tambah.Enabled = True Then
             If (e.RowIndex >= 0) Then
 
 
                 selectIDNasabah = dgv_data_peminjaman.Rows(e.RowIndex).Cells(0).Value
                 dataTerpilih = selectIDNasabah
 
-                FormCariAnggota.menu = "Pembayaran Nasabah"
+                kondisiBtnCetak()
 
                 Me.idtagihan = dgv_data_peminjaman.Rows(e.RowIndex).Cells(0).Value
 
@@ -269,30 +274,27 @@
                 Me.txt_alamat.Text = dgv_data_peminjaman.Rows(e.RowIndex).Cells(4).Value
                 Me.txt_jenis_pinjaman.Text = dgv_data_peminjaman.Rows(e.RowIndex).Cells(5).Value
 
-                Me.txt_besar_pinjam.Text = dgv_data_peminjaman.Rows(e.RowIndex).Cells(6).Value
+                Me.txt_besar_pinjam.Text = numberFormat(dgv_data_peminjaman.Rows(e.RowIndex).Cells(6).Value)
                 Me.txt_lama_pinjam.Text = dgv_data_peminjaman.Rows(e.RowIndex).Cells(7).Value
-                Me.txt_angsuran_pokok.Text = dgv_data_peminjaman.Rows(e.RowIndex).Cells(8).Value
-                Me.txt_angsuran_bunga.Text = dgv_data_peminjaman.Rows(e.RowIndex).Cells(9).Value
-                Me.txt_jumlah_angsuran.Text = dgv_data_peminjaman.Rows(e.RowIndex).Cells(10).Value
+                Me.txt_angsuran_pokok.Text = numberFormat(dgv_data_peminjaman.Rows(e.RowIndex).Cells(8).Value)
+                Me.txt_angsuran_bunga.Text = numberFormat(dgv_data_peminjaman.Rows(e.RowIndex).Cells(9).Value)
+                Me.txt_jumlah_angsuran.Text = numberFormat(dgv_data_peminjaman.Rows(e.RowIndex).Cells(10).Value)
 
                 Me.txt_angsuran_ke.Text = dgv_data_peminjaman.Rows(e.RowIndex).Cells(11).Value
-                Me.txt_sudah_dibayar.Text = dgv_data_peminjaman.Rows(e.RowIndex).Cells(12).Value
-                Me.txt_saldo_piutang.Text = dgv_data_peminjaman.Rows(e.RowIndex).Cells(13).Value
-                Me.txt_biaya_pokok.Text = dgv_data_peminjaman.Rows(e.RowIndex).Cells(14).Value
-                Me.txt_bayar_bunga.Text = dgv_data_peminjaman.Rows(e.RowIndex).Cells(15).Value
+                Me.txt_sudah_dibayar.Text = numberFormat(dgv_data_peminjaman.Rows(e.RowIndex).Cells(12).Value)
+                Me.txt_saldo_piutang.Text = numberFor(dgv_data_peminjaman.Rows(e.RowIndex).Cells(13).Value)
+                Me.txt_biaya_pokok.Text = numberFormat(dgv_data_peminjaman.Rows(e.RowIndex).Cells(14).Value)
+                Me.txt_bayar_bunga.Text = numberFormat(dgv_data_peminjaman.Rows(e.RowIndex).Cells(15).Value)
                 Me.txt_kode_tagihan.Text = dgv_data_peminjaman.Rows(e.RowIndex).Cells(16).Value
 
                 Me.bayarPokok = toDouble(dgv_data_peminjaman.Rows(e.RowIndex).Cells(14).Value)
                 Me.bayarBunga = toDouble(dgv_data_peminjaman.Rows(e.RowIndex).Cells(15).Value)
                 Me.idpinjam = dgv_data_peminjaman.Rows(e.RowIndex).Cells(1).Value
-
-                kondisiBtnCetak()
-                btn_simpan.Enabled = False
             End If
         Else
-            btn_simpan.Enabled = False
-        End If
+            btn_cetak_kwitansi.Enabled = False
 
+        End If
 
 
 
@@ -300,5 +302,15 @@
 
     Private Sub txt_jumlah_bayar_TextChanged(sender As Object, e As EventArgs) Handles txt_jumlah_bayar.TextChanged
         jumlahBayar()
+    End Sub
+
+    Private Sub txt_biaya_pokok_TextChanged(sender As Object, e As EventArgs) Handles txt_biaya_pokok.TextChanged
+        jumlahBayar()
+        numberFormat(txt_biaya_pokok.Text).ToString()
+    End Sub
+
+    Private Sub txt_bayar_bunga_TextChanged(sender As Object, e As EventArgs) Handles txt_bayar_bunga.TextChanged
+        jumlahBayar()
+        numberFormat(txt_bayar_bunga.Text).ToString()
     End Sub
 End Class

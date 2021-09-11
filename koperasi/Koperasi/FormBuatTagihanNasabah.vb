@@ -103,7 +103,8 @@
         dgv_data_peminjaman2.Columns(8).Visible = False
         dgv_data_peminjaman2.Columns(9).Visible = False
 
-        dgv_data_peminjaman.Columns(5).DefaultCellStyle.Format = "c0"
+        dgv_data_peminjaman2.Columns(5).DefaultCellStyle.Format = "c0"
+
 
         lbl_Jumlah2.Text = "Jumlah Data :" & dgv_data_peminjaman2.Rows.Count
 
