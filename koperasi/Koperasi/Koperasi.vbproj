@@ -604,6 +604,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="QueryModule.vb" />
+    <Compile Include="StandardRegional.vb" />
     <Compile Include="Terbilang.vb" />
   </ItemGroup>
   <ItemGroup>

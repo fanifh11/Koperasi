@@ -86,7 +86,8 @@
         Dim besarPinjam As Double = toDouble(unnumberFormat(txt_besar_pinjam.Text))
         Dim lamaPinjam As Double = toDouble(txt_lama_pinjam.Text)
 
-        Dim besarBunga As Double = toDouble(unnumberFormat(txt_bunga.Text))
+        Dim besarBunga As Double = toDouble((txt_bunga.Text))
+
         Dim totalPokok As Double = toDouble(unnumberFormat(txt_angsuran_pokok.Text))
 
 
@@ -117,7 +118,7 @@
 
     Sub hitungBunga()
         Dim besarPinjam As Double = toDouble(unnumberFormat(txt_besar_pinjam.Text))
-        Dim besarBunga As Double = toDouble(unnumberFormat(txt_bunga.Text))
+        Dim besarBunga As Double = toDouble((txt_bunga.Text))
         Dim totalPokok As Double = toDouble(unnumberFormat(txt_angsuran_pokok.Text))
 
         txt_angsuran_bunga.Text = numberFormat(Math.Ceiling((besarPinjam * besarBunga) / 100).ToString)
@@ -175,6 +176,9 @@
         If adaKosong(group_informasi_nasabah) Then
             dialogError("Pilih data nasabah terlebih dahulu !")
             Return
+        ElseIf Not Double.TryParse(txt_bunga.Text = "0", 0) Then
+            dialogError("Masukan bunga dengan benar")
+            Return
         ElseIf txt_besar_pinjam.Text = "0" Or txt_lama_pinjam.Text = "0" Or txt_bunga.Text = "0" Then
             dialogError("Lengkapi form data peminjmanan nasabah terlebih dahulu !")
             Return
@@ -192,7 +196,7 @@
             Dim tglPinjam As String = dtp_tanggal_pinjam.Value
             Dim besarPinjam As String = unnumberFormat(txt_besar_pinjam.Text)
             Dim lamaPinjam As String = txt_lama_pinjam.Text
-            Dim persenBunga As String = txt_bunga.Text
+            Dim persenBunga As String = txt_bunga.Text.Replace(",", ".")
             Dim asuransi As String = unnumberFormat(txt_asuransi.Text)
             Dim administrasi As String = unnumberFormat(txt_administrasi.Text)
             Dim diterima As String = unnumberFormat(txt_jumlah_diterima.Text)
@@ -318,7 +322,7 @@
     End Sub
 
     Private Sub txt_bunga_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_bunga.KeyPress
-        onlyNumber(e)
+        onlyNumberWithComma(e)
     End Sub
 
     Private Sub txt_angsuran_pokok_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_angsuran_pokok.KeyPress
