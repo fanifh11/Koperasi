@@ -135,9 +135,7 @@
                 dialogInfo("Hapus batal !")
             End If
         End If
-
-
-
+        showComboBoxHakAkses()
     End Sub
 
     Private Sub btnTampilkanMenu_Click(sender As Object, e As EventArgs) Handles btnTampilkanMenu.Click
