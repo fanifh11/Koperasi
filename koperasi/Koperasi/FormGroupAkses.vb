@@ -184,6 +184,8 @@
             Next
             dialogInfo("Update menu berhasil !")
             dialogInfo("Silahkan restart aplikasi untuk memperbarui menu !")
+            showComboBoxHakAkses()
+
         End If
 
     End Sub
