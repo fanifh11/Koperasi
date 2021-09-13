@@ -54,7 +54,7 @@ Partial Class MenuUtama
         Me.btnPeminjaman = New System.Windows.Forms.RibbonButton()
         Me.btnBuatTagihan = New System.Windows.Forms.RibbonButton()
         Me.btnLihatTagihan = New System.Windows.Forms.RibbonButton()
-        Me.RibbonPanel1 = New System.Windows.Forms.RibbonPanel()
+        Me.panelPemPinjaman = New System.Windows.Forms.RibbonPanel()
         Me.btnPemPinjaman = New System.Windows.Forms.RibbonButton()
         Me.btnPembKolektif = New System.Windows.Forms.RibbonButton()
         Me.panelKoreksi = New System.Windows.Forms.RibbonPanel()
@@ -342,7 +342,7 @@ Partial Class MenuUtama
         '
         Me.tabPinjaman.Name = "tabPinjaman"
         Me.tabPinjaman.Panels.Add(Me.panelPeminjaman)
-        Me.tabPinjaman.Panels.Add(Me.RibbonPanel1)
+        Me.tabPinjaman.Panels.Add(Me.panelPemPinjaman)
         Me.tabPinjaman.Panels.Add(Me.panelKoreksi)
         Me.tabPinjaman.Text = "Pinjaman"
         '
@@ -382,12 +382,12 @@ Partial Class MenuUtama
         Me.btnLihatTagihan.SmallImage = CType(resources.GetObject("btnLihatTagihan.SmallImage"), System.Drawing.Image)
         Me.btnLihatTagihan.Text = "Lihat Tagihan"
         '
-        'RibbonPanel1
+        'panelPemPinjaman
         '
-        Me.RibbonPanel1.Items.Add(Me.btnPemPinjaman)
-        Me.RibbonPanel1.Items.Add(Me.btnPembKolektif)
-        Me.RibbonPanel1.Name = "RibbonPanel1"
-        Me.RibbonPanel1.Text = "Pembayaran Pinjaman"
+        Me.panelPemPinjaman.Items.Add(Me.btnPemPinjaman)
+        Me.panelPemPinjaman.Items.Add(Me.btnPembKolektif)
+        Me.panelPemPinjaman.Name = "panelPemPinjaman"
+        Me.panelPemPinjaman.Text = "Pembayaran Pinjaman"
         '
         'btnPemPinjaman
         '
@@ -801,7 +801,7 @@ Partial Class MenuUtama
     Friend WithEvents btnPeminjaman As RibbonButton
     Friend WithEvents btnBuatTagihan As RibbonButton
     Friend WithEvents btnLihatTagihan As RibbonButton
-    Friend WithEvents RibbonPanel1 As RibbonPanel
+    Friend WithEvents panelPemPinjaman As RibbonPanel
     Friend WithEvents btnPemPinjaman As RibbonButton
     Friend WithEvents btnPembKolektif As RibbonButton
     Friend WithEvents panelKoreksi As RibbonPanel

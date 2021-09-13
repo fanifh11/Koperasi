@@ -17,7 +17,7 @@
 
     Sub showData()
         If cmb_simpanan_pokok.SelectedIndex = 0 Then
-            sql = "select idanggota, anggota, jk, jenissimpanan, besar, ketsimp, to_char(tglrek, 'DD-MM-YYYY') as tglrek from qrekening where anggota ilike '%" & txt_search.Text & "%' and kategori = 'POKOK' and tglrek between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'"
+            sql = "select idanggota, anggota, jk, jenissimpanan, besar, ketsimp, to_char(tglrek, 'DD-MM-YYYY') as tglrek from qrekening where anggota ilike '%" & txt_search.Text & "%' and kategori = 'POKOK' and tglrek between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & " 00:00' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & " 23:59'"
             dgv_data_simpanan.DataSource = getData(sql)
             dgv_data_simpanan.Columns(0).HeaderText = "ID Anggota"
             dgv_data_simpanan.Columns(1).HeaderText = "Nama Anggota"
@@ -31,7 +31,7 @@
 
             lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_simpanan.Rows.Count
         ElseIf cmb_simpanan_pokok.SelectedIndex = 1 Then
-            sql = "select idanggota, anggota, jk, jenissimpanan, besar, ketsimp, to_char(tglrek, 'DD-MM-YYYY') as tglrek from qrekening where anggota ilike '%" & txt_search.Text & "%' and kategori = 'WAJIB' and tglrek between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'"
+            sql = "select idanggota, anggota, jk, jenissimpanan, besar, ketsimp, to_char(tglrek, 'DD-MM-YYYY') as tglrek from qrekening where anggota ilike '%" & txt_search.Text & "%' and kategori = 'WAJIB' and tglrek between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & " 00:00' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & " 23:59'"
             dgv_data_simpanan.DataSource = getData(sql)
             dgv_data_simpanan.Columns(0).HeaderText = "ID Anggota"
             dgv_data_simpanan.Columns(1).HeaderText = "Nama Anggota"
@@ -45,7 +45,7 @@
 
             lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_simpanan.Rows.Count
         ElseIf cmb_simpanan_pokok.SelectedIndex = 2 Then
-            sql = "select idanggota, anggota, jk, jenissimpanan, besar, ketsimp, to_char(tglrek, 'DD-MM-YYYY') as tglrek from qrekening where anggota ilike '%" & txt_search.Text & "%' and kategori = 'SALDO AWAL' and tglrek between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'"
+            sql = "select idanggota, anggota, jk, jenissimpanan, besar, ketsimp, to_char(tglrek, 'DD-MM-YYYY') as tglrek from qrekening where anggota ilike '%" & txt_search.Text & "%' and kategori = 'SALDO AWAL' and tglrek between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & " 00:00' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & " 23:59'"
             dgv_data_simpanan.DataSource = getData(sql)
             dgv_data_simpanan.Columns(0).HeaderText = "ID Anggota"
             dgv_data_simpanan.Columns(1).HeaderText = "Nama Anggota"

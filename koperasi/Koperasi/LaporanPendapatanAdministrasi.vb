@@ -6,7 +6,7 @@
     Public sql As String
 
     Sub showData()
-        sql = "select idanggota, anggota, idpinjam, to_char(tglpinjam, 'DD-MM-YYYY') as tglpinjam, administrasi from qpinjam where administrasi > 0 and (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'"
+        sql = "select idanggota, anggota, idpinjam, to_char(tglpinjam, 'DD-MM-YYYY') as tglpinjam, administrasi from qpinjam where administrasi > 0 and (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & " 00:00' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & " 23:59'"
         dgv_laporan_pendapatan_administrasi.DataSource = getData(sql)
         dgv_laporan_pendapatan_administrasi.Columns(0).HeaderText = "ID Anggota"
         dgv_laporan_pendapatan_administrasi.Columns(1).HeaderText = "Nama Anggota"
@@ -17,7 +17,7 @@
         dgv_laporan_pendapatan_administrasi.Columns(4).DefaultCellStyle.Format = "c0"
 
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_laporan_pendapatan_administrasi.Rows.Count
-        lbl_total_administrasi.Text = "Total Administrasi : " & numberFor(toDouble(getValue("select sum(administrasi) as administrasi from qpinjam where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'", "administrasi")).ToString)
+        lbl_total_administrasi.Text = "Total Administrasi : " & numberFor(toDouble(getValue("select sum(administrasi) as administrasi from qpinjam where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & " 00:00' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & " 23:59'", "administrasi")).ToString)
     End Sub
 
     Private Sub btn_refresh_Click(sender As Object, e As EventArgs) Handles btn_refresh.Click

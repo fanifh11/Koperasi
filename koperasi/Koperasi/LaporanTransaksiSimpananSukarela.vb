@@ -12,7 +12,7 @@
 
     Sub showData()
         If cmb_setoran.SelectedIndex = 0 Then
-            sql = "select idanggota, anggota, jk, kettransaksi, debet, kredit from qtransaksi where anggota ilike '%" & txt_search.Text & "%' and tgltransaksi between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "' and kredit > 0"
+            sql = "select idanggota, anggota, jk, kettransaksi, debet, kredit from qtransaksi where anggota ilike '%" & txt_search.Text & "%' and tgltransaksi between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & " 00:00' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "' and kredit > 0"
             dgv_data_simpanan.DataSource = getData(sql)
             dgv_data_simpanan.Columns(0).HeaderText = "ID Anggota"
             dgv_data_simpanan.Columns(1).HeaderText = "Nama Anggota"
@@ -27,7 +27,7 @@
             lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_simpanan.Rows.Count
         ElseIf cmb_setoran.SelectedIndex = 1 Then
 
-            sql = "select idanggota, anggota, jk, kettransaksi, debet, kredit from qtransaksi where anggota ilike '%" & txt_search.Text & "%' and tgltransaksi between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "' and debet > 0"
+            sql = "select idanggota, anggota, jk, kettransaksi, debet, kredit from qtransaksi where anggota ilike '%" & txt_search.Text & "%' and tgltransaksi between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & " 00:00' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "' and debet > 0"
             dgv_data_simpanan.DataSource = getData(sql)
             dgv_data_simpanan.Columns(0).HeaderText = "ID Anggota"
             dgv_data_simpanan.Columns(1).HeaderText = "Nama Anggota"

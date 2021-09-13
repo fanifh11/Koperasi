@@ -11,7 +11,7 @@
     Public sql As String
 
     Sub showData()
-        sql = "select idanggota, anggota, idpinjam, to_char(tglpinjam, 'DD-MM-YYYY') as tglpinjam, besarpinjam, persenbunga, lamapinjam, asuransi, administrasi, diterima from qpinjam where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'"
+        sql = "select idanggota, anggota, idpinjam, to_char(tglpinjam, 'DD-MM-YYYY') as tglpinjam, besarpinjam, persenbunga, lamapinjam, asuransi, administrasi, diterima from qpinjam where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & " 00:00' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & " 23:59'"
         dgv_data_peminjaman.DataSource = getData(sql)
         dgv_data_peminjaman.Columns(0).HeaderText = "ID Anggota"
         dgv_data_peminjaman.Columns(1).HeaderText = "Nama Anggota"
@@ -30,7 +30,7 @@
         dgv_data_peminjaman.Columns(9).DefaultCellStyle.Format = "c0"
 
         lbl_jumlah_data.Text = "Jumlah Data : " & dgv_data_peminjaman.Rows.Count
-        lbl_total_pinjam.Text = "Total Pinjam : " & numberFor(toDouble(getValue("select sum(besarpinjam) as besarpinjam from qpinjam where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("yyyy-MM-dd") & "' and '" & dtp_sampai.Value.ToString("yyyy-MM-dd") & "'", "besarpinjam")).ToString)
+        lbl_total_pinjam.Text = "Total Pinjam : " & numberFor(toDouble(getValue("select sum(besarpinjam) as besarpinjam from qpinjam where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("yyyy-MM-dd") & " 00:00' and '" & dtp_sampai.Value.ToString("yyyy-MM-dd") & " 23:59'", "besarpinjam")).ToString)
     End Sub
 
     Private Sub txt_search_TextChanged(sender As Object, e As EventArgs) Handles txt_search.TextChanged

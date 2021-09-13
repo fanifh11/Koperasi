@@ -10,7 +10,7 @@
     Public sql As String
     Sub showData()
 
-        sql = "select tblanggota.idanggota, tblanggota.anggota, sum(qtransaksi.debet) as debet, sum(qtransaksi.kredit) as kredit, sum(qtransaksi.kredit - qtransaksi.debet) as saldo from qtransaksi inner join tblanggota on tblanggota.idanggota = qtransaksi.idanggota where qtransaksi.anggota ilike '%" & txt_search.Text & "%' and qtransaksi.tgltransaksi between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "' group by tblanggota.idanggota"
+        sql = "select tblanggota.idanggota, tblanggota.anggota, sum(qtransaksi.debet) as debet, sum(qtransaksi.kredit) as kredit, sum(qtransaksi.kredit - qtransaksi.debet) as saldo from qtransaksi inner join tblanggota on tblanggota.idanggota = qtransaksi.idanggota where qtransaksi.anggota ilike '%" & txt_search.Text & "%' and qtransaksi.tgltransaksi between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & " 00:00' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "' group by tblanggota.idanggota"
         dgv_data_simpanan.DataSource = getData(sql)
         dgv_data_simpanan.Columns(0).HeaderText = "ID Anggota"
         dgv_data_simpanan.Columns(1).HeaderText = "Nama Anggota"

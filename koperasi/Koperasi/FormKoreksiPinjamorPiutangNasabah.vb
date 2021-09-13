@@ -92,14 +92,16 @@
 
     Private Sub FormKoreksiPinjamorPiutangNasabah_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         showData()
-
+        lockAllInput()
+        group_InfoPeminjaman.Enabled = False
         cmb_Jenis.SelectedIndex = 1
 
     End Sub
 
     Private Sub dgv_DataPeminjaman_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_DataPeminjaman.CellClick
         If e.RowIndex >= 0 Then
-
+            group_InfoPeminjaman.Enabled = True
+            lockAllInput()
             Me.idpinjam = dgv_DataPeminjaman.Rows(e.RowIndex).Cells(4).Value
 
             Me.txt_KodeNasabah.Text = dgv_DataPeminjaman.Rows(e.RowIndex).Cells(0).Value
@@ -122,6 +124,14 @@
 
 
         End If
+    End Sub
+
+    Sub lockAllInput()
+        For Each control As Control In group_InfoPeminjaman.Controls
+            If TypeOf control Is TextBox Then
+                CType(control, TextBox).Enabled = False
+            End If
+        Next
     End Sub
 
     Private Sub btn_Simpan_Click(sender As Object, e As EventArgs) Handles btn_Simpan.Click
@@ -148,7 +158,7 @@
             Dim jumAngsuran As String = unnumberFormat(txt_JumAngsuran.Text)
 
 
-            If dialog("Apakah yakin untuk mengubah data pinjaman ?") Then
+            If dialog("Apakah yakin untuk menghapus data pinjaman ?") Then
                 Debug.WriteLine("select idpinjam from tblpinjam where idpinjam != '" & kodePinjam & "' and idpinjam = '" & idpinjam & "'  ")
                 If getCount("select idpinjam from tblpinjam where idpinjam != '" & kodePinjam & "'  and idpinjam = '" & idpinjam & "' ") = 0 Then
 
@@ -156,59 +166,15 @@
 
                     exc("delete from tblpinjam where idpinjam = '" & idpinjam & "'  ")
 
-                    exc("insert into tblpinjam 
-                        (
-                            idpinjam,
-                            idanggota,
-                            jenis,
-                            tglpinjam,
-                            besarpinjam,
-                            lamapinjam,
-                            persenbunga,
-                            administrasi,
-                            asuransi,
-                            angsuranpokok,
-                            angsuranbunga,
-                            jumlahangsuran,
-                            diterima,
-                            bayarpokok,
-                            bayarbunga,
-                            saldopinjam,
-                            statuspinjam,
-                            flagpinjam,
-                            addpinjam,
-                            flagpostingpinjam
-                        )values
-                        (
-                            '" & kodePinjam & "',
-                            '" & kodeAnggota & "',
-                            '" & jenisPinjam & "',
-                            '" & tglPinjam & "',
-                            '" & besarPinjam & "',
-                            '" & lamaPinjam & "',
-                            '" & persenBunga & "',
-                            '" & administrasi & "',
-                            '" & asuransi & "',
-                            '" & angsuranPokok & "',
-                            '" & angsuranBunga & "',
-                            '" & jumAngsuran & "',
-                            '" & diterima & "',
-                            0,
-                            0,
-                            '" & besarPinjam & "',
-                            0,
-                            0,
-                            'admin',
-                            0
-                        )
-                    ")
-                    dialogInfo("Input sukses")
+                    dialogInfo("Hapus sukses")
+                    showData()
                 Else
                     dialogError("Ada duplikasi kode pinjam !")
                 End If
             End If
             clearForm(group_InfoPeminjaman)
             clearForm(group_InfoNasabah)
+            group_InfoPeminjaman.Enabled = False
 
         End If
 
@@ -253,6 +219,7 @@
     End Sub
 
     Private Sub btn_Batal_Click(sender As Object, e As EventArgs) Handles btn_Batal.Click
+        group_InfoPeminjaman.Enabled = False
         clearForm(group_InfoNasabah)
         clearForm(group_InfoPeminjaman)
     End Sub

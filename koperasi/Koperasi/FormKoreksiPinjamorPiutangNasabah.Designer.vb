@@ -43,8 +43,6 @@ Partial Class FormKoreksiPinjamorPiutangNasabah
         Me.cmb_Jenis = New System.Windows.Forms.ComboBox()
         Me.lbl_Jenis = New System.Windows.Forms.Label()
         Me.group_InfoPeminjaman = New System.Windows.Forms.GroupBox()
-        Me.btn_Batal = New System.Windows.Forms.Button()
-        Me.btn_Simpan = New System.Windows.Forms.Button()
         Me.txt_KodePinjam = New System.Windows.Forms.TextBox()
         Me.lbl_KodePinjam = New System.Windows.Forms.Label()
         Me.txt_JumAngsuran = New System.Windows.Forms.TextBox()
@@ -70,6 +68,8 @@ Partial Class FormKoreksiPinjamorPiutangNasabah
         Me.lbl_TglPinjam2 = New System.Windows.Forms.Label()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.btn_Keluar = New System.Windows.Forms.Button()
+        Me.btn_Simpan = New System.Windows.Forms.Button()
+        Me.btn_Batal = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.group_DataPeminjaman.SuspendLayout()
         CType(Me.dgv_DataPeminjaman, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -314,24 +314,6 @@ Partial Class FormKoreksiPinjamorPiutangNasabah
         Me.group_InfoPeminjaman.TabStop = False
         Me.group_InfoPeminjaman.Text = "Informasi Peminjaman"
         '
-        'btn_Batal
-        '
-        Me.btn_Batal.Location = New System.Drawing.Point(185, 261)
-        Me.btn_Batal.Name = "btn_Batal"
-        Me.btn_Batal.Size = New System.Drawing.Size(75, 23)
-        Me.btn_Batal.TabIndex = 20
-        Me.btn_Batal.Text = "Batal"
-        Me.btn_Batal.UseVisualStyleBackColor = True
-        '
-        'btn_Simpan
-        '
-        Me.btn_Simpan.Location = New System.Drawing.Point(107, 261)
-        Me.btn_Simpan.Name = "btn_Simpan"
-        Me.btn_Simpan.Size = New System.Drawing.Size(75, 23)
-        Me.btn_Simpan.TabIndex = 19
-        Me.btn_Simpan.Text = "Simpan"
-        Me.btn_Simpan.UseVisualStyleBackColor = True
-        '
         'txt_KodePinjam
         '
         Me.txt_KodePinjam.Location = New System.Drawing.Point(344, 40)
@@ -548,6 +530,24 @@ Partial Class FormKoreksiPinjamorPiutangNasabah
         Me.btn_Keluar.Text = "Keluar" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.btn_Keluar.UseVisualStyleBackColor = True
         '
+        'btn_Simpan
+        '
+        Me.btn_Simpan.Location = New System.Drawing.Point(107, 261)
+        Me.btn_Simpan.Name = "btn_Simpan"
+        Me.btn_Simpan.Size = New System.Drawing.Size(75, 23)
+        Me.btn_Simpan.TabIndex = 19
+        Me.btn_Simpan.Text = "Hapus"
+        Me.btn_Simpan.UseVisualStyleBackColor = True
+        '
+        'btn_Batal
+        '
+        Me.btn_Batal.Location = New System.Drawing.Point(185, 261)
+        Me.btn_Batal.Name = "btn_Batal"
+        Me.btn_Batal.Size = New System.Drawing.Size(75, 23)
+        Me.btn_Batal.TabIndex = 20
+        Me.btn_Batal.Text = "Batal"
+        Me.btn_Batal.UseVisualStyleBackColor = True
+        '
         'FormKoreksiPinjamorPiutangNasabah
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -626,8 +626,8 @@ Partial Class FormKoreksiPinjamorPiutangNasabah
     Friend WithEvents btn_Keluar As Button
     Friend WithEvents lbl_KodePinjam As Label
     Friend WithEvents lbl As Label
-    Friend WithEvents btn_Batal As Button
-    Friend WithEvents btn_Simpan As Button
     Friend WithEvents cmb_Jenis As ComboBox
     Friend WithEvents txt_KodePinjam As TextBox
+    Friend WithEvents btn_Batal As Button
+    Friend WithEvents btn_Simpan As Button
 End Class

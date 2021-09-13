@@ -10,7 +10,7 @@
     Public sql As String
 
     Sub showData()
-        sql = "select idanggota, anggota, kredit, to_char(tgltransaksi, 'DD-MM-YYYY') as tgltransaksi from qtransaksi where kettransaksi = 'B' and tgltransaksi between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & "' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & "'"
+        sql = "select idanggota, anggota, kredit, to_char(tgltransaksi, 'DD-MM-YYYY') as tgltransaksi from qtransaksi where kettransaksi = 'B' and tgltransaksi between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & " 00:00' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & " 23:59'"
         dgv_data_simpanan.DataSource = getData(sql)
         dgv_data_simpanan.Columns(0).HeaderText = "ID Anggota"
         dgv_data_simpanan.Columns(1).HeaderText = "Nama Anggota"
