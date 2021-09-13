@@ -11,10 +11,8 @@
         setLocationDatabase(txt_Address.Text)
         Dim usernameTxt = txt_Username.Text
         Dim passwordTxt = txt_Password.Text
-
-        If getCount("select duser,dpassword from tbluser where duser = '" & usernameTxt & "' and dpassword = '" & passwordTxt & "' ") > 0 Then
-
-            If clearKoneksi() Then
+        If clearKoneksi() Then
+            If getCount("select duser,dpassword from tbluser where duser = '" & usernameTxt & "' and dpassword = '" & passwordTxt & "' ") > 0 Then
                 Me.Hide()
 
                 MenuUtama.username = usernameTxt
@@ -27,11 +25,12 @@
                 txt_Password.Clear()
 
             Else
-                dialogError("address tidak ditemukan")
+                dialogError("username atau passwrod tidak ditemukan")
             End If
         Else
-            dialogError("username atau passwrod tidak ditemukan")
+            dialogError("address tidak ditemukan")
         End If
+
     End Sub
 
     Private Sub CBox_showPass_CheckedChanged(sender As Object, e As EventArgs) Handles CBox_showPass.CheckedChanged
@@ -53,5 +52,7 @@
         End If
     End Sub
 
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
 End Class
