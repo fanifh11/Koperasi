@@ -56,8 +56,9 @@
     End Sub
 
     Sub showData()
-        dgv_DataPeminjaman.DataSource = getData("select distinct idanggota,anggota,alamat,jenis,idpinjam,tglpinjam,besarpinjam,lamapinjam,persenbunga,asuransi,administrasi,diterima,angsuranpokok,angsuranbunga,jumlahangsuran from qtagihan where flagtagihan = 1 and anggota ilike '%" & txt_CariData.Text & "%' and tglpinjam <='" & dtp_Pinjam.Value.ToString("dd-MM-yyyy") & "' ")
+        dgv_DataPeminjaman.DataSource = getData("select distinct idanggota,anggota,alamat,jenis,idpinjam,tglpinjam,besarpinjam,lamapinjam,persenbunga,asuransi,administrasi,diterima,angsuranpokok,angsuranbunga,jumlahangsuran from qtagihan where flagtagihan = 1 and anggota ilike '%" & txt_CariData.Text & "%' or tglpinjam <= '" & dtp_Pinjam.Value.ToString("yyyy-MM-dd") & "' ")
 
+        Debug.WriteLine("select distinct idanggota,anggota,alamat,jenis,idpinjam,tglpinjam,besarpinjam,lamapinjam,persenbunga,asuransi,administrasi,diterima,angsuranpokok,angsuranbunga,jumlahangsuran from qtagihan where flagtagihan = 1 and anggota ilike '%" & txt_CariData.Text & "%' or tglpinjam <= '" & dtp_Pinjam.Value.ToString("yyyy-MM-dd") & "' ")
         dgv_DataPeminjaman.Columns(0).HeaderText = "Kode Anggota"
         dgv_DataPeminjaman.Columns(1).HeaderText = "Nama"
         dgv_DataPeminjaman.Columns(2).HeaderText = "Alamat"
@@ -81,6 +82,7 @@
         dgv_DataPeminjaman.Columns(12).DefaultCellStyle.Format = "c0"
         dgv_DataPeminjaman.Columns(13).DefaultCellStyle.Format = "c0"
         dgv_DataPeminjaman.Columns(14).DefaultCellStyle.Format = "c0"
+
 
         lbl_JumData.Text = "Jumlah Data : " & dgv_DataPeminjaman.Rows.Count
     End Sub

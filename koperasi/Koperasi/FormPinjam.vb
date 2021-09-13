@@ -52,7 +52,8 @@
     Dim metode As String = ""
 
     Sub showData()
-        dgv_data_peminjaman.DataSource = getData("select idpinjam,idanggota,anggota,jenis,to_char(tglpinjam, 'DD-MM-YYYY') as tglpinjam,besarpinjam,lamapinjam,persenbunga,asuransi,administrasi,diterima,angsuranpokok,angsuranbunga,jumlahangsuran from qpinjam where idanggota='" & idanggota & "' and jenis ilike '%" & txt_search.Text & "%'  ")
+        dgv_data_peminjaman.DataSource = getData("select idpinjam,idanggota,anggota,jenis, to_date(to_char(tglpinjam, 'dd-MM-yyyy'),'dd-MM-yyyy') as tglpinjam,besarpinjam,lamapinjam,persenbunga,asuransi,administrasi,diterima,angsuranpokok,angsuranbunga,jumlahangsuran,alamat
+        from qpinjam where (tglpinjam between '" & Now().ToString("yyyy-MM-dd") & " 00:00' and '" & Now().ToString("yyyy-MM-dd") & " 23:59')  and jenis ilike '%" & txt_search.Text & "%'  ")
         dgv_data_peminjaman.Columns(0).HeaderText = "Kode Pinjam"
         dgv_data_peminjaman.Columns(1).HeaderText = "Kode Anggota"
         dgv_data_peminjaman.Columns(2).HeaderText = "Nama"
@@ -67,6 +68,7 @@
         dgv_data_peminjaman.Columns(11).HeaderText = "Angsuran Pokok"
         dgv_data_peminjaman.Columns(12).HeaderText = "Angsuran Bunga"
         dgv_data_peminjaman.Columns(13).HeaderText = "Jumlah Angsuran"
+        dgv_data_peminjaman.Columns(14).Visible = False
 
         dgv_data_peminjaman.Columns(5).DefaultCellStyle.Format = "c0"
         dgv_data_peminjaman.Columns(8).DefaultCellStyle.Format = "c0"
@@ -150,9 +152,6 @@
         FormCariAnggota.menu = "Data Peminjam"
         FormCariAnggota.ShowDialog()
         FormCariAnggota.Dispose()
-
-        showData()
-
     End Sub
 
     Private Sub FormPinjam_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -162,6 +161,8 @@
 
         kondisiBtnCetak()
         kondisiBtnHapus()
+        showData()
+
         txt_kode_pinjam.Text = Now.ToString("yyyyMMddHHmmss")
     End Sub
     Private Sub txt_besar_pinjam_TextChanged(sender As Object, e As EventArgs) Handles txt_besar_pinjam.TextChanged
@@ -350,7 +351,6 @@
 
     Private Sub btn_hapus_Click(sender As Object, e As EventArgs) Handles btn_hapus.Click
 
-
         Dim selectIdPinjam As String = dgv_data_peminjaman.Rows(dgv_data_peminjaman.CurrentCell.RowIndex).Cells(0).Value.ToString
 
         If dialog("Apakah anda yakin untuk menghapus data ?") Then
@@ -374,7 +374,6 @@
         lockForm()
         clearForm(group_informasi_nasabah)
         clearForm(group_informasi_peminjaman)
-        dgv_data_peminjaman.DataSource = Nothing
 
         txt_kode_pinjam.Text = Now.ToString("yyyyMMddHHmmss")
 
@@ -382,6 +381,22 @@
 
     Private Sub btn_tambah_Click(sender As Object, e As EventArgs) Handles btn_tambah.Click
         openForm()
+
+
+        clearForm(group_informasi_nasabah)
+        clearForm(group_informasi_peminjaman)
+
+        If btn_tambah.Enabled = False Then
+            dgv_data_peminjaman.Enabled = True
+            btn_cetak_kwitansi.Enabled = False
+        Else
+            dgv_data_peminjaman.Enabled = True
+            btn_cetak_kwitansi.Enabled = False
+        End If
+
+        If String.IsNullOrEmpty(txt_kode_pinjam.Text) Then
+            txt_kode_pinjam.Text = Now.ToString("yyyyMMddHHmmss")
+        End If
     End Sub
 
     Private Sub btn_cetak_kwitansi_Click(sender As Object, e As EventArgs) Handles btn_cetak_kwitansi.Click
@@ -392,13 +407,37 @@
     End Sub
 
     Private Sub dgv_data_peminjaman_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_data_peminjaman.CellClick
-        If (e.RowIndex >= 0) Then
-            selectKodePinjam = dgv_data_peminjaman.Rows(e.RowIndex).Cells(0).Value
-            idpinjam = selectKodePinjam
+        If btn_tambah.Enabled = True Then
+            If (e.RowIndex >= 0) Then
+                selectKodePinjam = dgv_data_peminjaman.Rows(e.RowIndex).Cells(0).Value
+                idpinjam = selectKodePinjam
 
-            kondisiBtnCetak()
-            kondisiBtnHapus()
+                kondisiBtnCetak()
+
+                Me.txt_kode_nasabah.Text = dgv_data_peminjaman.Rows(e.RowIndex).Cells(1).Value
+                Me.txt_nama.Text = dgv_data_peminjaman.Rows(e.RowIndex).Cells(2).Value
+                Me.txt_alamat.Text = dgv_data_peminjaman.Rows(e.RowIndex).Cells(14).Value
+
+                Me.txt_kode_pinjam.Text = dgv_data_peminjaman.Rows(e.RowIndex).Cells(0).Value
+                Me.dtp_tanggal_pinjam.Value = dgv_data_peminjaman.Rows(e.RowIndex).Cells(4).Value
+                Me.cmb_JenisBunga.SelectedItem = dgv_data_peminjaman.Rows(e.RowIndex).Cells(3).Value
+                Me.txt_besar_pinjam.Text = numberFormat(dgv_data_peminjaman.Rows(e.RowIndex).Cells(5).Value)
+                Me.txt_lama_pinjam.Text = dgv_data_peminjaman.Rows(e.RowIndex).Cells(6).Value
+                Me.txt_bunga.Text = dgv_data_peminjaman.Rows(e.RowIndex).Cells(7).Value
+                Me.txt_asuransi.Text = numberFormat(dgv_data_peminjaman.Rows(e.RowIndex).Cells(8).Value)
+                Me.txt_administrasi.Text = numberFormat(dgv_data_peminjaman.Rows(e.RowIndex).Cells(9).Value)
+                Me.txt_jumlah_diterima.Text = numberFormat(dgv_data_peminjaman.Rows(e.RowIndex).Cells(10).Value)
+
+                Me.txt_angsuran_pokok.Text = numberFormat(dgv_data_peminjaman.Rows(e.RowIndex).Cells(11).Value)
+                Me.txt_angsuran_bunga.Text = numberFormat(dgv_data_peminjaman.Rows(e.RowIndex).Cells(12).Value)
+                Me.txt_jumlah_angsuran.Text = numberFormat(dgv_data_peminjaman.Rows(e.RowIndex).Cells(13).Value)
+
+                kondisiBtnHapus()
+            End If
+        Else
+            btn_cetak_kwitansi.Enabled = False
         End If
+
     End Sub
 
     Dim checkJual2 As Boolean = True

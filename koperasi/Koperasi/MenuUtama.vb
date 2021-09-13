@@ -2,6 +2,68 @@
 
     Public masuk As String = ""
 
+    Public Sub removePanel()
+        If btnAnggota.Visible = False And btnTahunAktif.Visible = False Then
+            panelKeanggotaan.Visible = False
+        End If
+        If btnJenisSimpanan.Visible = False And btnBukuSimpSukarela.Visible = False Then
+            panelSimpanan.Visible = False
+        End If
+        If btnBillingSimpanan.Visible = False And btnLihatBilling.Visible = False Then
+            panelBilling.Visible = False
+        End If
+        If btnPemSimWjb.Visible = False And btnPemSimWjbKolektif.Visible = False And btnPengSimpPokok.Visible = False Then
+            panelSimpPokokWjb.Visible = False
+        End If
+        If btnRekSimpSukarela.Visible = False And btnPemSimpSukarela.Visible = False And btnPengSimpSukarela.Visible = False Then
+            panelSimpSukarela.Visible = False
+        End If
+        If btnHitungBunga.Visible = False Then
+            panelBunga.Visible = False
+        End If
+        If btnCetakSampul.Visible = False And btnCetakBuku.Visible = False Then
+            panelPembukuan.Visible = False
+        End If
+        If btnPeminjaman.Visible = False And btnLihatTagihan.Visible = False And btnBuatTagihan.Visible = False Then
+            panelPeminjaman.Visible = False
+        End If
+        If btnPemPinjaman.Visible = False And btnPembKolektif.Visible = False Then
+            panelPemPinjaman.Visible = False
+        End If
+        If btnKorPinjaman.Visible = False And btnKorPembayaran.Visible = False Then
+            panelKoreksi.Visible = False
+        End If
+        If btnLapAnggota.Visible = False And btnLapPeminjaman.Visible = False Then
+            panelLapKeanggotaan.Visible = False
+        End If
+        If btnPembAsuransi.Visible = False And btnByrAdmin.Visible = False And btnLapByrPinjaman.Visible = False And btnHistoriPembayaran.Visible = False Then
+            panelLapPembayaran.Visible = False
+        End If
+        If btnLapSaldo.Visible = False Then
+            panelSaldoPiutang.Visible = False
+        End If
+        If btnRekapPendatan.Visible = False And btnRekapSaldoPiutang.Visible = False And btnRekapSimpPokokWjb.Visible = False And btnSimpSukarela.Visible = False Then
+            panelRekap.Visible = False
+        End If
+        If btnLapTraSimpSukarela.Visible = False And btnLapSimpPokokWjb.Visible = False And btnLapTunggakanSimpan.Visible = False And btnLapPemBunga.Visible = False Then
+            panelLain2.Visible = False
+        End If
+        If btnProsesSHU.Visible = False Then
+            panelSHU.Visible = False
+        End If
+        If btnIdentitas.Visible = False And btnGroup.Visible = False And btnUser.Visible = False Then
+            panelSetting.Visible = False
+        End If
+        If btnBackupDB.Visible = False And btnRestoreDB.Visible = False And btnResetData.Visible = False Then
+            panelDB.Visible = False
+        End If
+        If Keluar.Visible = False Then
+            Me.RibbonPanel2.Visible = False
+        End If
+
+
+    End Sub
+
     Private Sub btnAnggota_Click(sender As Object, e As EventArgs) Handles btnAnggota.Click
         FormAnggota.ShowDialog()
         FormAnggota.Dispose()
@@ -242,94 +304,100 @@
             ElseIf menuTag = 4 Then
                 btnUser.Visible = checked
             ElseIf menuTag = 5 Then
-                tabMaster.Visible = checked
+                btnBackupDB.Visible = checked
             ElseIf menuTag = 6 Then
-                btnAnggota.Visible = checked
+                btnRestoreDB.Visible = checked
             ElseIf menuTag = 7 Then
-                btnTahunAktif.Visible = checked
+                btnResetData.Visible = checked
             ElseIf menuTag = 8 Then
-                btnJenisSimpanan.Visible = checked
+                tabMaster.Visible = checked
             ElseIf menuTag = 9 Then
-                btnBukuSimpSukarela.Visible = checked
+                btnAnggota.Visible = checked
             ElseIf menuTag = 10 Then
-                tabSimpanan.Visible = checked
+                btnTahunAktif.Visible = checked
             ElseIf menuTag = 11 Then
-                btnBuatTagihan.Visible = checked
+                btnJenisSimpanan.Visible = checked
             ElseIf menuTag = 12 Then
-                btnLihatBilling.Visible = checked
+                btnBukuSimpSukarela.Visible = checked
             ElseIf menuTag = 13 Then
-                btnPemSimWjb.Visible = checked
+                tabSimpanan.Visible = checked
             ElseIf menuTag = 14 Then
-                btnPemSimWjbKolektif.Visible = checked
+                btnBillingSimpanan.Visible = checked
             ElseIf menuTag = 15 Then
-                btnPengSimpPokok.Visible = checked
-            ElseIf menuTag = 16 Then
-                btnRekSimpSukarela.Visible = checked
-            ElseIf menuTag = 17 Then
-                btnPemSimpSukarela.Visible = checked
-            ElseIf menuTag = 18 Then
-                btnPengSimpSukarela.Visible = checked
-            ElseIf menuTag = 19 Then
-                btnCetakSimpSukarela.Visible = checked
-            ElseIf menuTag = 20 Then
-                btnHitungBunga.Visible = checked
-            ElseIf menuTag = 21 Then
-                btnCetakSampul.Visible = checked
-            ElseIf menuTag = 22 Then
-                btnCetakBuku.Visible = checked
-            ElseIf menuTag = 23 Then
-                tabPinjaman.Visible = checked
-            ElseIf menuTag = 24 Then
-                btnPeminjaman.Visible = checked
-            ElseIf menuTag = 25 Then
-                btnBuatTagihan.Visible = checked
-            ElseIf menuTag = 26 Then
                 btnLihatBilling.Visible = checked
+            ElseIf menuTag = 16 Then
+                btnPemSimWjb.Visible = checked
+            ElseIf menuTag = 17 Then
+                btnPemSimWjbKolektif.Visible = checked
+            ElseIf menuTag = 18 Then
+                btnPengSimpPokok.Visible = checked
+            ElseIf menuTag = 19 Then
+                btnRekSimpSukarela.Visible = checked
+            ElseIf menuTag = 20 Then
+                btnPemSimpSukarela.Visible = checked
+            ElseIf menuTag = 21 Then
+                btnPengSimpSukarela.Visible = checked
+            ElseIf menuTag = 22 Then
+                btnCetakSimpSukarela.Visible = checked
+            ElseIf menuTag = 23 Then
+                btnHitungBunga.Visible = checked
+            ElseIf menuTag = 24 Then
+                btnCetakSampul.Visible = checked
+            ElseIf menuTag = 25 Then
+                btnCetakBuku.Visible = checked
+            ElseIf menuTag = 26 Then
+                tabPinjaman.Visible = checked
             ElseIf menuTag = 27 Then
-                btnPemPinjaman.Visible = checked
+                btnPeminjaman.Visible = checked
             ElseIf menuTag = 28 Then
-                btnPembKolektif.Visible = checked
+                btnBuatTagihan.Visible = checked
             ElseIf menuTag = 29 Then
-                btnKorPinjaman.Visible = checked
+                btnLihatBilling.Visible = checked
             ElseIf menuTag = 30 Then
-                btnKorPembayaran.Visible = checked
+                btnPemPinjaman.Visible = checked
             ElseIf menuTag = 31 Then
-                tabLaporan.Visible = checked
+                btnPembKolektif.Visible = checked
             ElseIf menuTag = 32 Then
-                btnLapAnggota.Visible = checked
+                btnKorPinjaman.Visible = checked
             ElseIf menuTag = 33 Then
-                btnLapPeminjaman.Visible = checked
+                btnKorPembayaran.Visible = checked
             ElseIf menuTag = 34 Then
-                btnPembAsuransi.Visible = checked
+                tabLaporan.Visible = checked
             ElseIf menuTag = 35 Then
-                btnPembAsuransi.Visible = checked
+                btnLapAnggota.Visible = checked
             ElseIf menuTag = 36 Then
-                btnLapByrPinjaman.Visible = checked
+                btnLapPeminjaman.Visible = checked
             ElseIf menuTag = 37 Then
-                btnHistoriPembayaran.Visible = checked
+                btnPembAsuransi.Visible = checked
             ElseIf menuTag = 38 Then
-                btnLapSaldo.Visible = checked
+                btnPembAsuransi.Visible = checked
             ElseIf menuTag = 39 Then
-                btnRekapPendatan.Visible = checked
+                btnLapByrPinjaman.Visible = checked
             ElseIf menuTag = 40 Then
-                btnRekapSaldoPiutang.Visible = checked
+                btnHistoriPembayaran.Visible = checked
             ElseIf menuTag = 41 Then
-                btnRekapSimpPokokWjb.Visible = checked
+                btnLapSaldo.Visible = checked
             ElseIf menuTag = 42 Then
-                btnSimpSukarela.Visible = checked
+                btnRekapPendatan.Visible = checked
             ElseIf menuTag = 43 Then
-                btnLapTraSimpSukarela.Visible = checked
+                btnRekapSaldoPiutang.Visible = checked
             ElseIf menuTag = 44 Then
-                btnLapSimpPokokWjb.Visible = checked
+                btnRekapSimpPokokWjb.Visible = checked
             ElseIf menuTag = 45 Then
-                btnLapTunggakanSimpan.Visible = checked
+                btnSimpSukarela.Visible = checked
             ElseIf menuTag = 46 Then
-                btnLapPemBunga.Visible = checked
+                btnLapTraSimpSukarela.Visible = checked
             ElseIf menuTag = 47 Then
-                btnProsesSHU.Visible = checked
+                btnLapSimpPokokWjb.Visible = checked
             ElseIf menuTag = 48 Then
-                tabKeluar.Visible = checked
+                btnLapTunggakanSimpan.Visible = checked
             ElseIf menuTag = 49 Then
+                btnLapPemBunga.Visible = checked
+            ElseIf menuTag = 50 Then
+                btnProsesSHU.Visible = checked
+            ElseIf menuTag = 51 Then
+                tabKeluar.Visible = checked
+            ElseIf menuTag = 52 Then
                 Keluar.Visible = checked
             End If
         Next
@@ -365,5 +433,14 @@
     Private Sub btnResetData_Click(sender As Object, e As EventArgs) Handles btnResetData.Click
         DialogReset.ShowDialog()
         DialogReset.Dispose()
+    End Sub
+
+    Private Sub MenuUtama_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        removePanel()
+
+
+
+
+
     End Sub
 End Class
