@@ -239,6 +239,7 @@ Partial Class FormAnggota
         '
         'txt_NoTelp
         '
+        Me.txt_NoTelp.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.txt_NoTelp.Location = New System.Drawing.Point(164, 206)
         Me.txt_NoTelp.Name = "txt_NoTelp"
         Me.txt_NoTelp.Size = New System.Drawing.Size(325, 20)
@@ -246,6 +247,7 @@ Partial Class FormAnggota
         '
         'txt_Alamat
         '
+        Me.txt_Alamat.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.txt_Alamat.Location = New System.Drawing.Point(164, 145)
         Me.txt_Alamat.Name = "txt_Alamat"
         Me.txt_Alamat.Size = New System.Drawing.Size(466, 20)
@@ -253,6 +255,7 @@ Partial Class FormAnggota
         '
         'txt_TmptLahir
         '
+        Me.txt_TmptLahir.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.txt_TmptLahir.Location = New System.Drawing.Point(164, 115)
         Me.txt_TmptLahir.Name = "txt_TmptLahir"
         Me.txt_TmptLahir.Size = New System.Drawing.Size(209, 20)

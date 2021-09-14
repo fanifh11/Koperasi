@@ -53,6 +53,6 @@
     End Sub
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        txt_Address.Text = getLocationDatabase()
     End Sub
 End Class

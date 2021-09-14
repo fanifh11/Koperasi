@@ -160,11 +160,11 @@ Partial Class LaporanRekapitulasiPendapatanBunga
         Me.dgv_data_pembayaran.AllowUserToAddRows = False
         Me.dgv_data_pembayaran.AllowUserToDeleteRows = False
         Me.dgv_data_pembayaran.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv_data_pembayaran.Location = New System.Drawing.Point(7, 48)
+        Me.dgv_data_pembayaran.Location = New System.Drawing.Point(7, 19)
         Me.dgv_data_pembayaran.Name = "dgv_data_pembayaran"
         Me.dgv_data_pembayaran.ReadOnly = True
         Me.dgv_data_pembayaran.RowHeadersWidth = 51
-        Me.dgv_data_pembayaran.Size = New System.Drawing.Size(442, 173)
+        Me.dgv_data_pembayaran.Size = New System.Drawing.Size(442, 202)
         Me.dgv_data_pembayaran.TabIndex = 1
         '
         'txt_search
@@ -173,6 +173,7 @@ Partial Class LaporanRekapitulasiPendapatanBunga
         Me.txt_search.Name = "txt_search"
         Me.txt_search.Size = New System.Drawing.Size(442, 20)
         Me.txt_search.TabIndex = 0
+        Me.txt_search.Visible = False
         '
         'group_data_pembayaran
         '

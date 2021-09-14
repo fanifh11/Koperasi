@@ -24,9 +24,9 @@
         Dim idTagihan As String = Now.ToString("yyyyMMddHHmmss") & row.ToString
         Dim kodeTagihan As String = Now.ToString("yyyyMMdd-HHmmss") & row.ToString
 
-
-
-        exc("insert into tbltagihan
+        Dim sqlCekTagihanSebelumnya = $"SELECT idpinjam FROM tbltagihan where flagtagihan = 0 and idpinjam = '{idpinjam}'"
+        If getCount(sqlCekTagihanSebelumnya) = 0 Then
+            exc("insert into tbltagihan
                 (
                     idtagihan,
                     idpinjam,
@@ -57,6 +57,9 @@
                 )
             
             ")
+        End If
+
+
     End Sub
 
     Sub showData()

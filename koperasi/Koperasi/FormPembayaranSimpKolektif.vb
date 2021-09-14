@@ -39,11 +39,20 @@
             Return
         ElseIf dgv_DataAnggota.Rows.Count > 1 Then
             If dialog("Apakah yakin melakukan proses pembayaran kolektif ?") Then
-                exc("update tblrekening set
+                Dim idtagihan As String = "("
+
+                For Each Row As DataGridViewRow In dgv_DataAnggota.Rows
+                    idtagihan = idtagihan & " '" & Row.Cells(0).Value & "',"
+                Next
+
+                idtagihan = Strings.Left(idtagihan, idtagihan.Length - 1)
+
+                idtagihan = idtagihan & ")"
+                exc($"update tblrekening set
                 fbayar = 1, 
                 tglbayar = now()
 
-                where fbayar = 0
+                where fbayar = 0 and norek in {idtagihan}
                 ")
                 dialogInfo("Pembayaran secara kolektif berhasil !")
                 showData()
