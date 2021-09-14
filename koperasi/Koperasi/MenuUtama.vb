@@ -352,7 +352,7 @@
             ElseIf menuTag = 28 Then
                 btnBuatTagihan.Visible = checked
             ElseIf menuTag = 29 Then
-                btnLihatBilling.Visible = checked
+                btnLihatTagihan.Visible = checked
             ElseIf menuTag = 30 Then
                 btnPemPinjaman.Visible = checked
             ElseIf menuTag = 31 Then
