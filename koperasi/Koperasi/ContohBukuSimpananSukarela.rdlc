@@ -6,24 +6,24 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>4.45291cm</Width>
+              <Width>3.31291cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.55333cm</Width>
+              <Width>2.41333cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.66458cm</Width>
+              <Width>3.52458cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.66458cm</Width>
+              <Width>3.52458cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.66458cm</Width>
+              <Width>3.52458cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.76771cm</Height>
+              <Height>0.5825cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -36,6 +36,7 @@
                             <TextRun>
                               <Value>TANGGAL</Value>
                               <Style>
+                                <FontFamily>Times New Roman</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -48,7 +49,6 @@
                       <rd:DefaultName>Textbox1</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -70,6 +70,7 @@
                             <TextRun>
                               <Value>KODE</Value>
                               <Style>
+                                <FontFamily>Times New Roman</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -82,7 +83,6 @@
                       <rd:DefaultName>Textbox3</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -104,6 +104,7 @@
                             <TextRun>
                               <Value>DEBET</Value>
                               <Style>
+                                <FontFamily>Times New Roman</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -116,7 +117,6 @@
                       <rd:DefaultName>Textbox5</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -138,6 +138,7 @@
                             <TextRun>
                               <Value>KREDIT</Value>
                               <Style>
+                                <FontFamily>Times New Roman</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -150,7 +151,6 @@
                       <rd:DefaultName>Textbox7</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -172,6 +172,7 @@
                             <TextRun>
                               <Value>SALDO</Value>
                               <Style>
+                                <FontFamily>Times New Roman</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -184,7 +185,6 @@
                       <rd:DefaultName>Textbox9</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -198,7 +198,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>1.03229cm</Height>
+              <Height>0.76771cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -210,7 +210,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>30-10-2015</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Times New Roman</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -222,7 +224,7 @@
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
-                          <Style>Solid</Style>
+                          <Style>None</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -242,7 +244,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>11</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Times New Roman</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -254,7 +258,7 @@
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
-                          <Style>Solid</Style>
+                          <Style>None</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -275,6 +279,7 @@
                             <TextRun>
                               <Value>Rp0.00</Value>
                               <Style>
+                                <FontFamily>Times New Roman</FontFamily>
                                 <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
                               </Style>
                             </TextRun>
@@ -288,7 +293,7 @@
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
-                          <Style>Solid</Style>
+                          <Style>None</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -310,6 +315,7 @@
                             <TextRun>
                               <Value>Rp1,000,000.00</Value>
                               <Style>
+                                <FontFamily>Times New Roman</FontFamily>
                                 <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
                               </Style>
                             </TextRun>
@@ -323,7 +329,7 @@
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
-                          <Style>Solid</Style>
+                          <Style>None</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -345,6 +351,7 @@
                             <TextRun>
                               <Value>Rp1,000,000.00</Value>
                               <Style>
+                                <FontFamily>Times New Roman</FontFamily>
                                 <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
                               </Style>
                             </TextRun>
@@ -358,7 +365,7 @@
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
-                          <Style>Solid</Style>
+                          <Style>None</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -393,10 +400,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>1cm</Top>
-        <Left>1cm</Left>
-        <Height>1.8cm</Height>
-        <Width>21.99998cm</Width>
+        <Top>0.1cm</Top>
+        <Left>0.1cm</Left>
+        <Height>1.35021cm</Height>
+        <Width>16.29998cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -410,9 +417,10 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Lebar 24 cm X Tinggi 15,3 cm</Value>
+                <Value>Lebar 21 cm X Tinggi 29,7 cm</Value>
                 <Style>
-                  <FontSize>12pt</FontSize>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>14pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
@@ -423,10 +431,9 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox11</rd:DefaultName>
-        <Top>4cm</Top>
-        <Left>1cm</Left>
-        <Height>0.6cm</Height>
-        <Width>22cm</Width>
+        <Top>2.3cm</Top>
+        <Height>0.7cm</Height>
+        <Width>16.5cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -439,10 +446,10 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>15.3cm</Height>
+    <Height>3cm</Height>
     <Style />
   </Body>
-  <Width>24cm</Width>
+  <Width>16.5cm</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>

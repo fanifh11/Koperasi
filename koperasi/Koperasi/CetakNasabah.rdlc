@@ -13,16 +13,16 @@
                 <TextRuns>
                   <TextRun>
                     <Value>="No Nasabah : " &amp; Parameters!no_nasabah.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
-            <Top>1cm</Top>
-            <Left>1cm</Left>
             <Height>0.6cm</Height>
-            <Width>10cm</Width>
+            <Width>16.5cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -41,16 +41,17 @@
                 <TextRuns>
                   <TextRun>
                     <Value>= "No Rek : " &amp; Parameters!no_rek.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
-            <Top>1.8cm</Top>
-            <Left>1cm</Left>
+            <Top>0.8cm</Top>
             <Height>0.6cm</Height>
-            <Width>10cm</Width>
+            <Width>16.5cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -70,16 +71,17 @@
                 <TextRuns>
                   <TextRun>
                     <Value>= Parameters!nama.Value &amp; " / " &amp; Parameters!jk.Value &amp; " / " &amp; Parameters!jenissimpanan.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
-            <Top>2.6cm</Top>
-            <Left>1cm</Left>
+            <Top>1.6cm</Top>
             <Height>0.6cm</Height>
-            <Width>10cm</Width>
+            <Width>16.5cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -99,16 +101,17 @@
                 <TextRuns>
                   <TextRun>
                     <Value>= Parameters!alamat.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
-            <Top>3.4cm</Top>
-            <Left>1cm</Left>
+            <Top>2.4cm</Top>
             <Height>0.6cm</Height>
-            <Width>10cm</Width>
+            <Width>16.5cm</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -121,10 +124,10 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>10cm</Height>
+        <Height>3cm</Height>
         <Style />
       </Body>
-      <Width>12cm</Width>
+      <Width>16.5cm</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
