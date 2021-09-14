@@ -283,7 +283,7 @@
                 FormKoreksiPembayaranNasabah.txt_SaldoPiutang.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(13).Value)
                 FormKoreksiPembayaranNasabah.txt_BayarPokok.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(14).Value)
                 FormKoreksiPembayaranNasabah.txt_BayarBunga.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(15).Value)
-                FormKoreksiPembayaranNasabah.txt_KodeTagihan.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(16).Value
+                FormKoreksiPembayaranNasabah.txt_KodeTagihan.Text = dgv_DataAnggota.Rows(e.RowIndex).Cells(0).Value
 
                 FormKoreksiPembayaranNasabah.txt_JumBayar.Text = numberFormat(dgv_DataAnggota.Rows(e.RowIndex).Cells(17).Value)
 

@@ -82,44 +82,27 @@
             Return
         ElseIf (dialog("Apakah yakin untuk mengubah data ?")) Then
 
-            If txtbayarPokok > bayarPokok Then
-                dialogError("Uang pembayaran pokok yang anda ingputkan kelebihan!")
-                Return
-
-            ElseIf txtbayarBunga > bayarBunga Then
-                dialogError("Uang pembayaran bunga yang anda inputkan kelebihan!")
-                Return
-
-            Else
-                exc("update tbltagihan set
-                    tglbayar = '" & tglBayar & "',
-                    besarpokok = '" & txtbayarPokok & "',
-                    besarbunga = '" & txtbayarBunga & "'
-
-                    where idtagihan = '" & idtagihan & "'")
-
-                exc("update tbltagihan set
-                    besarbayar = besarpokok + besarbunga
-                    where idtagihan = '" & idtagihan & "' ")
-
+            If exc("DELETE FROM tbltagihan WHERE idtagihan = '" & txt_KodeTagihan.Text & "'") Then
+                Debug.WriteLine("DELETE FROM tbltagihan WHERE idtagihan = '" & txt_KodeTagihan.Text & "'")
                 exc("update tblpinjam set 
-                    bayarbunga = (select sum(tbltagihan.besarbunga) from tbltagihan where tbltagihan.idpinjam = tblpinjam.idpinjam),
-                    bayarpokok = (select sum(tbltagihan.besarpokok) from tbltagihan where tbltagihan.idpinjam = tblpinjam.idpinjam)
+                    bayarbunga = (select  coalesce(sum(tbltagihan.besarbunga),0) from tbltagihan where tbltagihan.idpinjam = tblpinjam.idpinjam),
+                    bayarpokok = (select coalesce(sum(tbltagihan.besarpokok),0) from tbltagihan where tbltagihan.idpinjam = tblpinjam.idpinjam)
 
                     where idpinjam = '" & idpinjam & "'
                    
-                   ")
+                    ")
 
-                exc("update tblpinjam set saldopinjam = besarpinjam - (select sum(tbltagihan.besarpokok) from tbltagihan where tbltagihan.idpinjam = tblpinjam.idpinjam)")
-
-                dialogInfo("Edit data sukses !")
+                exc("update tblpinjam set saldopinjam = besarpinjam - (select coalesce(sum(tbltagihan.besarpokok),0) from tbltagihan where tbltagihan.idpinjam = tblpinjam.idpinjam)")
+                clearForm(group_InformasiNasabah)
+                clearForm(group_InformasiPinjaman)
+                clearForm(group_InformasiPeminjaman)
+                dialogInfo("Berhasil dikoreksi")
             End If
+
         End If
 
 
-        clearForm(group_InformasiNasabah)
-        clearForm(group_InformasiPinjaman)
-        clearForm(group_InformasiPeminjaman)
+
 
     End Sub
 
