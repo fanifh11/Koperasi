@@ -85,6 +85,7 @@
             If exc("DELETE FROM tbltagihan WHERE idtagihan = '" & txt_KodeTagihan.Text & "'") Then
                 Debug.WriteLine("DELETE FROM tbltagihan WHERE idtagihan = '" & txt_KodeTagihan.Text & "'")
                 exc("update tblpinjam set 
+                    flagpinjam=0,
                     bayarbunga = (select  coalesce(sum(tbltagihan.besarbunga),0) from tbltagihan where tbltagihan.idpinjam = tblpinjam.idpinjam),
                     bayarpokok = (select coalesce(sum(tbltagihan.besarpokok),0) from tbltagihan where tbltagihan.idpinjam = tblpinjam.idpinjam)
 
