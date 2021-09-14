@@ -177,7 +177,7 @@
         If adaKosong(group_informasi_nasabah) Then
             dialogError("Pilih data nasabah terlebih dahulu !")
             Return
-        ElseIf Not Double.TryParse(txt_bunga.Text = "0", 0) Then
+        ElseIf Not Double.TryParse(txt_bunga.Text, 0) Then
             dialogError("Masukan bunga dengan benar")
             Return
         ElseIf txt_besar_pinjam.Text = "0" Or txt_lama_pinjam.Text = "0" Or txt_bunga.Text = "0" Then
@@ -255,10 +255,12 @@
                         )
                     ")
                     dialogInfo("Input sukses")
+
                 Else
                     dialogError("Ada duplikasi kode pinjam !")
                 End If
             End If
+            lockForm()
             clearForm(group_informasi_peminjaman)
             clearForm(group_informasi_nasabah)
             txt_kode_pinjam.Text = Now.ToString("yyyyMMddHHmmss")

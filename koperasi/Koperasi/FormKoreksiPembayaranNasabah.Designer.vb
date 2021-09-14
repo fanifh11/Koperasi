@@ -910,12 +910,13 @@ Partial Class FormKoreksiPembayaranNasabah
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(123, 27)
         Me.Button9.TabIndex = 27
-        Me.Button9.Text = "Simpan"
+        Me.Button9.Text = "Hapus"
         Me.Button9.UseVisualStyleBackColor = True
         '
         'txt_KodeTagihan
         '
         Me.txt_KodeTagihan.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.txt_KodeTagihan.Enabled = False
         Me.txt_KodeTagihan.Location = New System.Drawing.Point(400, 72)
         Me.txt_KodeTagihan.Name = "txt_KodeTagihan"
         Me.txt_KodeTagihan.ReadOnly = True
@@ -933,6 +934,7 @@ Partial Class FormKoreksiPembayaranNasabah
         '
         'Button8
         '
+        Me.Button8.Enabled = False
         Me.Button8.Location = New System.Drawing.Point(244, 76)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(85, 27)
@@ -942,6 +944,7 @@ Partial Class FormKoreksiPembayaranNasabah
         '
         'Button7
         '
+        Me.Button7.Enabled = False
         Me.Button7.Location = New System.Drawing.Point(244, 49)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(85, 27)
@@ -952,6 +955,7 @@ Partial Class FormKoreksiPembayaranNasabah
         'txt_JumBayar
         '
         Me.txt_JumBayar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_JumBayar.Enabled = False
         Me.txt_JumBayar.Location = New System.Drawing.Point(400, 25)
         Me.txt_JumBayar.Name = "txt_JumBayar"
         Me.txt_JumBayar.ReadOnly = True
@@ -987,6 +991,7 @@ Partial Class FormKoreksiPembayaranNasabah
         '
         'dtp_TglBayar
         '
+        Me.dtp_TglBayar.Enabled = False
         Me.dtp_TglBayar.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtp_TglBayar.Location = New System.Drawing.Point(106, 25)
         Me.dtp_TglBayar.Name = "dtp_TglBayar"
