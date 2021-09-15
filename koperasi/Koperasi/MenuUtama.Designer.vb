@@ -63,24 +63,22 @@ Partial Class MenuUtama
         Me.tabLaporan = New System.Windows.Forms.RibbonTab()
         Me.panelLapKeanggotaan = New System.Windows.Forms.RibbonPanel()
         Me.btnLapAnggota = New System.Windows.Forms.RibbonButton()
-        Me.btnLapPeminjaman = New System.Windows.Forms.RibbonButton()
         Me.panelLapPembayaran = New System.Windows.Forms.RibbonPanel()
-        Me.btnPembAsuransi = New System.Windows.Forms.RibbonButton()
-        Me.btnByrAdmin = New System.Windows.Forms.RibbonButton()
-        Me.btnLapByrPinjaman = New System.Windows.Forms.RibbonButton()
         Me.btnHistoriPembayaran = New System.Windows.Forms.RibbonButton()
-        Me.panelSaldoPiutang = New System.Windows.Forms.RibbonPanel()
+        Me.btnLapPeminjaman = New System.Windows.Forms.RibbonButton()
+        Me.btnLapByrPinjaman = New System.Windows.Forms.RibbonButton()
         Me.btnLapSaldo = New System.Windows.Forms.RibbonButton()
-        Me.panelRekap = New System.Windows.Forms.RibbonPanel()
-        Me.btnRekapPendatan = New System.Windows.Forms.RibbonButton()
         Me.btnRekapSaldoPiutang = New System.Windows.Forms.RibbonButton()
-        Me.btnRekapSimpPokokWjb = New System.Windows.Forms.RibbonButton()
-        Me.btnSimpSukarela = New System.Windows.Forms.RibbonButton()
+        Me.btnRekapPendatan = New System.Windows.Forms.RibbonButton()
+        Me.btnByrAdmin = New System.Windows.Forms.RibbonButton()
+        Me.btnPembAsuransi = New System.Windows.Forms.RibbonButton()
         Me.panelLain2 = New System.Windows.Forms.RibbonPanel()
-        Me.btnLapTraSimpSukarela = New System.Windows.Forms.RibbonButton()
         Me.btnLapSimpPokokWjb = New System.Windows.Forms.RibbonButton()
+        Me.btnLapTraSimpSukarela = New System.Windows.Forms.RibbonButton()
         Me.btnLapTunggakanSimpan = New System.Windows.Forms.RibbonButton()
         Me.btnLapPemBunga = New System.Windows.Forms.RibbonButton()
+        Me.btnRekapSimpPokokWjb = New System.Windows.Forms.RibbonButton()
+        Me.btnSimpSukarela = New System.Windows.Forms.RibbonButton()
         Me.panelSHU = New System.Windows.Forms.RibbonPanel()
         Me.btnProsesSHU = New System.Windows.Forms.RibbonButton()
         Me.tabUtilitas = New System.Windows.Forms.RibbonTab()
@@ -118,7 +116,7 @@ Partial Class MenuUtama
         Me.Ribbon1.OrbDropDown.TabIndex = 0
         Me.Ribbon1.OrbStyle = System.Windows.Forms.RibbonOrbStyle.Office_2013
         Me.Ribbon1.RibbonTabFont = New System.Drawing.Font("Trebuchet MS", 9.0!)
-        Me.Ribbon1.Size = New System.Drawing.Size(653, 142)
+        Me.Ribbon1.Size = New System.Drawing.Size(653, 158)
         Me.Ribbon1.TabIndex = 0
         Me.Ribbon1.Tabs.Add(Me.tabMaster)
         Me.Ribbon1.Tabs.Add(Me.tabSimpanan)
@@ -434,8 +432,6 @@ Partial Class MenuUtama
         Me.tabLaporan.Name = "tabLaporan"
         Me.tabLaporan.Panels.Add(Me.panelLapKeanggotaan)
         Me.tabLaporan.Panels.Add(Me.panelLapPembayaran)
-        Me.tabLaporan.Panels.Add(Me.panelSaldoPiutang)
-        Me.tabLaporan.Panels.Add(Me.panelRekap)
         Me.tabLaporan.Panels.Add(Me.panelLain2)
         Me.tabLaporan.Panels.Add(Me.panelSHU)
         Me.tabLaporan.Text = "Laporan"
@@ -443,9 +439,8 @@ Partial Class MenuUtama
         'panelLapKeanggotaan
         '
         Me.panelLapKeanggotaan.Items.Add(Me.btnLapAnggota)
-        Me.panelLapKeanggotaan.Items.Add(Me.btnLapPeminjaman)
         Me.panelLapKeanggotaan.Name = "panelLapKeanggotaan"
-        Me.panelLapKeanggotaan.Text = "Keanggotaan"
+        Me.panelLapKeanggotaan.Text = "Lap. Anggota"
         '
         'btnLapAnggota
         '
@@ -455,6 +450,27 @@ Partial Class MenuUtama
         Me.btnLapAnggota.SmallImage = CType(resources.GetObject("btnLapAnggota.SmallImage"), System.Drawing.Image)
         Me.btnLapAnggota.Text = "Anggota"
         '
+        'panelLapPembayaran
+        '
+        Me.panelLapPembayaran.Items.Add(Me.btnHistoriPembayaran)
+        Me.panelLapPembayaran.Items.Add(Me.btnLapPeminjaman)
+        Me.panelLapPembayaran.Items.Add(Me.btnLapByrPinjaman)
+        Me.panelLapPembayaran.Items.Add(Me.btnLapSaldo)
+        Me.panelLapPembayaran.Items.Add(Me.btnRekapSaldoPiutang)
+        Me.panelLapPembayaran.Items.Add(Me.btnRekapPendatan)
+        Me.panelLapPembayaran.Items.Add(Me.btnByrAdmin)
+        Me.panelLapPembayaran.Items.Add(Me.btnPembAsuransi)
+        Me.panelLapPembayaran.Name = "panelLapPembayaran"
+        Me.panelLapPembayaran.Text = "Lap. Pinjaman"
+        '
+        'btnHistoriPembayaran
+        '
+        Me.btnHistoriPembayaran.Image = CType(resources.GetObject("btnHistoriPembayaran.Image"), System.Drawing.Image)
+        Me.btnHistoriPembayaran.LargeImage = CType(resources.GetObject("btnHistoriPembayaran.LargeImage"), System.Drawing.Image)
+        Me.btnHistoriPembayaran.Name = "btnHistoriPembayaran"
+        Me.btnHistoriPembayaran.SmallImage = CType(resources.GetObject("btnHistoriPembayaran.SmallImage"), System.Drawing.Image)
+        Me.btnHistoriPembayaran.Text = "Histori Pembayaran Pinjaman"
+        '
         'btnLapPeminjaman
         '
         Me.btnLapPeminjaman.Image = CType(resources.GetObject("btnLapPeminjaman.Image"), System.Drawing.Image)
@@ -463,24 +479,38 @@ Partial Class MenuUtama
         Me.btnLapPeminjaman.SmallImage = CType(resources.GetObject("btnLapPeminjaman.SmallImage"), System.Drawing.Image)
         Me.btnLapPeminjaman.Text = "Peminjaman"
         '
-        'panelLapPembayaran
+        'btnLapByrPinjaman
         '
-        Me.panelLapPembayaran.Items.Add(Me.btnPembAsuransi)
-        Me.panelLapPembayaran.Items.Add(Me.btnByrAdmin)
-        Me.panelLapPembayaran.Items.Add(Me.btnLapByrPinjaman)
-        Me.panelLapPembayaran.Items.Add(Me.btnHistoriPembayaran)
-        Me.panelLapPembayaran.Name = "panelLapPembayaran"
-        Me.panelLapPembayaran.Text = "Pembayaran"
+        Me.btnLapByrPinjaman.Image = Global.Koperasi.My.Resources.Resources.analytics
+        Me.btnLapByrPinjaman.LargeImage = Global.Koperasi.My.Resources.Resources.analytics
+        Me.btnLapByrPinjaman.Name = "btnLapByrPinjaman"
+        Me.btnLapByrPinjaman.SmallImage = CType(resources.GetObject("btnLapByrPinjaman.SmallImage"), System.Drawing.Image)
+        Me.btnLapByrPinjaman.Text = "Pembayaran Pinjaman"
         '
-        'btnPembAsuransi
+        'btnLapSaldo
         '
-        Me.btnPembAsuransi.Image = CType(resources.GetObject("btnPembAsuransi.Image"), System.Drawing.Image)
-        Me.btnPembAsuransi.LargeImage = CType(resources.GetObject("btnPembAsuransi.LargeImage"), System.Drawing.Image)
-        Me.btnPembAsuransi.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium
-        Me.btnPembAsuransi.MinSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium
-        Me.btnPembAsuransi.Name = "btnPembAsuransi"
-        Me.btnPembAsuransi.SmallImage = CType(resources.GetObject("btnPembAsuransi.SmallImage"), System.Drawing.Image)
-        Me.btnPembAsuransi.Text = "Asuransi"
+        Me.btnLapSaldo.Image = Global.Koperasi.My.Resources.Resources.analytics
+        Me.btnLapSaldo.LargeImage = Global.Koperasi.My.Resources.Resources.analytics
+        Me.btnLapSaldo.Name = "btnLapSaldo"
+        Me.btnLapSaldo.SmallImage = CType(resources.GetObject("btnLapSaldo.SmallImage"), System.Drawing.Image)
+        Me.btnLapSaldo.Text = "Saldo Piutang"
+        '
+        'btnRekapSaldoPiutang
+        '
+        Me.btnRekapSaldoPiutang.Image = CType(resources.GetObject("btnRekapSaldoPiutang.Image"), System.Drawing.Image)
+        Me.btnRekapSaldoPiutang.LargeImage = CType(resources.GetObject("btnRekapSaldoPiutang.LargeImage"), System.Drawing.Image)
+        Me.btnRekapSaldoPiutang.MinimumSize = New System.Drawing.Size(80, 0)
+        Me.btnRekapSaldoPiutang.Name = "btnRekapSaldoPiutang"
+        Me.btnRekapSaldoPiutang.SmallImage = CType(resources.GetObject("btnRekapSaldoPiutang.SmallImage"), System.Drawing.Image)
+        Me.btnRekapSaldoPiutang.Text = "Rekap Saldo Piutang"
+        '
+        'btnRekapPendatan
+        '
+        Me.btnRekapPendatan.Image = CType(resources.GetObject("btnRekapPendatan.Image"), System.Drawing.Image)
+        Me.btnRekapPendatan.LargeImage = CType(resources.GetObject("btnRekapPendatan.LargeImage"), System.Drawing.Image)
+        Me.btnRekapPendatan.Name = "btnRekapPendatan"
+        Me.btnRekapPendatan.SmallImage = CType(resources.GetObject("btnRekapPendatan.SmallImage"), System.Drawing.Image)
+        Me.btnRekapPendatan.Text = "Rekap Pendapatan Bunga"
         '
         'btnByrAdmin
         '
@@ -492,104 +522,44 @@ Partial Class MenuUtama
         Me.btnByrAdmin.SmallImage = CType(resources.GetObject("btnByrAdmin.SmallImage"), System.Drawing.Image)
         Me.btnByrAdmin.Text = "Administrasi"
         '
-        'btnLapByrPinjaman
+        'btnPembAsuransi
         '
-        Me.btnLapByrPinjaman.Image = CType(resources.GetObject("btnLapByrPinjaman.Image"), System.Drawing.Image)
-        Me.btnLapByrPinjaman.LargeImage = CType(resources.GetObject("btnLapByrPinjaman.LargeImage"), System.Drawing.Image)
-        Me.btnLapByrPinjaman.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium
-        Me.btnLapByrPinjaman.MinSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium
-        Me.btnLapByrPinjaman.Name = "btnLapByrPinjaman"
-        Me.btnLapByrPinjaman.SmallImage = CType(resources.GetObject("btnLapByrPinjaman.SmallImage"), System.Drawing.Image)
-        Me.btnLapByrPinjaman.Text = "Pinjaman"
-        Me.btnLapByrPinjaman.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center
-        '
-        'btnHistoriPembayaran
-        '
-        Me.btnHistoriPembayaran.Image = CType(resources.GetObject("btnHistoriPembayaran.Image"), System.Drawing.Image)
-        Me.btnHistoriPembayaran.LargeImage = CType(resources.GetObject("btnHistoriPembayaran.LargeImage"), System.Drawing.Image)
-        Me.btnHistoriPembayaran.Name = "btnHistoriPembayaran"
-        Me.btnHistoriPembayaran.SmallImage = CType(resources.GetObject("btnHistoriPembayaran.SmallImage"), System.Drawing.Image)
-        Me.btnHistoriPembayaran.Text = "Histori Pembayaran Pinjaman"
-        '
-        'panelSaldoPiutang
-        '
-        Me.panelSaldoPiutang.Items.Add(Me.btnLapSaldo)
-        Me.panelSaldoPiutang.Name = "panelSaldoPiutang"
-        Me.panelSaldoPiutang.Text = "Saldo"
-        '
-        'btnLapSaldo
-        '
-        Me.btnLapSaldo.Image = CType(resources.GetObject("btnLapSaldo.Image"), System.Drawing.Image)
-        Me.btnLapSaldo.LargeImage = CType(resources.GetObject("btnLapSaldo.LargeImage"), System.Drawing.Image)
-        Me.btnLapSaldo.Name = "btnLapSaldo"
-        Me.btnLapSaldo.SmallImage = CType(resources.GetObject("btnLapSaldo.SmallImage"), System.Drawing.Image)
-        Me.btnLapSaldo.Text = "Saldo Piutang"
-        '
-        'panelRekap
-        '
-        Me.panelRekap.Items.Add(Me.btnRekapPendatan)
-        Me.panelRekap.Items.Add(Me.btnRekapSaldoPiutang)
-        Me.panelRekap.Items.Add(Me.btnRekapSimpPokokWjb)
-        Me.panelRekap.Items.Add(Me.btnSimpSukarela)
-        Me.panelRekap.Name = "panelRekap"
-        Me.panelRekap.Text = "Rekapitulasi"
-        '
-        'btnRekapPendatan
-        '
-        Me.btnRekapPendatan.Image = CType(resources.GetObject("btnRekapPendatan.Image"), System.Drawing.Image)
-        Me.btnRekapPendatan.LargeImage = CType(resources.GetObject("btnRekapPendatan.LargeImage"), System.Drawing.Image)
-        Me.btnRekapPendatan.Name = "btnRekapPendatan"
-        Me.btnRekapPendatan.SmallImage = CType(resources.GetObject("btnRekapPendatan.SmallImage"), System.Drawing.Image)
-        Me.btnRekapPendatan.Text = "Pendapatan Bunga"
-        '
-        'btnRekapSaldoPiutang
-        '
-        Me.btnRekapSaldoPiutang.Image = CType(resources.GetObject("btnRekapSaldoPiutang.Image"), System.Drawing.Image)
-        Me.btnRekapSaldoPiutang.LargeImage = CType(resources.GetObject("btnRekapSaldoPiutang.LargeImage"), System.Drawing.Image)
-        Me.btnRekapSaldoPiutang.Name = "btnRekapSaldoPiutang"
-        Me.btnRekapSaldoPiutang.SmallImage = CType(resources.GetObject("btnRekapSaldoPiutang.SmallImage"), System.Drawing.Image)
-        Me.btnRekapSaldoPiutang.Text = "Saldo Piutang"
-        '
-        'btnRekapSimpPokokWjb
-        '
-        Me.btnRekapSimpPokokWjb.Image = CType(resources.GetObject("btnRekapSimpPokokWjb.Image"), System.Drawing.Image)
-        Me.btnRekapSimpPokokWjb.LargeImage = CType(resources.GetObject("btnRekapSimpPokokWjb.LargeImage"), System.Drawing.Image)
-        Me.btnRekapSimpPokokWjb.Name = "btnRekapSimpPokokWjb"
-        Me.btnRekapSimpPokokWjb.SmallImage = CType(resources.GetObject("btnRekapSimpPokokWjb.SmallImage"), System.Drawing.Image)
-        Me.btnRekapSimpPokokWjb.Text = "Simpanan Pokok Wajib"
-        '
-        'btnSimpSukarela
-        '
-        Me.btnSimpSukarela.Image = CType(resources.GetObject("btnSimpSukarela.Image"), System.Drawing.Image)
-        Me.btnSimpSukarela.LargeImage = CType(resources.GetObject("btnSimpSukarela.LargeImage"), System.Drawing.Image)
-        Me.btnSimpSukarela.Name = "btnSimpSukarela"
-        Me.btnSimpSukarela.SmallImage = CType(resources.GetObject("btnSimpSukarela.SmallImage"), System.Drawing.Image)
-        Me.btnSimpSukarela.Text = "Simpanan Sukarela"
+        Me.btnPembAsuransi.Image = CType(resources.GetObject("btnPembAsuransi.Image"), System.Drawing.Image)
+        Me.btnPembAsuransi.LargeImage = CType(resources.GetObject("btnPembAsuransi.LargeImage"), System.Drawing.Image)
+        Me.btnPembAsuransi.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium
+        Me.btnPembAsuransi.MinSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium
+        Me.btnPembAsuransi.Name = "btnPembAsuransi"
+        Me.btnPembAsuransi.SmallImage = CType(resources.GetObject("btnPembAsuransi.SmallImage"), System.Drawing.Image)
+        Me.btnPembAsuransi.Text = "Asuransi"
         '
         'panelLain2
         '
-        Me.panelLain2.Items.Add(Me.btnLapTraSimpSukarela)
         Me.panelLain2.Items.Add(Me.btnLapSimpPokokWjb)
+        Me.panelLain2.Items.Add(Me.btnLapTraSimpSukarela)
         Me.panelLain2.Items.Add(Me.btnLapTunggakanSimpan)
         Me.panelLain2.Items.Add(Me.btnLapPemBunga)
+        Me.panelLain2.Items.Add(Me.btnRekapSimpPokokWjb)
+        Me.panelLain2.Items.Add(Me.btnSimpSukarela)
         Me.panelLain2.Name = "panelLain2"
-        Me.panelLain2.Text = "Lain - lain"
-        '
-        'btnLapTraSimpSukarela
-        '
-        Me.btnLapTraSimpSukarela.Image = CType(resources.GetObject("btnLapTraSimpSukarela.Image"), System.Drawing.Image)
-        Me.btnLapTraSimpSukarela.LargeImage = CType(resources.GetObject("btnLapTraSimpSukarela.LargeImage"), System.Drawing.Image)
-        Me.btnLapTraSimpSukarela.Name = "btnLapTraSimpSukarela"
-        Me.btnLapTraSimpSukarela.SmallImage = CType(resources.GetObject("btnLapTraSimpSukarela.SmallImage"), System.Drawing.Image)
-        Me.btnLapTraSimpSukarela.Text = "Transaksi Simp Sukarela"
+        Me.panelLain2.Text = "Lap. Simpanan"
         '
         'btnLapSimpPokokWjb
         '
         Me.btnLapSimpPokokWjb.Image = CType(resources.GetObject("btnLapSimpPokokWjb.Image"), System.Drawing.Image)
         Me.btnLapSimpPokokWjb.LargeImage = CType(resources.GetObject("btnLapSimpPokokWjb.LargeImage"), System.Drawing.Image)
+        Me.btnLapSimpPokokWjb.MinimumSize = New System.Drawing.Size(80, 0)
         Me.btnLapSimpPokokWjb.Name = "btnLapSimpPokokWjb"
         Me.btnLapSimpPokokWjb.SmallImage = CType(resources.GetObject("btnLapSimpPokokWjb.SmallImage"), System.Drawing.Image)
         Me.btnLapSimpPokokWjb.Text = "Simpanan Pokok Wajib"
+        '
+        'btnLapTraSimpSukarela
+        '
+        Me.btnLapTraSimpSukarela.Image = CType(resources.GetObject("btnLapTraSimpSukarela.Image"), System.Drawing.Image)
+        Me.btnLapTraSimpSukarela.LargeImage = CType(resources.GetObject("btnLapTraSimpSukarela.LargeImage"), System.Drawing.Image)
+        Me.btnLapTraSimpSukarela.MinimumSize = New System.Drawing.Size(90, 0)
+        Me.btnLapTraSimpSukarela.Name = "btnLapTraSimpSukarela"
+        Me.btnLapTraSimpSukarela.SmallImage = CType(resources.GetObject("btnLapTraSimpSukarela.SmallImage"), System.Drawing.Image)
+        Me.btnLapTraSimpSukarela.Text = "Transaksi Simp Sukarela"
         '
         'btnLapTunggakanSimpan
         '
@@ -607,11 +577,28 @@ Partial Class MenuUtama
         Me.btnLapPemBunga.SmallImage = CType(resources.GetObject("btnLapPemBunga.SmallImage"), System.Drawing.Image)
         Me.btnLapPemBunga.Text = "Pembayaran Bunga"
         '
+        'btnRekapSimpPokokWjb
+        '
+        Me.btnRekapSimpPokokWjb.Image = CType(resources.GetObject("btnRekapSimpPokokWjb.Image"), System.Drawing.Image)
+        Me.btnRekapSimpPokokWjb.LargeImage = CType(resources.GetObject("btnRekapSimpPokokWjb.LargeImage"), System.Drawing.Image)
+        Me.btnRekapSimpPokokWjb.MinimumSize = New System.Drawing.Size(80, 0)
+        Me.btnRekapSimpPokokWjb.Name = "btnRekapSimpPokokWjb"
+        Me.btnRekapSimpPokokWjb.SmallImage = CType(resources.GetObject("btnRekapSimpPokokWjb.SmallImage"), System.Drawing.Image)
+        Me.btnRekapSimpPokokWjb.Text = "Rekap Pokok dan Wajib"
+        '
+        'btnSimpSukarela
+        '
+        Me.btnSimpSukarela.Image = CType(resources.GetObject("btnSimpSukarela.Image"), System.Drawing.Image)
+        Me.btnSimpSukarela.LargeImage = CType(resources.GetObject("btnSimpSukarela.LargeImage"), System.Drawing.Image)
+        Me.btnSimpSukarela.Name = "btnSimpSukarela"
+        Me.btnSimpSukarela.SmallImage = CType(resources.GetObject("btnSimpSukarela.SmallImage"), System.Drawing.Image)
+        Me.btnSimpSukarela.Text = "Rekap Sukarela"
+        '
         'panelSHU
         '
         Me.panelSHU.Items.Add(Me.btnProsesSHU)
         Me.panelSHU.Name = "panelSHU"
-        Me.panelSHU.Text = "Sisa Hasil Usaha"
+        Me.panelSHU.Text = "Lap. SHU"
         '
         'btnProsesSHU
         '
@@ -724,10 +711,10 @@ Partial Class MenuUtama
         '
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 142)
+        Me.Panel1.Location = New System.Drawing.Point(0, 158)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Padding = New System.Windows.Forms.Padding(100)
-        Me.Panel1.Size = New System.Drawing.Size(653, 347)
+        Me.Panel1.Size = New System.Drawing.Size(653, 331)
         Me.Panel1.TabIndex = 1
         '
         'PictureBox1
@@ -739,7 +726,7 @@ Partial Class MenuUtama
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Padding = New System.Windows.Forms.Padding(20)
-        Me.PictureBox1.Size = New System.Drawing.Size(453, 147)
+        Me.PictureBox1.Size = New System.Drawing.Size(453, 131)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
@@ -810,17 +797,10 @@ Partial Class MenuUtama
     Friend WithEvents tabLaporan As RibbonTab
     Friend WithEvents panelLapKeanggotaan As RibbonPanel
     Friend WithEvents btnLapAnggota As RibbonButton
-    Friend WithEvents btnLapPeminjaman As RibbonButton
     Friend WithEvents panelLapPembayaran As RibbonPanel
-    Friend WithEvents btnLapByrPinjaman As RibbonButton
     Friend WithEvents btnHistoriPembayaran As RibbonButton
     Friend WithEvents panelSaldoPiutang As RibbonPanel
-    Friend WithEvents btnLapSaldo As RibbonButton
     Friend WithEvents panelRekap As RibbonPanel
-    Friend WithEvents btnRekapPendatan As RibbonButton
-    Friend WithEvents btnRekapSaldoPiutang As RibbonButton
-    Friend WithEvents btnRekapSimpPokokWjb As RibbonButton
-    Friend WithEvents btnSimpSukarela As RibbonButton
     Friend WithEvents panelLain2 As RibbonPanel
     Friend WithEvents btnLapTraSimpSukarela As RibbonButton
     Friend WithEvents btnLapSimpPokokWjb As RibbonButton
@@ -839,4 +819,11 @@ Partial Class MenuUtama
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btnResetData As RibbonButton
+    Friend WithEvents btnLapPeminjaman As RibbonButton
+    Friend WithEvents btnLapByrPinjaman As RibbonButton
+    Friend WithEvents btnLapSaldo As RibbonButton
+    Friend WithEvents btnRekapSaldoPiutang As RibbonButton
+    Friend WithEvents btnRekapPendatan As RibbonButton
+    Friend WithEvents btnRekapSimpPokokWjb As RibbonButton
+    Friend WithEvents btnSimpSukarela As RibbonButton
 End Class

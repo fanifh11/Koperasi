@@ -3,63 +3,87 @@
     Public masuk As String = ""
 
     Public Sub removePanel()
-        If btnAnggota.Visible = False And btnTahunAktif.Visible = False Then
-            panelKeanggotaan.Visible = False
-        End If
-        If btnJenisSimpanan.Visible = False And btnBukuSimpSukarela.Visible = False Then
-            panelSimpanan.Visible = False
-        End If
-        If btnBillingSimpanan.Visible = False And btnLihatBilling.Visible = False Then
-            panelBilling.Visible = False
-        End If
-        If btnPemSimWjb.Visible = False And btnPemSimWjbKolektif.Visible = False And btnPengSimpPokok.Visible = False Then
-            panelSimpPokokWjb.Visible = False
-        End If
-        If btnRekSimpSukarela.Visible = False And btnPemSimpSukarela.Visible = False And btnPengSimpSukarela.Visible = False Then
-            panelSimpSukarela.Visible = False
-        End If
-        If btnHitungBunga.Visible = False Then
-            panelBunga.Visible = False
-        End If
-        If btnCetakSampul.Visible = False And btnCetakBuku.Visible = False Then
-            panelPembukuan.Visible = False
-        End If
-        If btnPeminjaman.Visible = False And btnLihatTagihan.Visible = False And btnBuatTagihan.Visible = False Then
-            panelPeminjaman.Visible = False
-        End If
-        If btnPemPinjaman.Visible = False And btnPembKolektif.Visible = False Then
-            panelPemPinjaman.Visible = False
-        End If
-        If btnKorPinjaman.Visible = False And btnKorPembayaran.Visible = False Then
-            panelKoreksi.Visible = False
-        End If
-        If btnLapAnggota.Visible = False And btnLapPeminjaman.Visible = False Then
-            panelLapKeanggotaan.Visible = False
-        End If
-        If btnPembAsuransi.Visible = False And btnByrAdmin.Visible = False And btnLapByrPinjaman.Visible = False And btnHistoriPembayaran.Visible = False Then
-            panelLapPembayaran.Visible = False
-        End If
-        If btnLapSaldo.Visible = False Then
-            panelSaldoPiutang.Visible = False
-        End If
-        If btnRekapPendatan.Visible = False And btnRekapSaldoPiutang.Visible = False And btnRekapSimpPokokWjb.Visible = False And btnSimpSukarela.Visible = False Then
-            panelRekap.Visible = False
-        End If
-        If btnLapTraSimpSukarela.Visible = False And btnLapSimpPokokWjb.Visible = False And btnLapTunggakanSimpan.Visible = False And btnLapPemBunga.Visible = False Then
-            panelLain2.Visible = False
-        End If
-        If btnProsesSHU.Visible = False Then
-            panelSHU.Visible = False
-        End If
-        If btnIdentitas.Visible = False And btnGroup.Visible = False And btnUser.Visible = False Then
-            panelSetting.Visible = False
-        End If
-        If btnBackupDB.Visible = False And btnRestoreDB.Visible = False And btnResetData.Visible = False Then
-            panelDB.Visible = False
-        End If
-        If Keluar.Visible = False Then
-            Me.RibbonPanel2.Visible = False
-        End If
+
+        For Each tab As RibbonTab In Ribbon1.Tabs
+
+
+            Dim visibleTab As Boolean = False
+
+            For Each panel As RibbonPanel In tab.Panels
+                Dim visiblePanel As Boolean = False
+                For Each button As RibbonButton In panel.Items
+
+                    If button.Visible Then
+                        visiblePanel = True
+                    End If
+                Next
+
+                panel.Visible = visiblePanel
+                If visiblePanel Then
+
+                    visibleTab = True
+                End If
+            Next
+            tab.Visible = visibleTab
+        Next
+
+        'If btnAnggota.Visible = False And btnTahunAktif.Visible = False Then
+        '    panelKeanggotaan.Visible = False
+        'End If
+        'If btnJenisSimpanan.Visible = False And btnBukuSimpSukarela.Visible = False Then
+        '    panelSimpanan.Visible = False
+        'End If
+        'If btnBillingSimpanan.Visible = False And btnLihatBilling.Visible = False Then
+        '    panelBilling.Visible = False
+        'End If
+        'If btnPemSimWjb.Visible = False And btnPemSimWjbKolektif.Visible = False And btnPengSimpPokok.Visible = False Then
+        '    panelSimpPokokWjb.Visible = False
+        'End If
+        'If btnRekSimpSukarela.Visible = False And btnPemSimpSukarela.Visible = False And btnPengSimpSukarela.Visible = False Then
+        '    panelSimpSukarela.Visible = False
+        'End If
+        'If btnHitungBunga.Visible = False Then
+        '    panelBunga.Visible = False
+        'End If
+        'If btnCetakSampul.Visible = False And btnCetakBuku.Visible = False Then
+        '    panelPembukuan.Visible = False
+        'End If
+        'If btnPeminjaman.Visible = False And btnLihatTagihan.Visible = False And btnBuatTagihan.Visible = False Then
+        '    panelPeminjaman.Visible = False
+        'End If
+        'If btnPemPinjaman.Visible = False And btnPembKolektif.Visible = False Then
+        '    panelPemPinjaman.Visible = False
+        'End If
+        'If btnKorPinjaman.Visible = False And btnKorPembayaran.Visible = False Then
+        '    panelKoreksi.Visible = False
+        'End If
+        'If btnLapAnggota.Visible = False And btnLapPeminjaman.Visible = False Then
+        '    panelLapKeanggotaan.Visible = False
+        'End If
+        'If btnPembAsuransi.Visible = False And btnByrAdmin.Visible = False And btnLapByrPinjaman.Visible = False And btnHistoriPembayaran.Visible = False Then
+        '    panelLapPembayaran.Visible = False
+        'End If
+        'If btnLapSaldo.Visible = False Then
+        '    panelSaldoPiutang.Visible = False
+        'End If
+        'If btnRekapPendatan.Visible = False And btnRekapSaldoPiutang.Visible = False And btnRekapSimpPokokWjb.Visible = False And btnSimpSukarela.Visible = False Then
+        '    panelRekap.Visible = False
+        'End If
+        'If btnLapTraSimpSukarela.Visible = False And btnLapSimpPokokWjb.Visible = False And btnLapTunggakanSimpan.Visible = False And btnLapPemBunga.Visible = False Then
+        '    panelLain2.Visible = False
+        'End If
+        'If btnProsesSHU.Visible = False Then
+        '    panelSHU.Visible = False
+        'End If
+        'If btnIdentitas.Visible = False And btnGroup.Visible = False And btnUser.Visible = False Then
+        '    panelSetting.Visible = False
+        'End If
+        'If btnBackupDB.Visible = False And btnRestoreDB.Visible = False And btnResetData.Visible = False Then
+        '    panelDB.Visible = False
+        'End If
+        'If Keluar.Visible = False Then
+        '    Me.RibbonPanel2.Visible = False
+        'End If
 
 
     End Sub
@@ -296,9 +320,12 @@
             Dim checked = row.Item("flag")
 
             If menuTag = 1 Then
-                tabUtilitas.Visible = checked
+
+                tabUtilitas.Visible = CBool(checked)
+
             ElseIf menuTag = 2 Then
                 btnIdentitas.Visible = checked
+
             ElseIf menuTag = 3 Then
                 btnGroup.Visible = checked
             ElseIf menuTag = 4 Then
@@ -401,11 +428,13 @@
                 Keluar.Visible = checked
             End If
         Next
+
+        check = True
     End Sub
 
     Private Sub btnOut_Click(sender As Object, e As EventArgs)
-
         Me.Close()
+
 
         Login.ShowDialog()
         Login.Dispose()
@@ -436,11 +465,20 @@
     End Sub
 
     Private Sub MenuUtama_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        removePanel()
 
 
 
 
 
+
+    End Sub
+
+    Dim check As Boolean = False
+
+    Private Sub MenuUtama_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+        If check Then
+            removePanel()
+            check = False
+        End If
     End Sub
 End Class

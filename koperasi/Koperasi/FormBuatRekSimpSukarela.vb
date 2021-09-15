@@ -169,8 +169,9 @@
                     Dim bunga As String = txt_Bunga.Text
 
                     Dim replacedot = bunga.Replace(",", ".")
-
-                    exc("insert into tblsukarela
+                    Dim sqlSelect = $"select idanggota from tblsukarela where idanggota='{idanggota}' and ketsukarela='{ketsukarela}'"
+                    If getCount(sqlSelect) = 0 Then
+                        exc("insert into tblsukarela
                         (
                             idanggota,
                             tglsukarela,
@@ -188,6 +189,9 @@
                             '" & replacedot & "',
                             '0'
                         )")
+                    End If
+
+
                 Next
                 dialogInfo("Pembuatan akun rekening berhasil!")
                 removeAll()
