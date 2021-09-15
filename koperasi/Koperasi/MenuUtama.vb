@@ -465,8 +465,17 @@
     End Sub
 
     Private Sub MenuUtama_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim addItemForms As Dashboard = Application.OpenForms("Dashboard")
+        If IsNothing(addItemForms) Then
+            addItemForms = New Dashboard
+            TabControl1.TabPages.Add(addItemForms)
+            TabControl1.TabPages(addItemForms).CloseButtonVisible = False
 
+        Else
+            TabControl1.TabPages(addItemForms).Select()
+            TabControl1.TabPages(addItemForms).CloseButtonVisible = False
 
+        End If
 
 
 

@@ -801,3 +801,5 @@ F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.DialogRestore.reso
 F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.DialogReset.resources
 F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.ImportAnggota.resources
 F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.AssemblyReference.cache
+F:\Magang\Unesa\Koperasi\koperasi\Koperasi\bin\Debug\JacksiroKe.MdiTabCtrl.dll
+F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.Dashboard.resources
