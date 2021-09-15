@@ -32,14 +32,14 @@ Partial Class PreviewLaporanPendapatanAdministrasi
         Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.ServerReport.BearerToken = Nothing
-        Me.ReportViewer1.Size = New System.Drawing.Size(929, 461)
+        Me.ReportViewer1.Size = New System.Drawing.Size(644, 461)
         Me.ReportViewer1.TabIndex = 0
         '
         'PreviewLaporanPendapatanAdministrasi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(929, 461)
+        Me.ClientSize = New System.Drawing.Size(644, 461)
         Me.Controls.Add(Me.ReportViewer1)
         Me.Name = "PreviewLaporanPendapatanAdministrasi"
         Me.Text = "PreviewLaporanPendapatanAdministrasi"

@@ -15,7 +15,9 @@
                     <TextRuns>
                       <TextRun>
                         <Value>= Parameters!notelp.Value</Value>
-                        <Style />
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style>
@@ -24,9 +26,9 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>2.6cm</Top>
+                <Top>2.5cm</Top>
                 <Height>0.6cm</Height>
-                <Width>12cm</Width>
+                <Width>16.3cm</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -45,7 +47,9 @@
                     <TextRuns>
                       <TextRun>
                         <Value>= Parameters!kota.Value</Value>
-                        <Style />
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style>
@@ -54,9 +58,9 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>1.8cm</Top>
+                <Top>1.7cm</Top>
                 <Height>0.6cm</Height>
-                <Width>12cm</Width>
+                <Width>16.3cm</Width>
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
@@ -76,7 +80,9 @@
                     <TextRuns>
                       <TextRun>
                         <Value>= Parameters!alamatkoperasi.Value</Value>
-                        <Style />
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style>
@@ -85,9 +91,9 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>1cm</Top>
+                <Top>0.9cm</Top>
                 <Height>0.6cm</Height>
-                <Width>12cm</Width>
+                <Width>16.3cm</Width>
                 <ZIndex>2</ZIndex>
                 <Style>
                   <Border>
@@ -108,6 +114,7 @@
                       <TextRun>
                         <Value>= Parameters!namakoperasi.Value</Value>
                         <Style>
+                          <FontFamily>Times New Roman</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
@@ -118,9 +125,9 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>0.2cm</Top>
+                <Top>0.1cm</Top>
                 <Height>0.6cm</Height>
-                <Width>12cm</Width>
+                <Width>16.3cm</Width>
                 <ZIndex>3</ZIndex>
                 <Style>
                   <Border>
@@ -141,6 +148,7 @@
                       <TextRun>
                         <Value>= Parameters!anggota.Value</Value>
                         <Style>
+                          <FontFamily>Times New Roman</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
@@ -149,10 +157,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox8</rd:DefaultName>
-                <Top>3.6cm</Top>
+                <Top>3.5cm</Top>
                 <Left>0.5cm</Left>
                 <Height>0.6cm</Height>
-                <Width>5.5cm</Width>
+                <Width>7.6cm</Width>
                 <ZIndex>4</ZIndex>
                 <Style>
                   <Border>
@@ -172,17 +180,19 @@
                     <TextRuns>
                       <TextRun>
                         <Value>= Parameters!alamat.Value</Value>
-                        <Style />
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox8</rd:DefaultName>
-                <Top>5cm</Top>
+                <Top>5.1cm</Top>
                 <Left>0.5cm</Left>
                 <Height>0.6cm</Height>
-                <Width>5.5cm</Width>
+                <Width>7.6cm</Width>
                 <ZIndex>5</ZIndex>
                 <Style>
                   <Border>
@@ -202,17 +212,19 @@
                     <TextRuns>
                       <TextRun>
                         <Value>= Parameters!notelpanggota.Value</Value>
-                        <Style />
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox8</rd:DefaultName>
-                <Top>5.8cm</Top>
+                <Top>5.9cm</Top>
                 <Left>0.5cm</Left>
                 <Height>0.6cm</Height>
-                <Width>5.5cm</Width>
+                <Width>7.6cm</Width>
                 <ZIndex>6</ZIndex>
                 <Style>
                   <Border>
@@ -232,7 +244,9 @@
                     <TextRuns>
                       <TextRun>
                         <Value>= Parameters!idanggota.Value</Value>
-                        <Style />
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style>
@@ -241,10 +255,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox8</rd:DefaultName>
-                <Top>4.4cm</Top>
-                <Left>6cm</Left>
+                <Top>4.3cm</Top>
+                <Left>8.2cm</Left>
                 <Height>0.6cm</Height>
-                <Width>6cm</Width>
+                <Width>7.6cm</Width>
                 <ZIndex>7</ZIndex>
                 <Style>
                   <Border>
@@ -257,9 +271,9 @@
                 </Style>
               </Textbox>
               <Line Name="Line1">
-                <Top>3.4cm</Top>
+                <Top>3.3cm</Top>
                 <Height>0cm</Height>
-                <Width>12cm</Width>
+                <Width>16.3cm</Width>
                 <ZIndex>8</ZIndex>
                 <Style>
                   <Border>
@@ -269,10 +283,10 @@
               </Line>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>1cm</Top>
-            <Left>1cm</Left>
-            <Height>6.6cm</Height>
-            <Width>12cm</Width>
+            <Top>0.1cm</Top>
+            <Left>0.1cm</Left>
+            <Height>6.7cm</Height>
+            <Width>16.3cm</Width>
             <Style>
               <Border>
                 <Style>Solid</Style>
@@ -280,10 +294,10 @@
             </Style>
           </Rectangle>
         </ReportItems>
-        <Height>8.6cm</Height>
+        <Height>7cm</Height>
         <Style />
       </Body>
-      <Width>14cm</Width>
+      <Width>16.5cm</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
