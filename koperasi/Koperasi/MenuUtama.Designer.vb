@@ -36,11 +36,16 @@ Partial Class MenuUtama
         Me.btnPemSimWjb = New System.Windows.Forms.RibbonButton()
         Me.btnPemSimWjbKolektif = New System.Windows.Forms.RibbonButton()
         Me.btnPengSimpPokok = New System.Windows.Forms.RibbonButton()
+        Me.btnBillingSimpanan = New System.Windows.Forms.RibbonButton()
+        Me.btnLihatBilling = New System.Windows.Forms.RibbonButton()
         Me.panelSimpSukarela = New System.Windows.Forms.RibbonPanel()
         Me.btnRekSimpSukarela = New System.Windows.Forms.RibbonButton()
         Me.btnPemSimpSukarela = New System.Windows.Forms.RibbonButton()
         Me.btnPengSimpSukarela = New System.Windows.Forms.RibbonButton()
         Me.btnCetakSimpSukarela = New System.Windows.Forms.RibbonButton()
+        Me.btnCetakBuku = New System.Windows.Forms.RibbonButton()
+        Me.btnCetakSampul = New System.Windows.Forms.RibbonButton()
+        Me.btnHitungBunga = New System.Windows.Forms.RibbonButton()
         Me.tabPinjaman = New System.Windows.Forms.RibbonTab()
         Me.panelPeminjaman = New System.Windows.Forms.RibbonPanel()
         Me.btnPeminjaman = New System.Windows.Forms.RibbonButton()
@@ -85,11 +90,6 @@ Partial Class MenuUtama
         Me.RibbonPanel2 = New System.Windows.Forms.RibbonPanel()
         Me.Keluar = New System.Windows.Forms.RibbonButton()
         Me.TabControl1 = New JacksiroKe.MdiTabCtrl.TabControl()
-        Me.btnBillingSimpanan = New System.Windows.Forms.RibbonButton()
-        Me.btnLihatBilling = New System.Windows.Forms.RibbonButton()
-        Me.btnHitungBunga = New System.Windows.Forms.RibbonButton()
-        Me.btnCetakBuku = New System.Windows.Forms.RibbonButton()
-        Me.btnCetakSampul = New System.Windows.Forms.RibbonButton()
         Me.SuspendLayout()
         '
         'Ribbon1
@@ -188,11 +188,11 @@ Partial Class MenuUtama
         '
         'panelSimpPokokWjb
         '
+        Me.panelSimpPokokWjb.Items.Add(Me.btnBillingSimpanan)
+        Me.panelSimpPokokWjb.Items.Add(Me.btnLihatBilling)
         Me.panelSimpPokokWjb.Items.Add(Me.btnPemSimWjb)
         Me.panelSimpPokokWjb.Items.Add(Me.btnPemSimWjbKolektif)
         Me.panelSimpPokokWjb.Items.Add(Me.btnPengSimpPokok)
-        Me.panelSimpPokokWjb.Items.Add(Me.btnBillingSimpanan)
-        Me.panelSimpPokokWjb.Items.Add(Me.btnLihatBilling)
         Me.panelSimpPokokWjb.Name = "panelSimpPokokWjb"
         Me.panelSimpPokokWjb.Text = "Simpanan Pokok dan Wajib"
         '
@@ -219,6 +219,24 @@ Partial Class MenuUtama
         Me.btnPengSimpPokok.Name = "btnPengSimpPokok"
         Me.btnPengSimpPokok.SmallImage = CType(resources.GetObject("btnPengSimpPokok.SmallImage"), System.Drawing.Image)
         Me.btnPengSimpPokok.Text = "Pengambilan"
+        '
+        'btnBillingSimpanan
+        '
+        Me.btnBillingSimpanan.Image = CType(resources.GetObject("btnBillingSimpanan.Image"), System.Drawing.Image)
+        Me.btnBillingSimpanan.LargeImage = CType(resources.GetObject("btnBillingSimpanan.LargeImage"), System.Drawing.Image)
+        Me.btnBillingSimpanan.MinimumSize = New System.Drawing.Size(80, 0)
+        Me.btnBillingSimpanan.Name = "btnBillingSimpanan"
+        Me.btnBillingSimpanan.SmallImage = CType(resources.GetObject("btnBillingSimpanan.SmallImage"), System.Drawing.Image)
+        Me.btnBillingSimpanan.Text = "Buat Tagihan Simpanan"
+        '
+        'btnLihatBilling
+        '
+        Me.btnLihatBilling.Image = CType(resources.GetObject("btnLihatBilling.Image"), System.Drawing.Image)
+        Me.btnLihatBilling.LargeImage = CType(resources.GetObject("btnLihatBilling.LargeImage"), System.Drawing.Image)
+        Me.btnLihatBilling.MinimumSize = New System.Drawing.Size(80, 0)
+        Me.btnLihatBilling.Name = "btnLihatBilling"
+        Me.btnLihatBilling.SmallImage = CType(resources.GetObject("btnLihatBilling.SmallImage"), System.Drawing.Image)
+        Me.btnLihatBilling.Text = "Cek Tagihan Simpanan"
         '
         'panelSimpSukarela
         '
@@ -269,6 +287,35 @@ Partial Class MenuUtama
         Me.btnCetakSimpSukarela.Name = "btnCetakSimpSukarela"
         Me.btnCetakSimpSukarela.SmallImage = CType(resources.GetObject("btnCetakSimpSukarela.SmallImage"), System.Drawing.Image)
         Me.btnCetakSimpSukarela.Text = "Cetak Lap. Simpanan"
+        '
+        'btnCetakBuku
+        '
+        Me.btnCetakBuku.Image = CType(resources.GetObject("btnCetakBuku.Image"), System.Drawing.Image)
+        Me.btnCetakBuku.LargeImage = CType(resources.GetObject("btnCetakBuku.LargeImage"), System.Drawing.Image)
+        Me.btnCetakBuku.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium
+        Me.btnCetakBuku.MinSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium
+        Me.btnCetakBuku.Name = "btnCetakBuku"
+        Me.btnCetakBuku.SmallImage = CType(resources.GetObject("btnCetakBuku.SmallImage"), System.Drawing.Image)
+        Me.btnCetakBuku.Text = "Cetak Buku Simpanan"
+        '
+        'btnCetakSampul
+        '
+        Me.btnCetakSampul.Image = CType(resources.GetObject("btnCetakSampul.Image"), System.Drawing.Image)
+        Me.btnCetakSampul.LargeImage = CType(resources.GetObject("btnCetakSampul.LargeImage"), System.Drawing.Image)
+        Me.btnCetakSampul.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium
+        Me.btnCetakSampul.MinSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium
+        Me.btnCetakSampul.Name = "btnCetakSampul"
+        Me.btnCetakSampul.SmallImage = CType(resources.GetObject("btnCetakSampul.SmallImage"), System.Drawing.Image)
+        Me.btnCetakSampul.Text = "Cetak Sampul"
+        '
+        'btnHitungBunga
+        '
+        Me.btnHitungBunga.Image = CType(resources.GetObject("btnHitungBunga.Image"), System.Drawing.Image)
+        Me.btnHitungBunga.LargeImage = CType(resources.GetObject("btnHitungBunga.LargeImage"), System.Drawing.Image)
+        Me.btnHitungBunga.MinimumSize = New System.Drawing.Size(100, 0)
+        Me.btnHitungBunga.Name = "btnHitungBunga"
+        Me.btnHitungBunga.SmallImage = CType(resources.GetObject("btnHitungBunga.SmallImage"), System.Drawing.Image)
+        Me.btnHitungBunga.Text = "Hitung Bunga Simpanan"
         '
         'tabPinjaman
         '
@@ -381,9 +428,9 @@ Partial Class MenuUtama
         '
         'panelLapPembayaran
         '
-        Me.panelLapPembayaran.Items.Add(Me.btnHistoriPembayaran)
         Me.panelLapPembayaran.Items.Add(Me.btnLapPeminjaman)
         Me.panelLapPembayaran.Items.Add(Me.btnLapByrPinjaman)
+        Me.panelLapPembayaran.Items.Add(Me.btnHistoriPembayaran)
         Me.panelLapPembayaran.Items.Add(Me.btnLapSaldo)
         Me.panelLapPembayaran.Items.Add(Me.btnRekapSaldoPiutang)
         Me.panelLapPembayaran.Items.Add(Me.btnRekapPendatan)
@@ -655,53 +702,6 @@ Partial Class MenuUtama
         Me.TabControl1.TabCloseButtonImageDisabled = Nothing
         Me.TabControl1.TabCloseButtonImageHot = Nothing
         Me.TabControl1.TabIndex = 1
-        '
-        'btnBillingSimpanan
-        '
-        Me.btnBillingSimpanan.Image = CType(resources.GetObject("btnBillingSimpanan.Image"), System.Drawing.Image)
-        Me.btnBillingSimpanan.LargeImage = CType(resources.GetObject("btnBillingSimpanan.LargeImage"), System.Drawing.Image)
-        Me.btnBillingSimpanan.MinimumSize = New System.Drawing.Size(80, 0)
-        Me.btnBillingSimpanan.Name = "btnBillingSimpanan"
-        Me.btnBillingSimpanan.SmallImage = CType(resources.GetObject("btnBillingSimpanan.SmallImage"), System.Drawing.Image)
-        Me.btnBillingSimpanan.Text = "Buat Tagihan Simpanan"
-        '
-        'btnLihatBilling
-        '
-        Me.btnLihatBilling.Image = CType(resources.GetObject("btnLihatBilling.Image"), System.Drawing.Image)
-        Me.btnLihatBilling.LargeImage = CType(resources.GetObject("btnLihatBilling.LargeImage"), System.Drawing.Image)
-        Me.btnLihatBilling.MinimumSize = New System.Drawing.Size(80, 0)
-        Me.btnLihatBilling.Name = "btnLihatBilling"
-        Me.btnLihatBilling.SmallImage = CType(resources.GetObject("btnLihatBilling.SmallImage"), System.Drawing.Image)
-        Me.btnLihatBilling.Text = "Cek Tagihan Simpanan"
-        '
-        'btnHitungBunga
-        '
-        Me.btnHitungBunga.Image = CType(resources.GetObject("btnHitungBunga.Image"), System.Drawing.Image)
-        Me.btnHitungBunga.LargeImage = CType(resources.GetObject("btnHitungBunga.LargeImage"), System.Drawing.Image)
-        Me.btnHitungBunga.MinimumSize = New System.Drawing.Size(100, 0)
-        Me.btnHitungBunga.Name = "btnHitungBunga"
-        Me.btnHitungBunga.SmallImage = CType(resources.GetObject("btnHitungBunga.SmallImage"), System.Drawing.Image)
-        Me.btnHitungBunga.Text = "Hitung Bunga Simpanan"
-        '
-        'btnCetakBuku
-        '
-        Me.btnCetakBuku.Image = CType(resources.GetObject("btnCetakBuku.Image"), System.Drawing.Image)
-        Me.btnCetakBuku.LargeImage = CType(resources.GetObject("btnCetakBuku.LargeImage"), System.Drawing.Image)
-        Me.btnCetakBuku.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium
-        Me.btnCetakBuku.MinSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium
-        Me.btnCetakBuku.Name = "btnCetakBuku"
-        Me.btnCetakBuku.SmallImage = CType(resources.GetObject("btnCetakBuku.SmallImage"), System.Drawing.Image)
-        Me.btnCetakBuku.Text = "Cetak Buku Simpanan"
-        '
-        'btnCetakSampul
-        '
-        Me.btnCetakSampul.Image = CType(resources.GetObject("btnCetakSampul.Image"), System.Drawing.Image)
-        Me.btnCetakSampul.LargeImage = CType(resources.GetObject("btnCetakSampul.LargeImage"), System.Drawing.Image)
-        Me.btnCetakSampul.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium
-        Me.btnCetakSampul.MinSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium
-        Me.btnCetakSampul.Name = "btnCetakSampul"
-        Me.btnCetakSampul.SmallImage = CType(resources.GetObject("btnCetakSampul.SmallImage"), System.Drawing.Image)
-        Me.btnCetakSampul.Text = "Cetak Sampul"
         '
         'MenuUtama
         '
