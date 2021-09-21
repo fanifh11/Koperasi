@@ -9,6 +9,8 @@
         t.Text = getValue(sql, "besarbayar").ToString
 
         ReportViewer1.Reset()
+ReportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout)
+Me.WindowState = FormWindowState.Maximized
         ReportViewer1.LocalReport.ReportEmbeddedResource = "Koperasi.SuratPerjanjian.rdlc"
         Dim dt As DataTable = getData(sql)
         Dim bilang As New Terbilang

@@ -5,6 +5,8 @@
         Dim sql As String = "select * from qsukarela where idsukarela = '" & idsukarela & "'"
 
         ReportViewer1.Reset()
+ReportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout)
+Me.WindowState = FormWindowState.Maximized
         ReportViewer1.LocalReport.ReportEmbeddedResource = "Koperasi.CetakNasabah.rdlc"
 
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("no_nasabah", getValue(sql, "idanggota").ToString))

@@ -8,6 +8,8 @@
         Dim sqlidentitas As String = "select * from tblidentitas where idkoperasi = 1"
 
         ReportViewer1.Reset()
+ReportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout)
+Me.WindowState = FormWindowState.Maximized
         ReportViewer1.LocalReport.ReportEmbeddedResource = "Koperasi.LaporanTransaksiSimpananSukarela.rdlc"
         addLogoRDLC(ReportViewer1)
         ReportViewer1.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", CType(getData(sql), DataTable)))

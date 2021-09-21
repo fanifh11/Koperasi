@@ -10,7 +10,7 @@
     Public sql As String
 
     Sub showData()
-        sql = "select idanggota, anggota, idpinjam, to_char(tglbayar, 'DD-MM-YYYY') as tglbayar, besarbayar, besarpokok, besarbunga from qtagihan where (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & " 00:00' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & " 23:59'"
+        sql = "select idanggota, anggota, idpinjam, to_char(tglbayar, 'DD-MM-YYYY') as tglbayar, besarbayar, besarpokok, besarbunga from qtagihan where besarbayar > 0 and (idanggota ilike '%" & txt_search.Text & "%' or anggota ilike '%" & txt_search.Text & "%') and tglpinjam between '" & dtp_mulai.Value.ToString("dd-MM-yyyy") & " 00:00' and '" & dtp_sampai.Value.ToString("dd-MM-yyyy") & " 23:59'"
         dgv_data_pembayaran.DataSource = getData(sql)
         dgv_data_pembayaran.Columns(0).HeaderText = "ID Anggota"
         dgv_data_pembayaran.Columns(1).HeaderText = "Nama Anggota"

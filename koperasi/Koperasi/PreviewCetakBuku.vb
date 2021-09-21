@@ -6,6 +6,8 @@
         Dim sql As String = "select to_char(tgltransaksi, 'DD-MM-YYYY') as tgltransaksi, ketkode, debet, kredit, saldo from tbltransaksi where idsukarela = '" & idsukarela & "' and nocetak = '" & nocetak & "' order by idtransaksi desc limit 1"
 
         ReportViewer1.Reset()
+ReportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout)
+Me.WindowState = FormWindowState.Maximized
         ReportViewer1.LocalReport.ReportEmbeddedResource = "Koperasi.CetakHasil.rdlc"
 
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("tgltransaksi", getValue(Sql, "tgltransaksi").ToString))

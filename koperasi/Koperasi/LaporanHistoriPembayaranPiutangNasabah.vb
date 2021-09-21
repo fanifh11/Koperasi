@@ -12,7 +12,7 @@
 
     Sub showData()
         If cmb_status_pembayaran.SelectedIndex = 0 Then
-            sql = "select idanggota, anggota, idpinjam, besarbayar, besarpokok, besarbunga, totalangsur, totalpokok, totalbunga,TglBayar,BesarPinjam,SaldoPinjam,cicilanKe from qtagihan where anggota ilike '%" & txt_search.Text & "%' and saldopinjam > 0 and tglbayar is not null"
+            sql = "select idanggota, anggota, idpinjam, besarbayar, besarpokok, besarbunga, totalangsur, totalpokok, totalbunga,TglBayar,BesarPinjam,SaldoPinjam,cicilanKe from qtagihan where  anggota ilike '%" & txt_search.Text & "%' and saldopinjam > 0 and tglbayar is not null"
             dgv_data_pembayaran.DataSource = getData(sql)
             dgv_data_pembayaran.Columns(0).HeaderText = "ID Anggota"
             dgv_data_pembayaran.Columns(1).HeaderText = "Nama Anggota"

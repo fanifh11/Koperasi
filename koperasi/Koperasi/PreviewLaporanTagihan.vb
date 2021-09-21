@@ -6,6 +6,8 @@
         Dim sqlsekarang As String = "select to_char(now(), 'DD-MM-YYYY') as sekarang"
 
         ReportViewer1.Reset()
+ReportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout)
+Me.WindowState = FormWindowState.Maximized
         ReportViewer1.LocalReport.ReportEmbeddedResource = "Koperasi.LaporanTagihan.rdlc"
         addLogoRDLC(ReportViewer1)
         ReportViewer1.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", CType(getData(Sql), DataTable)))
