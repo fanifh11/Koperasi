@@ -26,6 +26,16 @@ Partial Class DataIdentitasKoperasi
         Me.lbl_Subjudul = New System.Windows.Forms.Label()
         Me.lbl_Judul = New System.Windows.Forms.Label()
         Me.group_InformasiKoperasi = New System.Windows.Forms.GroupBox()
+        Me.tbAlamatOrang = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.tbNoKtP = New System.Windows.Forms.TextBox()
+        Me.tbPekerjaan = New System.Windows.Forms.TextBox()
+        Me.tbUmur = New System.Windows.Forms.TextBox()
+        Me.tbNama = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.txtNoTelp = New System.Windows.Forms.TextBox()
         Me.txtBendahara = New System.Windows.Forms.TextBox()
         Me.txtPimpinan = New System.Windows.Forms.TextBox()
@@ -44,6 +54,9 @@ Partial Class DataIdentitasKoperasi
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.btnKeluar = New System.Windows.Forms.Button()
         Me.btnUbah = New System.Windows.Forms.Button()
+        Me.tbToleransiTagihan = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.group_InformasiKoperasi.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -89,6 +102,19 @@ Partial Class DataIdentitasKoperasi
         '
         'group_InformasiKoperasi
         '
+        Me.group_InformasiKoperasi.Controls.Add(Me.Label7)
+        Me.group_InformasiKoperasi.Controls.Add(Me.tbToleransiTagihan)
+        Me.group_InformasiKoperasi.Controls.Add(Me.Label6)
+        Me.group_InformasiKoperasi.Controls.Add(Me.tbAlamatOrang)
+        Me.group_InformasiKoperasi.Controls.Add(Me.Label5)
+        Me.group_InformasiKoperasi.Controls.Add(Me.tbNoKtP)
+        Me.group_InformasiKoperasi.Controls.Add(Me.tbPekerjaan)
+        Me.group_InformasiKoperasi.Controls.Add(Me.tbUmur)
+        Me.group_InformasiKoperasi.Controls.Add(Me.tbNama)
+        Me.group_InformasiKoperasi.Controls.Add(Me.Label1)
+        Me.group_InformasiKoperasi.Controls.Add(Me.Label2)
+        Me.group_InformasiKoperasi.Controls.Add(Me.Label3)
+        Me.group_InformasiKoperasi.Controls.Add(Me.Label4)
         Me.group_InformasiKoperasi.Controls.Add(Me.txtNoTelp)
         Me.group_InformasiKoperasi.Controls.Add(Me.txtBendahara)
         Me.group_InformasiKoperasi.Controls.Add(Me.txtPimpinan)
@@ -106,10 +132,100 @@ Partial Class DataIdentitasKoperasi
         Me.group_InformasiKoperasi.Margin = New System.Windows.Forms.Padding(2)
         Me.group_InformasiKoperasi.Name = "group_InformasiKoperasi"
         Me.group_InformasiKoperasi.Padding = New System.Windows.Forms.Padding(2)
-        Me.group_InformasiKoperasi.Size = New System.Drawing.Size(488, 177)
+        Me.group_InformasiKoperasi.Size = New System.Drawing.Size(488, 325)
         Me.group_InformasiKoperasi.TabIndex = 1
         Me.group_InformasiKoperasi.TabStop = False
         Me.group_InformasiKoperasi.Text = "Informasi Koperasi"
+        '
+        'tbAlamatOrang
+        '
+        Me.tbAlamatOrang.Location = New System.Drawing.Point(126, 273)
+        Me.tbAlamatOrang.Margin = New System.Windows.Forms.Padding(2)
+        Me.tbAlamatOrang.Name = "tbAlamatOrang"
+        Me.tbAlamatOrang.Size = New System.Drawing.Size(354, 20)
+        Me.tbAlamatOrang.TabIndex = 21
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(9, 273)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(45, 15)
+        Me.Label5.TabIndex = 20
+        Me.Label5.Text = "Alamat"
+        '
+        'tbNoKtP
+        '
+        Me.tbNoKtP.Location = New System.Drawing.Point(126, 248)
+        Me.tbNoKtP.Margin = New System.Windows.Forms.Padding(2)
+        Me.tbNoKtP.Name = "tbNoKtP"
+        Me.tbNoKtP.Size = New System.Drawing.Size(354, 20)
+        Me.tbNoKtP.TabIndex = 19
+        '
+        'tbPekerjaan
+        '
+        Me.tbPekerjaan.Location = New System.Drawing.Point(126, 224)
+        Me.tbPekerjaan.Margin = New System.Windows.Forms.Padding(2)
+        Me.tbPekerjaan.Name = "tbPekerjaan"
+        Me.tbPekerjaan.Size = New System.Drawing.Size(354, 20)
+        Me.tbPekerjaan.TabIndex = 18
+        '
+        'tbUmur
+        '
+        Me.tbUmur.Location = New System.Drawing.Point(126, 199)
+        Me.tbUmur.Margin = New System.Windows.Forms.Padding(2)
+        Me.tbUmur.Name = "tbUmur"
+        Me.tbUmur.Size = New System.Drawing.Size(354, 20)
+        Me.tbUmur.TabIndex = 17
+        '
+        'tbNama
+        '
+        Me.tbNama.Location = New System.Drawing.Point(126, 175)
+        Me.tbNama.Margin = New System.Windows.Forms.Padding(2)
+        Me.tbNama.Name = "tbNama"
+        Me.tbNama.Size = New System.Drawing.Size(354, 20)
+        Me.tbNama.TabIndex = 16
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(9, 248)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(52, 15)
+        Me.Label1.TabIndex = 15
+        Me.Label1.Text = "No. KTP"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(9, 224)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(63, 15)
+        Me.Label2.TabIndex = 14
+        Me.Label2.Text = "Pekerjaan"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(9, 199)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(38, 15)
+        Me.Label3.TabIndex = 13
+        Me.Label3.Text = "Umur"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(9, 175)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(41, 15)
+        Me.Label4.TabIndex = 12
+        Me.Label4.Text = "Nama"
         '
         'txtNoTelp
         '
@@ -222,7 +338,7 @@ Partial Class DataIdentitasKoperasi
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.imgKoperasi)
-        Me.GroupBox2.Location = New System.Drawing.Point(502, 60)
+        Me.GroupBox2.Location = New System.Drawing.Point(502, 114)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
@@ -241,7 +357,7 @@ Partial Class DataIdentitasKoperasi
         '
         'btnCariLogi
         '
-        Me.btnCariLogi.Location = New System.Drawing.Point(502, 191)
+        Me.btnCariLogi.Location = New System.Drawing.Point(502, 245)
         Me.btnCariLogi.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCariLogi.Name = "btnCariLogi"
         Me.btnCariLogi.Size = New System.Drawing.Size(88, 30)
@@ -256,7 +372,7 @@ Partial Class DataIdentitasKoperasi
         Me.GroupBox3.Controls.Add(Me.btnUbah)
         Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.Location = New System.Drawing.Point(0, 244)
+        Me.GroupBox3.Location = New System.Drawing.Point(0, 390)
         Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2)
@@ -284,11 +400,39 @@ Partial Class DataIdentitasKoperasi
         Me.btnUbah.Text = "Ubah"
         Me.btnUbah.UseVisualStyleBackColor = True
         '
+        'tbToleransiTagihan
+        '
+        Me.tbToleransiTagihan.Location = New System.Drawing.Point(125, 297)
+        Me.tbToleransiTagihan.Margin = New System.Windows.Forms.Padding(2)
+        Me.tbToleransiTagihan.Name = "tbToleransiTagihan"
+        Me.tbToleransiTagihan.Size = New System.Drawing.Size(157, 20)
+        Me.tbToleransiTagihan.TabIndex = 23
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(8, 297)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(106, 15)
+        Me.Label6.TabIndex = 22
+        Me.Label6.Text = "Toleransi Tagihan"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(286, 300)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(30, 15)
+        Me.Label7.TabIndex = 24
+        Me.Label7.Text = "Hari"
+        '
         'DataIdentitasKoperasi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(638, 294)
+        Me.ClientSize = New System.Drawing.Size(638, 440)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.btnCariLogi)
         Me.Controls.Add(Me.GroupBox2)
@@ -333,4 +477,17 @@ Partial Class DataIdentitasKoperasi
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents btnKeluar As Button
     Friend WithEvents btnUbah As Button
+    Friend WithEvents tbAlamatOrang As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents tbNoKtP As TextBox
+    Friend WithEvents tbPekerjaan As TextBox
+    Friend WithEvents tbUmur As TextBox
+    Friend WithEvents tbNama As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents tbToleransiTagihan As TextBox
+    Friend WithEvents Label6 As Label
 End Class

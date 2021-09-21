@@ -395,6 +395,7 @@ Module Modul
             Return True
 
         Catch ex As Exception
+            Debug.WriteLine(sql)
             MsgBox(ex.Message)
             Return False
         Finally

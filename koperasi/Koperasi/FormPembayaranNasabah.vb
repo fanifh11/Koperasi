@@ -161,9 +161,35 @@
         FormCariAnggota.menu = "Pembayaran Nasabah"
 
         FormCariAnggota.ShowDialog()
+        If FormCariAnggota.DialogResult = DialogResult.OK Then
+            setAdditionalData()
+        End If
+
         FormCariAnggota.Dispose()
         showData()
 
+    End Sub
+
+    Sub setAdditionalData()
+        If Not String.IsNullOrEmpty(idpinjam) Then
+            Dim sqlIdentitas As String = $"SELECT * FROM tblidentitas LIMIT 1"
+            Dim sqlAdditionalData As String = $"SELECT * FROM qpinjam WHERE idpinjam='{idpinjam}'"
+            Dim sqlAdditionalTagihan As String = $"SELECT * FROM qtagihan WHERE idtagihan='{idtagihan}'"
+            txtTglPinjam.Text = Date.Parse(getValue(sqlAdditionalData, "tglpinjam")).ToString("yyyy-MM-dd")
+            txtJatuhTempo.Text = Date.Parse(getValue(sqlAdditionalTagihan, "tgltagihan")).AddDays(getValue(sqlIdentitas, "toleransi")).ToString("yyyy-MM-dd")
+            tbPersenDenda.Text = getValue(sqlAdditionalData, "dendapersen")
+            tbTerlambat.Text = If(DateDiff(DateInterval.Day, Date.Parse(txtJatuhTempo.Text), Now) <= 0, "0", DateDiff(DateInterval.Day, Date.Parse(txtJatuhTempo.Text), Now).ToString())
+            hitungDenda()
+        End If
+
+    End Sub
+
+    Sub hitungDenda()
+        Dim jumlahDenda As Double = Math.Ceiling(toDouble(unnumberFormat(txt_jumlah_bayar.Text) * toDouble(tbPersenDenda.Text)) / 100)
+        tbDendaPerHari.Text = numberFormat(jumlahDenda.ToString)
+        tbTotalDenda.Text = numberFormat((toDouble(tbTerlambat.Text) * jumlahDenda).ToString)
+        Dim total As Double = jumlahDenda * toDouble(tbTerlambat.Text) + toDouble(unnumberFormat(txt_jumlah_bayar.Text))
+        tbTotal.Text = numberFormat(total.ToString)
     End Sub
 
     Private Sub btn_manual_Click(sender As Object, e As EventArgs) Handles btn_manual.Click
@@ -186,7 +212,7 @@
         Dim txtbayarPokok As Double = toDouble(unnumberFormat(txt_biaya_pokok.Text))
         Dim txtbayarBunga As Double = toDouble(unnumberFormat(txt_bayar_bunga.Text))
         Dim jumlahBayar As String = unnumberFormat(txt_jumlah_bayar.Text)
-
+        Dim denda As String = unnumberFormat(tbTotalDenda.Text)
         If adaKosong(group_pembayaran_pinjaman) Then
             dialogError("Harap lengkapi form isian anda!")
             Return
@@ -198,11 +224,11 @@
                 dialogError("Uang bayar bunga kelebihan")
                 Return
             Else
-                exc("update tbltagihan set
+                exc($"update tbltagihan set
                     tglbayar = '" & tglBayar & "',
                     besarpokok = besarpokok + " & txtbayarPokok & ",
-                    besarbunga = besarbunga + " & txtbayarBunga & "
-
+                    besarbunga = besarbunga + " & txtbayarBunga & ",
+                    denda=" & denda & "
                     where idtagihan = '" & idtagihan & "'
                     ")
 
@@ -302,6 +328,7 @@
 
     Private Sub txt_jumlah_bayar_TextChanged(sender As Object, e As EventArgs) Handles txt_jumlah_bayar.TextChanged
         jumlahBayar()
+        hitungDenda()
     End Sub
 
     Private Sub txt_biaya_pokok_TextChanged(sender As Object, e As EventArgs) Handles txt_biaya_pokok.TextChanged

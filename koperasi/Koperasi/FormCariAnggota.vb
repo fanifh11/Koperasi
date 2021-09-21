@@ -73,8 +73,11 @@
             makeFillDG(dgv_DataAnggota)
 
         ElseIf menu = "Pembayaran Nasabah" Then
-            dgv_DataAnggota.DataSource = getData("select idtagihan,idpinjam,idanggota,anggota,alamat,jenis,besarpinjam,lamapinjam,totalpokok,totalbunga,totalangsur,cicilanke,besarbayar,saldopinjam,totalpokok - besarpokok,totalbunga - besarbunga,kodetagihan
-            from qtagihan where flagtagihan = 0 and anggota ilike '%" & txt_CariDataAnggota.Text & "%'")
+            dgv_DataAnggota.DataSource = getData("select idtagihan,qtagihan.idpinjam,idanggota,anggota,alamat,jenis,besarpinjam,lamapinjam,totalpokok,totalbunga,totalangsur,qtagihan.cicilanke,besarbayar,saldopinjam,totalpokok - besarpokok,totalbunga - besarbunga,kodetagihan
+            from qtagihan 
+            inner join (select min(cicilanke) as cicilanke,idpinjam from tbltagihan where flagtagihan=0 group by idpinjam) t 
+            on t.idpinjam = qtagihan.idpinjam and t.cicilanke = qtagihan.cicilanke
+            where  anggota ilike '%" & txt_CariDataAnggota.Text & "%'")
             dgv_DataAnggota.Columns(0).Visible = False
             dgv_DataAnggota.Columns(1).HeaderText = "Kode Pinjam"
             dgv_DataAnggota.Columns(2).HeaderText = "Kode Anggota"
@@ -103,8 +106,11 @@
             dgv_DataAnggota.Columns(15).DefaultCellStyle.Format = "c0"
 
         ElseIf menu = "Koreksi Pembayaran Nasabah" Then
-            dgv_DataAnggota.DataSource = getData("select idtagihan,idpinjam,idanggota,anggota,alamat,jenis,besarpinjam,lamapinjam,totalpokok,totalbunga,jumlahangsuran,cicilanke,totalangsur,saldopinjam,besarpokok,besarbunga,kodetagihan,besarbayar 
-            from qtagihan where idtagihan in (select max(idtagihan) from tbltagihan where flagtagihan = 1 and anggota ilike '%" & txt_CariDataAnggota.Text & "%' group by idpinjam )")
+            dgv_DataAnggota.DataSource = getData("select idtagihan,qtagihan.idpinjam,idanggota,anggota,alamat,jenis,besarpinjam,lamapinjam,totalpokok,totalbunga,jumlahangsuran,qtagihan.cicilanke,totalangsur,saldopinjam,besarpokok,besarbunga,kodetagihan,besarbayar 
+            from qtagihan 
+            inner join (select max(cicilanke) as cicilanke,idpinjam from tbltagihan where flagtagihan=1 group by idpinjam) t 
+            on t.idpinjam = qtagihan.idpinjam and t.cicilanke = qtagihan.cicilanke
+            where anggota ilike '%" & txt_CariDataAnggota.Text & "%'")
 
             dgv_DataAnggota.Columns(0).Visible = False
             dgv_DataAnggota.Columns(1).HeaderText = "Kode Pinjam"
@@ -262,7 +268,7 @@
                 FormPembayaranNasabah.bayarPokok = toDouble(dgv_DataAnggota.Rows(e.RowIndex).Cells(14).Value)
                 FormPembayaranNasabah.bayarBunga = toDouble(dgv_DataAnggota.Rows(e.RowIndex).Cells(15).Value)
                 FormPembayaranNasabah.idpinjam = dgv_DataAnggota.Rows(e.RowIndex).Cells(1).Value
-
+                Me.DialogResult = DialogResult.OK
             ElseIf menu = "Koreksi Pembayaran Nasabah" Then
                 FormKoreksiPembayaranNasabah.idtagihan = dgv_DataAnggota.Rows(e.RowIndex).Cells(0).Value
 

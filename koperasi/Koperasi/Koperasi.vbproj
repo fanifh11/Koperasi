@@ -612,6 +612,30 @@
     <Compile Include="PreviewSimpSukarela.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PreviewSuratAngsuran.Designer.vb">
+      <DependentUpon>PreviewSuratAngsuran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreviewSuratAngsuran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreviewSuratPerjanjian.Designer.vb">
+      <DependentUpon>PreviewSuratPerjanjian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreviewSuratPerjanjian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreviewSuratPerjanjianBPKB.Designer.vb">
+      <DependentUpon>PreviewSuratPerjanjianBPKB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreviewSuratPerjanjianBPKB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreviewSuratPerjanjianSHM.Designer.vb">
+      <DependentUpon>PreviewSuratPerjanjianSHM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreviewSuratPerjanjianSHM.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="QueryModule.vb" />
     <Compile Include="StandardRegional.vb" />
     <Compile Include="Terbilang.vb" />
@@ -869,6 +893,22 @@
     <EmbeddedResource Include="PreviewSimpSukarela.resx">
       <DependentUpon>PreviewSimpSukarela.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PreviewSuratAngsuran.resx">
+      <DependentUpon>PreviewSuratAngsuran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreviewSuratPerjanjian.resx">
+      <DependentUpon>PreviewSuratPerjanjian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreviewSuratPerjanjianBPKB.resx">
+      <DependentUpon>PreviewSuratPerjanjianBPKB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreviewSuratPerjanjianSHM.resx">
+      <DependentUpon>PreviewSuratPerjanjianSHM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuratAngsuran.rdlc" />
+    <EmbeddedResource Include="SuratPerjanjianBPKB.rdlc" />
+    <EmbeddedResource Include="SuratPerjanjianSHM.rdlc" />
+    <EmbeddedResource Include="SuratPerjanjian.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <None Include="koperasiDataSet.xsc">

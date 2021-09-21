@@ -3523,6 +3523,11 @@
                 </xs:simpleType>
               </xs:element>
               <xs:element name="Logo" msprop:Generator_ColumnVarNameInTable="columnLogo" msprop:Generator_ColumnPropNameInRow="Logo" msprop:Generator_ColumnPropNameInTable="LogoColumn" msprop:Generator_UserColumnName="Logo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="nama" msprop:Generator_ColumnVarNameInTable="columnnama" msprop:Generator_ColumnPropNameInRow="nama" msprop:Generator_ColumnPropNameInTable="namaColumn" msprop:Generator_UserColumnName="nama" type="xs:string" minOccurs="0" />
+              <xs:element name="alamat" msprop:Generator_ColumnVarNameInTable="columnalamat" msprop:Generator_ColumnPropNameInRow="alamat" msprop:Generator_ColumnPropNameInTable="alamatColumn" msprop:Generator_UserColumnName="alamat" type="xs:string" minOccurs="0" />
+              <xs:element name="umur" msprop:Generator_ColumnVarNameInTable="columnumur" msprop:Generator_ColumnPropNameInRow="umur" msprop:Generator_ColumnPropNameInTable="umurColumn" msprop:Generator_UserColumnName="umur" type="xs:string" minOccurs="0" />
+              <xs:element name="pekerjaan" msprop:Generator_ColumnVarNameInTable="columnpekerjaan" msprop:Generator_ColumnPropNameInRow="pekerjaan" msprop:Generator_ColumnPropNameInTable="pekerjaanColumn" msprop:Generator_UserColumnName="pekerjaan" type="xs:string" minOccurs="0" />
+              <xs:element name="noktp" msprop:Generator_ColumnVarNameInTable="columnnoktp" msprop:Generator_ColumnPropNameInRow="noktp" msprop:Generator_ColumnPropNameInTable="noktpColumn" msprop:Generator_UserColumnName="noktp" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -3962,6 +3967,7 @@
                 </xs:simpleType>
               </xs:element>
               <xs:element name="flagPostingPinjam" msprop:Generator_ColumnVarNameInTable="columnflagPostingPinjam" msprop:Generator_ColumnPropNameInRow="flagPostingPinjam" msprop:Generator_ColumnPropNameInTable="flagPostingPinjamColumn" msprop:Generator_UserColumnName="flagPostingPinjam" type="xs:int" minOccurs="0" />
+              <xs:element name="dendapersen" msprop:Generator_ColumnVarNameInTable="columndendapersen" msprop:Generator_ColumnPropNameInRow="dendapersen" msprop:Generator_ColumnPropNameInTable="dendapersenColumn" msprop:Generator_UserColumnName="dendapersen" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -6020,6 +6026,41 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="tbljaminanbpkb" msprop:Generator_TableClassName="tbljaminanbpkbDataTable" msprop:Generator_TableVarName="tabletbljaminanbpkb" msprop:Generator_RowChangedName="tbljaminanbpkbRowChanged" msprop:Generator_TablePropName="tbljaminanbpkb" msprop:Generator_RowDeletingName="tbljaminanbpkbRowDeleting" msprop:Generator_RowChangingName="tbljaminanbpkbRowChanging" msprop:Generator_RowEvHandlerName="tbljaminanbpkbRowChangeEventHandler" msprop:Generator_RowDeletedName="tbljaminanbpkbRowDeleted" msprop:Generator_RowClassName="tbljaminanbpkbRow" msprop:Generator_UserTableName="tbljaminanbpkb" msprop:Generator_RowEvArgName="tbljaminanbpkbRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idjaminankendaraan" msprop:Generator_ColumnVarNameInTable="columnidjaminankendaraan" msprop:Generator_ColumnPropNameInRow="idjaminankendaraan" msprop:Generator_ColumnPropNameInTable="idjaminankendaraanColumn" msprop:Generator_UserColumnName="idjaminankendaraan" type="xs:string" />
+              <xs:element name="jeniskendaraan" msprop:Generator_ColumnVarNameInTable="columnjeniskendaraan" msprop:Generator_ColumnPropNameInRow="jeniskendaraan" msprop:Generator_ColumnPropNameInTable="jeniskendaraanColumn" msprop:Generator_UserColumnName="jeniskendaraan" type="xs:string" minOccurs="0" />
+              <xs:element name="nopol" msprop:Generator_ColumnVarNameInTable="columnnopol" msprop:Generator_ColumnPropNameInRow="nopol" msprop:Generator_ColumnPropNameInTable="nopolColumn" msprop:Generator_UserColumnName="nopol" type="xs:string" minOccurs="0" />
+              <xs:element name="merk" msprop:Generator_ColumnVarNameInTable="columnmerk" msprop:Generator_ColumnPropNameInRow="merk" msprop:Generator_ColumnPropNameInTable="merkColumn" msprop:Generator_UserColumnName="merk" type="xs:string" minOccurs="0" />
+              <xs:element name="nobpkb" msprop:Generator_ColumnVarNameInTable="columnnobpkb" msprop:Generator_ColumnPropNameInRow="nobpkb" msprop:Generator_ColumnPropNameInTable="nobpkbColumn" msprop:Generator_UserColumnName="nobpkb" type="xs:string" minOccurs="0" />
+              <xs:element name="nomesin" msprop:Generator_ColumnVarNameInTable="columnnomesin" msprop:Generator_ColumnPropNameInRow="nomesin" msprop:Generator_ColumnPropNameInTable="nomesinColumn" msprop:Generator_UserColumnName="nomesin" type="xs:string" minOccurs="0" />
+              <xs:element name="norangka" msprop:Generator_ColumnVarNameInTable="columnnorangka" msprop:Generator_ColumnPropNameInRow="norangka" msprop:Generator_ColumnPropNameInTable="norangkaColumn" msprop:Generator_UserColumnName="norangka" type="xs:string" minOccurs="0" />
+              <xs:element name="tglstnk" msprop:Generator_ColumnVarNameInTable="columntglstnk" msprop:Generator_ColumnPropNameInRow="tglstnk" msprop:Generator_ColumnPropNameInTable="tglstnkColumn" msprop:Generator_UserColumnName="tglstnk" type="xs:string" minOccurs="0" />
+              <xs:element name="warna" msprop:Generator_ColumnVarNameInTable="columnwarna" msprop:Generator_ColumnPropNameInRow="warna" msprop:Generator_ColumnPropNameInTable="warnaColumn" msprop:Generator_UserColumnName="warna" type="xs:string" minOccurs="0" />
+              <xs:element name="besarcc" msprop:Generator_ColumnVarNameInTable="columnbesarcc" msprop:Generator_ColumnPropNameInRow="besarcc" msprop:Generator_ColumnPropNameInTable="besarccColumn" msprop:Generator_UserColumnName="besarcc" type="xs:string" minOccurs="0" />
+              <xs:element name="tahunbuat" msprop:Generator_ColumnVarNameInTable="columntahunbuat" msprop:Generator_ColumnPropNameInRow="tahunbuat" msprop:Generator_ColumnPropNameInTable="tahunbuatColumn" msprop:Generator_UserColumnName="tahunbuat" type="xs:string" minOccurs="0" />
+              <xs:element name="pemilik" msprop:Generator_ColumnVarNameInTable="columnpemilik" msprop:Generator_ColumnPropNameInRow="pemilik" msprop:Generator_ColumnPropNameInTable="pemilikColumn" msprop:Generator_UserColumnName="pemilik" type="xs:string" minOccurs="0" />
+              <xs:element name="alamatpemilik" msprop:Generator_ColumnVarNameInTable="columnalamatpemilik" msprop:Generator_ColumnPropNameInRow="alamatpemilik" msprop:Generator_ColumnPropNameInTable="alamatpemilikColumn" msprop:Generator_UserColumnName="alamatpemilik" type="xs:string" minOccurs="0" />
+              <xs:element name="maxkredit" msprop:Generator_ColumnVarNameInTable="columnmaxkredit" msprop:Generator_ColumnPropNameInRow="maxkredit" msprop:Generator_ColumnPropNameInTable="maxkreditColumn" msprop:Generator_UserColumnName="maxkredit" type="xs:string" minOccurs="0" />
+              <xs:element name="idpinjam" msprop:Generator_ColumnVarNameInTable="columnidpinjam" msprop:Generator_ColumnPropNameInRow="idpinjam" msprop:Generator_ColumnPropNameInTable="idpinjamColumn" msprop:Generator_UserColumnName="idpinjam" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbljaminanshm" msprop:Generator_TableClassName="tbljaminanshmDataTable" msprop:Generator_TableVarName="tabletbljaminanshm" msprop:Generator_TablePropName="tbljaminanshm" msprop:Generator_RowDeletingName="tbljaminanshmRowDeleting" msprop:Generator_RowChangingName="tbljaminanshmRowChanging" msprop:Generator_RowEvHandlerName="tbljaminanshmRowChangeEventHandler" msprop:Generator_RowDeletedName="tbljaminanshmRowDeleted" msprop:Generator_UserTableName="tbljaminanshm" msprop:Generator_RowChangedName="tbljaminanshmRowChanged" msprop:Generator_RowEvArgName="tbljaminanshmRowChangeEvent" msprop:Generator_RowClassName="tbljaminanshmRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idjaminanshm" msprop:Generator_ColumnVarNameInTable="columnidjaminanshm" msprop:Generator_ColumnPropNameInRow="idjaminanshm" msprop:Generator_ColumnPropNameInTable="idjaminanshmColumn" msprop:Generator_UserColumnName="idjaminanshm" type="xs:string" />
+              <xs:element name="noshm" msprop:Generator_ColumnVarNameInTable="columnnoshm" msprop:Generator_ColumnPropNameInRow="noshm" msprop:Generator_ColumnPropNameInTable="noshmColumn" msprop:Generator_UserColumnName="noshm" type="xs:string" minOccurs="0" />
+              <xs:element name="atasnama" msprop:Generator_ColumnVarNameInTable="columnatasnama" msprop:Generator_ColumnPropNameInRow="atasnama" msprop:Generator_ColumnPropNameInTable="atasnamaColumn" msprop:Generator_UserColumnName="atasnama" type="xs:string" minOccurs="0" />
+              <xs:element name="saksi1" msprop:Generator_ColumnVarNameInTable="columnsaksi1" msprop:Generator_ColumnPropNameInRow="saksi1" msprop:Generator_ColumnPropNameInTable="saksi1Column" msprop:Generator_UserColumnName="saksi1" type="xs:string" minOccurs="0" />
+              <xs:element name="saksi2" msprop:Generator_ColumnVarNameInTable="columnsaksi2" msprop:Generator_ColumnPropNameInRow="saksi2" msprop:Generator_ColumnPropNameInTable="saksi2Column" msprop:Generator_UserColumnName="saksi2" type="xs:string" minOccurs="0" />
+              <xs:element name="saksi3" msprop:Generator_ColumnVarNameInTable="columnsaksi3" msprop:Generator_ColumnPropNameInRow="saksi3" msprop:Generator_ColumnPropNameInTable="saksi3Column" msprop:Generator_UserColumnName="saksi3" type="xs:string" minOccurs="0" />
+              <xs:element name="hari" msprop:Generator_ColumnVarNameInTable="columnhari" msprop:Generator_ColumnPropNameInRow="hari" msprop:Generator_ColumnPropNameInTable="hariColumn" msprop:Generator_UserColumnName="hari" type="xs:string" minOccurs="0" />
+              <xs:element name="idpinjam" msprop:Generator_ColumnVarNameInTable="columnidpinjam" msprop:Generator_ColumnPropNameInRow="idpinjam" msprop:Generator_ColumnPropNameInTable="idpinjamColumn" msprop:Generator_UserColumnName="idpinjam" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -6125,6 +6166,14 @@
     <xs:unique name="tbluser_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:tbluser" />
       <xs:field xpath="mstns:iduser" />
+    </xs:unique>
+    <xs:unique name="tbljaminanbpkb_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbljaminanbpkb" />
+      <xs:field xpath="mstns:idjaminankendaraan" />
+    </xs:unique>
+    <xs:unique name="tbljaminanshm_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbljaminanshm" />
+      <xs:field xpath="mstns:idjaminanshm" />
     </xs:unique>
   </xs:element>
   <xs:annotation>

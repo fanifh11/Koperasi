@@ -81,9 +81,17 @@
             dialogError("Lengkapi form isian Anda terlebih dahulu ! karena masih ada yang kosong")
             Return
         ElseIf (dialog("Apakah yakin untuk mengubah data ?")) Then
-
-            If exc("DELETE FROM tbltagihan WHERE idtagihan = '" & idtagihan & "'") Then
-                Debug.WriteLine("DELETE FROM tbltagihan WHERE idtagihan = '" & idtagihan & "'")
+            Dim sql As String = "SELECT flaggenerated FROM tblpinjam where idpinjam='" & idpinjam & "'"
+            If getValue(sql, "flaggenerated") = "1" Then
+                exc($"update tbltagihan set
+                    tglbayar = '" & Now.ToString("yyyy-MM-dd") & "',
+                    besarpokok = 0,
+                    besarbunga = 0,
+                    denda=0,
+                    besarbayar=0,
+                    flagtagihan=0
+                    where idtagihan = '" & idtagihan & "'
+                    ")
                 exc("update tblpinjam set 
                     flagpinjam=0,
                     bayarbunga = (select  coalesce(sum(tbltagihan.besarbunga),0) from tbltagihan where tbltagihan.idpinjam = tblpinjam.idpinjam),
@@ -92,13 +100,32 @@
                     where idpinjam = '" & idpinjam & "'
                    
                     ")
-
                 exc("update tblpinjam set saldopinjam = besarpinjam - (select coalesce(sum(tbltagihan.besarpokok),0) from tbltagihan where tbltagihan.idpinjam = tblpinjam.idpinjam)")
                 clearForm(group_InformasiNasabah)
                 clearForm(group_InformasiPinjaman)
                 clearForm(group_InformasiPeminjaman)
                 dialogInfo("Berhasil dikoreksi")
+
+            Else
+                If exc("DELETE FROM tbltagihan WHERE idtagihan = '" & idtagihan & "'") Then
+                    Debug.WriteLine("DELETE FROM tbltagihan WHERE idtagihan = '" & idtagihan & "'")
+                    exc("update tblpinjam set 
+                    flagpinjam=0,
+                    bayarbunga = (select  coalesce(sum(tbltagihan.besarbunga),0) from tbltagihan where tbltagihan.idpinjam = tblpinjam.idpinjam),
+                    bayarpokok = (select coalesce(sum(tbltagihan.besarpokok),0) from tbltagihan where tbltagihan.idpinjam = tblpinjam.idpinjam)
+
+                    where idpinjam = '" & idpinjam & "'
+                   
+                    ")
+
+                    exc("update tblpinjam set saldopinjam = besarpinjam - (select coalesce(sum(tbltagihan.besarpokok),0) from tbltagihan where tbltagihan.idpinjam = tblpinjam.idpinjam)")
+                    clearForm(group_InformasiNasabah)
+                    clearForm(group_InformasiPinjaman)
+                    clearForm(group_InformasiPeminjaman)
+                    dialogInfo("Berhasil dikoreksi")
+                End If
             End If
+
 
         End If
 

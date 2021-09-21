@@ -15,6 +15,12 @@
         txtPimpinan.Text = getValue("select * from tblidentitas where idkoperasi = '1' ", "pimpinan")
         txtBendahara.Text = getValue("select * from tblidentitas where idkoperasi = '1' ", "bendahara")
         txtNoTelp.Text = getValue("select * from tblidentitas where idkoperasi = '1' ", "notelp")
+        tbNama.Text = getValue("select * from tblidentitas where idkoperasi = '1' ", "nama")
+        tbNoKtP.Text = getValue("select * from tblidentitas where idkoperasi = '1' ", "noktp")
+        tbAlamatOrang.Text = getValue("select * from tblidentitas where idkoperasi = '1' ", "alamat")
+        tbPekerjaan.Text = getValue("select * from tblidentitas where idkoperasi = '1' ", "pekerjaan")
+        tbUmur.Text = getValue("select * from tblidentitas where idkoperasi = '1' ", "umur")
+        tbToleransiTagihan.Text = getValue("select * from tblidentitas where idkoperasi = '1' ", "toleransi")
     End Sub
 
     Private Sub btnUbah_Click(sender As Object, e As EventArgs) Handles btnUbah.Click
@@ -36,6 +42,10 @@
         ElseIf String.IsNullOrEmpty(txtNoTelp.Text) Then
             dialogError("Nomor telepon masih kosong !")
             Return
+
+        ElseIf String.IsNullOrEmpty(tbToleransiTagihan.Text) Then
+            dialogError("Nomor telepon masih kosong !")
+            Return
         Else
             If dialog("Apakah Anda yakin ?") Then
                 Dim namakoperasi As String = txtNamaKoperasi.Text
@@ -44,6 +54,12 @@
                 Dim pimpinan As String = txtPimpinan.Text
                 Dim bendahara As String = txtBendahara.Text
                 Dim notelp As String = txtNoTelp.Text
+                Dim nama As String = tbNama.Text
+                Dim alamat As String = tbAlamatOrang.Text
+                Dim pekerjaan As String = tbPekerjaan.Text
+                Dim umur As String = tbUmur.Text
+                Dim ktp As String = tbNoKtP.Text
+                Dim toleransi As String = tbToleransiTagihan.Text
 
                 exc("update tblidentitas set
                 namakoperasi = '" & namakoperasi & "',
@@ -51,8 +67,13 @@
                 alamatkoperasi = '" & alamatkoperasi & "',
                 pimpinan = '" & pimpinan & "',
                 bendahara = '" & bendahara & "',
-                notelp = '" & notelp & "'
-
+                notelp = '" & notelp & "',
+                nama = '" & nama & "',
+                alamat = '" & alamat & "',
+                umur = '" & umur & "',
+                pekerjaan = '" & pekerjaan & "',
+                noktp = '" & ktp & "',
+                toleransi = " & toleransi & "
                 where idkoperasi = '1'
                 ")
             End If
@@ -61,6 +82,14 @@
     End Sub
 
     Private Sub txtNoTelp_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNoTelp.KeyPress
+        onlyNumber(e)
+    End Sub
+
+    Private Sub tbNoKtP_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tbUmur.KeyPress, tbNoKtP.KeyPress
+        onlyNumber(e)
+    End Sub
+
+    Private Sub tbToleransiTagihan_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tbToleransiTagihan.KeyPress
         onlyNumber(e)
     End Sub
 End Class

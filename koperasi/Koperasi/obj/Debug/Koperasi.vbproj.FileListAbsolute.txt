@@ -803,3 +803,7 @@ F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.ImportAnggota.reso
 F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.vbproj.AssemblyReference.cache
 F:\Magang\Unesa\Koperasi\koperasi\Koperasi\bin\Debug\JacksiroKe.MdiTabCtrl.dll
 F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.Dashboard.resources
+F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.PreviewSuratPerjanjian.resources
+F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.PreviewSuratPerjanjianSHM.resources
+F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.PreviewSuratPerjanjianBPKB.resources
+F:\Magang\Unesa\Koperasi\koperasi\Koperasi\obj\Debug\Koperasi.PreviewSuratAngsuran.resources

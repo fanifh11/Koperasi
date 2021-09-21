@@ -13,8 +13,11 @@
     End Sub
 
     Sub showData()
-        dgv_data_tagihan.DataSource = getData("select idtagihan,idpinjam,idanggota,anggota,alamat,jenis,besarpinjam,lamapinjam,angsuranpokok,angsuranbunga,jumlahangsuran,cicilanke,besarbayar,saldopinjam,totalpokok - besarpokok,totalbunga - besarbunga,kodetagihan
-        from qtagihan where flagtagihan = 0 and anggota ilike '%" & txt_search.Text & "%'")
+        dgv_data_tagihan.DataSource = getData("select idtagihan,qtagihan.idpinjam,idanggota,anggota,alamat,jenis,besarpinjam,lamapinjam,angsuranpokok,angsuranbunga,jumlahangsuran,qtagihan.cicilanke,besarbayar,saldopinjam,totalpokok - besarpokok,totalbunga - besarbunga,kodetagihan
+        from qtagihan 
+        inner join (select min(cicilanke) as cicilanke,idpinjam from tbltagihan where flagtagihan=0 group by idpinjam) t 
+        on t.idpinjam = qtagihan.idpinjam and t.cicilanke = qtagihan.cicilanke
+        where anggota ilike '%" & txt_search.Text & "%'")
         dgv_data_tagihan.Columns(0).Visible = False
         dgv_data_tagihan.Columns(1).HeaderText = "Kode Pinjam"
         dgv_data_tagihan.Columns(2).HeaderText = "Kode Anggota"

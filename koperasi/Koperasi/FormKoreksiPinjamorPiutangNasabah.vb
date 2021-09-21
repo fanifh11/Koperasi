@@ -160,17 +160,17 @@
 
             If dialog("Apakah yakin untuk menghapus data pinjaman ?") Then
                 Debug.WriteLine("select idpinjam from tblpinjam where idpinjam != '" & kodePinjam & "' and idpinjam = '" & idpinjam & "'  ")
-                If getCount("select idpinjam from tblpinjam where idpinjam != '" & kodePinjam & "'  and idpinjam = '" & idpinjam & "' ") = 0 Then
 
-                    exc("delete from tbltagihan where idpinjam = '" & idpinjam & "' ")
+                exc("delete from tbljaminanshm where idpinjam = '" & idpinjam & "' ")
+                exc("delete from tbljaminankendaraan where idpinjam = '" & idpinjam & "' ")
+                exc("delete from tbltagihan where idpinjam = '" & idpinjam & "' ")
+                exc("delete from tblpinjam where idpinjam = '" & idpinjam & "'  ")
 
-                    exc("delete from tblpinjam where idpinjam = '" & idpinjam & "'  ")
+                dialogInfo("Hapus sukses")
+                showData()
 
-                    dialogInfo("Hapus sukses")
-                    showData()
-                Else
-                    dialogError("Ada duplikasi kode pinjam !")
-                End If
+
+
             End If
             clearForm(group_InfoPeminjaman)
             clearForm(group_InfoNasabah)

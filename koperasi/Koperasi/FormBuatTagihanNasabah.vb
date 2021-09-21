@@ -76,7 +76,7 @@
         End If
         terpilih = terpilih & ")"
 
-        dgv_data_peminjaman.DataSource = getData("select idpinjam,idanggota,anggota,jk,jenis,besarpinjam,lamapinjam,angsuranpokok,angsuranbunga,jumlahangsuran from qpinjam where flagpinjam = 0 and anggota ilike '%" & txt_search.Text & "%' and idpinjam not in " & terpilih)
+        dgv_data_peminjaman.DataSource = getData("select idpinjam,idanggota,anggota,jk,jenis,besarpinjam,lamapinjam,angsuranpokok,angsuranbunga,jumlahangsuran from qpinjam where flagpinjam = 0 and flaggenerated=0 and anggota ilike '%" & txt_search.Text & "%' and idpinjam not in " & terpilih)
         dgv_data_peminjaman.Columns(0).HeaderText = "Kode Pinjam"
         dgv_data_peminjaman.Columns(1).HeaderText = "Kode Anggota"
         dgv_data_peminjaman.Columns(2).HeaderText = "Nama"
@@ -93,7 +93,7 @@
 
         lbl_Jumlah.Text = "Jumlah Data :" & dgv_data_peminjaman.Rows.Count
 
-        dgv_data_peminjaman2.DataSource = getData("select idpinjam,idanggota,anggota,jk,jenis,besarpinjam,lamapinjam,angsuranpokok,angsuranbunga,jumlahangsuran from qpinjam where flagpinjam = 0 and anggota ilike  '%" & txt_search2.Text & "%' and idpinjam in " & terpilih)
+        dgv_data_peminjaman2.DataSource = getData("select idpinjam,idanggota,anggota,jk,jenis,besarpinjam,lamapinjam,angsuranpokok,angsuranbunga,jumlahangsuran from qpinjam where flagpinjam = 0 and flaggenerated=0 and anggota ilike  '%" & txt_search2.Text & "%' and idpinjam in " & terpilih)
         dgv_data_peminjaman2.Columns(0).HeaderText = "Kode Pinjam"
         dgv_data_peminjaman2.Columns(1).HeaderText = "Kode Anggota"
         dgv_data_peminjaman2.Columns(2).HeaderText = "Nama"
