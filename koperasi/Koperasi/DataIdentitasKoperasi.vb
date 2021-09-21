@@ -9,6 +9,7 @@
     End Sub
 
     Sub showData()
+        setLogo(imgKoperasi)
         txtNamaKoperasi.Text = getValue("select * from tblidentitas where idkoperasi = '1' ", "namakoperasi")
         txtNamaInstansi.Text = getValue("select * from tblidentitas where idkoperasi = '1' ", "namainstansi")
         txtAlamat.Text = getValue("select * from tblidentitas where idkoperasi = '1' ", "alamatkoperasi")
@@ -77,6 +78,10 @@
                 where idkoperasi = '1'
                 ")
             End If
+            If System.IO.File.Exists(imgKoperasi.ImageLocation) Then
+                uploadIamge(imgKoperasi.ImageLocation)
+            End If
+
         End If
 
     End Sub
@@ -91,5 +96,13 @@
 
     Private Sub tbToleransiTagihan_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tbToleransiTagihan.KeyPress
         onlyNumber(e)
+    End Sub
+
+    Private Sub btnCariLogi_Click(sender As Object, e As EventArgs) Handles btnCariLogi.Click
+        Dim open As New OpenFileDialog
+        open.Filter = "Gambar | *.png;*.jpg;*.jpeg"
+        If open.ShowDialog() = DialogResult.OK Then
+            imgKoperasi.ImageLocation = open.FileName
+        End If
     End Sub
 End Class

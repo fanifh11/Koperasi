@@ -3,6 +3,8 @@ Imports System.Net.Mail
 Imports System.Text
 Imports System.Security.Cryptography
 Imports Npgsql
+Imports System.IO
+
 Module Modul
     'ITBrainPOSTheToko25122020ONLINE
     Public kodeaplikasi As String = "KoperasiSP" '25122020  khusus taufiq tambahi ini
@@ -22,6 +24,81 @@ Module Modul
     Dim DA As NpgsqlDataAdapter
     Dim DT As DataTable
     Dim QUERY As String
+
+
+    Sub setLogo(pb As PictureBox)
+        Dim productImageByte As Byte() = Nothing
+        Dim sql = "SELECT pg_typeof(""logo"") from tblidentitas limit 1;"
+        'If getValue(sql, "pg_typeof").ToString = "25" Then
+        '    exc("ALTER TABLE tblidentitas DROP COLUMN logo;
+        '            ALTER TABLE tblidentitas ADD COLUMN logo bytea;")
+        'End If
+
+        Dim gambar As Byte()
+        Try
+            gambar = getValue("select logo from tblidentitas where idkoperasi=1", "logo")
+        Catch ex As Exception
+
+        End Try
+
+        productImageByte = (gambar)
+        Dim productImageStream As MemoryStream
+        If Not IsNothing(productImageByte) Then
+            productImageStream = New System.IO.MemoryStream(productImageByte)
+        Else
+            Dim pgFileStream As FileStream = New FileStream(Application.StartupPath & "\koperasi.png", FileMode.Open, FileAccess.Read)
+            Dim pgReader As BinaryReader = New BinaryReader(New BufferedStream(pgFileStream))
+            gambar = pgReader.ReadBytes(Convert.ToInt32(pgFileStream.Length))
+            productImageStream = New System.IO.MemoryStream(gambar)
+        End If
+        pb.Image = Image.FromStream(productImageStream)
+    End Sub
+
+    Sub addLogoRDLC(report As Microsoft.Reporting.WinForms.ReportViewer)
+
+        Dim gambar As Byte()
+        Try
+            gambar = getValue("select logo from tblidentitas where idkoperasi=1", "logo")
+        Catch ex As Exception
+
+        End Try
+        If IsNothing(gambar) Then
+            Dim pgFileStream As FileStream = New FileStream(Application.StartupPath & "\itb.png", FileMode.Open, FileAccess.Read)
+            Dim pgReader As BinaryReader = New BinaryReader(New BufferedStream(pgFileStream))
+            gambar = pgReader.ReadBytes(Convert.ToInt32(pgFileStream.Length))
+        End If
+        report.LocalReport.EnableExternalImages = True
+        report.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("logo", Convert.ToBase64String(gambar)))
+    End Sub
+
+    Function uploadIamge(file As String)
+        koneksi()
+        Dim pgFileStream As FileStream = New FileStream(file, FileMode.Open, FileAccess.Read)
+        Dim pgReader As BinaryReader = New BinaryReader(New BufferedStream(pgFileStream))
+        Dim ImgByteA As Byte() = pgReader.ReadBytes(Convert.ToInt32(pgFileStream.Length))
+
+
+        Try
+            Dim sql As String = "UPDATE tblidentitas set logo = @Image where idkoperasi =1"
+            CMD = New NpgsqlCommand(sql, Conn)
+            Dim param As NpgsqlParameter = CMD.CreateParameter
+            param.ParameterName = "@Image"
+            param.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Bytea
+            param.Value = ImgByteA
+            CMD.Parameters.Add(param)
+
+            CMD.ExecuteNonQuery()
+
+            Return True
+        Catch ex As Exception
+
+            Return False
+        Finally
+            closeKoneksi()
+        End Try
+
+
+    End Function
 
 
 
@@ -170,7 +247,7 @@ Module Modul
     End Function
 
     Function getLogo() As String
-        Dim gambar As String = getValue("select idtoko, namatoko, alamatoko, notoko, caption1, caption2, caption3, printstruk, logo, kota from tblidentitas where idtoko=1", "logo")
+        Dim gambar As String = getValue("select idkoperasi, namatoko, alamatoko, notoko, caption1, caption2, caption3, printstruk, logo, kota from tblidentitas where idkoperasi=1", "logo")
         If String.IsNullOrWhiteSpace(gambar) Then
             gambar = Application.StartupPath & "\itb.png"
         ElseIf Not System.IO.File.Exists(gambar) Then

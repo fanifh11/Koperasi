@@ -57,14 +57,14 @@
 
                 idtagihan = idtagihan & ")"
 
-
+                Dim toleransi As Double = toDouble(getValue("select toleransi from tblidentitas", "toleransi"))
                 exc("update tbltagihan set
                     besarbayar = totalangsur,
                     besarpokok = totalpokok,
                     besarbunga = totalbunga,
                     tglbayar = now(),
                     flagtagihan = 1 ,
-                    denda=(select case when EXTRACT(day from now() - tgltagihan)>0 then EXTRACT(day from now() - tgltagihan) * qtagihan.totalangsur * qtagihan.dendapersen /100 else 0 end as denda from qtagihan where idtagihan =tbltagihan.idtagihan)                   
+                    denda=(select case when EXTRACT(day from now() - tgltagihan) + " & toleransi.ToString.Replace(",", ".") & " > 0 then (EXTRACT(day from now() - tgltagihan) + " & toleransi.ToString.Replace(",", ".") & ") * qtagihan.totalangsur * qtagihan.dendapersen /100 else 0 end as denda from qtagihan where idtagihan =tbltagihan.idtagihan)                   
                     where idtagihan in " & idtagihan & "
          ")
 

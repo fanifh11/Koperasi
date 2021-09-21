@@ -26,6 +26,9 @@ Partial Class DataIdentitasKoperasi
         Me.lbl_Subjudul = New System.Windows.Forms.Label()
         Me.lbl_Judul = New System.Windows.Forms.Label()
         Me.group_InformasiKoperasi = New System.Windows.Forms.GroupBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.tbToleransiTagihan = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.tbAlamatOrang = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.tbNoKtP = New System.Windows.Forms.TextBox()
@@ -54,14 +57,13 @@ Partial Class DataIdentitasKoperasi
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.btnKeluar = New System.Windows.Forms.Button()
         Me.btnUbah = New System.Windows.Forms.Button()
-        Me.tbToleransiTagihan = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.FileSystemWatcher1 = New System.IO.FileSystemWatcher()
         Me.Panel1.SuspendLayout()
         Me.group_InformasiKoperasi.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.imgKoperasi, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
+        CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -136,6 +138,34 @@ Partial Class DataIdentitasKoperasi
         Me.group_InformasiKoperasi.TabIndex = 1
         Me.group_InformasiKoperasi.TabStop = False
         Me.group_InformasiKoperasi.Text = "Informasi Koperasi"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(286, 300)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(30, 15)
+        Me.Label7.TabIndex = 24
+        Me.Label7.Text = "Hari"
+        '
+        'tbToleransiTagihan
+        '
+        Me.tbToleransiTagihan.Location = New System.Drawing.Point(125, 297)
+        Me.tbToleransiTagihan.Margin = New System.Windows.Forms.Padding(2)
+        Me.tbToleransiTagihan.Name = "tbToleransiTagihan"
+        Me.tbToleransiTagihan.Size = New System.Drawing.Size(157, 20)
+        Me.tbToleransiTagihan.TabIndex = 23
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(8, 297)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(106, 15)
+        Me.Label6.TabIndex = 22
+        Me.Label6.Text = "Toleransi Tagihan"
         '
         'tbAlamatOrang
         '
@@ -352,6 +382,7 @@ Partial Class DataIdentitasKoperasi
         Me.imgKoperasi.Margin = New System.Windows.Forms.Padding(2)
         Me.imgKoperasi.Name = "imgKoperasi"
         Me.imgKoperasi.Size = New System.Drawing.Size(113, 107)
+        Me.imgKoperasi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.imgKoperasi.TabIndex = 0
         Me.imgKoperasi.TabStop = False
         '
@@ -400,33 +431,10 @@ Partial Class DataIdentitasKoperasi
         Me.btnUbah.Text = "Ubah"
         Me.btnUbah.UseVisualStyleBackColor = True
         '
-        'tbToleransiTagihan
+        'FileSystemWatcher1
         '
-        Me.tbToleransiTagihan.Location = New System.Drawing.Point(125, 297)
-        Me.tbToleransiTagihan.Margin = New System.Windows.Forms.Padding(2)
-        Me.tbToleransiTagihan.Name = "tbToleransiTagihan"
-        Me.tbToleransiTagihan.Size = New System.Drawing.Size(157, 20)
-        Me.tbToleransiTagihan.TabIndex = 23
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(8, 297)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(106, 15)
-        Me.Label6.TabIndex = 22
-        Me.Label6.Text = "Toleransi Tagihan"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(286, 300)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(30, 15)
-        Me.Label7.TabIndex = 24
-        Me.Label7.Text = "Hari"
+        Me.FileSystemWatcher1.EnableRaisingEvents = True
+        Me.FileSystemWatcher1.SynchronizingObject = Me
         '
         'DataIdentitasKoperasi
         '
@@ -451,6 +459,7 @@ Partial Class DataIdentitasKoperasi
         Me.GroupBox2.ResumeLayout(False)
         CType(Me.imgKoperasi, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
+        CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -490,4 +499,5 @@ Partial Class DataIdentitasKoperasi
     Friend WithEvents Label7 As Label
     Friend WithEvents tbToleransiTagihan As TextBox
     Friend WithEvents Label6 As Label
+    Friend WithEvents FileSystemWatcher1 As IO.FileSystemWatcher
 End Class
