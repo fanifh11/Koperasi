@@ -382,7 +382,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>3.95139cm</Top>
-            <Left>0.00751cm</Left>
+            <Left>0.02877cm</Left>
             <Height>0.6cm</Height>
             <Width>16.5cm</Width>
             <ZIndex>1</ZIndex>
@@ -507,7 +507,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -2230,7 +2229,7 @@
             <Top>13.04078cm</Top>
             <Left>0.01501cm</Left>
             <Height>1.2cm</Height>
-            <Width>16.4975cm</Width>
+            <Width>16.49749cm</Width>
             <ZIndex>7</ZIndex>
             <Style>
               <Border>
@@ -5331,6 +5330,22 @@
               </Border>
             </Style>
           </Rectangle>
+          <Image Name="Image1">
+            <Source>Database</Source>
+            <Value>=Parameters!logo.Value</Value>
+            <MIMEType>image/jpeg</MIMEType>
+            <Sizing>Fit</Sizing>
+            <Top>0.44911cm</Top>
+            <Left>0.19863cm</Left>
+            <Height>1.5cm</Height>
+            <Width>1.5cm</Width>
+            <ZIndex>9</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
           <Textbox Name="Textbox1">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
@@ -5340,7 +5355,7 @@
                   <TextRun>
                     <Value>= Parameters!namakoperasi.Value</Value>
                     <Style>
-                      <FontFamily>times New Roman</FontFamily>
+                      <FontFamily>Times New Roman</FontFamily>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -5351,11 +5366,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>0.05327cm</Top>
-            <Left>0.01314cm</Left>
+            <Top>0.13133cm</Top>
+            <Left>1.80446cm</Left>
             <Height>0.6cm</Height>
-            <Width>16.5cm</Width>
-            <ZIndex>9</ZIndex>
+            <Width>13.25319cm</Width>
+            <ZIndex>10</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -5375,7 +5390,7 @@
                   <TextRun>
                     <Value>= Parameters!alamatkoperasi.Value</Value>
                     <Style>
-                      <FontFamily>times New Roman</FontFamily>
+                      <FontFamily>Times New Roman</FontFamily>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -5385,11 +5400,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>0.73327cm</Top>
-            <Left>0.01314cm</Left>
+            <Top>0.78133cm</Top>
+            <Left>1.80446cm</Left>
             <Height>0.6cm</Height>
-            <Width>16.5cm</Width>
-            <ZIndex>10</ZIndex>
+            <Width>13.25319cm</Width>
+            <ZIndex>11</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -5409,7 +5424,7 @@
                   <TextRun>
                     <Value>= Parameters!kota.Value</Value>
                     <Style>
-                      <FontFamily>times New Roman</FontFamily>
+                      <FontFamily>Times New Roman</FontFamily>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -5419,11 +5434,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>1.40327cm</Top>
-            <Left>0.01314cm</Left>
+            <Top>1.38133cm</Top>
+            <Left>1.80446cm</Left>
             <Height>0.6cm</Height>
-            <Width>16.5cm</Width>
-            <ZIndex>11</ZIndex>
+            <Width>13.25319cm</Width>
+            <ZIndex>12</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -5443,7 +5458,7 @@
                   <TextRun>
                     <Value>= "No. Telp : " &amp; Parameters!notelp.Value</Value>
                     <Style>
-                      <FontFamily>times New Roman</FontFamily>
+                      <FontFamily>Times New Roman</FontFamily>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -5453,30 +5468,38 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox4</rd:DefaultName>
-            <Top>2.05327cm</Top>
-            <Left>0.01314cm</Left>
-            <Height>0.94909cm</Height>
-            <Width>16.5cm</Width>
-            <ZIndex>12</ZIndex>
+            <Top>2.08133cm</Top>
+            <Left>1.80446cm</Left>
+            <Height>0.6cm</Height>
+            <Width>13.25319cm</Width>
+            <ZIndex>13</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
-                <Width>2pt</Width>
               </Border>
-              <BottomBorder>
-                <Style>Solid</Style>
-              </BottomBorder>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
+          <Line Name="Line1">
+            <Top>2.90724cm</Top>
+            <Left>0.3175cm</Left>
+            <Height>0cm</Height>
+            <Width>16.06021cm</Width>
+            <ZIndex>14</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
         </ReportItems>
         <Height>14.60735in</Height>
         <Style />
       </Body>
-      <Width>6.50641in</Width>
+      <Width>6.50739in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
@@ -5524,6 +5547,10 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="logo">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -5559,6 +5586,11 @@
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>1</RowIndex>
           <ParameterName>terbilang</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>logo</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

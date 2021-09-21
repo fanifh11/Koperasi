@@ -10,7 +10,7 @@
 
         ReportViewer1.Reset()
         ReportViewer1.LocalReport.ReportEmbeddedResource = "Koperasi.CetakKartu.rdlc"
-
+        addLogoRDLC(ReportViewer1)
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("idanggota", getValue(Sql, "idanggota").ToString))
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("anggota", getValue(Sql, "anggota").ToString))
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("alamat", getValue(Sql, "alamat").ToString))

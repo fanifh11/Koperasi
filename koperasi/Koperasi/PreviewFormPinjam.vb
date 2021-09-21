@@ -11,7 +11,7 @@
         t.Text = getValue(sql, "besarpinjam").ToString
         ReportViewer1.Reset()
         ReportViewer1.LocalReport.ReportEmbeddedResource = "Koperasi.CetakKwitansiPinjaman.rdlc"
-
+        addLogoRDLC(ReportViewer1)
         ReportViewer1.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", CType(getData(sql), DataTable)))
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("kodepinjam", getValue(sql, "idpinjam").ToString))
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("banyaknyauang", t.Text))

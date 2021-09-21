@@ -13,11 +13,11 @@
         Dim dt As DataTable = getData(sql)
         Dim bilang As New Terbilang
         bilang.Text = dt.Rows(0).Item("besarpinjam")
-
+        addLogoRDLC(ReportViewer1)
         ReportViewer1.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", CType(dt, DataTable)))
         ReportViewer1.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("tagihan", CType(tagihan, DataTable)))
         ReportViewer1.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("jaminan", CType(getData("select * from tbljaminankendaraan where idpinjam = '" & idpinjam & "'"), DataTable)))
-
+        
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("namakoperasi", getValue(sqlidentitas, "namakoperasi").ToString))
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("alamatkoperasi", getValue(sqlidentitas, "alamatkoperasi").ToString))
         ReportViewer1.LocalReport.SetParameters(New Microsoft.Reporting.WinForms.ReportParameter("notelp", getValue(sqlidentitas, "notelp").ToString))

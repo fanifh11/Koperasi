@@ -192,7 +192,6 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Left>0cm</Left>
             <Height>0.6cm</Height>
             <Width>16.5cm</Width>
             <Style>
@@ -225,8 +224,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>2.4cm</Top>
-            <Left>0cm</Left>
+            <Top>2cm</Top>
             <Height>0.6cm</Height>
             <Width>16.5cm</Width>
             <ZIndex>1</ZIndex>
@@ -260,8 +258,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>1.6cm</Top>
-            <Left>0cm</Left>
+            <Top>1.3cm</Top>
             <Height>0.6cm</Height>
             <Width>16.5cm</Width>
             <ZIndex>2</ZIndex>
@@ -295,8 +292,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>0.8cm</Top>
-            <Left>0cm</Left>
+            <Top>0.7cm</Top>
             <Height>0.6cm</Height>
             <Width>16.5cm</Width>
             <ZIndex>3</ZIndex>
@@ -320,6 +316,7 @@
                     <Value>KWITANSI PINJAMAN</Value>
                     <Style>
                       <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>12pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -330,10 +327,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>3.4cm</Top>
-            <Left>6.37646cm</Left>
+            <Top>3.34111cm</Top>
+            <Left>5.95cm</Left>
             <Height>0.6cm</Height>
-            <Width>3.74708cm</Width>
+            <Width>4.82354cm</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -368,7 +365,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>4.2cm</Top>
-            <Left>0cm</Left>
             <Height>0.6cm</Height>
             <Width>16.5cm</Width>
             <ZIndex>5</ZIndex>
@@ -400,7 +396,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>5cm</Top>
-            <Left>0cm</Left>
             <Height>0.6cm</Height>
             <Width>3cm</Width>
             <ZIndex>6</ZIndex>
@@ -432,7 +427,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>5.8cm</Top>
-            <Left>0cm</Left>
             <Height>0.6cm</Height>
             <Width>3cm</Width>
             <ZIndex>7</ZIndex>
@@ -464,7 +458,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>6.6cm</Top>
-            <Left>0cm</Left>
             <Height>0.6cm</Height>
             <Width>3cm</Width>
             <ZIndex>8</ZIndex>
@@ -773,7 +766,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>12.4cm</Top>
-            <Left>0cm</Left>
             <Height>0.6cm</Height>
             <Width>6.5cm</Width>
             <ZIndex>17</ZIndex>
@@ -808,7 +800,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>13.2cm</Top>
-            <Left>0cm</Left>
             <Height>0.6cm</Height>
             <Width>6.5cm</Width>
             <ZIndex>18</ZIndex>
@@ -910,7 +901,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>17.2cm</Top>
-            <Left>0cm</Left>
             <Height>0.6cm</Height>
             <Width>16.5cm</Width>
             <ZIndex>21</ZIndex>
@@ -942,7 +932,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>18.2cm</Top>
-            <Left>0cm</Left>
             <Height>0.6cm</Height>
             <Width>3cm</Width>
             <ZIndex>22</ZIndex>
@@ -974,7 +963,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>19cm</Top>
-            <Left>0cm</Left>
             <Height>0.6cm</Height>
             <Width>3cm</Width>
             <ZIndex>23</ZIndex>
@@ -1006,7 +994,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>19.8cm</Top>
-            <Left>0cm</Left>
             <Height>0.6cm</Height>
             <Width>3cm</Width>
             <ZIndex>24</ZIndex>
@@ -1239,7 +1226,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>20.6cm</Top>
-            <Left>0cm</Left>
             <Height>0.6cm</Height>
             <Width>3cm</Width>
             <ZIndex>31</ZIndex>
@@ -1271,7 +1257,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>21.4cm</Top>
-            <Left>0cm</Left>
             <Height>0.6cm</Height>
             <Width>3cm</Width>
             <ZIndex>32</ZIndex>
@@ -1303,7 +1288,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>22.2cm</Top>
-            <Left>0cm</Left>
             <Height>0.6cm</Height>
             <Width>3cm</Width>
             <ZIndex>33</ZIndex>
@@ -1431,7 +1415,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>23cm</Top>
-            <Left>0cm</Left>
             <Height>0.6cm</Height>
             <Width>3cm</Width>
             <ZIndex>37</ZIndex>
@@ -2311,7 +2294,7 @@
             </Style>
           </Textbox>
           <Line Name="Line1">
-            <Top>3.2cm</Top>
+            <Top>2.8825cm</Top>
             <Left>0cm</Left>
             <Height>0cm</Height>
             <Width>16.5cm</Width>
@@ -3175,7 +3158,6 @@
           </Rectangle>
           <Line Name="Line3">
             <Top>17cm</Top>
-            <Left>0cm</Left>
             <Height>0cm</Height>
             <Width>16.5cm</Width>
             <ZIndex>66</ZIndex>
@@ -3187,7 +3169,6 @@
           </Line>
           <Line Name="Line4">
             <Top>18cm</Top>
-            <Left>0cm</Left>
             <Height>0cm</Height>
             <Width>16.5cm</Width>
             <ZIndex>67</ZIndex>
@@ -3275,6 +3256,22 @@
               <FontFamily />
             </Style>
           </Tablix>
+          <Image Name="Image1">
+            <Source>Database</Source>
+            <Value>=Parameters!logo.Value</Value>
+            <MIMEType>image/jpeg</MIMEType>
+            <Sizing>Fit</Sizing>
+            <Top>0.6cm</Top>
+            <Left>0.86146cm</Left>
+            <Height>1.5cm</Height>
+            <Width>1.5cm</Width>
+            <ZIndex>69</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
         </ReportItems>
         <Height>23.6cm</Height>
         <Style />
@@ -3381,11 +3378,15 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="logo">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>7</NumberOfRows>
+      <NumberOfRows>8</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
@@ -3496,6 +3497,11 @@
           <ColumnIndex>3</ColumnIndex>
           <RowIndex>6</RowIndex>
           <ParameterName>tanggaldaftar</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>7</RowIndex>
+          <ParameterName>logo</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

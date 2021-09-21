@@ -11,7 +11,7 @@
         ReportViewer1.Reset()
         ReportViewer1.LocalReport.ReportEmbeddedResource = "Koperasi.SuratPerjanjianSHM.rdlc"
         Dim dt As DataTable = getData(sql)
-
+        addLogoRDLC(ReportViewer1)
 
         ReportViewer1.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", CType(dt, DataTable)))
         ReportViewer1.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("jaminanSHM", CType(getData("select * from tbljaminanshm where idpinjam = '" & idpinjam & "'"), DataTable)))

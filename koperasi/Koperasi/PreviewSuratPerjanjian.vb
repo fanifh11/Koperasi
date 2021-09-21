@@ -13,6 +13,7 @@
         Dim dt As DataTable = getData(sql)
         Dim bilang As New Terbilang
         bilang.Text = dt.Rows(0).Item("besarpinjam")
+        addLogoRDLC(ReportViewer1)
         Dim jumlahPinjaman As String = Modul.numberFor(dt.Rows(0).Item("besarpinjam")) & " - ( " & bilang.Text & " )"
         ReportViewer1.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", CType(dt, DataTable)))
         ReportViewer1.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("dataJaminan", CType(getData("select * from tbljaminankendaraan where idpinjam = '" & idpinjam & "'"), DataTable)))
